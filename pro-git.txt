@@ -1,0 +1,201 @@
+Pro Git
+
+Tue May 23 21:26:44 2023
+Chapter 1: Getting started
+
+Identity commands:
+  $ git config --global user.name "Johan Madronero Cuervo"
+  $ git config --global user.email jmadronero@unal.edu.co
+  $ git config --global init.defaultBranch main
+
+  $ git config --list -> Lista la configuración
+
+Sets text editor:
+  $ git config --global core.editor nvim
+
+Getting help
+  $ git help <verb>
+  $ git <verb> --help
+  $ man git-<verb>
+
+Tue May 23 21:38:41 2023
+Chapter 2: Git Basics
+
+Cloning a repository
+  $ git clone [url]
+  $ git clone [url] [folder name]
+
+Initializing repository
+  $ git init
+
+Start tracking
+  $ git add [files]
+  $ git commit -m 'initial project version'
+
+Checking the Status of Your Files
+  $ git status
+
+Short Status
+  $ git status -s
+  $ git status --short
+
+Wed May 24 19:11:48 2023
+Ignoring files
+The file .gitignore stores the files to be ignored
+
+Check changed but not yet staged
+  $ git diff 
+
+Check changed and staged
+  $ git diff --staged
+
+Skipping the Staging Area
+  $ git commit -a
+
+Removing Files
+  $ git rm [file]
+
+Removing files from git and keeping in drive
+  $ git rm --chached [file]
+  $ git rm log/\*.log
+
+Renaming files
+  $ git mv [file_from] [file_to]
+
+Viewing the Commit History
+  $ git log
+  $ git log -p -2 -> p: show diff, 2: last 2 commits
+  $ git log --stat -> abbreviated stats
+
+Limiting Log Output
+  $ git log --since=2.weeks
+
+Undoing Things
+  $ git commit -amend
+
+Adding files to commit after commit
+  $ git commit -m 'initial commit'
+  $ git add forgotten_file
+  $ git commit --amend
+
+Unstaging
+  $ git reset HEAD [file]
+
+Thu May 25 19:09:28 2023
+Unmodify a file
+  $ git checkout -- [file]
+
+Displaying remotes
+  $ git remote
+  $ git remote -v -> shows fetch and push
+
+Adding remote repositories
+  $ git remote add [shortname] [url]
+
+Get data
+  $ git fetch [shortname]
+
+Pushing to remote
+  $ git push [shortname] [branch-name]
+
+Inspecting a remote
+  $ git remote show [remote-name]
+
+Renaming remotes
+  $ git remote rename pb paul
+
+Removing remotes
+  $ git remote rm paul
+
+Listing tags
+  $ git tag
+
+Annotaded tag
+  $ git tag -a v1.4 -m 'my version 1.4'
+
+Showing tags
+  $ git show [tag]
+
+Lightweight tag
+  $ git tag v1.4-lw
+
+Tagging later
+  $ git tag -a v1.2 9fceb02
+
+Sharing tags
+  $ git push origin v1.5
+  $ git push origin --tags
+
+Git Aliases
+  $ git config --global alias.co checkout
+  $ git config --global alias.br branch
+  $ git config --global alias.ci commit
+  $ git config --global alias.st status
+  $ git config --global alias.unstage 'reset HEAD --'
+  $ git config --global alias.last 'log -1 HEAD'
+  $ git config --global alias.visual "!gitk"
+    -> ! implies command
+
+Check where pointers are pointing to
+  $ git log --oneline --decorate
+
+Switch to an existing branch
+  $ git checkout [branch-name]
+
+Shows branch pointers, and history
+  $ git log --oneline --decorate --graph --all
+
+Switch and crate a branch
+  $ git checkout -b [branch-name]
+    -> This runs two commands: git branch, git checkout
+
+Merging branches
+  $ git checkout [branch-name1]
+  $ git merge [branch-name2] 
+
+Deleting branches
+  $ git branch -d [branch-name]
+
+Visual merging tool
+  $ git mergetool
+
+Listing branches
+  $ git branch
+
+Last commit in branches
+  $ git branch -v
+
+Check merged branches with current branch
+  $ git branch --merged
+  $ git branch --no-merged
+
+Pushing branch
+  $ git push [server] [branch-name]:[alias]
+
+Remembering credentials
+  $ git config --global credential.helper cache
+
+Getting local branches from remote
+  $ git checkout -b [branch-name] [remote]/[alias]
+  
+Tracking remote branch
+  $ git checkout --track [remote]/[branch]
+  $ git checkout -b [alias] [remote]/[branch]
+
+  $ git branch -u origin/serverfix -> set up to track remote branch
+
+Checking remote branches
+  $ git branch -vv
+
+Fetching branch information from server
+  $ git fetch --all; git branch -vv
+
+Deleting remote branches
+  $ git push [remote] --delete serverfix
+
+Rebasing 
+  $ git rebase [branch]
+
+Replaying using onto
+  $ git rebase --onto [branch] [branch2] [branch3]
+

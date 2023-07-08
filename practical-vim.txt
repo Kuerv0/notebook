@@ -1,0 +1,74 @@
+:edit! -> Undo all changes done to a file
+:wall -> Writes all changes to the files
+
+Part IV:
+Registers
+
+Addressing a Register
+  "{register}
+
+Black hole register -> "_
+
+Unnamed register -> "_
+
+The Yank register -> "_
+ 
+The expression Register -> "_
+
+Name of the current file -> "%
+
+Name of the alternate file -> "#
+
+Last insterted text -> ".
+
+Last Ex command -> ":
+
+Last search pattern -> "/
+
+:reg a -> Contens of register a
+
+insert mode <C-r>{register} -> paste contents of register
+
+Macros
+
+Keep in mind keyboard codes in macros, page 181 in the book.
+
+q{register} -> record macro.
+q -> stop recording.
+
+@{register} -> play macro.
+@@ -> play last macro.
+
+:'<,'>normal @a -> Play macro in "series".
+
+q{Mayus register} -> Appends to a macro
+  qa -> record.
+  qA -> append.
+
+:let @a=substitute(@a, '\', 'vU', 'g') -> Substitutes in the macro.
+  look up :h function-list for more ideas.
+
+Part V: Patterns
+
+Matching patterns and literals Mathcing 
+
+:set ignoracase -> Set case sensitivity globally
+
+\c -> ignore case
+\C -> forces case sensitivity
+\v -> enable \v pattern switch (very magic search)
+\V -> enable very no magic search
+  the pattern after it, only the backlash has a special meaning
+
+See character classes \x
+  :h /character-classes
+
+/\v(%(And|D)rew) (Neil) -> register 1 : (Andrew | Drew), register 2: (Neil)
+
+:%s//\2, \1/g -> Substitutes register 1 and 2.
+
+/\v<the> -> This will only find "the".
+
+\zs marks the start of a match.
+\ze matches the end of a match.
+
