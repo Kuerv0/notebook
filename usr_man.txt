@@ -45,3 +45,8 @@ Voy en Q_cm -> copying and moving text <- Pay attention here. We're reading this
 usr_03
 ================================================================================
 
+^	-> Moves the cursor	to first non-blank character in the line
+f{char} -> Moves the cursor to the Nth occurrence of {char} to the right
+F{char}	-> Moves the cursor to the Nth occurrence of {char} to the left
+T{char} -> Moves the cursor	till before the Nth occurrence of {char} to the left
+
