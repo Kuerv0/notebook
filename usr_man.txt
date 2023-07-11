@@ -16,4 +16,32 @@ usr_02
 ================================================================================
 
 The "J" command joins a line break. 
+press CTRL-D to show all available topics and TAB to complete
+Move between visual selection ends v_o
+
+If you need to know everything about regular expressions, start reading at:  
+  :help pattern.txt
+
+Vim Script is available at  
+  :help eval.txt
+
+i_CTRL-J -> Moves downwards adding no lines.
+i_CTRL-M -> Moves downwards adding new lines.
+i_CTRL-R -> insert the contents of a register.
+i_CTRL-H -> delete the character before the cursor.
+i_CTRL-W -> delete word before the cursor.
+i_CTRL-U -> delete all entered characters in the current line.
+i_CTRL-T -> insert one shiftwidth of indent in front of the current line. *
+i_CTRL-D -> delete one shiftwidth of indent in front of the current line. *
+:r! {command} -> insert the standard output of {command} below the cursor. *
+
+D or d{$} -> Deletes until the end of the line
+v_J -> join the highlighted lines
+gJ -> but without inserting spaces
+
+Voy en Q_cm -> copying and moving text <- Pay attention here. We're reading this
+
+================================================================================
+usr_03
+================================================================================
 
