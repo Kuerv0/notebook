@@ -53,3 +53,4 @@ Sat Jun 17 15:50:19 2023
   - $C = \{ 5, 8 \}$
 
 ## Section 1.2 Exercises 
+

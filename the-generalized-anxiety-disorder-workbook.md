@@ -1,4 +1,4 @@
-NOTES
+# NOTES
 
 Anxiety triggers the fight-or-flight response.
 
@@ -6,19 +6,19 @@ Anxiety can be triggered by thoughts and social situations.
 
 HS refers to Hypothetical situation, CP refers to Current Problem
 
-ABC triangle stands for 
-  Affect (Feelings, or emotions)
-  Behavior (Actions)
-  Cognition (Thoughts)
+ABC triangle stands for:
+  - Affect (Feelings, or emotions)
+  - Behavior (Actions)
+  - Cognition (Thoughts)
 
 Safety Behaviors
-  Avoidant
+  - Avoidant
     - Avoidance
     - Procrastination
     - Partial Commitment
     - Impulsive Decision Making
 
-  Approach
+  - Approach
     - Excessive Reassurance Seeking
     - Double-Checking
     - Excessive Information Seeking
