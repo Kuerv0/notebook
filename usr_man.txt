@@ -35,7 +35,9 @@ i_CTRL-T -> insert one shiftwidth of indent in front of the current line. *
 i_CTRL-D -> delete one shiftwidth of indent in front of the current line. *
 :r! {command} -> insert the standard output of {command} below the cursor. *
 
-D or d{$} -> Deletes until the end of the line
+>> -> Indent *
+<< -> delete indent *
+
 v_J -> join the highlighted lines
 gJ -> but without inserting spaces
 
@@ -53,3 +55,26 @@ T{char} -> Moves the cursor	till before the Nth occurrence of {char} to the left
 ================================================================================
 usr_04
 ================================================================================
+
+dd -> deletes a whole line.
+cc -> changes a whole line.
+
+x -> dl (delete character under the cursor)
+X -> dh (delete character left of the cursor)
+D -> d$ (delete to end of the line) *
+C -> c$ (change to end of the line) *
+s -> cl (change one character)
+S -> cc (change a whole line)
+
+CTRL-V -> Vertical visual mode
+
+v_o -> goes to the other end. (o as in other end)
+
+v_O -> goes to opposite corner (useful in block selection)
+
+yy -> yanks a whole line
+Y -> yanks to the end of the line
+daw -> delete a word
+
+You can find a long list of text objects here: :help text-objects.
+
