@@ -78,3 +78,24 @@ daw -> delete a word
 
 You can find a long list of text objects here: :help text-objects.
 
+================================================================================
+usr_05
+================================================================================
+
+I believe it is better to read the documentation for lazy.nvim. It takes care of
+all of this. I also have to read the documentation for nvim and plugins and Lua
+support. Still a long way to go.
+
+================================================================================
+usr_06
+================================================================================
+
+You can write your own syntax file, see mysyntaxfile.
+I believe I have to read about TreeSitter, nvChad is most likely using
+TreeSitter exclusively.
+
+================================================================================
+usr_07
+================================================================================
+
+
