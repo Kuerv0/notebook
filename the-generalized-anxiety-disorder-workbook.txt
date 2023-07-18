@@ -1,4 +1,4 @@
-# NOTES
+NOTES
 
 Anxiety triggers the fight-or-flight response.
 
@@ -197,22 +197,7 @@ Exercise 6.1: Identifying Your Safety Behaviors
 --------------------------------------------------------------------------------
 Monitoring Log
 
-1. Only complete the log three times a day.
-2. Use your anxiety as a cue to reveal when you're worrying.
-
-Hora: 8:26:45 PM
-Trigger: Poder dormir
-Preocupación: ¿Podré dormir plenamente hoy o me despertaré durante la noche?
-Anxiety(1-10): 6
-Type: HS
-
-Hora: 9:07:08 PM
-Trigger: Dolores pequeños después de orinar
-Preocupación: ¿Tendré una distensión? 
-Anxiety(1-10): 7
-Type: HS
-
---- Day 2 -- 
+-- Example -- 
 
 Hora: 11:36:33 PM
 Trigger: No poder orinar inmediatamente
@@ -238,14 +223,3 @@ si me aguanto más?
 Unfair: Yes
 Negative outcome: Yes
 Poor coping: Yes
-
--- Day 3 --
-
-Fecha: 7/6/2023 3:37:32 PM
-Trigger: Sentir que voy a cortarme al orinar.
-Tipo [Unpredictable, Ambiguous, Novel]: Unpredictable (CP)
-Preocupación: Si intento tratar mi fobia, ¿empeoraré mi condición (Si la tengo)?
-Unfair: Yes
-Negative outcome: Yes
-Poor coping: No
-
