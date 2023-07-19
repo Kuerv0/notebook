@@ -143,4 +143,67 @@ vim -M file -> Forbid making changes completely.
 usr_08
 ================================================================================
 
+:split [file] -> Split a window to another file
+:new -> Open a window on a new, empty file
+CTRL-W + -> Increase the size of a window
+CTRL-W - -> Decrease the size of a window
+:vsplit -> Make the window appear at the left side
+:vnew -> Open a vertically split window on a new, empty file.  
+CTRL-W t ->	move to the TOP window
+CTRL-W b-> move to the BOTTOM window
+
+CTRL-W K -> move window to the top
+CTRL-W H ->	move window to the far left
+CTRL-W J ->	move window to the bottom
+CTRL-W L ->	move window to the far right
+
+:qall -> quit all (buffers and windows)
+:wall -> Write all files
+:wqall -> Write all files and quit all windows
+:qall! -> Write all changes without saving
+
+vim -o one.txt two.txt three.txt -> Opens a window for every file
+(Use -O to get vertically split windows)
+
+nvim -d [file1] [file2] -> Start Nvim in diff mode
+
+zo -> Open fold *
+zc -> Close fold *
+
+:vertical diffsplit [file] -> [Inside Nvim] Open diff mode with a file.
+
+:set noscrollbind -> unbind scrolling files in diff mode.
+
+]c -> Jump forward to the next change. *
+[c -> Jump to the last change. *
+[Note] Prepended a count to jump further away.
+
+:diffupdate -> Updates differences in windows. *
+
+dp -> diff put.
+do -> diff obtain.
+
+For details about diff mode, see |diff-mode|.
+
+":tag" jumps to a tag, ":stag" splits the window.  
+
+:leftabove {cmd} ->	left or above the current window
+:aboveleft {cmd} ->	idem
+:rightbelow {cmd} -> right or below the current window
+:belowright {cmd} -> idem
+:topleft {cmd} ->	at the top or left of the Vim window
+:botright {cmd} -> at the bottom or right of the Vim window
+:splitbelow -> Splits the command to a window below.
+:splitright -> Splits the command to a window to the right.
+
+:tabedit [file] -> Opens a new tab with file 
+:tab split -> Makes a new tab page with one window that is editing the same
+buffer as the window we were in.
+
+:tab help gt -> Show the help text for "gt" in a new tab page.
+
+================================================================================
+usr_09
+================================================================================
+
 
