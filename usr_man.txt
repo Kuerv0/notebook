@@ -98,4 +98,49 @@ TreeSitter exclusively.
 usr_07
 ================================================================================
 
+:edit! or :e! -> Discard changes
+nvim one.c two.c three.c -> Opening more than one file
+:args -> See opened files
+:next -> Next buffer.
+:previous -> Previou buffer.
+:last -> Last buffer.
+:first -> First buffer.
+:2next -> Motions can be used with next and previous commands.
+
+:set autowrite -> Sets automatically writing when changing buffers.
+:set noautowrite -> Disables automatically writing when changing buffers.
+
+:args file1.txt file2.txt -> :args also adds more files.
+:args *.txt -> One can use a wildcard, too.
+CTRL-^ -> To quickly jump between two files.
+
+`" -> Position where the cursor was when you left the file.
+`. -> Position where you made the last change
+
+`{letter} -> Takes one to the exact position.
+'{letter} -> Takes one to the beginning of the line.
+
+[Note]: Marks are local to the file. 
+
+50%mF -> Marks with an uppercase letter are global marks.
+:marks {argument1}{argument2}...{argumentn} -> Check information for the marks.
+CTRL-O & CTRL-I to jump between files without placing marks.
+
+:set backup -> Create backup files.
+
+:write >> logfile -> Appending the content of the file to the end of the file.
+
+vim -R file -> Open file read only.
+view file -> read only [for UNIX systems].
+[Note] You can still write changes using w!
+
+vim -M file -> Forbid making changes completely.
+
+:saveas -> Fill in the details. *
+:file -> Fill in the details. *
+
+================================================================================
+usr_08
+================================================================================
+
 
