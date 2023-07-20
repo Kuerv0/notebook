@@ -206,4 +206,4 @@ buffer as the window we were in.
 usr_09
 ================================================================================
 
-
+You can tune the way Select mode works with the selectmode option.
