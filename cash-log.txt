@@ -54,4 +54,8 @@ Germán ->
   Valor: 297K
   Descripción: "Préstamo adicional"
 
-  Total: 3.702M
+  Fecha: ?
+  Valor: 280K
+  Descripción: "Audifonos de cumpleaños"
+
+  Total: 3.982M
