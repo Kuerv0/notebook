@@ -207,3 +207,31 @@ usr_09
 ================================================================================
 
 You can tune the way Select mode works with the selectmode option.
+
+================================================================================
+usr_10 Making big changes
+================================================================================
+
+. -> repeats the preceding change.
+
+q{register} -> records keystrokes into {register}[must be between a and z.].
+@{registe} -> execute the macro. 
+@@ -> execute last macro.
+qC -> records to the c register and appends. Works for macros and text!
+
+:[range]substitute/from/to/[flags] -> Substitute command.
+:%s -> "%" specifies the command works on all lines.
+:%s/Professor/Teacher/g -> g flag changes every occurrence on the line.
+
+[Note: Combining % and g makes changes in the whole file].
+
+p flag -> print out the last line it changes
+c flag -> ask for confirmation before it performs each substitution
+
+:1,5s/this/that/g -> number range. From line 1 to line 5 (included).
+:54s/President/Fool/ -> Substitute in line 45.
+
+:.write otherfile -> write only the current line into a file.
+:.,$s/yes/no/ -> Substitute in the lines from the cursor to the end. 
+
+usr_man10.txt = 30%
