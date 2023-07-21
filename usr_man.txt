@@ -225,8 +225,8 @@ qC -> records to the c register and appends. Works for macros and text!
 
 [Note: Combining % and g makes changes in the whole file].
 
-p flag -> print out the last line it changes
-c flag -> ask for confirmation before it performs each substitution
+p flag -> print out the last line it changes.
+c flag -> ask for confirmation before it performs each substitution.
 
 :1,5s/this/that/g -> number range. From line 1 to line 5 (included).
 :54s/President/Fool/ -> Substitute in line 45.
@@ -234,4 +234,93 @@ c flag -> ask for confirmation before it performs each substitution
 :.write otherfile -> write only the current line into a file.
 :.,$s/yes/no/ -> Substitute in the lines from the cursor to the end. 
 
-usr_man10.txt = 30%
+[Note: % Is a short way to say 1,$, where $ represents the last line]
+
+:?^Chapter?,/^Chapter/s=grey=gray=g -> Pattern in a range.
+  :?^Chapter? -> Backwards search.
+  :/^Chapter/ -> Forward search.
+
+/Chapter/-1 -> -1 Offset.
+/Chapter/+2 -> +2 Offset.
+:.+3,$-5 -> Offset in beginning and end.
+
+:'t,'b -> Using marks in a range.
+:'<,'> -> Using visual selection in a range.
+:'>,$ -> End of the visual selection to the end of the file.
+:.,.+4 -> Typing "5:" converts to the equivalent range.
+
+:g+//+s/foobar/barfoo/g -> Global command.
+
+[
+Note:
+  Delimiters:
+  /Pattern/
+  =Pattern=
+  ¡Pattern!
+  {Pattern}
+  [Pattern]
+  (Pattern)
+  <Pattern>
+  -Pattern-
+]
+
+CTRL+Q -> Enter visual block mode.
+[Note: In visual block mode A inserts text in shorter lines while I does not.]
+Visual mode c command -> Change all words.
+Visual mode ~	command -> swap case	(a -> A and A -> a)
+Visual mode U	command -> make uppercase  (a -> A and A -> A)
+Visual mode u	command -> make lowercase  (a -> a and A -> a)
+Visual mode r	command -> fill block with one character (rrrrrr)
+
+[Note: If you want to include characters beyond the end of the line in the
+block, check 'virtualedit']
+
+Visual mode >	command -> shift selected text one shift amount.
+Visual mode <	command -> removes one shift amount.
+
+J -> joins all selected lines together into one line. Works in block and
+visual modes.
+
+gJ -> Won't alter the white spaces.
+
+:read {filename} -> Appending file below the cursor. *
+
+:0read {filename} -> Appeding file to the beginning of the file.
+
+:.,$write tempo -> Writes from the cursor the end into the file "tempo".
+:.,$write! tempo -> Overwrites tempo. (if error message)
+
+:.write collection -> Writes the current line into the file collection.
+:.write >>collection -> Appends the current line into the file collection.
+
+:set textwidth=78 -> text is automatically trimmed to fit in the window.
+gqap -> Reformat the current file to textwidth.
+
+gq -> Format operator. *                  (I need to do more research about it!)
+
+gU -> Change case to uppercase.
+gu -> Change case to lowercase.
+g~ -> Swap case.
+gugu or guu -> Makes all file lowercase.
+gUgU or GUU -> Makes all file uppercase.
+g~g~ or g~~ -> Swaps case in the whole file.
+
+!{motion}{program} -> Using external program.
+!5G -> Filter from current line to 5.
+!! -> Filter the current line through a filter.
+!!date<CR> -> Replaces the current line with the output of 'date'.
+
+[Note: Help with the use of the shell
+'shell'
+'shellcmdflag'
+'shellquote'
+'shellxquote'
+'shellslash'
+'shellredir'
+]
+
+:read !ls -> Unix: Appending the contents of the directory to the file.
+:read !dir -> Windows: Appending the contents of the directory to the file.
+:0read !date -u -> You can pass arguments!
+:write !wc -> Unix command to count words, the text of the file is passed.
+CTRL-L -> To tell Vim to redraw the screen.
