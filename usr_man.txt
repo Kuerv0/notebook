@@ -346,3 +346,7 @@ directory
 usr_12
 ================================================================================
 
+:%s/\<four/4/g -> The \< item matches the start of a word.
+:%s/four\>/4/g -> The \> item matches the end of a word.
+:%s/\<four\>/4/g -> Match case.
+
