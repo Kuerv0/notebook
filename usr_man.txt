@@ -322,5 +322,27 @@ g~g~ or g~~ -> Swaps case in the whole file.
 :read !ls -> Unix: Appending the contents of the directory to the file.
 :read !dir -> Windows: Appending the contents of the directory to the file.
 :0read !date -u -> You can pass arguments!
-:write !wc -> Unix command to count words, the text of the file is passed.
-CTRL-L -> To tell Vim to redraw the screen.
+:write !wc -> Unix command to count words, the text of the file is passed. 
+CTRL-L -> To tell Vim to redraw the screen. 
+
+================================================================================
+usr_11
+================================================================================
+
+vim -r help.txt -> Open file in recovery mode.
+vim -r "" -> If file had no name when crash happened. (Must be in the same dir)
+vim -r .help.txt.swo -> Use the name of the swap file if you know it.
+:recover -> Recovery mode.
+
+Further reading
+swap-file
+:preserve
+:swapname
+updatecount
+updatetime
+directory
+
+================================================================================
+usr_12
+================================================================================
+
