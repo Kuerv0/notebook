@@ -346,7 +346,38 @@ directory
 usr_12
 ================================================================================
 
-:%s/\<four/4/g -> The \< item matches the start of a word.
-:%s/four\>/4/g -> The \> item matches the end of a word.
+\< -> Item matches the start of a word.
+:%s/\<four/4/g 
+
+\> -> item matches the end of a word.
+:%s/four\>/4/g
+
 :%s/\<four\>/4/g -> Match case.
 
+:%s/\<GetResp\>/GetAnswer/ge -> e flag ignores error if match is not found.
+
+[Note: Substitute command flags
+  g -> Global.
+  c -> Confirm. (for each match)
+  i -> Ignore case.
+  I -> Case sensitive.
+  n -> Counts.
+  e -> Ignore errors.
+]
+
+see sub-replace-special.
+
+:[selection]!sort -> Sorts the selection. Windows has sort! :0
+
+:global/^/move 0 or :g/^/m 0 -> Reverse lines.
+gCTRL-G -> Count words in file. *
+
+K -> Invokes man to the selected word.
+:Man csh -> Opens man page for csh.
+
+When you have a Unix system, check section 12.6.
+
+:%s/\s\+$// -> Remove whitespace at the end of every line.
+
+vim `grep -l frame_counter *.c` -> Finds all c files containing frame_counter.
+:grep error_string *.c -> Find all error_string in c files.
