@@ -196,6 +196,7 @@ Exercise 6.1: Identifying Your Safety Behaviors
 
 --------------------------------------------------------------------------------
 Monitoring Log
+--------------------------------------------------------------------------------
 
 -- Example -- 
 
@@ -207,19 +208,20 @@ Unfair: Yes
 Negative outcome: Yes
 Poor coping: Yes
 
-Hora: 12:06:06 AM
-Trigger: Pensar en mi futuro
-Tipo [Unpredictable, Ambiguous, Novel]: Ambiguous (CP)
-Preocupación: ¿Podré disfrutar de mi futuro si tengo un problema renal?
+Hora: 7/23/2023 5:51:59 PM
+Trigger: Pensar en situaciones en las que deba aguantar las ganas de orinar.
+Tipo [Unpredictable, Ambiguous, Novel]: Unpredictable (HS)
+Preocupación: Si ya tengo algún daño, ¿esto no hará que empeore?
 Unfair: Yes
 Negative outcome: Yes
 Poor coping: Yes
 
-Hora: 12:13:43 AM
-Trigger: Sentir pocas ganas de ir al baño
-Tipo [Unpredictable, Ambiguous, Novel]: Ambiguous (CP)
-Preocupación: ¿Podré orinar con las pocas ganas, será que empeora mi situación
-si me aguanto más?
+Hora: 7/23/2023 5:55:51 PM
+Trigger: ecografía el miércoles.
+Tipo [Unpredictable, Ambiguous, Novel]: Novel (CP)
+Preocupación: ¿Podré orinar al terminar la ecografía?
 Unfair: Yes
 Negative outcome: Yes
 Poor coping: Yes
+
+
