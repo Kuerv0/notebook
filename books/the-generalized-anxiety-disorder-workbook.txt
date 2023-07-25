@@ -202,7 +202,7 @@ Monitoring Log
 
 Hora: 11:36:33 PM
 Trigger: No poder orinar inmediatamente
-Tipo [Unpredictable, Ambiguous, Novel]: Unpredictable (CP)
+Tipo [Unpredictable, Ambiguous, Novel]:  Ambiguous (CP)
 Preocupación: ¿Será este un síntoma de algo grave por aguantar en el pasado?
 Unfair: Yes
 Negative outcome: Yes
@@ -217,11 +217,17 @@ Negative outcome: Yes
 Poor coping: Yes
 
 Hora: 7/23/2023 5:55:51 PM
-Trigger: ecografía el miércoles.
+Trigger: Ecografía el miércoles.
 Tipo [Unpredictable, Ambiguous, Novel]: Novel (CP)
 Preocupación: ¿Podré orinar al terminar la ecografía?
 Unfair: Yes
 Negative outcome: Yes
 Poor coping: Yes
 
-
+Hora: Mon Jul 24 13:42:34 2023
+Trigger: Ecografía el miércoles.
+Tipo [Unpredictable, Ambiguous, Novel]: Novel (CP)
+Preocupación: ¿Me hará daño aguantar para la ecografía?
+Unfair: Yes
+Negative outcome: Yes
+Poor coping: Yes
