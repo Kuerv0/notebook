@@ -381,3 +381,18 @@ When you have a Unix system, check section 12.6.
 
 vim `grep -l frame_counter *.c` -> Finds all c files containing frame_counter.
 :grep error_string *.c -> Find all error_string in c files.
+
+================================================================================
+usr_20
+================================================================================
+
+The most often used keys to move around in the command line:
+
+<Left> -> one character left
+<Right> -> one character right
+<S-Left> or <C-Left> ->	one word left
+<S-Right> or <C-Right> ->	one word right
+CTRL-B or <Home> ->	to begin of command line
+CTRL-E or <End>	->	to end of command line
+CTRL-W -> Deletes word.
+
