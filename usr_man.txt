@@ -396,3 +396,35 @@ CTRL-B or <Home> ->	to begin of command line
 CTRL-E or <End>	->	to end of command line
 CTRL-W -> Deletes word.
 
+CTRL-U -> removes all text
+
+Insert key -> toggles inserting/replacing
+
+CTRL-C or <Esc> -> exit command mode.
+
+:set autoindent -> :set ai
+You can find the full list of long and short names here: option-list.
+
+Vim has context sensitive completion.
+
+CTRL-D -> Shows all completion.
+
+CTRL-L -> Completes the word to the longest unambiguous string.
+
+The wildmode option can be used to change the way completion works.
+The wildmenu option can be used to get a menu-like list of matches.
+Use the suffixes option to specify files that are less important and appear
+at the end of the list of files.
+The wildignore option specifies files that are not listed at all.
+
+More about all of this here: cmdline-completion
+
+CTRL-P -> previous
+CTRL-N -> next
+
+q: -> command line history. You can change and execute commands in the q: window
+
+================================================================================
+usr_21
+================================================================================
+
