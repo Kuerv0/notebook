@@ -428,3 +428,70 @@ q: -> command line history. You can change and execute commands in the q: window
 usr_21
 ================================================================================
 
+CTRL-Z or :suspend -> Get back to the shell.
+fg -> Come back to nvim from the shell if CTRL-Z was used. 
+  [Only Unix has support for this.]
+
+:!{command} -> Execute a shell command.
+
+:!{program}		execute {program} *
+:r !{program}		execute {program} and read its output *
+:w !{program}		execute {program} and send text to its input *
+:[range]!{program}	filter text through {program} *
+
+The ShaDa saves ->
+  Command-line and Search pattern history
+  Text in registers
+  Marks for various files
+  The buffer list
+  Global variables
+
+See the shada option and shada-file for more information.
+
+'0 -> Mark for line where you exit.
+
+:oldfiles -> List recently closed files.
+
+:e #<2 -> Opens second file in the list.
+:split #<3 -> Splits the screen with the third file in the list.
+
+One can also press q after :oldfiles to select the file typing numbers
+
+More info at :oldfiles, v:oldfiles and c_#<.
+
+:wshada -> Save information while running nvim.
+:rshada -> Restore information while running nvim.
+
+help with session sessionoptions 
+
+:mksession vimbook.vim -> Creates a session file.
+:source vimbook.vim -> Restore session.
+vim -S vimbook.vim -> Restore specific section.
+
+session options:
+  blank		keep empty windows
+  buffers		all buffers, not only the ones in a window
+  curdir		the current directory
+  folds		folds, also manually created ones
+  help		the help window
+  options		all options and mappings
+  tabpages	all tab pages
+  winsize		window sizes
+  terminal	include terminal windows
+
+Jumping between section examples:
+  :wall
+  :mksession! ~/.config/nvim/secret.vim
+  :source ~/.config/nvim/boring.vim
+
+:mkview -> Create a view for the window.
+:loadview -> Restore a view for the window.
+[Note: You can store up to ten views for the same file this way, one unnumbered
+and nine numbered 1 to 9]
+
+:mkview ~/.config/nvim/main.vim -> Save the view of the current file.
+:source ~/.config/nvim/main.vim -> Restore the view of the current file.
+
+modeline format -> any-text vim:set {option}={value} ... : any-text  
+
+For more details see modeline.
