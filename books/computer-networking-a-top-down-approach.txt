@@ -1,0 +1,12 @@
+Chapter 1
+
+El internet es un sistema gigante y complejo, pero aprender sobre él es
+gratificante e incluso entretenido.
+
+Definition: The internet is a computer network that interconnects billions of
+computing devices throughout the world.
+
+Definition: host or end-systems are devices connected to the internet. *
+Check if definition is correct.
+
+Reading page 15
