@@ -495,3 +495,56 @@ and nine numbered 1 to 9]
 modeline format -> any-text vim:set {option}={value} ... : any-text  
 
 For more details see modeline.
+
+================================================================================
+usr_22
+================================================================================
+
+This chapter introduces netwr browser. However, NvChad uses a different plugin.
+See netrw-browse for more.
+
+:cd -> changes the current directory.
+:pwd -> Print working directory.
+:cd - -> Get back to last directory. *
+:lcd -> Change directory in a window.
+:tcd -> Chenge directory in a tab.
+
+gf -> Finds file and edit it.
+
+The path option allows specifying the directories where to search for files
+See the help on the path option.
+
+The isfname option is used to decide which characters are included in the
+file name, and which ones are not. 
+
+:find inits.h -> Use the path to try to find the file.
+
+To open the found file in a new window use CTRL-W f instead of gf, or use
+:sfind instead of :find.
+
+vim "+find stdio.h" -> Finds the file "stdio.h" in your value of 'path'
+
+:hide edit two.txt -> Hiddes current buffer and edits a new one.
+
+:buffers or :ls -> List bufferfs.
+
+Buffer flags:
+  u	Buffer is unlisted |unlisted-buffer|.
+  %	Current buffer.
+  #	Alternate buffer.
+  a	Buffer is loaded and displayed.
+  h	Buffer is loaded but hidden.
+  =	Buffer is read-only.
+  -	Buffer is not modifiable, the 'modifiable' option is off.
+  +	Buffer has been modified.
+
+:sbuffer 3 -> Open a buffer in a new window.
+
+Move around the buffer list:
+	:bnext ->	go to next buffer
+	:bprevious ->	go to previous buffer
+	:bfirst -> go to the first buffer
+	:blast ->	go to the last buffer
+
+:buffers! -> List unlisted buffers.
+:bwipe -> Make nvim forget about a buffer.
