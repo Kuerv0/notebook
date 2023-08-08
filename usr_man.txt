@@ -548,3 +548,36 @@ Move around the buffer list:
 
 :buffers! -> List unlisted buffers.
 :bwipe -> Make nvim forget about a buffer.
+
+================================================================================
+usr_23
+================================================================================
+
+The option 'fileformats' contains the various formats that will be tried
+when a new file is edited.
+
+gf -> Open file in link. 
+
+vim -b datafile -> Read binary characters.
+
+:set display=uhex -> See unprintable characters in hex format.
+
+ga -> Print the value of the character under the cursor.
+
+:%!xxd -> Convert file to xxd format.
+:%!xxd -r -> Convert file back.
+
+[Note: Only changes in the hex part are used.  Changes in the printable text
+part on the right are ignored.]
+
+ These compression methods are currently supported:
+
+.Z	compress
+.gz	gzip
+.bz2	bzip2
+
+================================================================================
+usr_23
+================================================================================
+
+
