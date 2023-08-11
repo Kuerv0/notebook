@@ -1,0 +1,130 @@
+Tue Aug  8 18:02:09 2023
+
+Enfoque ABP
+
+- El entendimiento con respecto a una situación de la realidad surge de las
+interacciones con el medio.
+
+- El conflicto cognitivo al enfrentar cada nueva situación estimula el
+aprendizaje.
+
+- El conocimiento se desarrolla mediante el reconocimiento y aceptación de los
+procesos sociales, y de la evlauación de las diferentes interpretaciones
+individuales del mismo fenómeno.
+
+Objetivos ABP's
+
+- Desarrollar habilidades para la evaluación crítica y la adquisición de nuevos
+conocimientos con un compromiso de aprendizaje de por vida.
+
+- Desarrollar una base de conocimiento relevante y profundo.
+
+- Desarrollar habilidades para el trabajo en equipo y el relacionamiento con los
+diferentes involucrados de un proyecto.
+
+- Promover en el alumno la responsabilidad de su propio aprendizaje.
+
+En esta materia también existe la co-evaluación. :c
+
+- Involucrar al alumno en un reto (problema u oportunidad) y que lo asuma de
+forma propositiva y con entusiasmo.
+
+El ciclo del proyecto:
+ - Establecer los objetivos de aprendizaje y diseño
+ - Los grupos de estudiantes desarrollan propuestas.
+ - Trabajo de aprendizaje. Trabajo de diseño.
+ - Reporte de aprendizaje. Reporte de diseño.
+ - Sustentación fianl y sustentación oral.
+
+Ciencias vs proyecto en ingeniería
+
+Flujo de caja
+
+- Ingresos
+- Costos
+- Gasto
+- Utilidad operativa
+- Depreciación (desgasa maquinaria)
+- Interés (préstamo)
+- Utilidad (antes de impuesto)
+- Impuesto (Pago gobierno)
+- Utilidad después de impuesto
+- Depreciación
++ Valor salvamento
+- Flujo de caja neto
+
+Gastos
+
+Inversión inicial
+
+2. Indicadores
+
+Valor presnta Neto (VPN)
+Tasa Interna de retorno (TIR)
+
+Evaluación ambiental
+
+[Análisis de proyecto]
+
+[
+Inventario ambiental
+Medio físico
+medio biológico
+Medio conceptual
+Medio económico y social
+]
+
+[Evaluación de impactos ambientales]
+
+[Medidas correctoras]
+
+[Plan de seguimiento y control]
+
+Estudio técnico es *importantísimo*
+Estudio ambiental es *importantísimo*
+
+Introducción a la metodología 
+  - Estudio de caso o caso de estudio
+
+Elementos financieros
+
+- Inversión
+- Capital de trabajo
+- Punto de equilibro
+- Flujo de caja
+- VPN, TIR, WACC
+- Análisis de costo-beneficio financiero
+- Evaluación financiera de proyectos
+- Sensibilidad determinística y probabilística
+- Riesgos financieros
+
+Calificación:
+20% Estudios de caso (parejas de aleatoria) 5-7 casos (durante todo el semestre)
+
+30% Parcial (parejas aleatorias) Fecha aleatoria
+
+50% Proyecto
+
+10% Sustentación 1 14 septiembre
+10% Sustentación 2 19 octubre
+15% Sustentación 3 16 de noviembre
+15% Muestra: obligatoria 23 y 24 de noviembre
+
+Temática del proyecto
+
+Un proyecto productivo es aquel que se pueda monetizar.
+
+¿Qué queremos hacer?
+¿Por qué lo queremos hacer?
+
+1. Innovación
+2. Ingeniería
+3. Proyectos de inversión privada. ?
+
+La idea se sube el jueves a las 11:59
+
+
+Thu Aug 10 18:45:18 2023
+Sección 2
+
+Presentación de proyectos por equipo, se escogeran los 8 mejores.
