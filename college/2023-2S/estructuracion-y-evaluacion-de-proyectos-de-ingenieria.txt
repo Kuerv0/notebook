@@ -1,3 +1,6 @@
+--------------------------------------------------------------------------------
+Sección 1
+--------------------------------------------------------------------------------
 Tue Aug  8 18:02:09 2023
 
 Enfoque ABP
@@ -124,7 +127,162 @@ Un proyecto productivo es aquel que se pueda monetizar.
 La idea se sube el jueves a las 11:59
 
 
-Thu Aug 10 18:45:18 2023
+--------------------------------------------------------------------------------
 Sección 2
+--------------------------------------------------------------------------------
+Thu Aug 10 18:45:18 2023
 
 Presentación de proyectos por equipo, se escogeran los 8 mejores.
+
+--------------------------------------------------------------------------------
+Sección 3
+--------------------------------------------------------------------------------
+Tue Aug 15 17:58:03 2023
+
+Modelo CANVAS
+
+Introducción al modelo CANVAS y generalidades
+
+Definido como una herramienta para diseñar el modelo de negocio.
+  Crea, distribuy y añade valor.
+  Visualiza 9 aspectos claves de una empresa.
+
+¿Qué se va a producir?
+
+¿Quién demanda?
+
+¿Cómo se lleva? => Producto/servicio
+
+Viabiabilidad financiera
+  Ingreso - costos y gastos >= 0
+  0 + equilibrio => Riesgos e incertidumbre
+
+Apuntar a las personas que están insatisfechas con el mercado actual.
+
+Observar competencia
+
+Fidelizar y aumentar los clientes
+
+Ingresos = cantidad demandada * precio
+
+Satisfacer costos fijos y variables y nos dejen un margen de rentabilidad
+
+Formas de pago => Tarjeta de crédito, efectivo, transferencia, QR, etc
+
+Elementos clave => infraestructura, empleados, tecnología, inversión inicial $
+  Capital de trabajo (dinero requerido para empezar a producir)
+  Ejemplo: empanadas requieren aceite, masa, etc
+  Inversiones activos fijos (Maquinaria)
+  Gastos preoperativos => Registro mercantil
+
+Socios claves => Proveedores, consumidores, inversionistas, compañías
+financieras
+
+Estructura de costo
+  Salidas de dinero =>
+  Proceso producción => producto final
+
+Costos => Proceso de producción 
+  Materia prima
+
+Gastos => Administración y venta del producto
+  Gerentes, vendedores-marketing
+
+Es importante responder estas preguntas para la primera entrega
+
+¿Qué problema o necesidad de nuestros clientes estamos ayudando a resolver o
+satisfacer?
+
+¿Cuáles dolores de cabeza...?
+
+[Ver diapositivas]
+
+Segmentación de consumidores
+
+¿Para quién estamos creando valor? ¿Qué hace o qué haría que los clientes nos
+elijan a nosotros?
+
+¿Quiénes son nuestros clientes más importantes? 
+¿Cuál es nuestro cilente ideal? ¿Cómo lo describiríamos?
+
+¿Están segmentandos nuestros clientes?
+
+Canales de distribución
+
+Canal directo
+
+Productor empresa => cliente
+
+Cnanal indirecto
+
+Producto => Distribuir => cliente
+(empresa)
+
+Producto => Mayorista => Detalliste => cliente
+(empresa)
+
+[Ver diapositivas]
+
+Relaciones con los clientes
+
+¿Cómo mantenemos y hacemos crecer nuestros clientes?
+
+¿Qué relación estamos estableciendo con ellos?
+
+[Ver diapositivas]
+
+Recursos claves
+
+¿Cuáles son los recursos más importantes para producir la oferta de valor?
+
+[Ver diapositivas]
+
+Actividades claves
+
+¿Qué actividaes son necesarias para entregar...?
+
+[Ver diapositivas]
+
+Socios claves
+
+¿Quiénes son nuestros socios claves?
+
+¿Quiénes son nuestros proveedores clave?
+
+¿Qué recursos claves obtienes de tus aliados?
+
+¿Qué actividades clave realizan los socios?
+
+¿Cómo estas actividades me ayudan?
+
+Mercado de capitales
+=> Crowfunding
+
+Recuerden empezar por la secuencia de las diapositivas *
+
+Es decir:
+
+1. Segmentación de consumidores
+2. Propuesta de valor
+
+Curiosmente puedes empezar con cualquiera de las dos.  *
+
+3. Canales de distribución
+...
+
+Tarea del día: Redefiir por primera vez el modelo CANVAS
+
+Definir:
+
+Empresa Manufacturadora
+
+Empresa Comercializadora
+
+Empresa Servicio
+
+Tue Aug 15 18:57:10 2023
+Pasamos un rato definiendo el modelo CANVAS para una empresa que vende ropa
+deportiva online [Marca Nacional], lo cual es una propuesta curiosa.
+
+Pienso en llevarle un café de vainilla a mi madre, quizá no llegue caliente,
+pero espero que le guste.
