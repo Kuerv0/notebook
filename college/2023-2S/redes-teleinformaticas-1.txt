@@ -47,3 +47,89 @@ Me tocaría el viernes con el señor Felipe.
 
 Lugar: M2 - 101
 
+--------------------------------------------------------------------------------
+Tercera sección
+--------------------------------------------------------------------------------
+SSID: Academia T&T
+Clave: UNAL4c4d
+
+El sistema operativo de los switches es IOS -> Internetworking Operating System
+heredado de UNIX
+
+UNIX fue el primer OS que tenía capacidades de redes
+
+Este sistema operativo tiene dos prompts ->
+  Switch> guest - user
+  Switch# root  - privileged
+
+>enable -> Salta a modo privilegiado
+#disable -> Regresa a modo invitado
+
+Siempre que lleguemos a clase, haremos el proceso de limpieza: *
+#show startup-config -> ideal: startup-config not present
+#erase startup-config -> Limpiar configuración
+#reload -> Renicia el equipo
+
+- Cuando aparece More -
+Enter -> una línea más
+Space -> un pantallazo más
+Otra tecla -> Aborta
+
+Comandos:
+
+1. Fecha/hora
+Es importante configurar la fecha y hora para los temas de seguridad es muy
+importante para re-construir cómo sucedió un ataque.
+Estos equipos guardan logs y la marca de tiempo debe ser configurada
+correctamente por esto
+
+#show clock -> Muestra la hora actual.
+UTC Mon Mar 1 1993: Fecha icónica en la que se hizo release
+
+Ajustar zona horaria
+
+Las configuraciones se hacen en submodos del modo privilegiado, como el submodo
+configuración global
+
+#configure terminal -> Pasar al submodo configuración global
+
+(config)#clock timezone COT -5
+
+(config)#exit -> Regresa a privilegiado
+
+#clock set TIME MONTH DAY YEAR
+
+2. Configurar un nombre al y demás equipo
+
+(config)#hostname WORD -> This system's network name
+
+Asegurar el modo privilegiado
+
+3. Asegurar el modo privilegiado
+
+(config)#enable password WORD -> En este curso usamos cisco o class
+
+Esta contraseña ya no se usa porque se guarda en texto plano.
+
+#show running-config -> Mostrar configuración
+
+4. Contraseña segura del privilegiado
+
+(config)#enable secret WORD -> class para esta clase
+
+Si está password, se usa para entrar, si ambas están presente, solo te deja
+pasar con secret
+
+Algoritmos de cifrado
+-5 MD5
+-9 SCRYPT
+
+Quitar las configuraciones mencionadas anteriormente
+nohostname
+noenable password
+noenable secret
+
+5. Mensaje del día 
+Para que no les den libertad en la corte
+
+(config)# banner motd $Propiedad privada$
