@@ -2,7 +2,7 @@ WebEx:
 https://netacad.webex.com/netacad-sp/j.php?MTID=mddb439f4d34079318b64e6bfe4478258
 
 --------------------------------------------------------------------------------
-Primera sección
+Primera clase
 --------------------------------------------------------------------------------
 8/9/2023 12:10:27 PM
 
@@ -31,7 +31,7 @@ Final teórico (English)
 Final práctico
 
 --------------------------------------------------------------------------------
-Segunda sección
+Segunda clase
 --------------------------------------------------------------------------------
 
 Semana 14 - 18: No hay sesiones magistrales
@@ -48,7 +48,7 @@ Me tocaría el viernes con el señor Felipe.
 Lugar: M2 - 101
 
 --------------------------------------------------------------------------------
-Tercera sección
+Tercera clase
 --------------------------------------------------------------------------------
 SSID: Academia T&T
 Clave: UNAL4c4d
@@ -62,13 +62,13 @@ Este sistema operativo tiene dos prompts ->
   Switch> guest - user
   Switch# root  - privileged
 
->enable -> Salta a modo privilegiado
-#disable -> Regresa a modo invitado
+> enable -> Salta a modo privilegiado
+# disable -> Regresa a modo invitado
 
 Siempre que lleguemos a clase, haremos el proceso de limpieza: *
-#show startup-config -> ideal: startup-config not present
-#erase startup-config -> Limpiar configuración
-#reload -> Renicia el equipo
+# show startup-config -> ideal: startup-config not present
+# erase startup-config -> Limpiar configuración
+# reload -> Renicia el equipo
 
 - Cuando aparece More -
 Enter -> una línea más
@@ -83,7 +83,7 @@ importante para re-construir cómo sucedió un ataque.
 Estos equipos guardan logs y la marca de tiempo debe ser configurada
 correctamente por esto
 
-#show clock -> Muestra la hora actual.
+# show clock -> Muestra la hora actual.
 UTC Mon Mar 1 1993: Fecha icónica en la que se hizo release
 
 Ajustar zona horaria
@@ -91,31 +91,31 @@ Ajustar zona horaria
 Las configuraciones se hacen en submodos del modo privilegiado, como el submodo
 configuración global
 
-#configure terminal -> Pasar al submodo configuración global
+# configure terminal -> Pasar al submodo configuración global
 
-(config)#clock timezone COT -5
+(config)# clock timezone COT -5
 
-(config)#exit -> Regresa a privilegiado
+(config)# exit -> Regresa a privilegiado
 
-#clock set TIME MONTH DAY YEAR
+# clock set TIME MONTH DAY YEAR
 
 2. Configurar un nombre al y demás equipo
 
-(config)#hostname WORD -> This system's network name
+(config)# hostname WORD -> This system's network name
 
 Asegurar el modo privilegiado
 
 3. Asegurar el modo privilegiado
 
-(config)#enable password WORD -> En este curso usamos cisco o class
+(config)# enable password WORD -> En este curso usamos cisco o class
 
 Esta contraseña ya no se usa porque se guarda en texto plano.
 
-#show running-config -> Mostrar configuración
+# show running-config -> Mostrar configuración
 
 4. Contraseña segura del privilegiado
 
-(config)#enable secret WORD -> class para esta clase
+(config)# enable secret WORD -> class para esta clase
 
 Si está password, se usa para entrar, si ambas están presente, solo te deja
 pasar con secret
@@ -125,11 +125,16 @@ Algoritmos de cifrado
 -9 SCRYPT
 
 Quitar las configuraciones mencionadas anteriormente
-nohostname
-noenable password
-noenable secret
+# nohostname
+# noenable password
+# noenable secret
 
 5. Mensaje del día 
 Para que no les den libertad en la corte
 
 (config)# banner motd $Propiedad privada$
+
+8/18/2023 5:13:38 PM
+Salimos por la activación de una alarma a eso de las 13:30. Curiosamente se
+trataba de una torta de cumpleaños. Dicen que al apagar la vela, el detector de
+humo se activó y perdimos aproximadamente 30 minutos de clase.
