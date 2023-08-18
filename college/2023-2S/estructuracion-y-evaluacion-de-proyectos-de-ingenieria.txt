@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-Sección 1
+Clase 1
 --------------------------------------------------------------------------------
 Tue Aug  8 18:02:09 2023
 
@@ -128,14 +128,14 @@ La idea se sube el jueves a las 11:59
 
 
 --------------------------------------------------------------------------------
-Sección 2
+Clase 2
 --------------------------------------------------------------------------------
 Thu Aug 10 18:45:18 2023
 
 Presentación de proyectos por equipo, se escogeran los 8 mejores.
 
 --------------------------------------------------------------------------------
-Sección 3
+Clase 3
 --------------------------------------------------------------------------------
 Tue Aug 15 17:58:03 2023
 
@@ -286,3 +286,184 @@ deportiva online [Marca Nacional], lo cual es una propuesta curiosa.
 
 Pienso en llevarle un café de vainilla a mi madre, quizá no llegue caliente,
 pero espero que le guste.
+
+--------------------------------------------------------------------------------
+Clase 4
+--------------------------------------------------------------------------------
+Llegué temprano a clase, me encontré con Javier. Noté que no puedo comprar café
+con Nequi, el dispositivo de pago no parece funcionar. Llegué relativamente
+temprano al salón y me estoy sintiendo bastante bien. Estos últimos días han
+sido algo caóticos, pero, por suerte, no tanto como han sido antes. Finalmente
+empiezo a controlar el lado más ansioso de mí. O eso creo...
+Thu Aug 17 17:58:23 2023
+
+Dando una mirada rápida a la clase de hoy, me gusta lo que veo, observo que es
+un formato para la primera entrega, por lo menos ya hay un avance en el formato
+con el que podemos trabajar y con nuetro aliado GPT podremos despegar bastante.
+
+Proyecto
+
+Proyecto es la búsqueda de una solución inteligente al planteamiento de un
+problema tendiente a resolver.
+
+El objetivo central de todo proyecto es solucionar un problema o una necesidad
+identificada.
+
+El proyecto puede definirse como una secuencia de tareas con un principio y un
+final, limitados por el tiempo, los recursos y los resultados deseados.
+
+[En esta materia llegaremos máximo a pre-inversión]
+[Los recursos financieros son escasos]
+
+La pleaneación es fundamental para maximizar y alcanzar.
+
+El proyecto es participativo desde el comienzo hasta el final.
+
+La formulación, ejecución y seguimiento de una propuesta de proyecto debe
+involucrar a todas las partes interesadas.
+
+Variables externas o macroecónomicas: * (será importante evaluar en el proyecto)
+  Inflación 
+  Poder adquisitivo
+  Tasa de USURA
+  Tasa de cambio => exp, imp, materia prima
+
+PIB Real => Mide el crecimiento del país
+
+PIB percápita
+
+Desempleo
+
+Tasa de interés => Pedir préstamos y valorar el proyecto
+
+Balanza de pagos
+
+PNB 
+
+El gobierno tiene una política fiscal *
+
+Características de un proyecto
+
+Tiene un objetivo definido * normalmente en términos de alcance, programa y
+costo.
+
+Se realiza por medio de una serie de tareas indterdependientes.
+
+Utiliza diferentes recursos.
+
+Tiene un cliente.
+
+Su ejecución involucra riesgo e incertidumbre.
+
+Trata de buscar diferentes proveedores o se le dará al único proveedor alto
+nivel de negociación *
+
+Principios rectores
+
+El punto de partida es una problemática
+[Ver diapositivas]
+Se deben incluir sistemas de seguimiento y control *
+
+Elaborar un proyecto
+
+El punto de partida para la ejecución de un proyecto es su planeación
+[Ver diapositivas]
+
+Ciclo de vida de proyectos
+
+Preinversión
+  Idea inicial
+  Estudio de perfil => Estudio de mercado, estudio técnico, estudio ambiental,
+    estudio organizacional, normatividad
+  Prefactibilidad
+  Factibilidad
+
+Inversión 
+  Autorizaciones y financiamiento
+  Ejecución
+
+Operación
+  Producción
+  Comercialización
+
+Pre-inversión
+
+Análisis del sector
+
+Analizar el sector desde lo general hasta los específico
+
+De acuerdo al DANE, se clasifica con el CIUU *
+
+El esfuerzo y el tiempo son dos variables muy importantes en el ciclo de vida
+del proyecto
+
+Los costos aumentan con el tiempo
+La incertidumbre disminuye con el tiempo
+
+Estructura financiera 
+
+Ingresos operacionales => Precio por cantidad [P * Q]
+
+Costos de producción => Estudio técnico [Materia prima, empleados, servicios
+  públicos como electricidad y agua]
+
+Utilidad bruta
+
+Gastos operativos => Estudio técnico => Administración, venta
+
+Utilidad operativa => ¿Qué dinero me queda después de sacar el dinero de
+  producción y los gastos?
+
+Tasa de interés (Gasto financiero)
+
+Depreciación (Desgaste activos fijos) => Estudio técnico
+
+Utilidad antes de impuesto 
+
+Impuesto => Reforma tributaria gobierno
+
+Utilidad despué de impuesto
+
+Valor de salvamento => Ir al mercado y ver características del activo con
+relación al precio
+
+Depreciación (Escudo fiscal: entre menos dinero tenga la empresa, le cobrarán
+menos dinero) De modo que esto no es un gasto monetario, sino un desgaste en el
+tiempo.
+
+Año 0:
+
+- Inversión inicial
++ Préstamo
++ Amortización
+
+Viabiabilidad del proyecto
+
+- Valor presente neto (VPN)
+- Tasa ainterna de retorno (TIR)
+- Relación beneficio costo
+
+¿Por qué fracasan los proyectos?
+
+Mal estimación de tiempos y costos (planeación)
+Problemas de comunicación
+Definición de alcance inapropiada
+Ausencia de la gestión de riesgos
+Falta de conocimientos en dirección de proyectos
+Poco capital humano capacitado y calificado
+Ausencia de liderazgo
+Entre otros...
+
+Identificación de proyecto
+
+Análisis mercado
+
+Análisis legal - normativo
+
+Análisis técnico
+
+Análisis financiero
+
+Análisis ambiental
+
+
