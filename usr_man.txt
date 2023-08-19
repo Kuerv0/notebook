@@ -577,7 +577,78 @@ part on the right are ignored.]
 .bz2	bzip2
 
 ================================================================================
-usr_23
+usr_24
 ================================================================================
 
+<BS> -> Deletes character after the cursor
+<Del> -> Deletes character before the cursor
+CTRL-W -> Deletes word before the cursor
+CTRL-U -> Start over in a line, removing changes before entering insert mode.
 
+An overview of the keys you can use in Insert mode:
+
+  <C-Home>	to start of the file
+  <PageUp>	a whole screenful up
+  <Home>		to start of line
+  <S-Left>	one word left
+  <C-Left>	one word left
+  <S-Right>	one word right
+  <C-Right>	one word right
+  <End>		to end of the line
+  <PageDown>	a whole screenful down
+  <C-End>		to end of the file
+
+There are a few more, see ins-special-special.
+
+vim has completion, but NvChad seems to always have completion.
+CTRL-P -> Completion
+
+CTRL-P -> Previous.
+CTRL-N -> Next.
+
+The Vim editor goes through a lot of effort to find words to complete.  By
+default, it searches the following places:
+
+	1. Current file
+	2. Files in other windows
+	3. Other loaded files (hidden buffers)
+	4. Files which are not loaded (inactive buffers)
+	5. Tag files
+	6. All files #included by the current file
+
+If you know what you are looking for, you can use these commands to complete
+with a certain type of item:
+
+	CTRL-X CTRL-F		file names
+	CTRL-X CTRL-L		whole lines
+	CTRL-X CTRL-D		macro definitions (also in included files)
+	CTRL-X CTRL-I		current and included files
+	CTRL-X CTRL-K		words from a dictionary
+	CTRL-X CTRL-T		words from a thesaurus
+	CTRL-X CTRL-]		tags
+	CTRL-X CTRL-V		Vim command line
+
+  Doesn't seem to work in NvChad.
+
+More information for each of these commands here: ins-completion.
+
+CTRL-A -> Inserts the text of the previous insert.
+CTRL-@ -> Does a CTRL-A and leaves insert mode.
+
+CTRL-Y -> Inserts the character above the cursor.
+CTRL-E -> Inserts the character below the cursor.
+
+CTRL-R {register} -> Inserts the contents of a register.
+
+:iabbrev ad advertisement -> Add an abbreviation
+
+CTRL-V -> Insert special characters
+
+CTRL-K -> Insertar digrafos
+
+CTRL-K Co -> 
+
+To find out what digraphs are available, use the following command: >
+:digraphs
+
+CTRL-O {command} -> Execute any Normal mode command from insert mode.
