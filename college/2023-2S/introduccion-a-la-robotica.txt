@@ -1,0 +1,187 @@
+Llegué temprano, parece que no hay nadie más aquí. Oh, no, justo llegaron dos
+compañeros que reconozco de otros cursos. Estoy esperando fuera del salón. Es el
+M3-102, no muy lejos había una mesa y sillas, es perfecto para escribir un rato
+y relajarme. Diría que el pico de ansiedad que he tenido estos días está en su
+punto más bajo, la exposición gradual está siendo un éxito y creo que estaré
+listo para la urodinamia en un tiempo si prosigo con los ejercicios
+diligentemente. 
+Sat Aug 19 07:40:31 2023
+
+Me pregunto si alguien, en algún momento leerá esto... si es así, me dirijo
+mentalmente a aquella persona que se toma el tiempo de revisar mis notas y
+enviarle un calurozo saludo. En este momento me siento algo solitario y decidí
+dirigirme a un posible lector en lugar de mi voz interna. Me hace sentir en un
+trabajo de ficción. 
+Sat Aug 19 07:44:46 2023
+
+--------------------------------------------------------------------------------
+Clase 1 
+Sat Aug 19 08:03:38 2023
+--------------------------------------------------------------------------------
+Profesor: Juan Camilo Herrera Pineda
+email: jherrerapi@unal.edu.co
+
+Def. Corriente eléctrica
+Def. Voltaje
+Def. Resistencia
+  Código de colores de resistencias
+Def. Circuito en serie
+
+Resistencia total circuito en serie es la sumatoria de todas las resistencias
+Rt = \sum{r_{i}}
+
+Ley de Ohm
+I = V/R
+
+Def. Circuito en paralelo
+1 / Rt = \sum{1 / r_{i}}
+
+¿Qué es Arduino?
+Es una placa de desarrollo con hardware libre y el IDE es de código abierto.
+
+Iniciando con Arduino
+
+1. Descargar el entorno Arduino
+2. Conectar el Arduino
+
+Estructura del lenguaje de programación Arduino
+
+void setup(){
+  Declaraciones
+}
+
+void loop(){
+  Declaraciones
+}
+
+La función setup() es la primera función a ejecutar en el programa, es ejecutada
+una vez y es usada como configuración.
+
+La función loop() se ejecuta continuamente en forma secuencial. Como leer
+entradas y salidas.
+
+Instrucciones de E/S digitales
+
+- Hay 14 pines de e/s digitales de 0 al 12+1.
+- Al ser digitales, los valores que se leen y/o escriben 0 y 1.
+
+Instrucciones de E/S análogas
+
+- Hay 6 pines de E/S digitales numerados del A0 al A5
+- Al ser analógicos, siempre son de lectura (no necesita la instrucción 
+pinMode)
+
+Señal digital vs señal análoga
+
+La señal digital es discreta, mientras que la señal análoga es continua.
+
+En la señal análoga el conversor cuenta con 10 bits para almacenar el voltaje.
+
+Entonces la resolución = Vt/1023
+  Ejemplo con 5 voltios, la resolución es igual a 5/1023 => 0.005...
+
+Pin PWM (Modulación por ancho de pulso)
+
+- Hay 6 pines PWM...
+[Ver diapositivas]
+
+Def. Funciones
+
+Elementos del lenguaje
+
+Bloques de comentarios => /* */
+Comentarios de una sola línea => //
+
+Tipos de variables
+
+- boolean
+- byte
+- char 
+- int
+- word
+- long
+- unsigned long
+- float/double
+- string
+- array
+
+If, else...
+
+While...
+
+For...
+
+Switch...
+
+Tinkercad
+url: https://www.tinkercad.com/login
+
+Tarea: Examinar tinkercad
+
+--------------------------------------------------------------------------------
+Práctica
+--------------------------------------------------------------------------------
+
+Valor de las resistencias:
+
+R1 teorico: 220 Ohms
+R1 medido: 213 Ohms
+
+R2 teorico: 220 Ohms
+R2 medido: 216 Ohms
+
+R3 teorico: 1000 Ohms
+R3 medido: 979 Ohms
+
+R4 teorico: 1000 Ohms
+R4 medido: 969 Ohms
+
+Para el circuito en serie:
+
+R1 = 220 Ohms
+R2 = 1000 Ohms
+R3 = 1000 Ohms
+
+I = 0.005 A
+Resistencia total = 2.2K Ohms | medido: 2.15K Ohms
+Voltaje resistencia 1 = 1.1 V | medido: 1.02 V
+Voltaje resistencia 1 = 5 V   | medido: 4.70 V
+Voltaje resistencia 1 = 5 V   | medido: 4.80 V
+
+Circuito paralelo
+
+R1 = 220 Ohms
+R2 = 1000 Ohms
+R3 = 1000 Ohms
+
+V total = 12 V
+I total = 0.08 A
+R total = 152.8 Ohms | medido: 148 Ohms
+
+I resistencia 1 = 0.05 A
+I resistencia 2 = 0.012 A
+I resistencia 3 = 0.012 A
+
+Después de la clase he estado perdido en pensamientos... ya no son pensamientos
+ansiosos; sin embargo, su contenido se puede resumir en una pregunta:
+¿Por qué no puedo disfrutar la vida como lo hace la gente?
+Me siento muy diferente a las personas en general. Por ejemplo, conozco pocas
+personas que no se emocionen por un viaje, por ir a comer, salir con amigos, ir
+a ver una película, estar en familia... 
+Yo... siento que estas actividades pueden brindarme distracciones por momentos,
+pero generalmente no me siento inmerso en ellas. Quizá pierdo interés al estar
+en ellas, o, puede ser que mis preocupaciones no me permitan disfrutarlas tanto.
+No obstante, cuando estoy jugando o leyendo un tema de interés, por ejemplo,
+puedo perderme con facilidad por horas, encontrarme totalmente atento a lo que
+estoy haciendo y tardo mucho en cansarme de ello, es como viajar en el tiempo.
+Quizá mi forma de disfrutar la vida es diferente y, de cierta manera, me afecta
+que sea así, supongo que solo quiero ser como todos los demás, es algo que ha
+estado dando vueltas en mi cabeza... ¿por qué soy diferente? ¿Por qué me
+deprimo con tanta facilidad? ¿Por qué no me genera emoción lo que a la mayoría
+sí?
+Si tengo que resumir lo que siento, diría que estoy perdido en cuestiones
+filosóficas de la vida. Intento descifrar lo que quiero hacer y qué hacer para
+cambiar algunas cosas con las que no estoy conforme.
+Sat Aug 19 12:59:19 2023
+
+
