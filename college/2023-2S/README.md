@@ -16,3 +16,16 @@
 | 18:00 |                          | Estructuración y evaluación de proyectos de ingeniería |                                         | Estructuración y evaluación de proyectos de ingeniería |                          |                            |
 | 19:00 |                          | Estructuración y evaluación de proyectos de ingeniería |                                         | Estructuración y evaluación de proyectos de ingeniería |                          |                            |
 | 20:00 |                          |                                                        |                                         |                                                        |                          |                            |
+
+# Todo
+
+## Semana 3
+
+Curso AWS
+Ver clase grabada servicios en la nube
+Revisar netcad
+Curso Cisco
+Trabajo escrito seminario 2 25%
+Acta seminario 2 80%
+
+## Semana 4
