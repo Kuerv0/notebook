@@ -5,6 +5,154 @@ Curso online:
 https://www.netacad.com/es
 
 --------------------------------------------------------------------------------
+Teoría: 1 Networking Today
+--------------------------------------------------------------------------------
+8/22/2023 14:25:07
+
+1.0
+Explain the advances in modern network technologies.
+Install Cisco Packet Tracer.
+
+1.1
+"Communication is almost as important to us as our reliance on air, water, food,
+and shelter".
+bold claim.
+
+1.2
+Host can be called end devices, sometimes clients. 
+
+An IP address identifies the host and the network to which the host is attached.
+
+As mentioned before, clients are a type of host. Clients have software for
+requesting and displaying the information obtained from the server. An example
+of client software is a web browser, like Chrome or FireFox.
+
+Peer-to-peer refers to a computer being server and client.
+
+Advantages:
+  - Easy to set up
+  - Less complex
+  - Lower cost because network devices and dedicated servers may no te be
+    required
+  - Can be used for simple tasks such as transferring files and sharing
+    printers
+
+Disadvantages:
+  - No centralized administration
+  - Not as secure
+  - Not scalable
+  - All devices may act as both clients and serves which slow performance
+
+To distinguish one end device from another, each end device on a network has an
+address.
+
+Intermediary devices connect the individual end devices to the network.
+
+Intermediary network devices perform some or all of these functions:
+  - Regenerate and retransmit communication signals.
+  - Maintain information about what pathways exist through the network and
+    internetwork
+  - Notify other devices of errors and communication failure
+  - Classify and direct messages according to priorites
+  - Permit or deny the flow of data, based on security settings
+
+Modern networks primarily use three types of media to interconnect devices
+  - Metal wires within cables - Electrical impulses
+  - Glass or plastic fibers within cables (fiber-optic-cable) - Pulses of light
+  - Wireless transmission - Modulation of specific frequencies of waves
+
+The four main criteria for choosing network media are these:
+  - What is the maximum distance that the media can successfully carry a
+    signal?
+  - What is the environment in which the media will be installed?
+  - What is the amount of data and at what speed must it be transmitted?
+  - What is the cost of the media and installation?
+
+1.3
+
+Diagrams of networks often use symbols to represent the different devices and
+connections that make up a network. This type of “picture” of a network is known
+as a topology diagram.
+
+In addition to these representations, specialized terminology is used to
+describe how each of these devices and media connect to each other:
+  - Network Interface Card (NIC): A NIC physically connects the end device to
+    the network. 
+  - Physical Port: A connector or outlet on a networking device where the media
+    connects to an end device or another networking device. 
+  - Interface: Specialized ports on a networking device that connect to
+    individual networks. Because routers connect networks, the ports on a router
+    are referred to as network interfaces. 
+
+The terms port and interface are often used interchangeably.
+
+Topology diagrams are mandatory for anyone working with a network. There are two
+types of topology diagrams: physical and logical.
+  - Physical topology diagrams illustrate the physical location of intermediary
+    devices and cable installation
+  - Logical topology diagrams illustrate devices, ports, and the addressing
+    scheme of the network
+
+1.4
+
+Networks range from simple networks consisting of two computers, to networks
+connecting millions of devices.
+
+Small office and home office (SOHO) networks allow people to work from home, or
+a remote office.
+
+The internet is the largest network in existence. In fact, the term internet
+means a “network of networks”. It is a collection of interconnected private and
+public networks.
+
+Network infrastructures vary greatly in terms of:
+  - Size of the area covered
+  - Number of users connected
+  - Number and types of services available
+  - Area of responsibility
+
+LANs -> Local Area Networks (department, home, small business)
+WANs -> Wide Area Networks (managed by a larger corporation)
+
+LANs have specific characteristics:
+  - LANs interconnect end devices in a limited area such as a home, school,
+    office building, or campus.
+  - A LAN is usually administered by a single organization or individual.
+    Administrative control is enforced at the network level and governs the
+    security and access control policies.
+  - LANs provide high-speed bandwidth to internal end devices and intermediary
+    devices.
+
+WANs have specific characteristics:
+  - WANs interconnect LANs over wide geographical areas such as between cities,
+    states, provinces, countries, or continents.
+  - WANs are usually administered by multiple service providers.
+  - WANs typically provide slower speed links between LANs.
+
+The internet is not owned by any individual or group. Ensuring effective
+communication across this diverse infrastructure requires the application of
+consistent and commonly recognized technologies and standards as well as the
+cooperation of many network administration agencies. There are organizations
+that were developed to help maintain the structure and standardization of
+internet protocols and processes. These organizations include the Internet
+Engineering Task Force (IETF), Internet Corporation for Assigned Names and
+Numbers (ICANN), and the Internet Architecture Board (IAB), plus many others.
+
+An intranet is designed to be accessible only by the organization's members,
+employees, or others with authorization.
+
+An organization may use an extranet to provide secure and safe access to
+individuals who work for a different organization but require access to the
+organization’s data. Here are some examples of extranets:
+  - A company that is providing access to outside suppliers and contractors
+  - A hospital that is providing a booking system to doctors so they can make
+    appointments for their patients
+  - A local office of education that is providing budget and personnel
+    information to the schools in its district
+
+1.5
+
+--------------------------------------------------------------------------------
 Primera clase
 --------------------------------------------------------------------------------
 8/9/2023 12:10:27 PM

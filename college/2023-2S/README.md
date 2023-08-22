@@ -21,10 +21,10 @@
 
 ## Semana 3
 
-Curso AWS
 Ver clase grabada servicios en la nube
-Revisar netcad
-Curso Cisco
+Revisar TinkerCad
+Curso Cisco 5%
+Curso AWS 10%
 Trabajo escrito seminario 2 25%
 Acta seminario 2 80%
 
