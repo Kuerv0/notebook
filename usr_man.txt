@@ -297,6 +297,7 @@ gJ -> Won't alter the white spaces.
 gqap -> Reformat the current file to textwidth.
 
 gq -> Format operator. *                  (I need to do more research about it!)
+gw -> Format operator when using lsp. *   (lsp uses a different operator)
 
 gU -> Change case to uppercase.
 gu -> Change case to lowercase.
