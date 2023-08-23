@@ -466,4 +466,82 @@ Análisis financiero
 
 Análisis ambiental
 
+--------------------------------------------------------------------------------
+Clase 5
+--------------------------------------------------------------------------------
+Tue Aug 22 18:02:55 2023
 
+Archivo para procesar: Identificación-del-problema.pdf *
+
+Bonificación juego financiero: 30% del examen. 
+
+planteamiento del problema
+
+La Identificación del problema es el ejercicio más difícil.
+
+Identificar en el problema:
+  - Circunstancias
+  - Síntomas
+  - Causas
+  - Elementos
+  - Interrelaciones
+  - [Ver diapositivas]
+
+También es importante identificar las soluciones que hay en el momento y
+comparar con la solución propuesta. (Estado del arte)
+
+Elementos del planteamiento
+  - Definición y delimitación del probelma 
+  - Preguntas de investigación
+  - Objetivos
+  - Justifación
+  - Aspectos éticos (se incluyen en la justificación)
+
+El problema debe ser definido y modelado para formular preguntas con la que
+encontraremos hipótessi que orientan a la metodología y guía hacia los
+resultados que satisfacen las necesidades
+
+Definición y delmitación: Establece la unidad de análissi, límites teóricos,
+temporales y espaciales del problema
+
+Preguntas de investigación: El qué del estudio
+
+Objetivos: Guía de estudio.
+
+[Ver diapositivas]
+
+Nuestra investigación debe tener un límite y llevarlo a una realidad que es
+fácil de manejar.
+
+Delimitación del tema
+¿Qué quiero investigar? Contenido
+¿Dónde voy a hacer la investigación? Escenario
+¿Cuándo voy a hacer la investigación? Tiempo
+
+Es importante identificar y delimitar nuestro problema de investigación.
+
+Ejercicio 1:
+
+Cómic de Gaturro
+
+"Y... es un poco incómodo, pero es la única forma de que los chicos nos
+presten algo de atención durante la clase..."
+
+Contexto: Escuelas de la ciudad de Medellín. (Delimitando)
+Problema: "Déficit de atención"
+
+¿Por qué?
+  - Mayor gusto hacia las tecnologías
+  - Metodología de la enseñanza
+  - Desorden
+  - ...
+
+Pregunta problema:
+  - ¿Qué estrategias de enseñanza?
+  - ¿Cuáles son las causas que generan el bajo rendimiento académico?
+  - ¿Cómo implementar las tecnologías a los métodos de enseñanza?
+
+Ejercicio 2:
+
+"Todo debería hacerse taan simple como sea posible, pero no más simple." 
+- Albert Einstein
