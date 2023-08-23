@@ -289,3 +289,49 @@ Para que no les den libertad en la corte
 Salimos por la activación de una alarma a eso de las 13:30. Curiosamente se
 trataba de una torta de cumpleaños. Dicen que al apagar la vela, el detector de
 humo se activó y perdimos aproximadamente 30 minutos de clase.
+
+--------------------------------------------------------------------------------
+Cuarta clase
+--------------------------------------------------------------------------------
+Wed Aug 23 12:02:06 2023
+No ha iniciado la clase aún. Creo que tengo todo listo.
+
+En el calenndario M se refiere a clases en WebEx.
+
+Número de grupo: 8
+
+Agregar dirección IP:
+
+Switch:
+  (config)# interface vlan 1
+  (config if)# ip address 10.0.0.x 255.0.0.0
+  (config if)# no shutdown
+
+Router:
+  (config)# interface g0/0/0
+  (config if)# ip address 10.0.0.x 255.0.0.0
+  (config if)# no shutdown
+
+ping IP
+
+TELNET -> Protocolo para configuraciones
+
+(config)# line vty <0-97> -> Cantidad de personas que se pueden conectar
+(config-line)# password WORD -> Para esta clase ciscovty
+(config-line)# login
+(config-line)# transport input telnet
+
+Telnet se accede desde Putty
+
+Configurar contraseña para conectarse por consola
+(config-line)# line console 0
+(config-line)# password ciscocon
+(config-line)# login
+
+Ambas contraseña están en texto plano en show running config
+
+(config-line)# service password-encryption -> Encriptar contraseñas (débil)
+
+#wr -> Guardar configuración
+# copy running-config startup-config -> Guardar configuración
+
