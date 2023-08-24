@@ -1,1 +1,53 @@
 Curso online: https://awsacademy.instructure.com/
+
+--------------------------------------------------------------------------------
+Clase 2
+--------------------------------------------------------------------------------
+
+Definición: Informática en la nube
+
+Es la entrega bajo demanda de potencia de cómputo, bases de datos,
+almacenamiento, aplicaciones y otros recursos de TI, a través de Internet con un
+sistema de precios de pago por uso.
+
+Modelos de implementación
+  - Nube pública -> De un tercero
+  - Nube privada -> Propiedad
+  - Nube híbrida -> Combinación
+
+Multinube -> Puedes tener aplicaciones en una nube y compartirla con otras nubes
+Infrastructure as a service -> Hospeda
+Platform as a service -> Construye
+Software as a service -> Consume
+
+Los componentes tienen nombres diferentes en cada nube
+
+VPC -> Virtual private cloud: Espacio virtual para desplegar recursos.
+Route53 -> Servicio web 
+Direct Connect -> Conexión exclusiva entre red local y AWS
+
+EC2 -> Alquilar PC virtual
+EC2 Container Service -> Dockers
+Elastic Beanstalk -> Desplegar plataformas
+Lambda -> Función como servicio.
+
+S3 -> Almacenamiento de Objetos
+Cloud Front -> Entrega de servicio
+Glacier -> Guardar data histórica, tarda mucho en entregar la data
+EFS -> Pendrive en la nube
+Snowball -> Transfiere data. Disco duro portátil. Se puede cifrar.
+Storage Gateway -> Almacenamiento en la nube de forma híbrida.
+
+RDS -> Instancias con motores de SQL
+DynamoDB -> Base de datos no SQL exclusiva de AWS, serverless
+Elasticache -> Base de datos en memoria
+Redshift -> Migrar bases de datos locales a bases de datos en la nube
+DMS -> warehouse
+
+Las estrategias de TI deben apuntar a reducir el tiempo o reducir los costos
+
+Continuidad -> Persistencia de servicio a pesar de catástrofes.
+
+Informática -> Te cobran por tiempo
+Almacenamiento -> Te cobran por GB
+Transferencia -> Cobran por dato de salida

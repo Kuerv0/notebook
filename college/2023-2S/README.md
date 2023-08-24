@@ -21,11 +21,13 @@
 
 ## Semana 3
 
-Ver clase grabada servicios en la nube
 Revisar TinkerCad
+Trabajo escrito seminario 2 25%
+Ver clase grabada servicios en la nube 100%
+Acta seminario 2 80%
 Curso Cisco 5%
 Curso AWS 10%
-Trabajo escrito seminario 2 25%
-Acta seminario 2 80%
 
 ## Semana 4
+
+vim:nowrap:

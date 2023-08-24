@@ -491,17 +491,17 @@ También es importante identificar las soluciones que hay en el momento y
 comparar con la solución propuesta. (Estado del arte)
 
 Elementos del planteamiento
-  - Definición y delimitación del probelma 
+  - Definición y delimitación del problema 
   - Preguntas de investigación
   - Objetivos
   - Justifación
   - Aspectos éticos (se incluyen en la justificación)
 
 El problema debe ser definido y modelado para formular preguntas con la que
-encontraremos hipótessi que orientan a la metodología y guía hacia los
+encontraremos hipótesis que orientan a la metodología y guía hacia los
 resultados que satisfacen las necesidades
 
-Definición y delmitación: Establece la unidad de análissi, límites teóricos,
+Definición y delmitación: Establece la unidad de análisis, límites teóricos,
 temporales y espaciales del problema
 
 Preguntas de investigación: El qué del estudio
