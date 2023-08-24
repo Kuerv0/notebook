@@ -522,8 +522,6 @@ Es importante identificar y delimitar nuestro problema de investigación.
 
 Ejercicio 1:
 
-Cómic de Gaturro
-
 "Y... es un poco incómodo, pero es la única forma de que los chicos nos
 presten algo de atención durante la clase..."
 
@@ -543,5 +541,109 @@ Pregunta problema:
 
 Ejercicio 2:
 
-"Todo debería hacerse taan simple como sea posible, pero no más simple." 
+"Todo debería hacerse tan simple como sea posible, pero no más simple." 
 - Albert Einstein
+
+--------------------------------------------------------------------------------
+Clase 6
+--------------------------------------------------------------------------------
+Thu Aug 24 18:01:53 2023
+
+2.2 Justifación es el por qué y el para qué *
+
+Se envían documentos para basarnos y adelantar la entrega 1
+
+Se explica brevemente la Taxonomía de Bloom
+Debe usarse Taxonomía de Bloom para la entrega 1.
+
+3 Estado del arte
+
+Presentarlo en columnas
+
+¿Qué se ha hecho?
+¿Cómo se ha hecho? ¿Por qué se ha realizado de esa forma?
+¿Cómo ha evolucionado en el tiempo?
+
+Paso 1:
+  Citas
+  Autor
+  Problema a resolver
+  Objetivo
+  Pais/ciudad
+  Alternativas de solución
+  Alternativa final
+  Método
+  Resultados
+  Conclusiones con el tema, es decir...
+
+Paso 2:
+  Resumen
+  Palabras clave
+  Introducción
+  Desarrollo de temas
+  Conclusión
+  Bibliografía (referencias)
+
+4 Alternativas de solución
+
+5. Estudio de Mercado: Análisis del sector
+  Ir desde lo general hacia lo particular
+  Matriz DOFA
+
+PIB: Producto Interno Bruto -> Valora la producción de bienes y servicio
+  finales. Énfasis en finales.
+
+El PIB se puede clasificar:
+  real (precios constantes) 
+  PIB nominal (Precios correintes con Inflación)
+  
+PNB: Producto Nacional Bruto
+  Es el valor total de la producción de los factores nacionales en todo el
+  mundo.
+
+PNN: Producto Nacional Neto
+
+PIN: Producto Interno Bruto
+
+Economía subterránea: Se refiere a transacciones no legales. *
+
+Determinar el nivel de ingreso de una población:
+  PIB percápita => \frac{PIB}{Total de población}
+  
+El Desempleo
+
+Sugiere peor calidad de vida.
+
+Razones para el desempleo
+  Friccional: Consecuencias temporales normales del mercado.
+  Estructural: Cambios en la estructura de la economía.
+  Tasa natural de de desempleo: friccional + estructural
+  Cíclico: La economía es cíclica.
+
+PIB = Consumo interno + Inversión maquinaría + Gasto gobieno + Comercio
+  exterior
+
+Tasa de mercado => Tasas en el mercado (Captación, colocación, interbancaria)
+
+La inflación -> Incremento en el nivel GENERAL de precios.
+
+Causas de la inflación
+
+Inflación de demanda: Mucha demanda, poca oferta
+Inflación de costos: Aumentan los costos de los productos y este se refleja en
+  los productos
+
+IPC Definición de Índice de Precios al Consumidor (IPC)
+Mide la variación porcentual promedio de bienes y consumo final que demandan los
+consumidores en Colombia.
+
+Se usa para:
+[Ver diapositivas]
+
+La DOFA es del sector 
+
+Fuentes para usar en el trabajo 1 *
+  Andi
+  DANE
+  Banco de la república
+  Bancos como Davivienda, Bancolombia
