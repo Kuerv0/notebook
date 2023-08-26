@@ -16,8 +16,9 @@ Sat Aug 19 07:44:46 2023
 
 --------------------------------------------------------------------------------
 Clase 1 
-Sat Aug 19 08:03:38 2023
 --------------------------------------------------------------------------------
+Sat Aug 19 08:03:38 2023
+
 Profesor: Juan Camilo Herrera Pineda
 email: jherrerapi@unal.edu.co
 
@@ -184,4 +185,25 @@ filosóficas de la vida. Intento descifrar lo que quiero hacer y qué hacer para
 cambiar algunas cosas con las que no estoy conforme.
 Sat Aug 19 12:59:19 2023
 
+--------------------------------------------------------------------------------
+Clase 2 
+--------------------------------------------------------------------------------
+Sat Aug 26 08:00:11 2023
 
+Pull-up
+
+if (digitalRead(pin) == LOW){
+  while(!digitalRead(pin)){
+    
+  }
+  count++
+}
+
+Pull-down
+
+if (digitalRead(pin) == HIGH){
+  while(digitalRead(pin)){
+  }
+  
+  count++
+}

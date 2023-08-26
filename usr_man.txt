@@ -653,3 +653,15 @@ To find out what digraphs are available, use the following command: >
 :digraphs
 
 CTRL-O {command} -> Execute any Normal mode command from insert mode.
+
+================================================================================
+usr_25
+================================================================================
+
+:set textwidth=30 -> Automatic line break.
+
+:set !wrap -> Disable wrapping
+
+gq -> Gets paragraph into shape
+
+14%
