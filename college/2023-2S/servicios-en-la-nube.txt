@@ -1,6 +1,131 @@
 Curso online: https://awsacademy.instructure.com/
 
 --------------------------------------------------------------------------------
+Curso Cloud Foundation
+Modulo 2
+--------------------------------------------------------------------------------
+
+Genedores fundamentales de costo
+  - Informática
+  - Almacenamiento
+  - Transferencia de datos
+
+Generalmente ingresar datos a la nube es gratuito, al igual que la transferencia
+de datos en la misma región.
+
+Filosofía de pago AWS
+  - Pagar por lo que se utilice
+  - Pagar menos al reservar
+  - Pagar menos cuando utilice más y a medida que AWS crezca
+
+No hay contratos, deja de usar el servicio cuando quieras.
+
+Solo se paga por lo que utiliza, no es necesario anticiparse a la necesidad del
+futuro.
+
+Existe una calculadora que permite comparar soluciones locales con soluciones
+usando AWS, esta se llama TCO calculator
+
+También existe una calculadora mensual:
+https://calculator.s3.amazonaws.com/index.html
+
+AWS Organization -> Servicio para organizar el pago de múltiples cuentas *
+AWS Organization tiene seguridad
+
+Acceso
+  - Consola de administración
+  - CLI de AWS
+  - SDK
+  - APIs
+
+AWS tiene servicios para ver los gastos de manera estructurada y constuir
+reportes
+
+Se habla maravillas del soporte técnico de AWS.
+
+--------------------------------------------------------------------------------
+Curso Cloud Foundation
+Modulo 3
+--------------------------------------------------------------------------------
+
+Una región de AWS es una zona geográfica.
+
+China tiene restricciones curiosas
+
+Las regiones pueden tener restricciones *
+
+Cada región cuenta con varias zonas de disponibilidad.
+  Cada zona de disponibilidad es una partición completamente aislada de la
+  infraestructura de AWS.
+
+AWS recomienda replicar en zonas de disponibilidad diferentes para mayor
+seguridad
+
+Los centros de datos de AWS están diseñados para ofrecer seguridad.
+
+ODMs diseñan y fabrican productos en función de las especificaciones de una
+segunda empresa. Esta segunda empresa luego cambia la marca de los productos
+para la venta.
+
+Características de la infraestructura de AWS
+  - Elasticidad y escalabilidad
+  - Tolerancia a errores
+  - Alta disponibilidad
+
+Servicios de almacenamiento
+  - S3
+  - EBS
+  - EFS
+  - Service Glacier
+
+Servicios de informática
+  - EC2
+  - ECS
+  - Beanstalk
+  - Lambda
+  - EKS
+  - Fargate
+
+Servicios de base de datos
+  - ARDS
+  - Aurora
+  - Redshift
+  - DynamoDB
+
+Servicios de redes y entrega de contenido
+  - Amazon VPC
+  - Elastic Load Balancing
+  - CloudFront
+  - AWS Transit Gateway
+  - Amazon Route53
+  - AWS Direct Connect
+  - AWS VPN
+
+Servicios de seguridad, identidad y conformidad
+  - AWS Identity and Access Management (IAM)
+  - AWS Organizations
+  - Amazon Cognito
+  - AWS Artifact
+  - AWS Key Management
+  - AWS Shield
+
+Servicios de administración de costos AWS
+  - Informe de uso y costo de AWS
+  - Presupuetos de AWS
+  - AWS Cost Explorer
+
+Servicios de administración y gobernanza de datos
+  - Consola de administración de AWS
+  - AWS config
+  - Amazon CloudWatch
+  - AWS Auto Scaling
+  - Interfaz de línea de comandos de AWS
+  - AWS Trusted Advisor
+  - AWS Well-Architected Tool
+  - AWS CloudTrail
+
+
+--------------------------------------------------------------------------------
 Clase 2
 --------------------------------------------------------------------------------
 

@@ -21,12 +21,13 @@
 
 ## Semana 3
 
-Revisar TinkerCad
-Trabajo escrito seminario 2 25%
-Ver clase grabada servicios en la nube 100%
-Acta seminario 2 80%
-Curso Cisco 5%
-Curso AWS 10%
+Revisar TinkerCad 100%  
+Revisar Classroom Transformación digital 100%  
+Trabajo escrito seminario 2 25%  
+Ver clase grabada servicios en la nube 100%  
+Acta seminario 2 80%  
+Curso Cisco 5%  
+Curso AWS 30%  
 
 ## Semana 4
 
