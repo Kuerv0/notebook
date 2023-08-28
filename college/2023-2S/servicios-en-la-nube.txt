@@ -123,7 +123,51 @@ Servicios de administración y gobernanza de datos
   - AWS Trusted Advisor
   - AWS Well-Architected Tool
   - AWS CloudTrail
+  
+--------------------------------------------------------------------------------
+Curso Cloud Foundation
+Modulo 4
+--------------------------------------------------------------------------------
 
+La seguridad es un trabajo en conjunto del cliente y AWS.
+
+Cliente:
+  - Datos del cliente
+  - Administración de la plataforma, las aplicaciones, la identidad y el
+    acceso
+  - Configuración del sistema operativo, de la red y del firewall
+  - Cifrado de datos y autenticación de integridad de datos
+  - Cifrado de datos en el cliente y servidor
+  - Protección del tráfico en la red
+
+La cuenta root tiene accesso a todo.
+
+Inline Policies are typically used to apply permissions for one-off
+situations.
+
+--------------------------------------------------------------------------------
+Curso Cloud Foundation
+Modulo 5
+--------------------------------------------------------------------------------
+
+VPC es una nube aislada lógicamente para lanzar los productos definidos.
+
+Las subnets pertenecen a una sola zona de disponibilidad.
+
+A public subnet is the sum of a VPC, an internet gateway that has been attached
+to the VPC, a subnet that has been defined according to some instructions and a
+routing table that indicates the public traffic that is going to be processeed
+by the internet gateway.
+
+Firewall en AWS es llamado grupos de seguridad.
+
+Having subnets in multiple Availability Zones within a VPC is useful for
+deploying solutions that provide High Availability. 
+
+Amazon Route53 es un DNS.
+
+CloudFront es un servicio que encuentra la dirección IP más cercana al
+customer.
 
 --------------------------------------------------------------------------------
 Clase 2
@@ -136,7 +180,7 @@ almacenamiento, aplicaciones y otros recursos de TI, a través de Internet con u
 sistema de precios de pago por uso.
 
 Modelos de implementación
-  - Nube pública -> De un tercero
+  
   - Nube privada -> Propiedad
   - Nube híbrida -> Combinación
 
@@ -176,3 +220,4 @@ Continuidad -> Persistencia de servicio a pesar de catástrofes.
 Informática -> Te cobran por tiempo
 Almacenamiento -> Te cobran por GB
 Transferencia -> Cobran por dato de salida
+

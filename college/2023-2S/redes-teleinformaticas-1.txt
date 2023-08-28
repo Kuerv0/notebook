@@ -152,6 +152,105 @@ organization’s data. Here are some examples of extranets:
 
 1.5
 
+8/27/2023 21:22:49
+
+ISP -> Internet Service Provider
+
+Common connections for users:
+
+Cable
+  - DSL -> Digital Subscriber Lines
+    - ADSL -> download speed faster than upload speed.
+  - Cellular
+  - Satellite
+  - Dial-up telephone
+
+Business Internet Connection
+  - Dedicated Leased Line
+  - Metro Ethernet
+  - Business DSL
+  - Satellite
+
+Traditional Separate Networks -> Multiple services ran on multiple networks.
+Converged Networks -> Carry multiple services on one network.
+
+1.6
+We have learned that there are four basic characteristics that network
+architects must address to meet user expectations:
+  - Fault Tolerance
+      A fault tolerant network is one that limits the number of affected devices
+      during a failure.
+      
+  - Scalability
+      A scalable network expands quickly to support new users and applications.
+      
+  - Quality of Service (QoS)
+      The type of traffic, not the content of the traffic, is what is important.
+      
+  - Security
+      Network administrators must address two types of network security
+      concerns: network infrastructure security and information security.
+      Network administrators must also protect the information contained within
+      the packets being transmitted over the network, and the information stored
+      on network attached devices.
+        - Confidentiality
+        - Integrity
+        - Availability
+
+1.7
+
+There are several networking trends that affect organizations and consumers:
+
+  - Bring Your Own Device (BYOD)
+     enables end users the freedom to use personal tools to access information
+     and communicate across a business or campus network. BYOD means any device,
+     with any ownership, used anywhere.
+     
+  - Online collaboration
+    Collaboration is a critical and strategic priority that organizations are
+    using to remain competitive.
+    
+  - Video communications
+    Video is becoming a critical requirement for effective collaboration as
+    organizations extend across geographic and cultural boundaries.
+  
+  - Cloud Computing
+    Cloud computing allows us to store personal files, even backup an entire
+    drive on servers over the internet.
+    Data centers are facilities used to house computer systems and associated
+    components.
+
+    There are four primary types of clouds:
+    
+      - Public clouds
+          Available to the general population. Services may be free or are
+          offered on a pay-per-use model.
+
+      - Private clouds
+          Intended for a specific organization or entity, such as a government.
+          A private cloud can be set up using the organization’s private
+          network.
+
+      - Hybrid clouds
+          A hybrid cloud is made up of two or more clouds
+
+      - Community clouds
+          A community cloud is created for exclusive use by specific entities or
+          organizations.
+  
+Smart home technology integrates into every-day appliances, which can then
+connect with other devices to make the appliances more ‘smart’ or automated.
+
+Powerline networking for home networks uses existing electrical wiring to
+connect devices
+
+WISP -> Wireless Internet Service Provider. Common in rural environments.
+
+Another wireless solution for the home and small businesses is wireless
+broadband. This solution uses the same cellular technology as a smart phone.
+
+1.8
+
 --------------------------------------------------------------------------------
 Primera clase
 --------------------------------------------------------------------------------

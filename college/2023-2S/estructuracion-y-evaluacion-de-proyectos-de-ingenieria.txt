@@ -647,3 +647,6 @@ Fuentes para usar en el trabajo 1 *
   DANE
   Banco de la república
   Bancos como Davivienda, Bancolombia
+
+Preguntar en la próxima clase: 
+  - Por el planteamiento del problema y nuetro caso particular.
