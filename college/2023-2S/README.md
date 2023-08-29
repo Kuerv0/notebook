@@ -21,14 +21,23 @@
 
 ## Semana 3
 
-Revisar TinkerCad 100%  
-Revisar Classroom Transformación digital 100%  
-Trabajo escrito seminario 2 25%  
-Ver clase grabada servicios en la nube 100%  
-Acta seminario 2 80%  
-Curso Cisco 5%  
-Curso AWS 30%  
+| Tarea                                                           | Porcentaje |
+|:---------------------------------------------------------------:|:----------:|
+| Curso Cisco                                                     | 5%         |
+| Trabajo escrito seminario 2                                     | 30%        |
+| Curso AWS                                                       | 50%        |
+| Revisar TinkerCad                                               | 100%       |
+| Revisar Classroom Transformación digital                        | 100%       |
+| Ver clase grabada servicios en la nube                          | 100%       |
+| Acta seminario 2                                                | 100%       |
 
 ## Semana 4
+
+| Tarea                                                           | Porcentaje |
+|:---------------------------------------------------------------:|:----------:|
+| Enviar código para Introducción a la robótica                   | 0%         |
+| Curso Cisco                                                     | 5%         |
+| Trabajo escrito seminario 2                                     | 30%        |
+| Curso AWS                                                       | 50%        |
 
 vim:nowrap:
