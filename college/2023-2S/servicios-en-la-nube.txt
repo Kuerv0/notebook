@@ -170,6 +170,91 @@ CloudFront es un servicio que encuentra la dirección IP más cercana al
 customer.
 
 --------------------------------------------------------------------------------
+Curso Cloud Foundation
+Modulo 6
+--------------------------------------------------------------------------------
+8/29/2023 11:46:04
+
+Compute Services:
+
+  infraestructura como servicio:
+    - Amazon EC2
+
+  Informática sin servidor
+    - AWS Lambda
+
+  Informática basada en contenedores
+    - Amazon ECS
+    - Amazon EKS
+    - AWS Fargate
+    - Amazon ECR
+
+Plataforma como servicio
+  - AWS Elastic Beanstalk
+
+El Amazon Amazon Elastic Compute Cloud (EC2) es un servidor en la nube. Estos
+permiten crear máquinas virtuales llamadas instancias. Se posee completo control
+sobre el sistema operativo de las instancias. Se pueden lanzar en minutos en una
+zona de disponibilidad en cualquier lugar del mundo.
+
+Para crear Instancias de EC2 existe el Launch Instance Wizard.
+
+Pasos para lanzar una Instancia.
+
+  1. Escoger imagen (IMA)
+  
+  2. Seleccionar Características de la instancia -> cpu, ram, storage, bandwidth
+    - t3.large -> T es la familia, 3 es la generación, Large es el tamaño.
+    
+  3. Configuración de red -> VPC, subred, dirección IP.
+  
+  4. Rol de IMA -> Asocie el rol adecuado, se mantiene en un perfil de instancia.
+    - Nunca guardar credenciales en una instancia. Es mejor asignar roles.
+    
+  5. Datos de usuario -> Script de datos de usuario para el lanzamiento.
+    - El script se ejecuta la primera vez que se inicia la instancia.
+    
+  6. Opciones de lanzamiento -> Volumen raíz, tamaño, tipo de volumen, cifrado.
+    - Amazon Elastis Block Store (EBS)
+    - Almacén de isntancias de Amazon (EC2) [Es temporal]
+    - Amazon Elastic File System (EFS)
+    - Amazon Simple Storage Service (Amazon S3)
+  
+  7. Tags -> Marca que puede ser asignada a un recurso de AWS.
+    - Cada tag consta de una clave y un valor opcional.
+
+  8. Grupo de seguridad -> Conjunto de reglas firewall que controlan el tráfico
+  de la instancia.
+
+  9. Key pair -> Consta de una clave pública y una clave privada.
+
+Ejecutando instancias desde el CLI.
+
+aws ec2 run-instances             \
+--image-id ami-1a2b3c4d           \
+--count 1                         \
+--instance-type c3.large          \
+--key-name MyKeyPair              \
+--security-groups MySecurityGroup \
+--region us-east-1
+
+Considere la posibilidad de utilizar una dirección IP elástica.
+
+Modelos de precios de Amazon EC2:
+  - Instancias bajo demanda
+  - Hosts dedicados
+  - Instancias dedicadas
+  - Instancias reservadas
+  - Instancias reservadas programadas
+  - Instancias de spot
+
+Pilares:
+  - Adaptación del tamaño
+  - Aumento de la elasticidad
+  - Modelo de precios óptimo
+  - Optimización de las opciones de almacenamiento
+
+--------------------------------------------------------------------------------
 Clase 2
 --------------------------------------------------------------------------------
 
