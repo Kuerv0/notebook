@@ -434,3 +434,22 @@ Ambas contraseña están en texto plano en show running config
 #wr -> Guardar configuración
 # copy running-config startup-config -> Guardar configuración
 
+--------------------------------------------------------------------------------
+Quinta clase
+-------------------------------------------------------------------------------
+Mon Aug 28 10:11:40 2023
+
+ping 8.8.8.8 -> Ping a Google.
+
+En la Universidad bloquean servicios de streams y otros sitios que no cumplen
+con el fin misional de la Universidad.
+
+El firewall escanea y bloque paquetes.
+
+tracert es un ping controlado.
+
+tracert 8.8.8.8
+
+ipvoid.com -> Herramientas de trazado y demás.
+
+Explicación de uso de Wireshark e inspección de paquetes ICMP y ICPMv6.
