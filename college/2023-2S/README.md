@@ -39,5 +39,6 @@
 | Curso Cisco                                                     | 5%         |
 | Trabajo escrito seminario 2                                     | 30%        |
 | Curso AWS                                                       | 50%        |
+| Entender las cuentas en la clase de seminario 2                 | 0%         |
 
 vim:nowrap:

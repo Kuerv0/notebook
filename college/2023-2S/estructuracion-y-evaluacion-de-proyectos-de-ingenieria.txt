@@ -650,3 +650,276 @@ Fuentes para usar en el trabajo 1 *
 
 Preguntar en la próxima clase: 
   - Por el planteamiento del problema y nuetro caso particular.
+  - Preguntar por el juego financiero.
+  
+--------------------------------------------------------------------------------
+Clase 7
+--------------------------------------------------------------------------------
+Tue Aug 29 18:14:25 2023
+
+Empresa
+
+Una empresa es una organización de personas y recursos que buscan la consecución
+de un beneficio económico con el desarrollo de una actividad en particular.
+
+Según su tamaño o el número de trabajadores en plantilla:
+
+  - Microempresa: Con un personal no superior a 10 trabajadores.
+  - Pequeña: tienen entre 11 y 50 trabajadores.
+  - Mediana: Cuenta entre 51 y 200 trabajadores.
+  - Grande: Más de 250 trabajadores.
+
+Medir por el número de trabajadores no está mal, pero también podemos medirlo
+mediante ingresos.
+
+Definir la empresa para la entraga 2 *
+
+Clasificación según el sector actividad
+
+  - Empresas del sector primario: 
+      Extractivo.
+
+  - Empresas del sector secundario o industrial: 
+    Proceso o transformación 
+    -> Aquí nos vamos a ubicar.
+
+  - Empresas del sector terciario o de servicios:
+      Capacidad humana para realizar trabajos físicos o intelectuales.
+
+Clasificación según la capital
+
+  - Privada: Capital en manos privadas.
+
+  - Pública: Capital pertenece al estado.
+
+  - Mixta: Capital compartida entre el estado y los particulares.
+
+Según el destino de los beneficios
+
+  - Empresas con Ánimo de Lucro: Excedentes pasan a poder de los propietarios.
+
+  - Empresas sin Ánimo de Lucro.
+
+Según la forma jurídica
+
+  - Unipersonal: 
+    Pertenece a una sola persona.
+    
+  - Sociedad colectiva:
+    Pertenece a todos los socios.
+    
+  - Cooperativas:
+    Pertenece a los aportantes y los gestores de la empresa.
+    
+  - Comanditarias:
+    Varios socios participan.
+    
+  - Sociedad de responsabilidad Limitada:
+    Sociedad de personas y responsabilidad limitada
+      
+  - Sociedad Anónima:
+    Sociedad de capital.
+  
+Vamos a clasificar nuestra empresa *
+
+1. Clasificar tamaño.
+2. Será una empresa manufacturera perteneciente al sector financiero.
+3. Con ánimo de lucro para obtener ganancia.
+4. SAS para poder obtener músculo financiero (capital) desde la bolsa.
+
+Activos => Lo que tiene
+Pasivos => Lo que debe
+Patrimonio => Capital social
+
+Estados de Información financiera
+
+  - Activo no corriente: 
+    Se pueden convertir en efectivo en un plazo mayor a un año.
+    
+  - Activos fijos:
+    Relativa larga duración, Se use en operaciones en la empresa, que no se
+    tenga para la venta. 
+    
+  - Depreciación: 
+    La pérdida de valor en el tiempo.
+
+Ecuación patrimonial o de equilibrio.
+
+Contablemente debe existir equilibrio.
+
+Vida útil del activo:
+  Ecuación => Activo = Pasivo + Patrimonio
+
+Ejemplo:
+
+a) Adquiere activos por $3000, los cuales se obtuvieron con aportes de los
+   dueños.
+
+b) Adquiere activos por $500, los cuales se obtuvieron, el 50% aporte de los
+   dueños y el resto con deuda. 
+
+c) Adquiere activos pro $1200, los cuales fueron obtenidos a través de deuda.
+
+d) Adquiere activos por $800, los cuales se pagaron de contado.
+
+e) Pagó $100 como abono de la deuda del numeral B.
+
+Transacción 1
+
+Activos
+
+| Debe | Haber |
+|------|-------|
+| 3000 |       |
+
+Capital social
+
+| Debe | Haber |
+|------|-------|
+|      | 3000  |
+
+Transacción 2
+
+Activos
+
+| Debe | Haber |
+|------|-------|
+| 500  |       |
+
+Capital social
+
+| Debe | Haber |
+|------|-------|
+|      | 250   |
+
+Obligación fra
+
+| Debe | Haber |
+|------|-------|
+|      | 250   |
+
+Transacción 3
+
+Activos
+
+| Debe | Haber |
+|------|-------|
+| 1200 |       |
+
+Obligación fra
+
+| Debe | Haber |
+|------|-------|
+|      | 1200  |
+
+Transacción 4
+
+Activos
+
+| Debe | Haber |
+|------|-------|
+| 800  |       |
+
+Caja bancos
+
+| Debe | Haber |
+|------|-------|
+|      | 800   |
+
+Pago deuda
+
+| Debe | Haber |
+|------|-------|
+| 100  |       |
+
+Pago deuda
+
+| Debe | Haber |
+|------|-------|
+|      | 100   |
+
+Se da una actividad que no entendí muy bien
+
+Activos
+
+| Debe | Haber |
+|------|-------|
+| 3000 | 100   |
+| 500  | 800   |
+| 1200 |       |
+| 800  |       |
+|------|-------|
+| 5500 | 900   |
+| 4600 |       |
+
+Pasivos
+
+| Debe | Haber |
+|------|-------|
+| 100  | 250   |
+|      | 1200  |
+|------|-------|
+| 100  | 1450  |
+|      | 1350  |
+
+Capital social (patrimonio)
+
+| Debe | Haber |
+|------|-------|
+|      | 3000  |
+|      | 250   |
+|------|-------|
+|      | 3250  |
+
+Activos = Pasivos + Patrimonio
+4600 = 1350 + 3250
+
+- Los dueños realizan aportes en efectivo por 35M
+- Se compra de contado inventario (suministros de oficina) por valor de 4M
+- Se compra un edificio por 14M, del cual se paga 50% de contado y el resto a
+  crédito
+- Se compra equipo de oficina por 3M a crédito
+- El banco le hace un préstamo a la empresa por valor de 12M a 2 años
+- La empresa paga 3M de la deuda del edificio
+
+Capital Social (Patrimonio)
+
+| Debe | Haber |
+|------|-------|
+|      | 35M   |
+
+Inventario
+
+| Debe | Haber |
+|------|-------|
+| 4M   |       |
+
+Caja/banco
+
+| Debe | Haber |
+|------|-------|
+| 12M  | 4M    |
+| 35M  | 7M    |
+| 35M  | 3M    |
+
+Edificio
+
+| Debe | Haber |
+|------|-------|
+| 14M  |       |
+
+Obligación fra
+
+| Debe | Haber |
+|------|-------|
+| 3M   | 7M    |
+|      | 3M    |
+|      | 12M   |
+
+Equipo oficina
+
+| Debe | Haber |
+|------|-------|
+| 3M   |       |
+
+Necesito revisar esto aunque no sé exactamente qué es. *
