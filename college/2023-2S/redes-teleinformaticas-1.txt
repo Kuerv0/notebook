@@ -323,6 +323,57 @@ virtualization, automation, and network programmability.
 Teoría: 2 Basic Switch and End Device Configuration
 --------------------------------------------------------------------------------
 
+2.0
+8/31/2023 15:37:02
+
+As part of your career in networking, you might have to set up a new network or
+maintain and upgrade an existing one. In either case, you’ll configure switches
+and end devices so that they are secure and perform effectively based on your
+requirements.
+
+2.1
+All end devices and network devices require an operating system (OS). The
+portion of the OS that interacts directly with computer hardware is known as the
+kernel. The portion that interfaces with applications and the user is known as
+the shell. The user can interact with the shell using a command-line interface
+(CLI) or a graphical user interface (GUI).
+
+  - Shell: The user interface that allows to request specific tasks from the
+    computer. These requests can be made either through the CLI or GUI
+    interfaces.
+  - Kernel: Communicates between the hardware and software of a computer and
+    manages how hardware resources are used to meet software requiremetns.
+  - Hardware: The physical part of a computer including underlying
+    electronics.
+
+GUIs may not always be able to provide all the features available with the CLI.
+GUIs can also fail. For these reasons, network devices are typically accessed
+through a CLI. 
+
+The family of network operating systems used on many Cisco devices is called the
+Cisco Internetwork Operating System (IOS). *
+
+Other Cisco operating systems include IOS XE, IOS XR, and NX-OS. *
+
+The operating system on home routers is usually called firmware. The most common
+method for configuring a home router is by using a web browser-based GUI.
+
+A switch will forward traffic by default and does not need to be explicitly
+configured to operate. Regardless of the default behavior of a new switch, all
+switches should be configured and secured.
+
+Ways to access a switch:
+  - Console (No remote)
+  - SSH (Is secure)
+  - Telnet (is not secure)
+  - Legacy auxiliary port for telephone connections (Some devices)
+
+Terminal Emulation Programs
+  - PuTTY
+  - Tera Term
+  - SecureCRT
+
+  2.2
 
 --------------------------------------------------------------------------------
 Primera clase

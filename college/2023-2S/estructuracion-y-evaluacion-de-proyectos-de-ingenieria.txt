@@ -1,4 +1,137 @@
 --------------------------------------------------------------------------------
+Learn accounting in under 5 hours!
+--------------------------------------------------------------------------------
+
+The accounting cycle
+
+Steps in financial accounting:
+  - Step 1: Identify transactions
+  - Step 2: Prepare journal entry
+  - Step 3: Post to general ledger
+  - Step 4: Unadjusted trial balance
+  - Step 5: Post adjusting entries
+  - Step 6: Adjusted trial balance
+  - Step 7: Create financial statements
+  - Step 8: Post closing entries
+
+Debits and Credits misconceptions
+  - Debits and credits are neither good nor bad
+  - Debits and credits are not the same as adding or subtracting
+
+Equity = owner's equity paid in - dividends paid out + retained earnings
+
+Retained earnings = revenue - expenses
+
+Equity = owner's equity - dividends + revenue - expenses
+
+Dividends + expenses + assets = liabilites + owner's equity + revenue
+                      Debits = Credits
+
+Balance means "total at a point in time".
+
+--------------------------------------------------------------------------------
+Definitions
+--------------------------------------------------------------------------------
+
+Financial accounting:
+The process of identifying, recording, summarising & analysing an entity's
+financial transactions & reporting them in financial statements.
+
+Journal entry:
+Record of a financial transaction.
+
+Double entry accounting:
+Core principle: stuff that a business owns = stuff that a business owes.
+
+Assets:
+Stuff that a business owns; things like cash and inventory.
+
+Liabilities:
+Debts to external parties.
+  -> Obligations that you need to fulfill in the future
+
+Net assets:
+Extra money when a business makes more money than it spends.
+
+Equity:
+This represents your claim in the businesses net assets. If the businesses is
+not doing so well, it represents the value that the project owes to you.
+
+Accounting equation:
+Assets = Liabilities + Equity
+
+General ledger:
+A database that stores a complete record of all accounts & journal entries.
+
+Account:
+A place where we record, sort & store all financial transactions that affect a
+related group of items
+
+Account types:
+  - Assets
+  - Liabilities
+  - Equity
+    * Revenue
+    * Expenses
+    * Withdrawals aka dividends
+
+Revenue:
+It represents the total amount of money earned by a company through selling
+goods, providing services, or other operating activities.
+
+Trial balance:
+An accounting report showing the closing balances of all general ledger
+accounts. List all of your accounts and their closing balances.
+Cumulative total of all transactions affecting an account.
+
+Adjusting entries:
+Journal entries posted at the end of an accounting period to bring a business's
+books in line with the accrual method of accounting.
+
+Accounting rules:
+There are standards such as
+  - International financial reporting standards (IFRS)
+  - Generally accepted accounting principles (GAAP)
+
+Accrual method:
+Revenue is recognised as it's earned expenses are recorded as they are
+incurred.
+
+Financial statements:
+Accounting reports that summarise a business's activities over a period of
+time.
+
+  - Balance sheet: Snapshot of business's assets liabilites and equity at a
+    single point in time which can teach the readers about your financial
+    position.
+
+  - Income Statement: Summarizes your businesses revenues and expenses over a
+    period of time.
+
+  - Cash flow statement: Summary of how cash and cash equivalents have flowed in
+    and out of a business during a specific period of time.
+
+Closing entry:
+A journal entry that transfers balances from temporary accounts to permanent
+accounts in the balance sheet.
+
+Debits and credits:
+Are words used to reflect the duality or double-sided nature of all financial
+transactions
+
+Economic benefit:
+Is the potential for an asset to contribute either directly or indirectly to the
+flow of an entity's cash. Credits represent the source and debits represent the
+destination.
+
+Account:
+A place where we can record, sort and store all transactions that affect a
+related group of items.
+
+T-Account:
+Visual representation of an account. It looks like a T.
+
+--------------------------------------------------------------------------------
 Clase 1
 --------------------------------------------------------------------------------
 Tue Aug  8 18:02:09 2023

@@ -35,7 +35,8 @@
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Entender las cuentas en la clase de seminario 2                 | 0%         |
+| Pensar en el proyecto transversal de la catedra                 | 0%         |
+| Entender las cuentas en la clase de seminario 2                 | 50%        |
 | Curso Cisco                                                     | 6%         |
 | Trabajo escrito seminario 2                                     | 30%        |
 | Curso AWS                                                       | 60%        |
