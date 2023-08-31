@@ -254,6 +254,53 @@ Pilares:
   - Modelo de precios óptimo
   - Optimización de las opciones de almacenamiento
 
+Los contenedores son un método de virtualización del sistema operativo. Se
+ejecutan como procesos aislados de los recursos.
+
+Docker permite crear, probar e implementar aplicacioens rápidamente.
+
+Servicio de adminstración de contenedores altamente escalable y rápido (ECS)
+Este es básicamente un Docker de AWS.
+
+Amazon Elastic Kubernetes Service (Amazon EKS) permite ejecutar Kubernetes en
+AWS
+
+Amazon Elastic Container Registry ECR es un registro de contenedores de Docker
+que facilita las tareas de almacenamiento, administración e implementación de
+imágenes de contenedores de Docker.
+
+AWS Lambda es un servicio de informática sin servidor.
+  - Cargue el código.
+  - Ejecute el código de forma programada o en respuesta a eventos.
+  - El código solo se ejecuta cuando se desencadena.
+  - Pague solo por el tiempo de cómputo que utiliza.
+
+Beneficios de Lambda
+  - Compatibilidad con varios lenguajes de programación
+  - Administración totalmente automatizada
+  - Tolerancia a errores integrada
+  - Admite la organización de varias funciones
+  - Precios de pago por el uso
+
+8/30/2023 15:20:11
+
+Elastic Beanstalk es una forma sencilla de poner en marcha las aplicaciones
+web. Administra automáticamente lo siguiente:
+  - Aprovisionamiento de la infraestructura.
+  - Implementación
+  - Balanceo de cargas
+  - Escalado automático
+  - Monitoreo de estado
+  - Análisis y depuración
+  - Registros
+
+No se incurre en gastos adicionales
+
+--------------------------------------------------------------------------------
+Curso Cloud Foundation
+Modulo 7
+--------------------------------------------------------------------------------
+
 --------------------------------------------------------------------------------
 Clase 2
 --------------------------------------------------------------------------------

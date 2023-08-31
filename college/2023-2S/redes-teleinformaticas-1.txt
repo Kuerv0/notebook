@@ -250,6 +250,79 @@ Another wireless solution for the home and small businesses is wireless
 broadband. This solution uses the same cellular technology as a smart phone.
 
 1.8
+8/30/2023 17:17:05
+
+Network security must consider the environment, as well as the tools and
+requirements of the network. It must be able to secure data while still
+allowing for the quality of service that users expect of the network.
+
+There are several common external threats to networks:
+  - Viruses, worms, and Trojan horses: These contain malicious software or code
+    running on a user device.
+
+  - Spyware and adware: These are types of software which are installed on a
+    user’s device. The software then secretly collects information about the
+    user.
+
+  - Zero-day attacks: Also called zero-hour attacks, these occur on the first
+    day that a vulnerability becomes known.
+
+  - Threat actor attacks: A malicious person attacks user devices or network
+    resources.
+
+  - Denial of service attacks: These attacks slow or crash applications and
+    processes on a network device.
+
+  - Data interception and theft: This attack captures private information from
+    an organization’s network.
+
+  - Identity theft: This attack steals the login credentials of a user in order
+    to access private data.
+
+With the evolving BYOD strategies, corporate data is much more vulnerable.
+Therefore, when developing a security policy, it is important to address both
+external and internal security threats.
+
+These are the basic security components for a home or small office network:
+  - Antivirus and antispyware - These applications help to protect end devices
+    from becoming infected with malicious software.
+    
+  - Firewall filtering - Firewall filtering blocks unauthorized access into and
+    out of the network. This may include a host-based firewall system that
+    prevents unauthorized access to the end device, or a basic filtering service
+    on the home router to prevent unauthorized access from the outside world
+    into the network.
+
+Larger networks and corporate networks use antivirus, antispyware, and firewall
+filtering, but they also have other security requirements:
+  - Dedicated firewall systems - These provide more advanced firewall
+    capabilities that can filter large amounts of traffic with more granularity.
+
+  - Access control lists (ACL) - These further filter access and traffic
+    forwarding based on IP addresses and applications.
+
+  - Intrusion prevention systems (IPS) - These identify fast-spreading threats,
+    such as zero-day or zero-hour attacks.
+
+  - Virtual private networks (VPN) - These provide secure access into an
+    organization for remote workers.
+
+The study of network security threats and mitigation techniques starts with a
+clear understanding of the underlying switching and routing infrastructure used
+to organize network services.
+
+1.9
+8/30/2023 20:59:04
+
+A consolidated and updated CCNA for networking engineers is three courses and
+one exam which covers the fundamental topics for all network technologies. The
+new CCNA focuses on IP foundation and security topics along with wireless,
+virtualization, automation, and network programmability.
+
+--------------------------------------------------------------------------------
+Teoría: 2 Basic Switch and End Device Configuration
+--------------------------------------------------------------------------------
+
 
 --------------------------------------------------------------------------------
 Primera clase
@@ -453,3 +526,65 @@ tracert 8.8.8.8
 ipvoid.com -> Herramientas de trazado y demás.
 
 Explicación de uso de Wireshark e inspección de paquetes ICMP y ICPMv6.
+
+--------------------------------------------------------------------------------
+Sexta clase
+-------------------------------------------------------------------------------
+8/30/2023 11:54:10
+Omar explica la calificación del curso en WebEx.
+
+8/30/2023 12:29:57
+Las telecomunicaciones se han inspirado en las conversaciones humanas. 
+
+Participantes:
+  -> Source
+  -> Destination
+
+Mensaje
+
+Medio
+
+Reglas
+
+Comunicación unicast, es decir, uno a uno. 
+Comunicación broadcast, es decir, de uno a todos. En español le llaman
+  difusión.
+Comunicación multicast, es decir, de uno a un grupo en particular. Por ejemplo,
+  la televisión digital es un multicast. En el que el decodificador usa
+  protocolos para unirse o desligarse de una conexión multicast.
+
+El broadcast es ineficiente porque perturba en la red.
+
+Los protocolos son las reglas de comunicación. Llegar a un acuerdo en estos fue
+un proceso difícil.
+
+ISO -> International Organization for Standardization
+
+El modelo OSI intenta explicar cómo funcionan las telecomunicaciones y lo hace
+  mediante un modelo de 7 capas.
+
+  7. Capa de aplicación (programas)
+  6. Presentación (ASCII, gif, png)
+  5. Sesión (MySQL)
+  4. Transporte
+  3. Red
+  2. Enlace de datos
+  1. Física
+
+En las capas 5 - 7 la información se llama data.
+
+La información viaja en segmentos, los cuales están compuestos por un header y
+un payload. Diferentes capas agregan diferentes encabezados.
+
+Data -> Segment -> Packet -> Frame -> Bits 
+5-7     4          3         2        1
+
+La PDU se refiere al nombre de la información en cada paso.
+
+Unidad de transmisión máxima (MTU) En Ethernet es 1500Bytes (Solo data)
+
+El modelo OSI no se usa, es meramente de referencia y para explicaciones
+  académicas
+  
+Se termina la sesión.
+8/30/2023 13:30:52

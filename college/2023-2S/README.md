@@ -35,10 +35,11 @@
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Enviar código para Introducción a la robótica                   | 0%         |
-| Curso Cisco                                                     | 5%         |
-| Trabajo escrito seminario 2                                     | 30%        |
-| Curso AWS                                                       | 50%        |
 | Entender las cuentas en la clase de seminario 2                 | 0%         |
+| Curso Cisco                                                     | 6%         |
+| Trabajo escrito seminario 2                                     | 30%        |
+| Curso AWS                                                       | 60%        |
+| Revisar la sesión 4 de la cátedra transformación digital        | 100%       |
+| Enviar código para Introducción a la robótica                   | 100%       |
 
 vim:nowrap:
