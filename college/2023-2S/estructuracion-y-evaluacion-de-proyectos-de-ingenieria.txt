@@ -1,3 +1,4 @@
+Gojira?
 --------------------------------------------------------------------------------
 Learn accounting in under 5 hours!
 --------------------------------------------------------------------------------
@@ -25,7 +26,7 @@ Retained earnings = revenue - expenses
 Equity = owner's equity - dividends + revenue - expenses
 
 Dividends + expenses + assets = liabilites + owner's equity + revenue
-                      Debits = Credits
+                       Debits = Credits
 
 Balance means "total at a point in time".
 
@@ -1055,4 +1056,43 @@ Equipo oficina
 |------|-------|
 | 3M   |       |
 
-Necesito revisar esto aunque no sé exactamente qué es. *
+Necesito revisar esto aunque no sé exactamente qué es. 
+
+Lo logré a través de vídeos de YouTube.
+
+--------------------------------------------------------------------------------
+Clase 8
+--------------------------------------------------------------------------------
+Thu Aug 31 18:05:09 2023
+
+Conferencia
+Perspectiva de género e interseccional en proyectos de ingenierías
+Karen Ortiz Cuchivague.
+
+¿Las empresas utilizan cada vez más agentes de IA conversacionales para servicios
+
+El genéro puede jugar un papel fundamental.
+
+al cliente y los consumidores como asistentes personales. Estas IA no están
+escritas por humanos y responden a interlocutores humanos mediante algoritmos de
+aprendizaje y guiados por humanos (Brandtzaeg & Falstad, 2017; West, Kraut & Ei
+Chew, 2019).Por qué es importante el género y la diferenciación en proyectos de ingeniería?
+
+- 1. Consideración de sesgos de género: Es importante que se esté discutiendo y
+  reconociendo el sesgo de género en la tecnología de chatbots. Esto es
+  fundamental para la igualdad de género y para evitar la perpetuación de
+  estereotipos perjudiciales.
+
+- 2. Resolución de sesgos desde la ingeniería: Sí, desde la ingeniería es
+  posible abordar los sesgos en el diseño tecnológico. Esto implica revisar y
+  ajustar los algoritmos de IA para evitar la discriminación y el refuerzo de
+  estereotipos. También es esencial diversificar los conjuntos de datos
+  utilizados para entrenar a los chatbots y asegurarse de que sean
+  representativos de la diversidad de género y culturas.
+
+- 3. Intervención de otras disciplinas: Además de la ingeniería, disciplinas
+  como la ética, la sociología, la antropología y la psicología desempeñan un
+  papel crucial en el diseño de tecnologías inclusivas. Estas disciplinas pueden
+  aportar perspectivas sobre cómo las tecnologías afectan a diferentes grupos de
+  personas y ayudar a identificar posibles sesgos o impactos negativos.
+
