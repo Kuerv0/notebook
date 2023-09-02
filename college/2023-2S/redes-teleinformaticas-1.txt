@@ -373,7 +373,121 @@ Terminal Emulation Programs
   - Tera Term
   - SecureCRT
 
-  2.2
+2.2
+9/1/2023 11:15:26
+
+User EXEC Mode: 
+Limited capabilities, but useful for basic operations. Also called "view-only"
+mode.
+
+Priviledged EXEC Mode: 
+Allows access to all commands and features. 
+
+Switch(config)# Configuration mode
+Switch(config-line)# Line configuration mode
+Switch(config-if)# Interface configuration mode
+
+important commands:
+  >enable
+  #disable
+  #configure terminal
+  #(...)exit
+  #line console 0 -> management interface console port
+  #line vty 0 15 -> remote administrator access
+  #interface vlan 1 -> vlan configuration
+  #interface fastethernet 0/1 -> fast ethernet interface
+  #(...)end -> Return to privileged EXEC mode
+  #(...)<C-z> -> Return to privileged EXEC mode
+
+2.3
+9/1/2023 16:38:49
+
+A network administrator must know the basic IOS command structure to be able to
+use the CLI for device configuration.
+
+Keyword is defined by the OS
+Argument is a value or variable
+
+To determine the keywords and arguments required for a command, refer to the
+command syntax.
+
+| Convention | Description      |
+|:----------:|:----------------:|
+| Boldface   | Keywords         |
+| Italics    | Arguments        |
+| [x]        | Optional element |
+| {x}        | Required element |
+| [x {y|z}]  | Required choice  |
+
+The Cisco IOS Command Reference is the ultimate source of information for a
+particular IOS command.
+
+To access context-sensitive help, simply enter a question mark, ?, at the CLI.
+
+If the interpreter cannot understand the command being entered, it will provide
+feedback describing what is wrong with the command.
+
+the configure command can be shortened to conf because configure is the only
+command that begins with conf.
+
+| Keystroke   | Description                                       |
+|:-----------:|:--------------------------------------------------|
+| Tab         | Partial command completion                        |
+| Backspace   | Deletes character left the the cursor             |
+| Ctrl+D      | Deletes character at the cursor                   |
+| Ctrl+K      | Deletes from the cursor to the end                |
+| Esc D       | Deletes from the cursor to the end of the word    |
+| Ctrl+U      | Deletes back to the beginning of the command line |
+| Ctrl+X      | Deletes back to the beginning of the command line |
+| Ctrl+W      | Deletes word to the left of the cursor            |
+| Ctrl+A      | Moves the cursor to the beginning of the line     |
+| Left arrow  | Moves the cursor one character to the left        |
+| Ctrl B      | Moves the cursor one character to the left        |
+| Esc B       | Moves the cursor back one word to the left        |
+| Esc F       | Moves the cursor forward one word to the right    |
+| Right arrow | Moves the cursor one character to the right       |
+| Ctrl+F      | Moves the cursor one character to the right       |
+| Ctrl+E      | Moves the cursor to the end of command line       |
+| Up arrow    | Previous command                                  |
+| Ctrl-P      | Previous command                                  |
+| Down arrow  | Next command                                      |
+| Ctrl-N      | Next command                                      |
+| Ctrl-R      | Redisplays system prompt                          |
+| Ctrl-I      | Redisplays system prompt                          |
+| Ctrl-L      | Redisplays system prompt                          |
+
+“--More--”
+  - Enter -> Displays the next line.
+  - Space -> Displays the next screen
+  - Any other key -> Ends the display string
+
+Exit out of an operation
+Ctrl - C -> Returns to privileged mode, in setup aborts
+Ctrl - Z -> Returns ot privileged mode
+Ctrl-Shift-6 -> All-purpose break sequence
+
+2.4
+
+Here are some important naming guidelines for hosts:
+  - Start with a letter
+  - Contain no spaces
+  - End with a letter or digit
+  - Use only letters, digits, and dashes
+  - Be less than 64 characters in length
+
+There are some key points to consider when choosing passwords:
+  - Use passwords that are more than eight characters in length.
+  - Use a combination of upper and lowercase letters, numbers, special
+    characters, and/or numeric sequences.
+  - Avoid using the same password for all devices.
+  - Do not use common words because they are easily guessed.
+
+To encrypt all plaintext passwords, use the service password-encryption
+
+
+--------------------------------------------------------------------------------
+Teoría: 3 Protocols and Models
+--------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 Primera clase
@@ -639,3 +753,78 @@ El modelo OSI no se usa, es meramente de referencia y para explicaciones
   
 Se termina la sesión.
 8/30/2023 13:30:52
+
+--------------------------------------------------------------------------------
+Séptima clase
+-------------------------------------------------------------------------------
+9/1/2023 12:22:49
+
+El modelo que se usa en la vida real es el modelo TCP/IP, el cual consta solo
+con 4 capas.
+
+Modelo OSI comparado con el modelo TCP/IP
+
+7. Capa de aplicación (programas)     | App         |
+6. Presentación (ASCII, gif, png)     | App         |
+5. Sesión (MySQL)                     | App         |
+4. Transporte                         | Transporte  |
+3. Red                                | Internet    |
+2. Enlace de datos                    | Acceso a la |
+1. Física                             |     red     |
+
+En este curso se habla con un enfoque LAN, si se toca el tema de cable coaxial,
+se refiere a conectar coaxial entre ordenadores.
+
+4. Medios - Capa 1 Física
+  - Cobre: Conductor barato desde las líneas telefónicas. Inició como un
+    coaxial. 
+    
+    La instalación y el costo son atractivos. Sin embargo, la señal se
+    degrada con interferiencias electromagnéticas y radiofrecuencias. 
+    
+    Baja velocidad, 10 Mbps máximo.
+
+    Desconectaba otros usuario al conectar nuevos equipos a la red.
+
+    Coaxial grueso: 10BASE5 (Thick) 500m máximo, luego un repetidor (elemento
+    activo, dado que necesita una fuente de energía para repetir la señal).
+
+    Coaxial delgado: 10BASE2 (Thin) 175m máximo, es más usuado para las
+    computadoras al interior. 
+
+    Las redes coaxiales salen del panorama por sus contras, por ello
+    evolucionamos al pan trenzado, sin embargo, sigue siendo cobre. Tiene 8
+    pines (Verde, Naranja, Café, Azul y sus tierra).
+
+    El par trenzado tiene 4 canales, por lo que el ancho de banda
+    aumenta. Dado que puede recibir y transmitir al mismo tiempo. Tiene una
+    distancia máxima de 100m.
+    10BASET -> Ethernet
+    100BASETX -> FastEthernet
+    1000BASET -> GigabitEthernet
+
+    Un conductor lineal se convierte en una antena receptora de señales. *
+
+    Los pares entre sí no se afectan, pero sí las frecuencias parásitas.
+    EMI/RFI.
+
+    El par trenzado inció en los 80 y hasta el día de hoy sigue siendo usado por
+    sus ventajas.
+
+    El par trenzado más sencillo lo llamamos UTP -> Unshielded twisted pair.
+    Par trenzado recubierto STP, FTP -> Shielded twisted pair. Full, cables
+    only.
+
+    La pantalla o shield refleja las interferencias.
+
+    Es mejor pasar a la fibra óptica que pasar a STP. *
+    
+  - Fibra
+  - Wireless
+
+A esta fecha 9/1/2023 13:16:40 Hay fibra desde el M2 hasta el M5.
+
+Entender el half-duplex, full duplex, tx, rx la clase lamentablemente se cortó
+cuando lo estaba explicando.
+
+9/1/2023 13:21:08
