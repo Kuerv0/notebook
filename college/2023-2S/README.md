@@ -35,12 +35,20 @@
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Pensar en el proyecto transversal de la catedra                 | 0%         |
-| Entender las cuentas en la clase de seminario 2                 | 50%        |
-| Curso Cisco                                                     | 6%         |
+| Curso Cisco                                                     | 12%        |
 | Trabajo escrito seminario 2                                     | 30%        |
 | Curso AWS                                                       | 60%        |
+| Entender las cuentas en la clase de seminario 2                 | 100%       |
+| Pensar en el proyecto transversal de la catedra                 | 100%       |
 | Revisar la sesión 4 de la cátedra transformación digital        | 100%       |
 | Enviar código para Introducción a la robótica                   | 100%       |
+
+## Semana 5
+
+| Tarea                                                           | Porcentaje |
+|:---------------------------------------------------------------:|:----------:|
+| Cronograma de actividades y ruta crítica                        | 0%         |
+| Curso Cisco (hasta 18%)                                         | 12%        |
+| Curso AWS                                                       | 60%        |
 
 vim:nowrap:
