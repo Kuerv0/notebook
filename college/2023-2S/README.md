@@ -47,8 +47,8 @@
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Cronograma de actividades y ruta crítica                        | 0%         |
-| Curso Cisco (hasta 18%)                                         | 12%        |
-| Curso AWS                                                       | 60%        |
+| Curso Cisco (hasta 18%)                                         | 15%        |
+| Curso AWS                                                       | 70%        |
+| Cronograma de actividades y ruta crítica                        | 100%       |
 
 vim:nowrap:

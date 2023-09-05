@@ -1272,3 +1272,23 @@ Entender el half-duplex, full duplex, tx, rx la clase lamentablemente se cortó
 cuando lo estaba explicando.
 
 9/1/2023 13:21:08
+
+--------------------------------------------------------------------------------
+Octava clase
+-------------------------------------------------------------------------------
+9/5/2023 12:49:24
+
+Fue ayer, no estuve en clase porque me tomé muy literal el horario en NetAcad,
+sin embargo, lo que se hizo fue crimpear RJ45.
+
+Hay dos estándares:
+  - T568A
+  - T568B
+  
+También hay cables straight-trough y crossover. Los straight-trough tienen la
+particularidad de tener ambas terminaciones iguales, sin embargo, los crossover
+no, se adaptan a las necesidades de transmisión y recepción de señales. Por
+suerte el auto MDIX detecta cómo mandar las señales y donde está implementado no
+hace falta crimpear el cable de una forma en particular. El estándar más usado
+es el T568B.
+  

@@ -301,6 +301,39 @@ Curso Cloud Foundation
 Modulo 7
 --------------------------------------------------------------------------------
 
+Amazon EBS -> Elastic Block Storage that EC2 instances use, it is not
+volatile. Backups are called snapshots.
+
+Amazon Simple Storage Service (Amazon S3) -> Si quieres hacer un cambio, debes
+hacer el cambio y subir nuevamente el archivo modificado
+
+Amazon Elastic File System (Amazon EFS) -> Varias máquinas virtuales pueden
+acceder al mismo tiempo.
+
+Amazon S3 Glacier -> Para archivos que no necesitan recuperación inmediata, bajo
+costo y alta durabilidad. No se accede a través del GUI de AWS.
+
+--------------------------------------------------------------------------------
+Curso Cloud Foundation
+Modulo 8
+--------------------------------------------------------------------------------
+
+Hay servicios No administrados y Administrados, en los que la persona debe o no
+debe administrar el escalado, la tolerancia a errores y la disponibilidad.
+
+Una base de datos administrada se puede hacer usando EC2.
+
+Amazon RDS es un ejemplo de bases de datos que no son administrados.
+
+Dynamo DB -> A non relational database
+
+Relacional: Tablas
+No relacional: JSONs
+
+Amazon Aurora -> Automatización
+
+Amazon Redshift -> Para warehouses de datos en analítica.
+
 --------------------------------------------------------------------------------
 Clase 2
 --------------------------------------------------------------------------------
