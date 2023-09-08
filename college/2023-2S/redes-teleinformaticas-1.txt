@@ -1291,4 +1291,65 @@ no, se adaptan a las necesidades de transmisión y recepción de señales. Por
 suerte el auto MDIX detecta cómo mandar las señales y donde está implementado no
 hace falta crimpear el cable de una forma en particular. El estándar más usado
 es el T568B.
+
+--------------------------------------------------------------------------------
+Novena clase
+-------------------------------------------------------------------------------
+
+En este capítulo se introduce la fibra. Donde se usa la luz para transmitir
+información, una de las grandes ventajas es que no tiene los problemas
+EMI/RFI. Además las distancias empiezan a ser de kilómetros. Sin embargo, es
+costosa. La instalación es más compleja y crimpear el cable también.
+
+La fibra tiene dos modalidades.
+  - Monomodo: Solo viaja una haz de luz en la fibra. El cable es generalmente
+    amarillo. Un láser emite el haz de luz, pero es muy costoso.
+    
+  - Multimodo: Viajan varios haces de luz en reflección, pero nunca se chocan.
+    El cable es generalmente naranja, usa un LED y es más barata.
+    (La más popular) [Más gruesa] {Menor distancia que la Monomodo}
+
+La fibra tiene varios tipos de conectores.
+
+La fibra no es negociable. A diferencia de los cables de cobre, donde puedes
+conectar a interfaces de velocidad diferente y trabajará a la velocidad más
+limitante.
+
+La fibra trabaja Full Duplex.
+
+Cualquier impureza en la fibra causaría que deje de funcionar.
+
+El siguiente medio es el medio no guiado o medios inalámbricos.
+
+Inició con la radio, pero era una transmisión unidireccional. Luego cada empresa
+nuevamente inició a solucionar el problema de transmisión por su lado hasta que
+llegó la estandarización de Alliance WiFi y IEE 802.11 LAN o WLAN en el año
+1997.
+
+En ese entonces la frecuencia usada era 2.4GHz con una banda ancha de 2Mbps, era
+poco atractivo debido a su velocidad, por lo que la IEEE empezó a anexar.
+1 - Legacy 1997 2.4Ghz 2Mbps.
   
+2 - Anexo a 1999 -> 802.11a: 5Ghz 54Mbps. Le custa superar obstáculos, pero va a
+    más velocidad.
+    
+2 - Anexo b 1999 -> 802.11b: 2.4Ghz 11Mbps. Supera obstáculos con más
+    facilidad, pero es más lenta.
+
+3 - Anexo g 2003 -> 2.4Ghz 54Mbps. Esta tomó lo mejor de las anteriores.
+
+4 - Anexo n 2009 -> 2.4Ghz/5Ghz. 600Mbps. Debe tener 4 antenas, cada antena de
+    aproximadamente 150.
+
+5 - Anexo ac 2013 -> 5Ghz. 1.3Gbps. Se hizo tan popular el 2.4Ghz que se saturó.
+
+6 - Anexo ax 2020 -> 2.4Ghz/5Ghz. 9Gbps. El famoso Wi-Fi 6.
+
+Las frecuencias pertenecen al estado. En Colombia es la Agencia Nacional del
+Espectro, estos se encargan de licenciar las frecuencias y cobrar a las
+entidades que las usan.
+
+Las redes 3G, 4G, 5G, emisoras de radio, canales de televisión usan estas
+frecuencias y deben pagar por su uso. La excepción es 2.4Ghz y 5Ghz, dado que no
+son licenciadas.
+
