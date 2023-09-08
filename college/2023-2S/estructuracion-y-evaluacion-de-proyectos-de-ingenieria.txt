@@ -1102,3 +1102,63 @@ Clase 9
 Tue Sep  5 17:54:22 2023
 
 Iniciamos con un ejercicio para hacer en clase.
+
+--------------------------------------------------------------------------------
+Clase 10
+--------------------------------------------------------------------------------
+Thu Sep  7 17:56:48 2023
+Esperando...
+
+Gastos:
+  - Administración ventas como marketing
+  - Gasto venta
+
+Costos => Nivel de producción
+
+Estados de información financiera
+
+Balance General o situación financiera:
+  - Activos (Lo que se tiene)
+    - Corrientes (Líquidos, inferiores a un año o banco, efectivo, cuenta por
+      cobrar, inventarios, cdt < 1 año) [caja es efectivo] 
+    
+    - No corrientes (Aquellos que son fijos y tangibles. Maquinaria, terreno,
+      inversiones a largo plazo, cdt >= 1)
+    
+  - Pasivos (Lo que se debe)
+    - Corrientes (Menores a un año, proveedores)
+
+    - no corrientes (Mayor a un año => Obligaciones financieras => préstamos con
+      entidades financieras)
+  
+  - Patrimonio: Capital social, Reservas legal, Utilidad operacaionl.
+
+Ejemplo:
+La empresa X presenta un gasto de nómina igual a 20M. Esta la paga de contado.
+
+
+  
+    Estado de         Balance    
+    resultados        general    
+    
+| Gasto nómina | |     Caja     |
+| Debe | Haber | | Debe | Haber |
+|------|-------| |------|-------|
+| 20M  |       | | 20M  |       |
+
+En las cuentas T el debe aumenta, mientras que el haber disminuye.
+
+Activo
+  + Compra vehículos
+  + Inventarios
+  + Edificio
+  - Caja
+  - Banco
+  - Vende maquinaría, vehículos
+
+Pasivos
+  + Deudas 
+  - Pagos deudas
+
+Patrimonio
+  - Siempre 
