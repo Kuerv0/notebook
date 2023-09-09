@@ -926,7 +926,7 @@ MAC addresses are physically embedded on the Ethernet NIC.
   - Source MAC address - This is the data link address, or the Ethernet MAC
     address, of the device that sends the data link frame with the encapsulated
     IP packet. The MAC address of the Ethernet NIC of PC1 is AA-AA-AA-AA-AA-AA,
-    written in hexadecimal notation.
+    written in hexadecimal notation. (Media Access Control)
     
   - Destination MAC address - When the receiving device is on the same network
     as the sending device, this is the data link address of the receiving
@@ -1353,3 +1353,51 @@ Las redes 3G, 4G, 5G, emisoras de radio, canales de televisión usan estas
 frecuencias y deben pagar por su uso. La excepción es 2.4Ghz y 5Ghz, dado que no
 son licenciadas.
 
+--------------------------------------------------------------------------------
+Décima clase
+-------------------------------------------------------------------------------
+9/8/2023 12:16:38
+
+Access point -> Es una especie de HUB
+
+Cisco vendía la WPC300N, esta trae GUI. 
+
+Asociar W en PT a b/g, es decir 2.4GHz.
+
+SSID -> Nombre de la red.
+Auth -> Contraseña (seguridad)
+
+802.3 -> Ethernet standard.
+
+Capa 2, Data Link, Enlace de datos. => Control de acceso, tiene control de
+errores.
+
+Capa 2 Lan protocolos -> Ethernet, WLAN, Token Ring, Fool.
+Capa 2 WAN protocolos -> PPP, MPLS, HDLC, FrameRelay, ATM.
+
+Topologías LAN
+
+Bus -> Dejo de usarse porque es poco atractivo desconectar otros usuarios al
+escalar.
+
+Estrella -> Se queda sin conexión si el centro falla.
+
+Anillo -> Dejó de usarse porque un fallo deja la topología sin internet.
+
+Topologías WAN
+
+P2P -> Conexión entre dos WAN
+Hub & Spoke | Malla parcial -> Conexión entre varias WAN.
+Mesh | Malla completa -> Conexión con todos.
+
+Formas de hablar en redes.
+
+Determinística | por turnos:
+  - Token: Recuerda token ring, tecnología de IBM, topología en anillo y
+    necesitaba dos tarjetas.
+    
+  - FDDI: Usaba fibra y necesita dos tarjetas de fibra.
+
+No determinístico | Contienda
+  - Ethernet: Escucho, si el medio está ocupado, espero, si el medio está libre,
+    envío.
