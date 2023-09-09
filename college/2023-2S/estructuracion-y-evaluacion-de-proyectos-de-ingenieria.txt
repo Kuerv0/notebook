@@ -133,6 +133,153 @@ T-Account:
 Visual representation of an account. It looks like a T.
 
 --------------------------------------------------------------------------------
+Juego financiero
+--------------------------------------------------------------------------------
+Sat Sep  9 13:23:28 2023
+
+Habilidades
+  - Conocimientos financieros
+  - Perspicacia Empresarial
+  - Visualización del Negocio
+
+Roles
+  - CEO: Reporta los resultados a Wall Street
+  - 2 CFO: Prepara los Estados Financieros del equipo.
+  - 2 CMO: Fija la estretegia de mercado.
+  - 2 COO: Mueve los objetos en el tablero.
+
+Nombre del equipo: Royal S.A.S
+Equipo 6
+
+Los costos están asocidados a la produccioń, mientras que los gastos no.
+
+Negro -> Patrimonio
+Rojo -> Deudas
+Plateado -> Capital
+
+Estado financiero
+Mes 1
+
+Efectivo: 80
+Materia prima: 0
+Inventario en proceso: 0
+Maquinaria: 0
+Terreno y locales: 0
+
+Inversión inical: 80
+Ganancia o pérdidas: 0
+
+Estado financiero
+Mes 2
+
+Efectivo: 60
+Materia prima: 0
+Inventario en proceso: 0
+Maquinaria: 0
+Terreno y locales: 20
+
+Inversión inical: 80
+Ganancia o pérdidas: 0
+
+Mes 3
+
+Efectivo: 50
+Materia prima: 0
+Inventario en proceso: 0
+Maquinaria: 10
+Terreno y locales: 20
+
+Inversión inical: 80
+Ganancia o pérdidas: 0
+
+Mes 4
+
+Efectivo: 38
+Materia prima: 12
+Inventario en proceso: 0
+Maquinaria: 10
+Terreno y locales: 20
+
+Inversión inical: 80
+Ganancia o pérdidas: 0
+
+Mes 5
+
+Efectivo: 20
+Materia prima: 0
+Inventario en proceso: 24
+Maquinaria: 9
+Terreno y locales: 20
+
+Inversión inical: 80
+Ganancia o pérdidas: 7
+
+Estado de resultados: 0
+Ventas totales: 0
+Menos costo de mercancía vendida: 0
+Utilidad directa: 1
+Menos gastos fijos de fábrica: -1
+Utilidad bruta: -5
+Menos gastos generales: -5
+EBITA: -6
+menos depreciación: 1
+Utilidad Operacional: -7
+Menos intereses: 0
+Utilidad gravable: -7
+Menos impuestos: 0
+Utilidad Neta: -7
+
+Balance
+
+Activos corrientes
+Efectivo: 20
+Partidas por Cobrar: 0
+Inventario de producto terminado: 0
+Producto en proceso: 24
+Materia prima: 0
+Total activos corrientes: 44
+
+Activos fijos
+Maquinaria: 9
+Terreno y Edificios: 20
+Total activos fijos: 29
+Activos totales: 73
+
+Pasivos
+Proveedores: 0
+Préstramos: 0
+impuestos: 0
+Total pasivos: 0
+
+Patrimonio
+Ganancias acumuladas: 73
+Patrimonio: 80
+Total Pasivos y Patrimonio
+
+Cálculo de Patrimonio
+Efectivo: 6
+Partidas por cobrar: 34
+Producto terminado: 6
+Inventario en proceso: 0
+Materia prima: 12
+Maquinaria: 9
+Terreno y locales: 20
+Activos totales: 87
+
+Cálculo de pasivos
+Proveedores: 
+Préstamos: 
+Otros: 
+Pasivos totales:
+
+Cálculo de patrimonio
+Activos totales
+-Pasivos totales
+= Patriomonio
+
+Endeudamiento:
+Patrimonio - pasivos = capacidad de endeudamiento
+--------------------------------------------------------------------------------
 Clase 1
 --------------------------------------------------------------------------------
 Tue Aug  8 18:02:09 2023
