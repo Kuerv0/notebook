@@ -1178,7 +1178,31 @@ In general, a WLAN requires the following network devices:
   - Wireless NIC adapters - These provide wireless communication capability to
     network hosts.
 
-5
+--------------------------------------------------------------------------------
+Teoría: 5 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Teoría: 6 Purpose of the data link layer
+--------------------------------------------------------------------------------
+
+The data link layer does the following:
+  - Enables upper layers to access the media. The upper layer protocol is
+    completely unaware of the type of media that is used to forward the data.
+
+  - Accepts data, usually Layer 3 packets (i.e., IPv4 or IPv6), and encapsulates
+    them into Layer 2 frames.
+
+  - Controls how data is placed and received on the media.
+
+  - Exchanges frames between endpoints over the network media.
+
+  - Receives encapsulated data, usually Layer 3 packets, and directs them to the
+    proper upper-layer protocol.
+
+  - Performs error detection and rejects any corrupt frame.
+
+
 
 --------------------------------------------------------------------------------
 Primera clase
