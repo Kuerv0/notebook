@@ -1985,3 +1985,17 @@ Determinística | por turnos:
 No determinístico | Contienda
   - Ethernet: Escucho, si el medio está ocupado, espero, si el medio está libre,
     envío.
+    
+ 
+--------------------------------------------------------------------------------
+Décima primera clase
+--------------------------------------------------------------------------------
+Mon Sep 11 09:58:53 2023
+
+El sistema decimal nació de la anatomía del ser humano. (sin fuente)
+El binario podía ser usado en Morse. Se representa 2# o binario_{2}
+El hexadecimal nació por la computación. Se representa 0x.
+
+ipconfig -> 
+ipconfig/all ->
+nslookup address ->
