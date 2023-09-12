@@ -47,11 +47,20 @@
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Curso Cisco (hasta 18%)                                         | 15%        |
+| Curso Cisco (hasta 18%)                                         | 18%        |
 | Curso AWS                                                       | 100%       |
 | Cronograma de actividades y ruta crítica                        | 100%       |
 | Revisar grabación servicios en la nube                          | 0%         |
 | Revisar la sesión 5 de la cátedra transformación digital        | 100%       |
-| Realizar la primera evaluación de Cisco                         | 0%         |
+| Realizar la primera evaluación de Cisco                         | 100%       |
+| Realizar los laboratiors en el curso de Cisco                   | 100%       |
+
+## Semana 6
+
+| Tarea                                                           | Porcentaje |
+|:---------------------------------------------------------------:|:----------:|
+| Curso Cisco (hasta 41%)                                         | 35%        |
+| Curso Arquitectura AWS                                          | 0%         |
+| Revisar grabación servicios en la nube                          | 0%         |
 
 vim:nowrap:
