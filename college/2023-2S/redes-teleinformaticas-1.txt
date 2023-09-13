@@ -1999,3 +1999,40 @@ El hexadecimal nació por la computación. Se representa 0x.
 ipconfig -> 
 ipconfig/all ->
 nslookup address ->
+
+--------------------------------------------------------------------------------
+Décima segunda clase
+--------------------------------------------------------------------------------
+WebEx
+9/13/2023 12:06:40
+
+Ethernet es de los más populares. Nación en Hawaii.
+
+LLC y MAC son las subdivisiones de la capa 2.
+Si cambia la capa física, cambia el MAC, si cambia la capa 3, la que cambia es
+la LLC.
+
+Norma MAC: 802.3
+Norma LLC: 802.2
+
+OUI -> Primeros 24 bits de la MAC, puede ser constante por proveedor.
+
+Todos F en la MAC implica broadcast.
+
+Los frames tienen:
+  - Header
+    - DST MAC
+    - SRC MAC
+    - Type/L => MTU: 0x05dc, tipo => 0x800, 0x0806, 0x0842
+  - payload
+    - Mayor a 46 y menor a 1500
+  - Trailer
+    FCS => Frame Checksum
+    CRC-4 => Suma polinomica
+
+Recuerda que antes hay un preambulo que prepara al dispositivo para escuchar.
+
+En entornos más seguros se usa md5, SHA1, lo cual tiene sumas únicas.
+
+El HUB es un loro que solo repite.
+el Switch entiende las tramas y toma decisiones.
