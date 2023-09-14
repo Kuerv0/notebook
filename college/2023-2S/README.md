@@ -62,5 +62,8 @@
 | Curso Cisco (hasta 41%)                                         | 35%        |
 | Curso Arquitectura AWS                                          | 0%         |
 | Revisar grabación servicios en la nube                          | 0%         |
+| Laboratorio de Google para conseguir algo                       | 0%         |
+| Ver las clases grabadas de Transformación digital               | 0%         |
+| Entender los temas en seminario 2                               | 0%         |
 
 vim:nowrap:
