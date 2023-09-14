@@ -1309,3 +1309,78 @@ Pasivos
 
 Patrimonio
   - Siempre 
+
+--------------------------------------------------------------------------------
+Clase 11
+--------------------------------------------------------------------------------
+Tue Sep 12 17:59:47 2023
+Esperando la clase...
+Vamos a resolver el ejericio que no se resolvió la clase pasada.
+
+Interés -> Una especie de compensación.
+Tasa de interés -> Términos porcentuales.
+  - Capitalización: Simple y compuesta.
+  - Frecuencia de capitalización: Tasas nominales y efectivas.
+  - Momento del pago de intereses: tasas vencidas y anticipadas.
+
+Tasa de interés simple
+No se suman al capital para generar nuevos intereses.
+
+$ F = P(1 + ni) $
+
+$ P = \frac{F}{1 + ni} $
+
+P: valor presente
+i: porcentaje
+n: años
+
+Tasa de interés compuesto
+El valor se acumula
+
+$ F = P(1 + i)^n $
+
+$ P = \frac{F}{(1 + i)^n} $
+
+Períodos de capitalización
+
+n = 1
+n = 2
+n = 3
+n = 6
+n = 12
+n = 12
+n = 360
+
+Research tasa de interés nominal y efectiva *
+
+Cuando se hable de dinero, trabajar con 4 décimales. *
+
+Tasa nominal => Interés simple => No hay capitalización de intereses
+Tasa efectiva => Sí C.I.
+
+Ejercicio
+
+Comics Ltda
+Libro diario
+31 de diciembre de 2023.
+
+1) Los pagos pagan en efectivo 100M
+
+Efectivo, debe: 100M
+Capital social, haber: 100M
+
+2) Se abre una cuenta en el banco con el dinero efectivo
+
+Banco, debe: 100M
+Caja, haber: 100M
+
+3) Se compra vehículo por 35M, que financia con un préstamo que le otroga el
+banco a una tasa del 25% durante 5 años,
+
+Vehículo, debe: 35M
+Obligación financiera, haber: 35M
+
+Pago deuda, debe: 12.702,308
+Pago deuda, haber: 12.702,308
+
+
