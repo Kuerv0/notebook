@@ -1364,6 +1364,32 @@ Comics Ltda
 Libro diario
 31 de diciembre de 2023.
 
+--------------------------------------------------------------------------------
+Clase 12
+--------------------------------------------------------------------------------
+Thu Sep 14 18:11:42 2023
+
+Ejemplo:
+Juan realiza un préstamo igual a 1M, el préstamo lo paga de manera mensual a un
+período de 5 meses. La tasa de interés que el banco le ofreció es del 16%
+nominal anual con la capitalización bimestral. Calcular la tabla de
+amortización.
+
+Tasa efectiva: 17.11%
+Equivalente mensual: 1.32%
+
+funciones Excel
+  int.efectivo(tasa_nominal, num_per_año)
+  pago(tasa,nper,va,[vf],[tipo])
+
+Las ceantías y la prima son el mismo valor
+La prima incluye el subsidio de transporte
+
+La depreciación => Desgaste
+
+Depreciación lineal = \frac{valor comercial - valor de salvamento}{vida util}
+Depreciación lineal = \frac{Valor comercial}{vida útil}
+
 1) Los pagos pagan en efectivo 100M
 
 Efectivo, debe: 100M
@@ -1383,4 +1409,37 @@ Obligación financiera, haber: 35M
 Pago deuda, debe: 12.702,308
 Pago deuda, haber: 12.702,308
 
+4) Se compra mercancía por 40M, paga por bancos.
 
+5) Pagos nómina pagados en su totalidad:
+  2 Personal de venta 1.16M
+  1 Personal de administración: salario igual a 1.5M cada uno, pagadero mensual.
+  1 gerentes con un salario igual a 3M cada uno, pagadero mensual.
+
+Pago nómina, haber: 119M...
+Bancos, deber: 119.160.405
+
+6) La empresa vende mercanciía a contado por 110M. La venta fue consignada en
+bancos.
+
+Bancos, debe: 110M
+Venta mercacía vendida: haber, 110M
+
+7) Pago de servicios públicos anuales por 0.750M al contado.
+
+Pago de SP, haber: 750K
+Bancos: debe, 750K
+
+8) Pago de arrendamiento anual por 1M al contado.
+
+Pago arrendamiento, haber: 1M
+Bancos, fdeber: 1M
+
+9)
+Banco
+Caja
+
+10)
+
+Gasto de depreciación, debe: 7M
+Depreciación acumulada, deber: 7M
