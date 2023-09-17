@@ -692,4 +692,29 @@ For mismatched tabstop values:
   :set tabstop=3
   :retab 8
   
-50%
+:set guioptions+=b -> horizontal scrollbar at the bottom of the window.
+
+commands to scroll the text.
+	zh		scroll right
+	4zh		scroll four characters right
+	zH		scroll half a window width right
+	ze		scroll right to put the cursor at the end
+	zl		scroll left
+	4zl		scroll four characters left
+	zL		scroll half a window width left
+	zs		scroll left to put the cursor at the start
+  
+commands for wrap off.
+  g0    to first visible character in this line
+  g^    to first non-blank visible character in this line
+  gm    to middle of screen line
+  gM    to middle of the text in this line
+  g$    to last visible character in this line
+
+linebreak -> breaks lines at an appropriate place when displaying the line.
+
+:g/./,/^$/join -> Turn paragrah into single line.
+
+:g/\S/,/^\s*$/join -> For blank lines.
+
+77%
