@@ -664,4 +664,32 @@ usr_25
 
 gq -> Gets paragraph into shape
 
-14%
+Note: there is a way to do automatic formatting for specific types of text
+layouts, see auto-format.
+
+"gq}" formats from the cursor to the end of the current paragraph.
+
+gqap -> Paragraph operator.
+
+Vim is able to format more than just plain text.  See |fo-table| for how to
+change this.  See the 'joinspaces' option to change the number of spaces used
+after a full stop.
+   It is possible to use an external program for formatting.  This is useful
+if your text can't be properly formatted with Vim's builtin command.  See the
+'formatprg' option.
+
+:{range}center [width] -> Center a range of lines.
+:{range}right [width] -> Justifies the text.
+:{range}left [margin] -> Moves text to the left.
+
+:packadd justify -> enables _j operator
+
+The 'autoindent' option inserts indents automatically
+
+If you always want spaces and no tab characters, set the 'expandtab'
+
+For mismatched tabstop values:
+  :set tabstop=3
+  :retab 8
+  
+50%
