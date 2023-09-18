@@ -717,4 +717,55 @@ linebreak -> breaks lines at an appropriate place when displaying the line.
 
 :g/\S/,/^\s*$/join -> For blank lines.
 
-77%
+:set virtualedit=all -> Edit tables, no need for spaces
+
+B -> moves back to the start of a white space separated word.
+
+gr" -> makes sure the new character takes the right amount of screen space.
+
+================================================================================
+usr_26
+================================================================================
+
+gv -> Selects previous visual selected area.
+
+CTRL-A -> Increase number
+
+CTRL-X -> Decrease number
+
+CTRL-A and CTRL-X depends on the value of |'nrformats'|.
+
+The ":argdo" command takes an argument that is another command.  That command
+will be executed on all files in the argument list.
+
+There is also the ":windo" command, which executes its argument in all
+windows. 
+
+I didn't quite catch the this part:
+  26.4	Using Vim from a shell script.
+  
+================================================================================
+usr_27
+================================================================================
+
+:set ignorecase -> Ignore case in searches.
+:set noignorecase -> Disable ignore case.
+
+/c -> ignore case
+/C -> match case
+
+:set nowrapscan -> Disable wrap in searches.
+
+/default/2 -> Offset 2 lines when matching default.
+
+/const/en -> The "e" offset indicates an offset from the end of the match.
+
+/const/b+2 -> "b", the cursor moves to the beginning of the pattern.
+
+//offset -> To repeat searching for the previously used search pattern.
+
+// -> To repeat removing previously used offset.
+
+?const?e-2 -> The "?" command uses offsets in the same way.
+
+42%
