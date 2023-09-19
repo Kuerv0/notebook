@@ -59,11 +59,24 @@
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Curso Cisco (hasta 41%)                                         | 35%        |
+| Encuesta docente                                                | 0%         |
 | Curso Arquitectura AWS                                          | 0%         |
-| Revisar grabación servicios en la nube                          | 0%         |
-| Laboratorio de Google para conseguir algo                       | 0%         |
-| Ver las clases grabadas de Transformación digital               | 0%         |
 | Entender los temas en seminario 2                               | 0%         |
+| Curso Cisco (hasta 35%)                                         | 35%        |
+| Ver las clases grabadas de Transformación digital               | 100%       |
+| Laboratorio de Google para créditos gratis                      | 100%       |
+| Revisar grabación servicios en la nube                          | 100%       |
+
+## Semana Universitaria
+
+| Tarea                                                           | Porcentaje |
+|:---------------------------------------------------------------:|:----------:|
+| Encuesta docente                                                | 0%         |
+| Curso Arquitectura AWS                                          | 0%         |
+| Entender los temas en seminario 2                               | 0%         |
+| Curso Cisco (hasta 35%)                                         | 35%        |
+| Ver las clases grabadas de Transformación digital               | 100%       |
+| Laboratorio de Google para créditos gratis                      | 100%       |
+| Revisar grabación servicios en la nube                          | 100%       |
 
 vim:nowrap:

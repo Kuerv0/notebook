@@ -3,6 +3,7 @@ Commands
 ================================================================================
 
 pu=strftime('%c') -> Current time
+:set virtualedit=all -> Edit tables, no need for spaces
 
 ================================================================================
 usr_01
@@ -717,7 +718,7 @@ linebreak -> breaks lines at an appropriate place when displaying the line.
 
 :g/\S/,/^\s*$/join -> For blank lines.
 
-:set virtualedit=all -> Edit tables, no need for spaces
+:set virtualedit=all -> Edit tables, no need for spaces *
 
 B -> moves back to the start of a white space separated word.
 
@@ -768,4 +769,82 @@ usr_27
 
 ?const?e-2 -> The "?" command uses offsets in the same way.
 
-42%
+27.4 Matching multiple times *
+
+/a* -> * item specifies that the item before it can match 0 or more times.
+/\(ab\)* -> matches ab string o or more times.
+/a+ -> + item specifies that the item before it can match 1 or more times.
+\= -> Optional. folders\= => folder or folders.
+/ab\{3,5} -> Matches b followed by a 3 - 5 times.
+
+Examples:
+\{,4}		0, 1, 2, 3 or 4
+\{3,}		3, 4, 5, etc.
+\{0,1}		0 or 1, same as \=
+\{0,}		0 or more, same as *
+\{1,}		1 or more, same as \+
+\{3}		3
+
+\{-n,m} -> Match as minimal as possible.
+
+\| -> or operator. /foo\|bar
+\& -> Concat
+
+[] -> construct to match a character.
+[a-z], [0123456789abcdef], [0-3].
+To match the "-" character itself make it the first or last one in the range.
+
+Special characters:
+\e	<Esc>
+\t	<Tab>
+\r	<CR>
+\b	<BS>
+
+/"[^"]*" -> The [] item then matches everything but the characters included.
+
+Shortcuts:
+item matches                equivalent  
+\a alphabetic               [a-zA-Z]
+\d digit                    [0-9]
+\D non-digit                [^0-9]
+\x hex digit                [0-9a-fA-F]
+\X non-hex digit            [^0-9a-fA-F]
+\s white space              [  ]          (<Tab> and <Space>)
+\S non-white characters     [^  ]         (not <Tab> and <Space>)
+\l lowercase alpha          [a-z]
+\L non-lowercase alpha      [^a-z]
+\u uppercase alpha          [A-Z]
+\U non-uppercase alpha      [^A-Z]
+
+See |/\s| for the whole list of these ranges.
+
+The character classes are:
+
+item          matches                              option  
+\i            identifier characters                'isident'
+\I            like \i, excluding digits
+\k            keyword characters                   'iskeyword'
+\K            like \k, excluding digits
+\p            printable characters                 'isprint'
+\P            like \p, excluding digits
+\f            file name characters                 'isfname'
+\F            like \f, excluding digits
+
+\n -> match line break
+\_s -> match line break or space
+\_s/+ -> match any amount of white space
+
+"\_a" matches an alphabetic character or a line break.  The other character
+classes and ranges can be modified in the same way by inserting a "_".
+
+Many other items can be made to match a line break by prepending "\_".  For
+example: "\_." matches any character or a line break.
+
+Another example is "\_[]", a character range that includes a line break  
+
+"\<" and "\>" are used to find only whole words.
+
+================================================================================
+usr_28
+================================================================================
+
