@@ -848,3 +848,61 @@ Another example is "\_[]", a character range that includes a line break
 usr_28
 ================================================================================
 
+zf -> fold motion
+zo -> Open fold
+zc -> Close fold
+
+zm -> Fold all
+zr -> Unfold all
+
+zM -> Fold even nested
+zR -> Unfold even nested
+
+zn -> Disable folding
+zN -> Enables folding
+zi -> Toggles between the two
+
+zO -> To open all folds at the cursor line.
+zC -> Close all folds at the cursor line.
+zd -> Delete a fold at the cursor line.
+zD -> Delete all folds at the cursor line.
+
+:set foldopen=all -> line under the cursor always open.
+
+:mkview -> Save views including folds.
+:loadview -> Restore view.
+
+:set foldmethod=indent -> Set fold by indent.
+
+:set foldmethod=marker -> Uses markers, but modifies the text.
+
+More about folding by syntax in the reference manual: fold-syntax
+
+:set foldexpr -> Folding using expressions.
+
+More about folding by expression in the reference manual: fold-expr
+
+Useful when you set the diff option in the same window.  The -d option does this
+for you.  Example:  
+
+:setlocal diff foldmethod=diff scrollbind nowrap foldlevel=1
+
+================================================================================
+usr_29
+================================================================================
+
+ctags *.c -> Generate tags file
+
+:tags -> shows the list of tags that you traversed through
+
+:tag -> Goes to the tag on top of the list.
+
+:stag tagname -> Open tag on a new Window.
+
+I need to finish reading this chapter. I'm not that interested in this topic
+just yet.
+
+================================================================================
+usr_30
+================================================================================
+
