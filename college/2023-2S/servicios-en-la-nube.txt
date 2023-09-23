@@ -74,6 +74,84 @@ CloudWatch -> Alarms and notifications.
 Turning on MFA, root account -> Security.
 Amazon Braket -> Cloud Computing.
 
+Six Advantages to Cloud
+  1 Trade capital expense for variable expense: Pay on-demand.
+  2 Benefit from massive economies of scale: Sharing the cost.
+  3 Stop guessing capacity: Scale up and down.
+  4 Increase speed and agility: Launch resources within a few clicks.
+  5 Stop spending money on running and maintaining data centers: Customer focus
+  6 Go global in minutes: Deploy around the world with a few clicks.
+
+Regions are geographically distinct locations consisting of one or more
+Availability Zones
+
+Each region generally has three Availability Zones
+
+New services almost always become available first in us-east
+
+An Availability Zone is physica location made up of one or more datacenter.
+
+A datacenter is a secured building that contains hundreds of thousands of
+computers.
+
+A Subnet is associated with an Availability Zone.
+
+You never choose the AZ when launching resources. You choose the Subnet which is
+associated to the AZ.
+
+An AWS Region would be a Fault Level.
+
+A Availability Zone would be a Fault Domain.
+
+Edge locations can act as on and off ramps to the AWS Global Network.
+
+Edge locations are used by accelerators as an on-ramp to quickly reach AWS
+resources in other regions by traversing the fast AWS Global Network.
+
+Amazon CloudFront uses Edge Locations as an off-ramp, to provide at the Edge
+storage and computer near the end user.
+
+VPC endpoints ensuring your resources stay within the AWS Network and do not
+traverse over the public Internet.
+
+Points of presence PoP is an intermediate location between an AWS Region and the
+end user, and this location could be a datacenter or collection of hardware.
+
+PoP resources are: Edge Locations, Regional Edge Caches.
+
+Edge locations are datacenters that hold cached (copy) on the most popular files
+(eg. web pages, images and videos) so that the delivery of distance to the end
+users are reduced.
+
+Regional Edge Locations are datacenters that hold much larger caches of
+less-popular files to reduce a full round trip and also to reduce the cost of
+transfer fees.
+
+Amazon CloudFront is a Content Delivery Network (CDN) service that:
+You point your website to CloudFront so that it will route requests to nearest
+Edge Location cache.
+
+Amazon S3 Transfer Acceleration allows you to generate a special URL that can be
+used by end users to uplaod files to a nearby Edge Location. Once a file is
+uplaoded to an Edge Location, it can move much faster withint the AWS Network to
+reach S3.
+
+AWS Global Accelerator cna find the optimal path from the end user to your
+web-servers. Global Accelerator are deployed within Edge Locations so you send
+usser traffic to an Edge Locaiton instead of directly to your web-application.
+
+AWS Direct Connect is a private/dedicated connection between your datacenter,
+office, co-location and AWS.
+Lower Bandwidth: 50MBps-500MBps
+Higher Bandwidht: 1GBps or 10GBps
+
+Direct Connect Locations are trusted partnered datacenters that you can
+establish high sped, low-latency connection from your on-premise to AWS.
+
+Local Zones are datacenters located very close to a densely populated area to
+provide single-digit millisecond low latency performance (eg. 7ms) for that
+area.
+
 --------------------------------------------------------------------------------
 Curso Cloud Foundation
 Modulo 2
