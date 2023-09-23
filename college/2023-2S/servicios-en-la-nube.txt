@@ -11,7 +11,7 @@ server or a personal computer.
 Cloud providers:
   - Own the servers
   - Hires the IT people
-  - Pays or rent teh real-state
+  - Pays or rent the real-state
   - You are responsible for your configuring cloud services and code, someone
     else takes care of the rest.
 
@@ -45,7 +45,7 @@ Elastic Compute Cloud (EC2) was launched in August of 2006.
 In November 2010, it was reported that all of Amazon.com's retail sites had
 migrated to AWS. 
 
-AWS began offering a certication program for computer engineers, on April,
+AWS began offering a certification program for computer engineers, on April,
 2013.
 
 A Cloud Service Provider (CSP) is a company which 
@@ -89,7 +89,7 @@ Each region generally has three Availability Zones
 
 New services almost always become available first in us-east
 
-An Availability Zone is physica location made up of one or more datacenter.
+An Availability Zone is physical location made up of one or more datacenter.
 
 A datacenter is a secured building that contains hundreds of thousands of
 computers.
@@ -132,11 +132,11 @@ You point your website to CloudFront so that it will route requests to nearest
 Edge Location cache.
 
 Amazon S3 Transfer Acceleration allows you to generate a special URL that can be
-used by end users to uplaod files to a nearby Edge Location. Once a file is
-uplaoded to an Edge Location, it can move much faster withint the AWS Network to
+used by end users to upload files to a nearby Edge Location. Once a file is
+uplaoded to an Edge Location, it can move much faster within the AWS Network to
 reach S3.
 
-AWS Global Accelerator cna find the optimal path from the end user to your
+AWS Global Accelerator can find the optimal path from the end user to your
 web-servers. Global Accelerator are deployed within Edge Locations so you send
 usser traffic to an Edge Locaiton instead of directly to your web-application.
 
