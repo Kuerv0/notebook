@@ -152,6 +152,81 @@ Local Zones are datacenters located very close to a densely populated area to
 provide single-digit millisecond low latency performance (eg. 7ms) for that
 area.
 
+The purpose of Local Zone is the support highly-demanding applications sensitive
+to latencies:
+  - Media & Entertainment
+  - Electronic Design Automation
+  - Ad-Tech
+  - Machine learning
+
+AWS Wavelength Zones allows for edge-computing on 5G Networks.
+
+AWS Outposts is a physical rack of servers that you can put in your data center
+to store data.
+
+AWS Config is a Policy as Code Service. Create rules to continuous check AWS.
+
+IAM Policies can be written explicitly deny access to specific AWS Regions.
+Service Control Policy are permission applied organization wide.
+
+Public sector:
+  - Military
+  - Law enforcement
+  - Infrastructure
+  - Public Transit
+  - Public Education
+  - Health Care
+  - Government itself
+  
+AWS is working having their AWS Global Infrastructure powered by 100% renewable
+energy by 2025.
+
+AWS Ground Station: Lets you control satellite communications:
+  - Weather forecasting 
+  - Surface Imaging
+  - Communications
+  - Video broadcasts
+
+AWS Outposts is a rack of servers running AWS infraestructure on your physical
+location.
+
+Running your workloads across multiple Availabilty Zones ensures high
+availability.
+
+Elastic Load Balancer: allows to evenly distribute traffic to multiople servers
+in one or more datacenter. If a datacenter becomes unavailable the balancer will
+route the traffic to only available datacenters with servers.
+
+Scaling up: Biggers server.
+Scaling out: More servers of the same size.
+
+Elasticity is automatically increase or decrease your capacity based on the
+current deamnd of traffic.
+
+Auto Scaling Groups (ASG) Featurethat will automatically add or remove servers
+based on scaling rules you define on metrics.
+
+High fault Tolerant: Ability for your service to ensure there is no single point
+of failure. Preventing the chane of failure.
+
+Fail-overs: Shift traffic to redundant system in case the primary fails.
+
+RDS Multi-AZ: Duplicate database in case the primary fails.
+
+High durability: Ability to recover from a disaster and to prevent the loss of
+data.
+
+Recovery Time Objective: the maximum acceptable delay between the interruption
+of service and restoration of service.
+
+CloudEndure Disaster Recovery: Continuously replicates your machines.
+
+Every AWS Account has a unique Account ID. Is composed of 12 digits. Is used
+when:
+  - logging in with a non'root user account.
+  - Cross-account roles
+  - Support cases
+
 --------------------------------------------------------------------------------
 Curso Cloud Foundation
 Modulo 2
