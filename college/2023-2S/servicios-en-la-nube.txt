@@ -227,6 +227,72 @@ when:
   - Cross-account roles
   - Support cases
 
+Amazon Resource Names (ARNs) uniquely identify AWS resources.
+
+A (CLI) processes commands to a computer program in the form of lines of text.
+
+A terminal is a text only interface (input/output environment)
+
+A console is a physical computer to physically input information into a
+terminal.
+
+A shell is the command line program that users interact with to input
+commands.
+
+AWS Command Line Interface (CLI) allows users to programmatically interact with
+the AWS API.
+
+The AWS is a Python executable program
+
+A software development kit (SDK) is a collection of software development tools
+in one installable package.
+
+AWS SKD can be used to programatically create, modify, delete or interact with
+AWS resources.
+  - Java
+  - Python
+  - Node.js
+  - Ruby 
+  - Go
+  - .NET
+  - PHP
+  - Javascript
+  - C++
+
+Cloud9 allows developers to write, test, and debug code directly in the cloud.
+
+AWS Cloudshell is a browser-based shell built into AWS management console.
+Scoped per region.
+
+Infrastructure as Code (IaC): You write a configuration script to automate
+creating, updating or destroying cloud infraestructure.
+
+AWS CloudFormation (CFN) is a IaC declarative tool.
+
+AWS Cloud Development Kit (CDK) is an Imperative tool.
+CDK is powered by CloudFormation (it generates out CloudFormation templates)
+
+Access Keys is a key and secret required to have programmatic access to AWS
+resources when interacting with the AWS API outside of the AWS Management
+Console. Commonly referred to as AWS Credentials.
+
+A user must be granted access to use Access Keys.
+
+Recommendation: Always have access keys.
+
+AWS Documentation is a large collection of technical documentation.
+
+The Shared Responsibility Model is a cloud security framework that defines the
+security obligations of the customer versa the Cloud Service Provider (CSP) e.g.
+AWS.
+
+User is responsible in the cloud => Data, configuration
+aws is responsible of the cloud => hardware, operation of managed services,
+global infrastructure.
+
+
+
+
 --------------------------------------------------------------------------------
 Curso Cloud Foundation
 Modulo 2
