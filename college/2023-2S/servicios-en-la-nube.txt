@@ -290,8 +290,179 @@ User is responsible in the cloud => Data, configuration
 aws is responsible of the cloud => hardware, operation of managed services,
 global infrastructure.
 
+Elastic Compute Cloud (EC2) allows you to launch Virtual Machines (VM)
 
+A VM is an emulation of a physical computer using software.
 
+Amazon LightSail is the managed virtual server service. Friendly version of EC2
+
+Containers - virtualizing an Operation System to run multiple workloads on a
+single OS instance. Containers are generally used in micro-service architecture
+(when you divide your application into smaller applicatrions that talk to each
+other)
+
+Elastic Container Service (ECS) is a container orchestration service that
+supprot Docker contianers. Launches a cluster of server(s) on EC2 instances with
+Docker installed. When you need Docker as a Service, or you need to run
+containers.
+
+Elastic Container Registry (ECR) is a repository for container images. In order
+to launch a containers you need an image. An image just means a saved copy. A
+repository just means a storage that has version control.
+
+ECS Fargate is serverless orchestration container service. It is the same as ECS
+expect you pay-on-demand per runnig container (With ECS you have to keep a EC2
+server running even if you have no containers running) AWS manages the
+underlying server, so you don't have to scale or upgrade the EC2 server.
+
+Elastic Kubernetes Service (EKS) is a fully managed Kubernetes service.
+Kubernetes (K8) is an open-source orchestration software that was created by
+Google and is generally the standard for managing microservices. When you need
+to run Kubernetes as a Service.
+
+Serverless - when the underlying servers are managed by AWS. You don't worry or
+configure servers.
+
+AWS Lambda is a serverless functions service. You can run code without
+provisioning or managing servers. You upload small pieces of code, choose much
+memory and how how long funciton is allowed to run before timing out. You are
+charged based on the runtiem of the serverless function rouded to the neareast
+100ms.
+
+The Nitro System is a combination of dedicated hardware and lightweight
+hypervisor enabling faster innovation and enchanced security. All new EC2
+instance types use the Nitro System.
+
+Nitro Cards - specialized cards for VPC, EBS and Instance Storage and controller
+card
+
+Nitro Security Chips - Integrated into motherboard. Protects hardware
+resources.
+
+Nitro Hypervisor - lightweight memory and CPU allocation BAre metal-like
+performance.
+
+Bare metal instance: You can launch EC2 instances that have no hypervisor so you
+can run workloads directly on the hardware for maximum performance and control.
+The M5 and R5 EC2 instances run are bare metal.
+
+Bottlerocket is a linux-based open-source operation system that is purpose-built
+by AWS for running containers on Virtual Machiens or bare metal hosts.
+
+High Performance Computing (HPC) is a cluster of hundreds of thousands of
+servers with fast connections between each of them with the purpose of boosting
+computing capacity.
+
+AWS ParallelCluster is an AWS-supported open source cluster management tool that
+makes it easy for you to deploy and manage HPC clusters on AWS.
+
+Edge computing is when you push your computing workloads outside of your
+networks to run close to the destination location. 
+
+Hybrid computing is when you're able to run workloads on both your on-premise
+datacenter and AWS VPC.
+
+VMWare Cloud on AWS allows you to manage on-premise virtual machiens using
+VMWare as EC2 instances. The data-center must being using VMWare for
+Virtualization.
+
+AWS Local Zones are edge datacenters located outside of an AWS region so you can
+use AWS closer to end destination.
+
+EC2 Spot Instances, Reserved Instanced and Savings Plan.
+
+AWS Batch plans, schedules, and executes your batch computing workloads, can
+utilize Spot Instance to save money.
+
+AWS Compute Optimizer suggests how to reduce costs and improve performance by
+using machine learning to analyze your previous usage history.
+
+EC2 Autoscaling Groups (ASGs) Automatically adds ore remove EC2 servers to meet
+the current demand of traffic. Will save you money and meet capacity since you
+only run the amount of servers you need.
+
+Elastic Load Balancer (ELB) Distributes traffic to multiple instance.
+
+AWS Elastic Beanstalk (EB) is for easily deploying web-applications without
+developers having to worry about setting up and understanding the underlying AWS
+Services.
+
+Elastic Block Store (EBS) - Block: Data is split into evenly split blocks,
+directly accessed by the OS, supports only a write volume. When you need a
+virtual hard drive attached to a VM.
+
+AWS Elastic File Storage (EFS) - File
+File is stored with data and metadata, multipel connections via a network share,
+supports multipel reads, writing locks the file. When you need a file-share
+where multiple users or VMs need to access the same drive.
+
+Amazon Simple Storage Service (S3) - Object
+Object is stored with data, metadata and Unique ID. Scales with limited no file
+limite or storage limit. Support multiple reads and writes (no locks) When you
+just want to upload files, and not have to worry about the underlying
+infraestructure.
+
+S3 Objects contain data. They are like files. Object may consist of: Key,
+Value, Version ID, Metadata
+
+S3 Bucket. Buckets hold objects. Buckets can also have folders which in turn
+hold objects. S3 is a universal namespace so bucket names must be unique (like
+having a domain name). Store file from 0 bytes to 5 terabytes in size.
+
+S3 Standard (default): fast, replicated across at least 3 AZs.
+
+S3 Intelligent Tiering: ML to analyze object usage, moves data to most
+cost-effective tier.
+
+S3 Standard-IA (Infrequent Access): Still fast, cheaper if you access files less
+than once a month. Additional retrieval fee is applied.
+
+S3 One-Zone-IA
+Still fast, objects only exist in one AZ. Retrieval fee is appllied.
+
+S3 Glacier.
+For long term cold storage. Retrieval of data can take minutes to hours.
+
+S3 Glacier Deep Archive.
+The lowest cost storage class. Data retrieval time is 12 hours.
+
+AWS Snow family are storage and compute devices used to physically move data in
+or out the cloud when moving data over the internet or private connection it to
+slow, difficult or costly.
+
+Snowcone, Snowball Edge, Snowmobile
+
+S3 is a serverless object storage service.
+
+S3 Glacier is a cold storage service.
+
+Elastic Block Store (EBS) is a persistent block storage service. You can attach
+it to EC2 instances.
+
+Elastic File Storage (EFS) is a cloud-native NFS file system service.
+
+Storage Gateway is a hybrid cloud storage service that extends your on-premise
+storage to cloud 
+
+File Gateway extends your local storage to AWS S3
+
+Volume Gateway caches your local drives to S3 so you have a countious backup of
+local files in the cloud.
+
+Tape Gateway stores files onto virtual tapes for backing upr your files on very
+cost effective long term storage.
+
+AWS Snow Family are storage devices used to physically migrate large amounts of
+data to the cloud. 
+
+AWS Backup a fully managed backup service that makes it easy to centralize and
+automate the backup of data across multiple AWS services.
+
+CloudEndure Disaster Recovery continously replicates your machiens into a
+low-cost staging area in your target AWS account and preferred Region enabling
+fast and realiable recovery in case of IT data center failures.
+
+Amazon FSx is a feature rich and highly-performant file system.
 
 --------------------------------------------------------------------------------
 Curso Cloud Foundation
