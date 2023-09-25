@@ -2036,3 +2036,21 @@ En entornos más seguros se usa md5, SHA1, lo cual tiene sumas únicas.
 
 El HUB es un loro que solo repite.
 el Switch entiende las tramas y toma decisiones.
+
+--------------------------------------------------------------------------------
+Décima tercera clase
+--------------------------------------------------------------------------------
+
+El switch solo maneja la capa 2.
+
+#show ip interface brief -> Inventario de interfaces
+#show interface fa0/1 o gi1/0/1 -> Checkear MAC
+
+Cuando se hace ping a un switch, la MAC es la de vlan1
+
+El switch construy la tabla MAC, la cual asocia puerto con MAC
+
+#show mac address-table
+
+Eth -> dst, src
+ip -> src, dst
