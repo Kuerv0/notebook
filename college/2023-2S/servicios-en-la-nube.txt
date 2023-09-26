@@ -618,6 +618,136 @@ weaknesses.
 AWS Quick Starts are prebuilt templates by AWS to help deploy wide range of
 stacks.
 
+Serverless services
+
+DynamoDB
+Simple Storage Service (S3)
+ECS Fargate
+AWS Lambda
+Step functions
+Aurora serverless
+
+CloudTrail logs API calls, AWS services.
+
+CloudWatch has logs, metrics, events, alarms, dahboard.
+
+AWS X-ray distributed tracing system.
+
+Amazon SAgeMaker. Build, train, and deploy machine learning models.
+
+Amazon CodeGuru, machine-learning code analysis service.
+
+Amazon Personalize, real-time recommendations service.
+
+Amazon Polly, text-to-speech.
+
+Amazon Recognizition, image and video recognizition service.
+
+Amazon Transcribe, speech-to-text service.
+
+Amazon Textract OCR tool.
+
+Amazon translate, neural machine learning translation service.
+
+Amazon comprehend natural language processor.
+
+Amazon forecast, time-series forecasting service.
+
+AWS Deep Learning AMIS pre-installed with popular deep learning frameworks.
+
+AWS Deep learning containers are docker images, deep learning frameworks.
+
+AWS Deepcomposer machine learning musical keyboard.
+
+AWS DeepLens, video-camera that uses deep-learning
+
+AWS DeepRacer a toy race car, autonomous driving.
+
+Amazon Elastic Inference allows you to attach low-cost GPU-powered EC2 instances
+
+Amazon Fraud Detector, fully managed fraud detection service.
+
+Amazon Kendra, enterprise machine learning search engine service.
+
+Amazon Athena, serverless interactive query service. Query CSV or JSON files.
+
+Amazon CloudSearch, full-text search service. When you want to add search.
+
+Amazon Elasticserach Service (ES) managed Elasticsearch cluster. 
+
+Amazon Elasti MapReduce (EMR) is for data processing and analysis.
+
+Kinesis, real-time streaming data service.
+
+Kinesis Firehouse, serverless, simpler version of Data Streams.
+
+Amazon Kinesis Data Analytics. Queries against data that is flowing through
+stream.
+
+Amazon Kinesis Video Streams allows you to analyze or apply processing on
+real-time streaming video.
+
+MAnaged Kafka service. fully managed apache kafka service.
+
+Amazon QuickSight is business intelligence (BI) dashboard.
+
+AWS Data Pipeline automates the movement of data.
+
+AWS Glue is an Extract, Transform, Load (ETL) service.
+
+AWS Lake Formation is a cnetralized, curated, and secured repository that stores
+all your data.
+
+5 pillars
+Operational Excellence, run and monitor systems
+Security, Protect data and systems, mitigate risk
+Reliability, Mitigate and recover from disruptions
+Performance Efficiency, use computing resources effectively
+Cost Optimization, get the lowest price.
+
+Well-Architected tool is an uditing tool, basically a document and checklist.
+
+The AWS Architecture Center is a web-portal that contains best practices and
+reference architectures. *
+
+TCO is a financial estimate. on-premise to cloud.
+
+TSO logic, estimate tool
+
+VM import, import virtual machine images into EC2
+
+AWS DMS 
+
+AWS Cloud adoption framework, six categories
+
+AWS Support Plans
+
+Basic: Email support only $0
+
+Developer: Tech Support via Email ~24 hours reply $29
+
+7 Trusted Advisor Checks
+
+Business: Tech support via Chat, Phone 24/7 $100
+
+Enterprise: Business critical system down < 15 min, concierge, tam $15000
+
+All Trusted Advisor checks
+
+TAM provide proactive guidance and reactive support.
+
+Service level agreement (SLA) expected level of service.
+
+SLI measure of performance.
+
+SLO are objectives.
+
+AWS Cost Explorer, visualize, understand and manage your AWS costs over time.
+
+AWS Artifact, documents
+
+Guard Duty threat detection system, ML.
+
 --------------------------------------------------------------------------------
 Curso Cloud Foundation
 Modulo 2
