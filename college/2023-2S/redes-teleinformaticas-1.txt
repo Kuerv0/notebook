@@ -2048,9 +2048,38 @@ El switch solo maneja la capa 2.
 
 Cuando se hace ping a un switch, la MAC es la de vlan1
 
-El switch construy la tabla MAC, la cual asocia puerto con MAC
+El switch construye la tabla MAC, la cual asocia puerto con MAC
 
 #show mac address-table
 
 Eth -> dst, src
 ip -> src, dst
+
+--------------------------------------------------------------------------------
+Décima cuarta clase
+--------------------------------------------------------------------------------
+Wed 27 Sep 2023 11:57:26 AM -05
+
+Ya hay examen de los capítulos 4 - 7. Hasta el domingo primero.
+
+El hub es un dispositivo de capa 1, de modo que solo ve voltaje.
+El concentrador replica la señal por todos los puertos exceptuando el puerto por
+el que lo recibió. El hub además usa un ancho de banda compartido, entre más
+dispostivos, más ancho de banda se consume. Los hub hacen unicasts sucesivos, no
+broadcast, a esto se le llama flood. Los hubs usan half-duplex. Las colisiones
+son comúnes en los hubs.
+
+La portadora es figurarse cuando hay una bajada en voltaje para permitir o otro
+dispositivo hablar. 
+CSMA/XX => Carrier Sense multiple access, censado de portadora.
+XXXX/CD => Collision detection. Cuando llegan señales extrañas que no se pueden
+entender. Se hace un back-off con un tiempo determinado a cada computador para
+escuchar otra vez.
+
+Switches tienen buffers cuando reciben paquetes al tiempo.
+
+Construcción de la tabla MAC:
+SRC - aprende dirección de source
+DST - decide, si no la tiene, hace un flooding, el cual es unicast para cada
+port.
+
