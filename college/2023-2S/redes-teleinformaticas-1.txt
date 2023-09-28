@@ -1516,6 +1516,62 @@ Ethernet Frame Fields Detail:
     disruption of the electrical signals that represent the bits.
 
 7.2
+Thu 28 Sep 2023 02:35:15 PM -05
+
+Hexadecimal numbers are often represented by the value preceded by 0x.
+
+An Ethernet MAC address is:
+  - 48 bits
+  - 12 hex
+  - 6 bytes
+  
+When a vendor assigns a MAC address to a device or Ethernet interface, the
+vendor must do as follows:
+  - Use its assigned OUI as the first 6 hexadecimal digits.
+  - Assign a unique value in the last 6 hexadecimal digits.
+
+All MAC addresses must be unique to the Ethernet device or Ethernet interface.
+
+If there are duplicated MACs it will be necessary to modify the MAC address with
+a new NIC or make modifications via software.
+
+Sometimes the MAC address is referred to as a burned-in address (BIA) because
+the address is hard coded into read-only memory (ROM) on the NIC.
+
+The process that a source host uses to determine the destination MAC address
+associated with an IPv4 address is known as Address Resolution Protocol (ARP).
+
+The process that a source host uses to determine the destination MAC address
+associated with an IPv6 address is known as Neighbor Discovery (ND).
+
+An Ethernet broadcast frame is received and processed by every device on the
+Ethernet LAN. The features of an Ethernet broadcast are as follows:
+  - It has a destination MAC address of FF-FF-FF-FF-FF-FF in hexadecimal (48
+    ones in binary).
+  - It is flooded out all Ethernet switch ports except the incoming port.
+  - It is not forwarded by a router.
+
+DHCP for IPv4 is an example of a protocol that uses Ethernet and IPv4 broadcast
+addresses.
+
+not all Ethernet broadcasts carry an IPv4 broadcast packet. For example, ARP
+Requests do not use IPv4, but the ARP message is sent as an Ethernet
+broadcast.
+
+The features of an Ethernet multicast are as follows:
+  - There is a destination MAC address of 01-00-5E when the encapsulated data is
+    an IPv4 multicast packet and a destination MAC address of 33-33 when the
+    encapsulated data is an IPv6 multicast packet.
+
+  - There are other reserved multicast destination MAC addresses for when the
+    encapsulated data is not IP, such as Spanning Tree Protocol (STP) and Link
+    Layer Discovery Protocol (LLDP).
+  
+  - It is flooded out all Ethernet switch ports except the incoming port, unless
+    the switch is configured for multicast snooping.
+
+  - It is not forwarded by a router, unless the router is configured to route
+    multicast packets.
 
 --------------------------------------------------------------------------------
 Primera clase
