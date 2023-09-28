@@ -71,12 +71,21 @@
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Encuesta docente                                                | 0%         |
+| Encuesta docente                                                | 100%       |
 | Curso Arquitectura AWS                                          | 0%         |
 | Entender los temas en seminario 2                               | 0%         |
 | Curso Cisco (hasta 35%)                                         | 35%        |
 | Ver las clases grabadas de Transformación digital               | 100%       |
 | Laboratorio de Google para créditos gratis                      | 100%       |
 | Revisar grabación servicios en la nube                          | 100%       |
+
+## Semana 7
+
+| Tarea                                                           | Porcentaje |
+|:---------------------------------------------------------------:|:----------:|
+| Curso Arquitectura AWS                                          | 0%         |
+| Evaluación Cisco netacad                                        | 0%         |
+| Presentación seminario 2                                        | 0%         |
+| Iniciar el proyecto de transformación digital                   | 0%         |
 
 vim:nowrap:
