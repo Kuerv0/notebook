@@ -1594,6 +1594,8 @@ When a device has an IP address that is on a remote network, the Ethernet frame
 cannot be sent directly to the destination device. Instead, the Ethernet frame
 is sent to the MAC address of the default gateway, the router.
 
+7.4
+
 Switches use one of the following forwarding methods for switching data between
 network ports:
 
@@ -1630,7 +1632,49 @@ There are two variants of cut-through switching:
     high latency and high integrity of store-and-forward switching, and the low
     latency and reduced integrity of fast-forward switching.
 
-Reading on memory buffering on switches
+Memory Buffering Methods
+
+Port-based memory
+  - Frames are stored in queues that are linked to specific incoming and
+    outgoing ports.
+  - A frame is transmitted to the outgoing port only when all the frames ahead
+    in the queue have been successfully transmitted.
+  - It is possible for a single frame to delay the transmission of all the
+    frames in memory because of a busy destination port.
+  - This delay occurs even if the other frames could be transmitted to open
+    destination ports.
+
+Shared memory
+  - Deposits all frames into a common memory buffer shared by all switch ports
+    and the amount of buffer memory required by a port is dynamically
+    allocated.
+  - The frames in the buffer are dynamically linked to the destination port
+    enabling a packet to be received on one port and then transmitted on another
+    port, without moving it to a different queue.
+
+There are two types of duplex settings used for communications on an Ethernet
+network:
+
+  - Full-duplex - Both ends of the connection can send and receive
+    simultaneously.
+  - Half-duplex - Only one end of the connection can send at a time.
+
+Autonegotiation is an optional function found on most Ethernet switches and
+NICs. It enables two devices to automatically negotiate the best speed and
+duplex capabilities. Full-duplex is chosen if both devices have the capability
+along with their highest common bandwidth.
+
+Duplex mismatch occurs when one or both ports on a link are reset, and the
+autonegotiation process does not result in both link partners having the same
+configuration. Duplex mismatch is one of the most common causes of performance
+issues on 10/100 Mbps Ethernet links.
+
+A crossover cable is used when connecting like devices, and a straight-through
+cable is used for connecting unlike devices.
+For some reason, PC - router connection uses a crossover.
+
+Auto-MDIX can be re-enabled using the mdix auto interface configuration
+command.
 
 --------------------------------------------------------------------------------
 Primera clase
@@ -2197,4 +2241,60 @@ Construcción de la tabla MAC:
 SRC - aprende dirección de source
 DST - decide, si no la tiene, hace un flooding, el cual es unicast para cada
 port.
+
+--------------------------------------------------------------------------------
+Décima quinta clase
+--------------------------------------------------------------------------------
+Fri 29 Sep 2023 12:13:27 PM -05
+
+Parcial 2: ipv4, 12 + 1 October
+parcial 3: ipv6, November.
+
+Hasta entonces hemos visto hasta capa 2, construyendo LANs, donde los equipos
+estrella son switches. Hasta ahora solo nos podemos comunicar en el mismo
+segmento, si quiero comunicarme con otra LAN, necesitamos routers y capa 3.
+
+Capa 2: switching
+Capa 3: routing
+
+Tareas de la capa 3:
+  - Seleccionar la mejor ruta. Basado en métricas.
+  - Comunicar diferentes segmentos.
+
+El router segmenta las redes.
+
+Al principio existía un protocoloj 
+
+¿Por qué nos quedamos con Ethernet? Por su modularidad. LLC, MAC.
+
+IPX Novell 
+AppleTalk
+IP DoD
+
+¿Por qué nace IP? IP era un sistema de comunicaciones redundantes interesante
+usado por espías. Pronto después se decidió implementar IP en la industria. Por
+ende, se empezó a producir equipos usando IP, IPX Novell y Appletalk perdieron
+fuerza por esto.
+
+Data, voz, vídeo -> Se usa IP.
+
+IP entró en crisis en los años en los años 90. En lugar de hacer un protocolo
+nuevo, se desarrolló IPv6 a partir del conocimiento que se tenía de IPv4.
+
+IP -> Nombre inicialmente.
+IPv4 -> Nombre para diferenciar de IPv6.
+
+El Ipv6 nació en el 99.
+
+IPv5 era un protocolo de multimedia ya registrado, pero no fue popular.
+
+El ID de IPv4 tiene 32 bits.
+
+El ID de IPv6 tiene 128 bits. 4 octetos. 32 hex. 8 hextetos hexadecimales
+separados por 2 puntos.
+
+Network -> Grupo
+Host -> Individuo 
+
+La máscara de red te dice cuáles son de red (network) y cuáles son de host.
 
