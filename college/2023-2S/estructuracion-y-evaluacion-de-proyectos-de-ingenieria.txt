@@ -1443,3 +1443,23 @@ Caja
 
 Gasto de depreciación, debe: 7M
 Depreciación acumulada, deber: 7M
+
+--------------------------------------------------------------------------------
+Clase 13
+--------------------------------------------------------------------------------
+Thu Sep 28 18:06:25 2023
+
+Actividad económica 
+La empresa XYZ SAS, el 28 ener de 2023 compra mercancía por valor de 40M. Esta
+las paga al contado.
+
+Balance de prueba.
+
+Cuenta mercancía banco
+
+Compra mercancía, deber: 40M
+Banco, haber, 40M
+
+Okay, hay bastante que debo aprender para el parcial. Sin embargo, tengo dónde
+empezar, pues hay un ejercicio que me ayudará a hacerlo.
+
