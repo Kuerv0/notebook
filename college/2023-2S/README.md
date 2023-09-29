@@ -83,9 +83,10 @@
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Curso Arquitectura AWS                                          | 0%         |
 | Evaluación Cisco netacad                                        | 0%         |
-| Presentación seminario 2                                        | 0%         |
+| Presentación seminario 2                                        | 100%       |
 | Iniciar el proyecto de transformación digital                   | 0%         |
+| Entender los temas de seminario 2                               | 0%         |
+| Hacer curso de Google                                           | 0%         |
 
 vim:nowrap:
