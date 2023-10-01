@@ -1,0 +1,106 @@
+Contabilidad de Horngren
+Décima edición
+
+Contabilidad: Sistema de información que evalúa las actividades de una empresa,
+presenta la información en reportes y comunica los resultados a quienes toman
+decisiones.
+
+Contabilidad financiera: Campo de la contabildiad que se centra en el suministro
+de información necesaria para la adecuada toma de decisiones por parte de los
+usuarios externos a una compañía.
+
+Contabilidad administrativa: Área de la contabilidad que se centra en el
+suministro de información de información para los tomadores internos de
+decisiones.
+
+Acreedor: Alguien a quien una empresa debe dinero.
+
+Contadores públicos certificados (CPC): Contadores públicos con licencia que
+sirven al público general.
+
+Contadores de gestión certificados (CGC): Profesionales certificados que se
+especializan en el conocimiento de la gerencia contable y financiera. Por lo
+general, trabajan para una única empresa.
+
+Financial Accounting Standards Board (FASB): Organización privada que supervisa
+las creación y administración de las normas contables en Estados Unidos.
+
+Securities and Exchange Commission (SEC): Agencia gubernamental de Estados
+Unidos que vigila los mercados financieros de ese país.
+
+Principios de contabilidad generalmente aceptados (PCGA): Conjunto de normas
+contable que guían el proceso de la contabilidad, direccionados por al principal
+organización contable del país. Actualmente en Estados Unidos en la Financial
+Accounting Standards Board (FASB).
+
+Supuesto de entidad económica: Considera que una organización se distingue como
+una unidad económica independiente.
+
+Empresa unipersonal: Empresa de un solo dueño.
+
+Asociación: Una empresa con dos o más propietarios que no está organizada como
+una corporación.
+
+Corporación: Empresa organizada legalmente como entidad legal separada.
+
+Sociedad de responsabilidad limitada. (SRL): Compañía en la que cada socio es
+responsable únicamente hasta por el valor de sus aportes.
+
+Principio de costo: Principio que exige que los activos y servicios adquiridos
+se registren a su costo real.
+
+Supuesto de continuidad: Asume que la entidad se mantendrá en funcionamiento
+durante el futuro previsible.
+
+Supuesto de unidad monetaría: Supuesto que exige que los elementos de los
+estados financieros sean reflejados en términos de una unidad monetaría.
+
+Normas internacionales de información financiera (NIIF) - International
+Financial Reporting Standards (IFRS) Conjunto de directrices internacionales
+desarrollados por la International Accounting Standards Board (IASB).
+
+International Accounting Standards Board (IASB): Organización privada que
+supervisa la creación y administración de las NIIF, conocidas en inglés como
+international Financial Reporting Standards (IFRS).
+
+Auditoría: Examen de los estados y registros financieros de una empresa.
+
+Ley Sarbanes-Oxley (Sarbanes-Oxley Act: SOX): Norma que obliga a las empresas a
+revisar su control interno y asumir la responsabilidadpor la exactitud e
+integridad de sus reportes financieros.
+
+Ecuación contable: Herramienta básica de la contabilidad que evalúa los recursos
+de una empresa (de los que la empresa es propietaria o controla) y las deudas
+generadas por tales recursos (lo que debe la empresa a sus acreedores y
+propietarios). Activo = Pasivo + Capital contable del propietario.
+
+Activos: Recursos económicos que se espera aporten beneficios a una empresa en
+el futuro. Algo que un negocio posee o controla.
+
+Pasivos: Montos que una empresa adeuda a sus acreedores.
+
+Capital contable: Derecho del propietario de un negocio sobre los activos de una
+empresa. También se denomina capital contable del propietario.
+
+Capital del propietario: Contribuciones del propietario a una empresa.
+
+Ingresos: Efectivo obtenido por la venta de los bienes o servicios.
+
+Gastos: Costo por la venta de bienes y servicios.
+
+Retiros del propietario: Pagos de capital al propietario.
+
+Utilidad neta: Resultado de las operaciones que surge cuando los ingresos
+totales son mayores que los gastos totales.
+
+Pérdida neta: Resultado negativo de las operaciones que se produce cuando el
+total de gasetos es mayor que los ingresos totales.
+
+Activo   =   Pasivo +          Capital contable del propietario
+------       ------   ------------------------------------------------
+                        Capital      Retiros del            
+                      contable del - propietario  + Ingresos - Gastos
+                       propietario
+
+Transacción: Evento que afecta la posición financiera de una empresa y puede
+medirse de forma confiable en montos de dinero.
