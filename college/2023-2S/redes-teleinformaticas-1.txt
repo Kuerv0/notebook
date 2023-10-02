@@ -2298,3 +2298,61 @@ Host -> Individuo
 
 La máscara de red te dice cuáles son de red (network) y cuáles son de host.
 
+--------------------------------------------------------------------------------
+Décima sexta clase
+--------------------------------------------------------------------------------
+Mon Oct  2 09:58:34 2023
+
+Clase A: Grandes.
+
+Primer octeto: 0 _ _ _ _ _ _ _ : minimo: 0, maximo: 127.
+Cualquier segmento de red entre 0 y 127 es clase A, para grandes segmentos de
+redes.
+
+R.H.H.H -> red.host.host.host
+
+Máscara.
+11111111.00000000.00000000.00000000
+255.0.0.0 o /8 al todos los tales ser 8.
+
+De esto podemos tener 128 redes 0-128.H.H.H, sin embargo, no usamos 2.
+0.0.0.0 -> Cuando el dispositivo no pertenece a una red.
+127.0.0.1 -> (loopback) para debuggear el NIC. El famoso localhost.
+
+Hay 16777216 direcciones por cada Clase A.
+Excepto por 
+H = 0, Red: 10.0.0.0 -> Para hacer reglas de segmento.
+H = 1, Broadcast: 10.255.255.255 -> Broadcast.
+
+Clase B: Mediana
+
+Primer Octeto: 10 _ _ _ _ _ _
+Máscara. R.R.H.H
+Máscara binarios: 11111111.11111111.00000000.0000000
+Máscara decimales: 255.255.0.0 o /16
+Cantidad de redes: 2^14 = 16384
+Cantidad de host: 2^16 = 65534 - 2 porque siempre hay dos redes que no usamos.
+Host y redes combinatoria: 1073709056
+
+Clase C: pequeña
+110 _ _ _ _ _
+Máscara R.R.R.H
+Máscara binario: 255.255.255.0 o /24
+Redes: 2097152
+Host por red: 254
+Combinatoria: 532676608
+
+Clase D: direcciones multicast (grupos)
+224-239
+
+Clase E: 240-255 Experimental.
+Broadcast de una sola red *.*.*.255
+Broadcast de broadcast 255.255.255.255
+
+El router parte las redes en diferentes
+
+Default gateway => Equipo L3, pertencer al mismo segmento.
+
+poner default gateway en el switch
+#ip defaault gateway [ip]
+
