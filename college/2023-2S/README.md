@@ -83,11 +83,12 @@
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
+| Hacer curso de Google                                           | 0%         |
+| Leer módulos de Cisco                                           | 0%         |
+| Entender los temas de seminario 2                               | 30%        |
+| Iniciar el proyecto de transformación digital                   | 70%        |
 | Evaluación Cisco netacad                                        | 100%       |
 | Presentación seminario 2                                        | 100%       |
-| Iniciar el proyecto de transformación digital                   | 70%        |
-| Entender los temas de seminario 2                               | 0%         |
-| Terminar el ejercicio de seminario 2                            | 0%         |
-| Hacer curso de Google                                           | 0%         |
+| Terminar el ejercicio de seminario 2                            | 100%       |
 
 vim:nowrap:
