@@ -83,8 +83,11 @@
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Hacer curso de Google                                           | 0%         |
 | Leer módulos de Cisco                                           | 0%         |
+| Cloud Computing Fundamentals                                    | 70%        |
+| Infraestructure in Google Cloud                                 | 0%         |
+| Networking and Security in Google Cloud                         | 0%         |
+| Data, ML, and AI in Google Cloud                                | 0%         |
 | Entender los temas de seminario 2                               | 30%        |
 | Iniciar el proyecto de transformación digital                   | 70%        |
 | Evaluación Cisco netacad                                        | 100%       |
