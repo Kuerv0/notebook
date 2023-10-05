@@ -2,7 +2,7 @@ WebEx:
 https://netacad.webex.com/netacad-sp/j.php?MTID=mddb439f4d34079318b64e6bfe4478258
 
 Curso online:
-https://www.netacad.com/es
+https://www.netacad.com/en
 
 --------------------------------------------------------------------------------
 Teoría: 1 Networking Today
@@ -1676,6 +1676,10 @@ For some reason, PC - router connection uses a crossover.
 Auto-MDIX can be re-enabled using the mdix auto interface configuration
 command.
 
+-------------------------------------------------------------------------------
+Teoría: 8 Network layer
+--------------------------------------------------------------------------------
+
 8.1
 
 The network layer, provides services to allow end devices to exchange data
@@ -1846,6 +1850,8 @@ address of the receiving host.
 
 Unlike IPv4, routers do not fragment routed IPv6 packets.
 
+8.4
+
 A host can send a packet to the following:
 
 Itself - A host can ping itself by sending a packet to a special IPv4 address of
@@ -1905,6 +1911,8 @@ local network, and local default routes.
 
 IPv6 Route Table - Lists all known IPv6 routes, including direct connections,
 local network, and local default routes.
+
+8.5
 
 The routing table stores three types of route entries:
 
@@ -1976,6 +1984,141 @@ C – Directly connected network
 S – Static route was manually configured by an administrator
 O - OSPF
 D - EIGRP
+
+-------------------------------------------------------------------------------
+Teoría: 9 Address Resolution
+--------------------------------------------------------------------------------
+9.1
+Thu 05 Oct 2023 12:30:10 PM -05
+
+There are two primary addresses assigned to a device on an Ethernet LAN:
+
+Physical address (the MAC address) – Used for NIC to NIC communications on the
+same Ethernet network.
+
+Logical address (the IP address) – Used to send the packet from the source
+device to the destination device. The destination IP address may be on the same
+IP network as the source or it may be on a remote network.
+
+When the destination IP address (IPv4 or IPv6) is on a remote network, the
+destination MAC address will be the address of the host default gateway (i.e.,
+the router interface).
+
+How are the IP addresses of the IP packets in a data flow associated with the
+MAC addresses on each link along the path to the destination? For IPv4 packets,
+this is done through a process called Address Resolution Protocol (ARP). For
+IPv6 packets, the process is ICMPv6 Neighbor Discovery (ND).
+
+[Hacer la actividad 9.1.3 en Packet tracer] <-
+
+9.2
+
+ARP is what you need to map IPv4 addresses to MAC addresses.
+
+ARP provides two basic functions:
+
+Resolving IPv4 addresses to MAC addresses
+Maintaining a table of IPv4 to MAC address mappings
+
+When a packet is sent to the data link layer to be encapsulated into an Ethernet
+frame, the device refers to a table in its memory to find the MAC address that
+is mapped to the IPv4 address. This table is stored temporarily in RAM memory
+and called the ARP table or the ARP cache.
+
+The sending device will search its ARP table for a destination IPv4 address and
+a corresponding MAC address.
+
+If the packet’s destination IPv4 address is on the same network as the source
+IPv4 address, the device will search the ARP table for the destination IPv4
+address.
+
+If the destination IPv4 address is on a different network than the source IPv4
+address, the device will search the ARP table for the IPv4 address of the
+default gateway.
+
+The ARP request is encapsulated in an Ethernet frame using the following header
+information:
+
+Destination MAC address – This is a broadcast address FF-FF-FF-FF-FF-FF
+requiring all Ethernet NICs on the LAN to accept and process the ARP request.
+
+Source MAC address – This is MAC address of the sender of the ARP request. Type
+- ARP messages have a type field of 0x806. This informs the receiving NIC that
+the data portion of the frame needs to be passed to the ARP process.
+
+The ARP reply is encapsulated in an Ethernet frame using the following header
+information:
+
+Destination MAC address – This is the MAC address of the sender of the ARP
+request.
+
+Source MAC address – This is the MAC address of the sender of the ARP reply.
+
+Type - ARP messages have a type field of 0x806. This informs the receiving NIC
+that the data portion of the frame needs to be passed to the ARP process.
+
+Additionally, static map entries can be entered in an ARP table, but this is
+rarely done. Static ARP table entries do not expire over time and must be
+manually removed.
+
+IPv6 uses a similar process to ARP for IPv4, known as ICMPv6 Neighbor Discovery
+(ND).
+
+For each device, an ARP cache timer removes ARP entries that have not been used
+for a specified period of time.
+
+On a Cisco router, the show ip arp command is used to display the ARP table
+
+#show ip arp -> Display the ARP table
+$arp - a -> Windows command to display the ARP table.
+
+For large networks, arp impact network performance. After the devices send out
+the initial ARP broadcasts and have learned the necessary MAC addresses, any
+impact on the network will be minimized.
+
+In some cases, the use of ARP can lead to a potential security risk. The threat
+actor sends an ARP reply with its own MAC address. The receiver of the ARP reply
+will add the wrong MAC address to its ARP table and send these packets to the
+threat actor.
+
+[Realizar actividad de packet tracer] <- 9.2.9
+
+9.3
+
+If your network is using the IPv6 communications protocol, the Neighbor
+Discovery protocol, or ND, is what you need to match IPv6 addresses to MAC
+addresses.
+
+ND provides address resolution, router discovery, and redirection services for
+IPv6 using ICMPv6. ICMPv6 ND uses five ICMPv6 messages to perform these
+services:
+  - Neighbor Solicitation messages
+  - Neighbor Advertisement messages
+  - Router Solicitation messages
+  - Router Advertisement messages
+  - Redirect Message
+
+Neighbor Solicitation and Neighbor Advertisement messages are used for
+device-to-device messaging such as address resolution (similar to ARP for IPv4).
+Devices include both host computers and routers.
+
+Router Solicitation and Router Advertisement messages are for messaging between
+devices and routers. Typically router discovery is used for dynamic address
+allocation and stateless address autoconfiguration (SLAAC).
+
+ICMPv6 Neighbor Solicitation and Neighbor Advertisement messages are used for
+MAC address resolution.
+
+ICMPv6 Neighbor Solicitation messages are sent using special Ethernet and IPv6
+multicast addresses. This allows the Ethernet NIC of the receiving device to
+determine whether the Neighbor Solicitation message is for itself without having
+to send it to the operating system for processing.
+
+[Hacer actividad 9.3.4 packet tracer] <-
+
+--------------------------------------------------------------------------------
+Teoría: 10 Basic Router Configuration
+--------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 Primera clase
