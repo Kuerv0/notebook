@@ -2119,6 +2119,71 @@ to send it to the operating system for processing.
 --------------------------------------------------------------------------------
 Teoría: 10 Basic Router Configuration
 --------------------------------------------------------------------------------
+Thu 05 Oct 2023 10:27:47 PM -05
+
+1. Configure the device name
+Router(config)# hostname [string]
+
+2. Secure privileged EXEC mode.
+Router(config)# enable secret [password]
+
+3. Secure user EXEC mode.
+Router(config)# line console 0
+Router(config-line)# password [password]
+Router(config-line)# login
+
+4. Secure remote Telnet/SSH access.
+Router(config-line)# line vty 0 4
+Router(config-line)# password [password]
+Router(config-line)# login
+Router(config-line)# transport input {ssh | telnet}
+
+5. Secure all passwords in the config line.
+Router(config-line)# exit
+Router(config)# service password-encryption
+
+6. Provide legal notification
+Router(config)# banner motd [delimiter][message][delimiter]
+
+7. Save the configuration.
+Router(config)# end
+Router# copy running-config startup-config
+
+[Packet tracer activity 10.1.4] <-
+
+10.2
+
+Configurar interfaces:
+
+Router(config)# interface [type-and-number]
+Router(config-if)# description [description-text]
+Router(config-if)# ip address [ipv4-address] [subnet-mask]
+Router(config-if)# ipv6 address [ipv6-address/prefix-length]
+Router(config-if)# no shutdown
+
+Confirmar la configuración:
+
+R1# show ip interface brief
+R1# show ipv6 interface brief
+
+R1# show ip route
+R1# show ipvo6 route
+
+R1# show interfaces
+
+R1# show ip interface
+R1# show ipv6 inteface
+
+10.3
+The default gateway is only used when the host wants to send a packet to a
+device on another network.
+
+To configure an IPv4 default gateway on a switch, use the ip default-gateway
+ip-address global configuration command.
+
+Switch(config)# ip default-gateway [ip-address]
+
+[Actividad de Packet Tracer 10.3.4] <- 
 
 --------------------------------------------------------------------------------
 Primera clase
