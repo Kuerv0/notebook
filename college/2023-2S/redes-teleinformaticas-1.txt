@@ -2906,3 +2906,81 @@ Los routers son un muro de contención de broadcast.
 ARP - Remota
 Se envía al default gateway luego de comprobar que la IP no está en la misma
 red.
+
+--------------------------------------------------------------------------------
+Décima octava clase
+--------------------------------------------------------------------------------
+Fri 06 Oct 2023 11:55:35 AM -05
+
+Subredes
+
+Nadie iba a pagar por 16 millones de direcciones hablando de la clase A, por
+ende se convirtió en una papa caliente.
+
+A finales de los 80s llegó el módem a las casas.
+
+La división se hace en potencias de 2.
+
+A veces se le puede hacer subnetting a las subnetting.
+
+Hay dos métodos de subredes, cuando no se había agotado completamente las
+direcciones, el FLSM - Fixed Length Subnet Mask. 
+  - En el FLSM el tamaño de la subnet no varía.
+  - En el FLSM es importante el número de grupos.
+  - Se desperdician muchas direcciones con el FLSM.
+
+El otro método es VLSM - Variable Length Subnet Mask.
+  - El tamaño es variable.
+  - Las direcciones se desperdician menos.
+  - Es importante el número de hosts.
+
+En redes privadas, FLSM, donde no cobran por las direcciones, pero en entornos
+públicos, donde cobran por las direcciones, usar VLSM.
+
+La empresa ABC requiere implementar un esquema de direcciones IPv4, utilizará la
+dirección 10.0.0.0/8 para atender sus instalaciones. La empresa tiene las
+siguientes características, tenemos una sede en Bogotá que requiere 12K
+estaciones de trabajo (hosts), una sede en Medellín que necesita 6K hosts, una
+sede en Cali que requiere 1K hosts, una sede en Bucaramanga que requiere 3.5
+hosts, Barranquilla requiere 200 hosts, San Andrés 31 hosts, Villavicencio 100
+hosts, Pasto 80 hosts.
+
+- Bogotá: 12K
+- Medellín 6K
+- Cali 1K
+- Bucaramanga 3.5K
+- Barranquilla 200
+- San Andrés 31
+- Villavicencio 100
+- Pasto 80
+
+FLSM
+Número de grupos: 8
+2^X >= grupos, Fórmula de diseño.
+X bits para hacer las 8 combinaciones.
+
+[R][H][H][H]
+255.0.0.0 /8
+
+Pasa a ser
+
+[R][S|H][H][H]
+255.224.0.0 /11
+
+   RED        HOST                     BROADCAST
+S1 10.0.0.0   10.0.0.1 - 10.31.255.254 10.31.255.255
+S2 10.32.0.0                           10.63.255.255
+S3 10.64.0.0                           10.95.255.255
+S4 10.96.0.0
+S5 10.128.0.0
+S6 10.160.0.0
+S7 10.192.0.0
+S8 10.224.0.0                          10.255.255.255
+
+VLSM
+2^Y-2 >= Hosts
+
+[R][H][H][H]
+[R][S][S, 2|H, 6][H]/28 -> Bogotá
+[R][S][S][S, 1][H]/25 -> Villavicencio
+
