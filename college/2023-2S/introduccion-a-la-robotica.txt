@@ -303,3 +303,46 @@ Blanco alimentacion
 Azul 
 Verde canal A
 Amarillo
+
+--------------------------------------------------------------------------------
+Clase ? 
+--------------------------------------------------------------------------------
+Sat Oct  7 08:10:35 2023
+Instalé bun, falta agregar el path
+export BUN_INSTALL="$HOME/.bun"
+export PATH="BUN_INSTALL/bin:$PATH"
+
+Hoy vamos a ver sensores de distancia, funciona como la ecolocalización de los
+muerciegalos.
+
+Tiene 4 pines, vcc, trig, echo, end.
+
+Durante 10 microsegundos poner trig en alto.
+El pin echo se pone en alto cuando recibe la onda.
+
+En el arduino, se pone en 
+duration = pulseIn(echo, HIGH);
+
+d = v * t
+
+velocidad del sonido: 343 m/s
+
+Distancia = 0.034 * duration/2
+
+Filtro pasa loaja media exponencial movil (EMA)
+
+Es un filtro pasa-baja de primer orden cuyo objetivo es atenuar el ruido
+presente en las señales.
+
+s(t)
+  - y(0) t = 0
+  - a y(t) + (1 - a) s(t - 1) t > 0
+
+Donde:
+a: Es un factor de suavizado entre 0 y 1
+y(t): Es el valor de la señal a filtrar en un período de tiempo t.
+s(t):Es el valor EMA en cualquier periodo de tiempo t.
+s(t - 1): Es el valor EMA en el periodo de tiempo pasado (t - 1).
+
+# define alpha_config 0.5
+
