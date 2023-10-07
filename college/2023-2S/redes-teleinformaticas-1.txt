@@ -2186,6 +2186,44 @@ Switch(config)# ip default-gateway [ip-address]
 [Actividad de Packet Tracer 10.3.4] <- 
 
 --------------------------------------------------------------------------------
+Teoría: 10 Basic Router Configuration
+--------------------------------------------------------------------------------
+
+10.1
+
+Fri 06 Oct 2023 09:29:24 PM -05
+
+assigning an IPv4 address to a host requires the following:
+  - IPv4 address - This is the unique IPv4 address of the host.
+  - Subnet mask- This is used to identify the network/host portion of the IPv4
+    address.
+
+To identify the network and host portions of an IPv4 address, the subnet mask is
+compared to the IPv4 address bit for bit, from left to right.
+
+The actual process used to identify the network portion and host portion is
+called ANDing.
+
+The prefix length is the number of bits set to 1 in the subnet mask. It is
+written in “slash notation”, which is noted by a forward slash (/) followed by
+the number of bits set to 1.
+
+Within each network are three types of IP addresses:
+  - Network address
+  - Host addresses
+  - Broadcast address
+
+A network address is an address that represents a specific network. A device
+belongs to this network if it meets three criteria:
+  - It has the same subnet mask as the network address.
+  - It has the same network bits as the network address, as indicated by the
+    subnet mask.
+  - It is located on the same broadcast domain as other hosts with the same
+    network address.
+
+10.2
+
+--------------------------------------------------------------------------------
 Primera clase
 --------------------------------------------------------------------------------
 8/9/2023 12:10:27 PM
