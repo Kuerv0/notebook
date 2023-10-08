@@ -2186,10 +2186,10 @@ Switch(config)# ip default-gateway [ip-address]
 [Actividad de Packet Tracer 10.3.4] <- 
 
 --------------------------------------------------------------------------------
-Teoría: 10 Basic Router Configuration
+Teoría: 11 IPv4 Addressing
 --------------------------------------------------------------------------------
 
-10.1
+11.1
 
 Fri 06 Oct 2023 09:29:24 PM -05
 
@@ -2221,8 +2221,95 @@ belongs to this network if it meets three criteria:
   - It is located on the same broadcast domain as other hosts with the same
     network address.
 
-10.2
+11.2
 
+A unicast packet has a destination IP address that is a unicast address which
+goes to a single recipient. A source IP address can only be a unicast address,
+because the packet can only originate from a single source. This is regardless
+of whether the destination IP address is a unicast, broadcast or multicast.
+
+IPv4 uses broadcast packets. However, there are no broadcast packets with IPv6.
+
+Therefore, broadcast traffic should be limited so that it does not adversely
+affect the performance of the network or devices.
+
+A device that is not directly connected to the destination network forwards an
+IP directed broadcast in the same way it would forward unicast IP packets
+destined to a host on that network.
+
+Disable directed broadcasts Cisco router
+# no ip directed-broadcasts
+
+IPv4 has reserved the 224.0.0.0 to 239.255.255.255 addresses as a multicast
+range.
+
+Routing protocols such as OSPF use multicast transmissions.
+
+11.3
+
+Public IPv4 addresses are addresses which are globally routed between internet
+service provider (ISP) routers.
+
+The long-term solution to IPv4 address depletion was IPv6.
+
+The Private Address Blocks
+
+10.0.0.0/8 : 10.0.0.0 - 10.255.255.255
+172.16.0.0/12 : 172.16.0.0 - 172.31.255.255
+192.168.0.0/16 : 192.168.0.0 - 192.168.255.255
+
+NAT - network address translation
+
+Organizations that have resources available to the internet, such as a web
+server, will also have devices that have public IPv4 addresses. As shown in the
+figure, this part of the network is known as the DMZ (demilitarized zone).
+
+Loopback addresses (127.0.0.0 /8 or 127.0.0.1 to 127.255.255.254) are more
+commonly identified as only 127.0.0.1, these are special addresses used by a
+host to direct traffic to itself.
+
+Link-local addresses (169.254.0.0 /16 or 169.254.0.1 to 169.254.255.254) are
+more commonly known as the Automatic Private IP Addressing (APIPA) addresses or
+self-assigned addresses.
+
+The RFC divided the unicast ranges into specific classes as follows:
+  - Class A (0.0.0.0/8 to 127.0.0.0/8) - Designed to support extremely large
+    networks with more than 16 million host addresses. Class A used a fixed /8
+    prefix with the first octet to indicate the network address and the
+    remaining three octets for host addresses (more than 16 million host
+    addresses per network).
+    
+  - Class B (128.0.0.0 /16 - 191.255.0.0 /16) - Designed to support the needs of
+    moderate to large size networks with up to approximately 65,000 host
+    addresses. Class B used a fixed /16 prefix with the two high-order octets to
+    indicate the network address and the remaining two octets for host addresses
+    (more than 65,000 host addresses per network).
+    
+  - Class C (192.0.0.0 /24 - 223.255.255.0 /24) - Designed to support small
+    networks with a maximum of 254 hosts. Class C used a fixed /24 prefix with
+    the first three octets to indicate the network and the remaining octet for
+    the host addresses (only 254 host addresses per network).
+
+There is also a Class D multicast block consisting of 224.0.0.0 to 239.0.0.0 and
+a Class E experimental address block consisting of 240.0.0.0 - 255.0.0.0.
+
+Classful address allocation was replaced with classless addressing, which is
+used today. Classless addressing ignores the rules of classes (A, B, C). Public
+IPv4 network addresses (network addresses and subnet masks) are allocated based
+on the number of addresses that can be justified.
+
+Both IPv4 and IPv6 addresses are managed by the Internet Assigned Numbers
+Authority (IANA).
+
+
+Regional Internet Registries
+  - AfriNIC (African Network Information Centre) - Africa Region
+  - APNIC (Asia Pacific Network Information Centre) - Asia/Pacific Region
+  - ARIN (American Registry for Internet Numbers) - North America Region
+  - LACNIC (Regional Latin-American and Caribbean IP Address Registry) - Latin
+    America and some Caribbean Islands
+  - RIPE NCC (Réseaux IP Européens Network Coordination Centre) - Europe, the
+    Middle East, and Central Asia
 --------------------------------------------------------------------------------
 Primera clase
 --------------------------------------------------------------------------------
