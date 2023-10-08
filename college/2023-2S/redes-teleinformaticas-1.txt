@@ -2377,7 +2377,43 @@ VLSM is just subnetting a subnet.
 
 11.9
 
+Before you start subnetting, you should develop an IPv4 addressing scheme for
+your entire network. You will need to know how many subnets you need, how many
+hosts a particular subnet requires, what devices are part of the subnet, which
+parts of your network use private addresses, and which use public, and many
+other determining factors. A good addressing scheme allows for growth. A good
+addressing scheme is also the sign of a good network administrator.
 
+Within a network, there are different types of devices that require addresses:
+
+End user clients - Most networks allocate IPv4 addresses to client devices
+dynamically, using Dynamic Host Configuration Protocol (DHCP). This reduces the
+burden on network support staff and virtually eliminates entry errors. With
+DHCP, addresses are only leased for a period of time, and can be reused when the
+lease expires. This is an important feature for networks that support transient
+users and wireless devices. Changing the subnetting scheme means that the DHCP
+server needs to be reconfigured, and the clients must renew their IPv4
+addresses. IPv6 clients can obtain address information using DHCPv6 or SLAAC.
+
+Servers and peripherals - These should have a predictable static IP address. Use
+a consistent numbering system for these devices.
+
+Servers that are accessible from the internet - Servers that need to be publicly
+available on the internet must have a public IPv4 address, most often accessed
+using NAT. In some organizations, internal servers (not publicly available) must
+be made available to the remote users. In most cases, these servers are assigned
+private addresses internally, and the user is required to create a virtual
+private network (VPN) connection to access the server. This has the same effect
+as if the user is accessing the server from a host within the intranet.
+
+Intermediary devices - These devices are assigned addresses for network
+management, monitoring, and security. Because we must know how to communicate
+with intermediary devices, they should have predictable, statically assigned
+addresses.
+
+Gateway - Routers and firewall devices have an IP address assigned to each
+interface which serves as the gateway for the hosts in that network. Typically,
+the router interface uses either the lowest or highest address in the network.
   
 --------------------------------------------------------------------------------
 Primera clase
