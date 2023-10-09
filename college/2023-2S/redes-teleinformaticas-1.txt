@@ -3225,3 +3225,56 @@ VLSM
 [R][S][S, 2|H, 6][H]/28 -> Bogotá
 [R][S][S][S, 1][H]/25 -> Villavicencio
 
+--------------------------------------------------------------------------------
+Décima novena clase
+--------------------------------------------------------------------------------
+Mon Oct  9 09:54:58 2023
+Waiting...
+
+Mon Oct  9 10:14:09 2023
+VLSM es basado en hosts y la forma de diseño es 2^y - 2 >= hosts.
+
+Yo tengo 100 hosts, la potencia de 2 que podría cubrir esto es de 128, pero si
+se tiene estimado un crecimiento de 50%, entonces necesita usar la potencia
+256.
+
+Este método necesita ser de mayor a menor.
+
+12000
+6000
+3500
+1000
+200
+100
+80
+31
+
+Demanda
+12000
+6000
+3500
+1000
+200
+100
+80
+31
+
+y
+14
+13
+12
+10
+8
+7
+7
+6
+
+Mask | Network id         |      Hosts       | Broadcasts
+18   | 10.0.0.0/18        | 0.1 - 63.254     | 63.255
+19   | 10.0.64.0/19       | 64.1 - 95.254    | 95.255
+20   | 10.0.96.0/20       | 96.1 - 111.254   | 111.255
+22   | 10.0.112.0/22      | 112.1 - 115.254  | 115.255
+24   | 10.0.116.0/24      |     ...          | 116.255
+25   | 10.0.0.117.0/25    |     ...          | 117.127
+25   | 10.0.0.117.128/25  |     ...          | 117.255
+26   | 10.0.0.118.0/25    |     ...          | 118.163
