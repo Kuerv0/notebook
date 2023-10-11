@@ -1463,3 +1463,28 @@ Banco, haber, 40M
 Okay, hay bastante que debo aprender para el parcial. Sin embargo, tengo dónde
 empezar, pues hay un ejercicio que me ayudará a hacerlo.
 
+--------------------------------------------------------------------------------
+Clase 15
+--------------------------------------------------------------------------------
+
+110 cm alto, 80 largo para el poster.
+diametro no mayor a 2 cm
+
+Flujo de caja, Buscar cómo hacer un flujo de caja.
+
+Ingresos de operación, costos de inversión, 
+
+Cuentas del flujo de caja
+
+Costos: se clasifican en:
+
+De inversión:
+  - Activos fijos
+  - Activos nominales
+  - Capital de trabajo
+
+publicidad es gasto de venta.
+
+Ingresos operacionales => Precio por cantidad [P * Q].
+IPC es lo mismo que la inflación.
+
