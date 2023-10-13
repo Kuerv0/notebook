@@ -1488,3 +1488,59 @@ publicidad es gasto de venta.
 Ingresos operacionales => Precio por cantidad [P * Q].
 IPC es lo mismo que la inflación.
 
+--------------------------------------------------------------------------------
+Clase 15
+--------------------------------------------------------------------------------
+Thu Oct 12 18:03:28 2023
+
+Depreciación escudo fiscal para reducir los impuestos.
+
+Valor presente neto
+
+Tasa de descuento variable muy importante => Valor del dinero en el tiempo
+(inflación).
+
+Consultar inflación: DANE o banco de la república.
+
+WACC => Costo promedio de capital.
+
+VPN = VPI - VPE
+
+P + valort/((1 - tasa%)^tiempo)
+
+VPN > 0, aceptar
+VPN = 0, indiferente
+VPN < 0, rechazar
+
+Formula Excel para calcular VPN: =VNA(tasa, valorn, flujo de caja futuro) falta
+restar la inversión inicial en este cálculo.
+
+TIR
+Si es mayor a la tasa de descuento se acepta el proyecto.
+La tasa de descuento es lo que el inversionista le pide al proyecto.
+
+En Excel está la función TIR(flujos de caja (incluída la inverisón inicial))
+
+El VPN se usa para decidir si rechazar el proyecto.
+
+Relación beneficio - costo
+
+B/C > 1 viable
+B/C = 1 indiferente
+B/C < 1 Rechaza
+
+Para obtener B/C:
+Traer los flujos de caja a valor presente, luego, dividirlo por la inversión
+inicial en valor absoluto. 
+
+dias operacion 124
+
+100 2000 
+150
+200
+250
+
+El subsidio de transporte no es considerado salario
+
+Vacaciones = (salario * dias trabajados[30]) /720
+
