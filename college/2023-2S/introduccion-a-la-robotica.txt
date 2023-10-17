@@ -346,3 +346,11 @@ s(t - 1): Es el valor EMA en el periodo de tiempo pasado (t - 1).
 
 # define alpha_config 0.5
 
+--------------------------------------------------------------------------------
+Clase ? 
+--------------------------------------------------------------------------------
+Sat Oct 14 07:56:32 2023
+Instalé bun, falta agregar el path
+export BUN_INSTALL="$HOME/.bun"
+export PATH="BUN_INSTALL/bin:$PATH"
+
