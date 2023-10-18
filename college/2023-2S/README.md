@@ -95,3 +95,10 @@
 | Terminar el ejercicio de seminario 2                            | 100%       |
 
 vim:nowrap:
+
+## Semana 9
+
+| Tarea                                                           | Porcentaje |
+|:---------------------------------------------------------------:|:----------:|
+| Hacer tarea para seminario 2                                    | 0%         |
+| Arreglar el problema con el curso de NetAcad                    | 0%         |

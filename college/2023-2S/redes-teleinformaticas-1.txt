@@ -3443,3 +3443,69 @@ Esperando que Omar entre a la reunión
 Wed 11 Oct 2023 11:56:32 AM -05
 
 Explicando cómo obtener carajadas.
+
+--------------------------------------------------------------------------------
+vigésima primera clase
+--------------------------------------------------------------------------------
+Wed 18 Oct 2023 12:14:15 PM -05
+
+128 bits => 2^128 combinaciones.
+
+8 Cuartetos hex:
+HHHH:HHHH:HHHH:HHHH:HHHH:HHHH:HHHH:HHHH:
+
+Prefijo, antes llamado red.
+
+Interface ID, antes llamado host.
+
+Ya no se llama máscara, ahora se llama longitud prejijo y siempre se representa
+en formato slash.
+
+Cuarteto hexadecimal o hextetos.
+
+Reglas para reducir las direcciones ipv6
+Es importante recordar que esto es escritura y no representa lo que se envía.
+
+:0000: -> :0: 
+
+0's a la izq
+2800:0:0:5ce:0:0:0:0:9
+
+continuos 0's => ::
+a. 2800::5ce:0:0:0:9
+b 2800:0:0:5ce::9
+
+Siempre validar que la dirección tenga 8 hextetos.
+
+Si Windows tiene ambas opciones, usa IPv6.
+
+IPv4 y IPv6 son paralelos, pero no se mezclan.
+
+Tipos de direcciones IPv6
+
+Ámbito, Cobertura, Área de acción.
+
+1. Link-Local Address (LLA)
+  - Segmento local.
+  - Dirección built-in, todos los equipos lo tienen.
+  - Patrón: fe80::/10 => fe[10|00] => fe8, fe9, fea, feb.
+
+2. ULA. Unique Local Address.
+  - No navega en internet. (ip privada en IPv4)
+  - No sale a internet.
+  - Patrón: fc00::/7 => fe[110|0] => fc, fd son ULA.
+
+Hay direcciones IPv6 globales.
+
+3. Globales
+  - Patrón: 2000::/3 => [001|0] => 2, 3 son globales.
+
+4. Multicast
+  - FF00::/8
+  
+5. Loopback
+  - ::1
+  
+6. Sin dirección.
+  - ::
+  
