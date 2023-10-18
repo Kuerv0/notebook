@@ -1544,3 +1544,13 @@ El subsidio de transporte no es considerado salario
 
 Vacaciones = (salario * dias trabajados[30]) /720
 
+--------------------------------------------------------------------------------
+Clase 16
+--------------------------------------------------------------------------------
+Tue Oct 17 18:03:05 2023
+
+salario, subT, pension, salud, cesantias, prima, vacaciones, arl, caja comp
+
+cesantias  = primas = (s + sub) * dias-trabajados / 360
+
+intereses C = (s + sub) * 0.12 * diasT / 360
