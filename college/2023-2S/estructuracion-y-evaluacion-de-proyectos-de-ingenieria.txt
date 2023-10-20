@@ -407,7 +407,6 @@ Un proyecto productivo es aquel que se pueda monetizar.
 
 La idea se sube el jueves a las 11:59
 
-
 --------------------------------------------------------------------------------
 Clase 2
 --------------------------------------------------------------------------------
@@ -1554,3 +1553,75 @@ salario, subT, pension, salud, cesantias, prima, vacaciones, arl, caja comp
 cesantias  = primas = (s + sub) * dias-trabajados / 360
 
 intereses C = (s + sub) * 0.12 * diasT / 360
+
+--------------------------------------------------------------------------------
+Clase 17
+--------------------------------------------------------------------------------
+Thu Oct 19 18:05:44 2023
+
+Ingresos operacionales = precio * cantidad demandada
+
+Precio, tamaño de bodega, nivel de producćión y todo se determina a través del
+estudio de mercado.
+
+Para que se considere mercado solo es necesario satisfacer que haya compradores
+y vendedores. 
+
+Estructuras de mercado:
+  - Comptencia perfecta [Es demasido ideal]
+  - Monopolio [Solo un oferente]
+  - Duopolio [Dos empresas dominantes]
+  - Oligopolio [Más de dos empresas, pero con poder fuerte]
+
+Un cartel son varias empresas que se unen con el fin de subir el precio.
+
+
+Caso compradores
+  - Monosopnio: Industria de armamento pesado.
+  - Oligosonpio: Aviones, Submarinos, fabricantes de sillas de autos.
+  [En ambos casos tienen alto nivel de negociación.]
+  
+Monopolio => Poder en el precio.
+Bienes de primera necesidad => si aumento el precio, entonces se reduce la
+cantidad demandada, pero será menor al incremento en el precio. 
+
+Bienes superiores => aumenta producción => Disminuye la cantidad
+
+Muchos sustitutos => Mayor producción => Consumidor => Bien menor precio.
+
+Los consumidores no miran tanto la calidad, sino el precio.
+
+El precio y la cantidad tienen una relación inversa.
+
+Músculo financiero => Dinero.
+
+Definición elasticidad:
+Grado de sensibilidad 
+
+%X / %Y => 
+
+Variacion cantidad / Variacion precio * precio / cantidad
+
+> 1 : Elástica -> Sensible con relación al precio.
+< 1 : Inélastica -> Poco sensible.
+= 1 : Unitario => En la misma proporción.
+
+Definición de requerimientos.
+
+Metodología: Entrevista, la profesora la llama instrumento.
+
+Definición de herramientas
+
+... Checkear dispositivas.
+
+En el mercado tenemos varios instrumentos 
+
+Derivados financieros, son contratos a futuros para "cubrirse" ante la variación
+de un tipo de variable.
+
+Hacer el estudio de mercado a través de fuentes secundarias. *
+
+La profesora está esprando un análisis de series de tiempo. Pero, los botcitos
+hacemos regresiones lineales y carajadas.
+
+Yo me voy a encargar de hacer la parte de "series de tiempo"
