@@ -94,11 +94,17 @@
 | Presentación seminario 2                                        | 100%       |
 | Terminar el ejercicio de seminario 2                            | 100%       |
 
-vim:nowrap:
-
 ## Semana 9
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Hacer tarea para seminario 2                                    | 0%         |
-| Arreglar el problema con el curso de NetAcad                    | 0%         |
+| Hacer el curso de NetAcad                                       | 0%         |
+| Leer el módul de IPv6                                           | 0%         |
+| Hacer el curso extra de NetAcad                                 | 0%         |
+| Leer el material para la predicción de seminario                | 0%         |
+| Hacer la predicción para seminario                              | 0%         |
+| Terminar laboratorios de Google Cloud                           | 0%         |
+| Hacer tarea para seminario 2                                    | 100%       |
+| Arreglar el problema con el curso de NetAcad                    | 100%       |
+
+vim:nowrap:
