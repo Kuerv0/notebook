@@ -94,16 +94,17 @@
 | Presentación seminario 2                                        | 100%       |
 | Terminar el ejercicio de seminario 2                            | 100%       |
 
-## Semana 9
+## Semana 11
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Hacer el curso de NetAcad                                       | 0%         |
-| Leer el módul de IPv6                                           | 0%         |
+| Leer el módulo de IPv6                                          | 0%         |
+| Hacer el trabajo final para servicios en la nube                | 0%         |
 | Hacer el curso extra de NetAcad                                 | 0%         |
-| Leer el material para la predicción de seminario                | 0%         |
 | Hacer la predicción para seminario                              | 0%         |
 | Terminar laboratorios de Google Cloud                           | 0%         |
+| Leer el material para la predicción de seminario                | 75%        |
+| Hacer el curso de NetAcad                                       | 100%       |
 | Hacer tarea para seminario 2                                    | 100%       |
 | Arreglar el problema con el curso de NetAcad                    | 100%       |
 
