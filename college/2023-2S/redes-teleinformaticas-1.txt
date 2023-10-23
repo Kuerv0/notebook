@@ -3509,3 +3509,30 @@ Hay direcciones IPv6 globales.
 6. Sin dirección.
   - ::
   
+--------------------------------------------------------------------------------
+vigésima segunda clase
+--------------------------------------------------------------------------------
+10/20/2023 12:10:37
+
+Subnetting en IPv6, a pesar de tener muchas direcciones IPv6, es mejor tener
+grupos para controlarla a través de reglas.
+
+Subnetting is supposedly easy and for what I can see... I guess so.
+
+Ahora vamos a mirar por qué se recomienda /64
+
+[Prefijo]|[ID] <- Le caben 18 trillones de dispositivos.
+         |64
+
+El método EUI-64 funciona si el dispositivo tiene una dirección /64, le entregas
+el prefijo y cada maquina se asigna el ID.
+
+Parto en mitades la MAC
+
+[mitad1] [FFFE] [mitad2]
+
+Invertir el séptimo bit más significativo
+
+(config)# ipv6 unicast-routing -> Activar ipv6
+(config)# interface [] -> Entrar a la configuración de interfaz
+(coinfg-if)# ipv6 enable -> Activar ipv6
