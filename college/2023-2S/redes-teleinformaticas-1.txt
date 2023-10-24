@@ -3536,3 +3536,49 @@ Invertir el séptimo bit más significativo
 (config)# ipv6 unicast-routing -> Activar ipv6
 (config)# interface [] -> Entrar a la configuración de interfaz
 (coinfg-if)# ipv6 enable -> Activar ipv6
+
+--------------------------------------------------------------------------------
+vigésima tercera clase
+--------------------------------------------------------------------------------
+Mon Oct 23 09:52:36 2023
+Link local es solo para comunicarse en local
+
+(config)#ipv6 unicast-routing
+#show ipv6 inteface brief
+(config)# int g0/0, g0/1
+(config-if)# ipv6 address [ip-address]
+(config-if)# no shutdown
+
+En ipv6 un dispositivo puede tener varias interfaces sin ningún problema.
+
+Microsoft no usa EWi64, tiene un método. Se puede desactivar y usar el el
+Ewi64.
+
+Acostumbramos que los equipos de infrastructuras tengan direcciones más
+sencillas.
+
+(config-i)#ipv6 address fe80::1 link-local
+
+Gua -> Direciones globales que nos da el proveedor y por ellas pagamos.
+
+Las direcciones globales generalmente inician con 2 o 3.
+Generalmente no se ve la ULA porque la gente pide la direccion de internete y
+lo usan para ambas cosas.
+
+(config-if)no ipv6 address [] => Eliminar ipv6 address.
+
+En casos en los que la dirección del PC es muy larga y queremos una más
+reducida, debemos configurarla manualmente desde el PC.
+
+La mejor práctica para el default gateway es poner la link local del router.
+
+No todos los switches soportan ipv6 y es necesario activarlo
+#int vlan 1 address
+(config-if)#no shutdown
+
+(config)# sdm prefer dual-ipv4-and-ipv6 default
+#wr
+#reload -> Habilitar ipv6 en los switches que no lo soportan.
+
+En los routers nos centrabamos en las gigas o en la fast, en el switch nos
+metemos en la vlan 1.
