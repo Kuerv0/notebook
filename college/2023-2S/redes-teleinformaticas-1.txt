@@ -2416,6 +2416,74 @@ interface which serves as the gateway for the hosts in that network. Typically,
 the router interface uses either the lowest or highest address in the network.
 
 --------------------------------------------------------------------------------
+Teoría: 12 
+--------------------------------------------------------------------------------
+10/24/2023 15:35:55
+
+12.1
+IPv6 is designed to be the successor to IPv4. IPv6 has a larger 128-bit address
+space, providing 340 undecillion (i.e., 340 followed by 36 zeroes) possible
+addresses. However, IPv6 is more than just larger addresses.
+
+IETF enhanced limitations found in IPv4. One example is ICPMv6, which includes
+address autoconfiguration not found in ICMP for IPv4.
+
+NAT is problematic for many applications, creates latency, and has limitations
+that severely impede peer-to-peer communications.
+
+There is no specific date to move to IPv6. Both IPv4 and IPv6 will coexist in
+the near future and the transition will take several years. The IETF has created
+various protocols and tools to help network administrators migrate their
+networks to IPv6. The migration techniques can be divided into three categories:
+
+Dual Stack:
+Dual stack allows IPv4 and IPv6 to coexist on the same network segment. Dual
+stack devices run both IPv4 and IPv6 protocol stacks simultaneously. Known as
+native IPv6, this means the customer network has an IPv6 connection to their ISP
+and is able to access content found on the internet over IPv6.
+
+Tunneling:
+Tunneling is a method of transporting an IPv6 packet over an IPv4 network. The
+IPv6 packet is encapsulated inside an IPv4 packet, similar to other types of
+data.
+
+Translation:
+Network Address Translation 64 (NAT64) allows IPv6-enabled devices to
+communicate with IPv4-enabled devices using a translation technique similar to
+NAT for IPv4. An IPv6 packet is translated to an IPv4 packet and an IPv4 packet
+is translated to an IPv6 packet.
+
+12.2
+IPv6 addresses are 128 bits in length and written as a string of hexadecimal
+values. Every four bits is represented by a single hexadecimal digit; for a
+total of 32 hexadecimal values, as shown in the figure. IPv6 addresses are not
+case-sensitive and can be written in either lowercase or uppercase.
+
+In IPv6, a hextet is the unofficial term used to refer to a segment of 16 bits,
+or four hexadecimal values. Each “x” is a single hextet which is 16 bits or four
+hexadecimal digits.
+
+The first rule to help reduce the notation of IPv6 addresses is to omit any
+leading 0s (zeros) in any hextet.
+  - 01ab can be represented as 1ab
+  - 09f0 can be represented as 9f0
+  - 0a00 can be represented as a00
+  - 00ab can be represented as ab
+
+The second rule to help reduce the notation of IPv6 addresses is that a double
+colon (::) can replace any single, contiguous string of one or more 16-bit
+hextets consisting of all zeros.
+
+2001:db8:cafe:1:0:0:0:1 -> 2001:db8:cafe:1::1
+
+If an address has more than one contiguous string of all-0 hextets, best
+practice is to use the double colon (::) on the longest string. If the strings
+are equal, the first string should use the double colon (::).
+
+12.3
+  
+
+--------------------------------------------------------------------------------
 Teoría: 13 
 --------------------------------------------------------------------------------
 Wed 11 Oct 2023 04:25:50 PM -05
