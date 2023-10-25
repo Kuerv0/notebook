@@ -3650,3 +3650,52 @@ No todos los switches soportan ipv6 y es necesario activarlo
 
 En los routers nos centrabamos en las gigas o en la fast, en el switch nos
 metemos en la vlan 1.
+
+--------------------------------------------------------------------------------
+vigésima cuarta clase
+--------------------------------------------------------------------------------
+Esperando a Omar...
+10/25/2023 12:01:26
+
+Llegó
+10/25/2023 12:10:05
+
+Estábamos revisando temas de IPv6, hicimos subnetting, vimos cómo se asignan las
+direcciones en los laboratorios. Ahora vamos a hablar de cosas invisibles que
+están en el medio y nos ayudan a usarlo sin dificultades, primero vamos a
+conversar acerca de ARP.
+
+En IPv4 usamos el prtocolo ARP para mappear ip a MAC, usando el broadcast.
+
+IPv6 is no different. Pero, ARP no puede ayudarnos porque en IPv6 no hay
+broadcasts.
+
+Recurrimos al protocolo ICMPv6 para que haga esa labor. ICMPv6 hace se pone
+diferentes camisetas para hacer funciones diferentes.
+
+ICMPv6 utiliza una herramienta para hacer el descubrimiento llamado NDP Neighbor
+Discovery Protocol, este utiliza mensajes ICMPv6 para descubrir la MAC.
+
+Neighbor Solicitation (NS)
+
+Neighbor Advertisement (NA)
+
+El orign de NS es la link local, siempre se usará la link local para este
+mensaje. Porque es una dirección que todos tiene para trabajar en IPV6.
+
+El mensaje acotado se llama dirección de nodo solicitado, esto solo la entienden
+los que tienen cierto parámetro final, solo lo van a procesar los que terminan
+en ese. La dirección de nodo solicitado se construye de la siguiente manera:
+FF02:0:0:0:0:1:FF__: este es el patrón que se usa y se agregan los últimos bits
+de la dirección que se quiere consultar.
+
+Tabla de vecinos, show neighbor.
+
+IGMP, grupos para que nos floodeen los puertos.
+
+Conectividad -> ping, echo request(128 0x80), echo reply(129 0x81). [Unicast]
+
+Mappeo IPv6-MAC -> NDP, NS(135 0x87), NA(136 0x88). [Multicast]
+
+Los hosts piden el prefijo con Router Solicitation(133) y Router Advertisement
+(134), usa multicast.
