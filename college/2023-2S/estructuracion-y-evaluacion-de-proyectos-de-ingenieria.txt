@@ -324,19 +324,52 @@ Ciencias vs proyecto en ingeniería
 
 Flujo de caja
 
-- Ingresos
-- Costos
-- Gasto
-- Utilidad operativa
++ Ingresos operacionales
+- Costos {fijos, variables}
+= Utilidad bruta
+- Gastos operacionales {Venta, administración}
+= Utilidad operacional -> EBITDA
 - Depreciación (desgasa maquinaria)
-- Interés (préstamo)
-- Utilidad (antes de impuesto)
-- Impuesto (Pago gobierno)
-- Utilidad después de impuesto
-- Depreciación
+- Interés (préstamo) {Escudo fiscal}
+= Utilidad antes de impuesto
+- Impuesto (Pago gobierno) {renta}
+= Utilidad después de impuesto {Nunca se le va a sacar a utilidad negativa}
++ Depreciación
 + Valor salvamento
 - Flujo de caja neto
++ Valor en libro
++ Impuestos por ganancias ocasionales.
+- Inversión inicial
+  + CAPEX => Activos fijos
+  + OPEX => KTNO
+  + Gastos pre-operativos
++ Préstamo
+- Amortizaciones
 
+VPN = 
+
+Tue Oct 24 18:53:45 2023
+This is going to be long as fu*k.
+
+Valor de salvamento vamos a hacer lo siguiente, van a ir al mercado y van a
+encontrar ese activo fijo con características similares y van a buscar el valor,
+como vender un vehículo con x característica. Si en esa época lo compré en x
+millones, voy a buscar el valor del vehiculo al día de hoy, eso nosotros lo
+vamos a llamar valor de salvamaneto. Para el valor de salvamento se van a mover
+3 cuentas, valor de salvamento, valor en libros (?) e impuesto ganancias
+ocasionales. Porcentaje de impuesto de ganancias ocasionales es 20%, en el flujo
+de caja debo tener en cuenta la siguiente fórmula. 
+Valor Salvamento > Valor comercial. Si el valor de salvamento es mayor al valor
+comercial, estás ganando dinero y a ese dinero, se aplica el impuesto de
+ganancias ocasionales. El cual es 20%.
+
+VS < VL (valor en libros) le llaman en los libros costo deducible.
+VS = VL (valor en libros) no pasa nada.
+
+Valor en libros -> depreciación acumulada.
+
+Gastos administrativos {Gerentes}
+Gasto venta {Vendedores, publicidad}
 Gastos
 
 Inversión inicial
@@ -1575,7 +1608,6 @@ Estructuras de mercado:
 
 Un cartel son varias empresas que se unen con el fin de subir el precio.
 
-
 Caso compradores
   - Monosopnio: Industria de armamento pesado.
   - Oligosonpio: Aviones, Submarinos, fabricantes de sillas de autos.
@@ -1625,3 +1657,97 @@ La profesora está esprando un análisis de series de tiempo. Pero, los botcitos
 hacemos regresiones lineales y carajadas.
 
 Yo me voy a encargar de hacer la parte de "series de tiempo"
+
+--------------------------------------------------------------------------------
+Clase 18
+--------------------------------------------------------------------------------
+Tue Oct 24 18:04:25 2023
+
+Costos de inversión.
+
+I0 -> Inversión inicial.
+^
+| Preinversión
+|-> idea -> estudio perfil -> prefactibilidad - factibilidad
+                           |
+                         Preinversión
+                         Inversión -> Ejecución
+                         Operar => Producción, comercialización
+                         
+Costos de inversión o gastos-pre-operativos, corresponden a quellos que se
+incurren en al adquisición de los activos necesarios para poner el proyecto en
+funcionamiento.
+
+Antes de la inversión son costso pre-operativos, después de la producción costos
+operativos.
+
+- Estudios de factibilidad
+- Estudios definitivos
+- Planos y licencisias
+[Ver diapositivas]
+
+CAPEX -> Activos fijos.
+OPEX -> CApital de trabajo o lo mínimo para empezar a producir.
+
+Para la segunda entrega es muy importante identificar el perfil minimizando los
+costos. *
+
+La inversión inicial no se hace en el año 0, se puede hacer en otro momento en
+el tiempo y es lo que llamamos costos de reinversión. También cuando se necesita
+cambiar un equipo y así.
+
+Capital de trabajo = Activo corriente - Pasivo corriente
+
+El capital de trabajo es el margen de seguridad para que la empresa opere sin
+tropiezos.
+
+Los activos y pasivos corrientes son aquellos que duran menos de un año.
+
+Capital de trabajo neto operativo
+KTNO
++Cartera -> Cuentas por cobrar clientes
++Inventarios
+-Proveedores
+
+Rotación fórmula = 360 dias/dias CxC = veces
+
+Ciclo de caja = Días CxC + Dias inventario - Dias C x P
+
+CxC promedio = Ventas / Rotacion CxC = $
+
+Inventario inicial + Compras - Inventario final = Costo de ventas.
+
+Compras = Costo de ventas + Inventario inicial - Inventario inicial.
+
+Para este caso estamos en el tiempo 0 y no se está operando.
+
+Costos siempre están relacionados con operación.
+
+Usar esto para la entrega, aunque no estoy muy seguro de cómo usarlo aún. *
+
+[Hay más fórmulas, revisar las diapositivas]
+
+VPN = -I0 + sum(FCN / (1 + i)^n)
+
+El WACC es (1 + i)^n
+
+Cómo se calcula:
+
+Costo promedio de capital (WACC)
+
+WACC = KE * equity/(equity + deuda)
+
+KE => Costo de patrimonio o costo equity + Kd * deuda/(equity + deuda) * (1 -t)
+
+El equity es lo que yo invertí y la deuda se refiere a lo que presto al banco.
+
+Kd => Costo deuda.
+
+t = impuesto
+
+Equity = I0 - D
+
+Para el trabajo no tenemos el KE *
+En nuesto proyecto debemos calcular el KE.
+
+Ke = Rm - B (Rm - Rf) + Riesgo pais
