@@ -1751,3 +1751,107 @@ Para el trabajo no tenemos el KE *
 En nuesto proyecto debemos calcular el KE.
 
 Ke = Rm - B (Rm - Rf) + Riesgo pais
+
+--------------------------------------------------------------------------------
+Fuera de horario de clase, intentando resolver un ejercicio
+10/26/2023 15:37:03
+--------------------------------------------------------------------------------
+
+Por favor lea detenidamente el parcial y diligencie lo solicitado, debe entregar
+el archivo de Excel en la ubicación indicada y las respuestas de la parte 1 en
+esta misma hoja. Dentro del enunciado usted encontrará cifras con 123, las
+cuales debe cambiar por sus tres últimos dígitos del documento de identidad, es
+decir, si la cifra es $13.123 y su documento de identidad finaliza en 123, la
+cifra final será $13.123. Tener en cuenta que el punto (.) es separador de miles
+y la coma (,) es separador de decimales.
+
+Usted ha sido beneficiario de una convocatoria del Ministerio de Agricultura
+para la conformación de microempresas en el norte del departamento del Valle,
+por lo cual ha decidido iniciar con su emprendimiento de plantación de caña de
+azúcar para la producción de melaza de caña orgánica. Reconoce que es necesario
+estudiar el comportamiento actual del mercado, así que por medio de diferentes
+técnicas de investigación es posible conocer que sus productos serán utilizados
+como materia prima para la elaboración de snacks para deportistas de alto
+rendimiento, por lo cual decide que iniciará con dos productos; gelatinas y
+barras energéticas, que serán vendidas en la ciudad de Cali en los estratos 4 y
+5, por lo cual espera que sus ventas se comporten de la siguiente manera:
+
+-Gelatinas: En el primer año espera vender 123 unidades con un precio de venta
+de $1.237. Se espera que las ventas tengan un incremento de 1.230 unidades
+anuales, mientras que el precio se incremente en un 5,123% anual.
+
+-Barras Energéticas: En el primer año espera vender 4.123 unidades con un precio
+de venta de $3.123. Se espera que las unidades tengan un incremento de 6,123%
+anual, mientas que el precio se incremente en $123 anual.
+
+Para poder operar, la empresa ha decidido arrendar una bodega a las afueras de
+Jamundí, por un valor anual de $ 11.123.378
+
+Dentro de los gastos pagan los siguientes valores mensuales:
+
+Energía eléctrica $569.254
+Acueducto y Alcantarillado $ 812.300
+Internet y comunicaciones $ 120.123
+Mantenimiento de equipos 5,650% más que el valor del internet
+Papelería e Insumos de oficina $ 212.390
+
+El Ministerio de Agricultura pone a su disposición un grupo de expertos
+temáticos que lo asesoran para la compra de las maquinarias, así que luego de
+varias cotizaciones decide realizar las siguientes adquisiciones:
+
+a. Cortadora de Caña la cual tiene un valor de $1.512.323
+b. Extractor de juegos industrial el cual tiene un valor de $712.300
+c. Despulpadora la cual tiene un valor de $3.123.278
+d. Empaquetadora la cual tiene un valor de $612.311
+
+También conoce que necesita comprar equipos de cómputo e impresoras, para poder
+desarrollar las actividades administrativas que tienen un valor total de
+$2.123.700, además, muebles y enseres por un valor total de $3.123.123. Este
+mismo estudio le permite identificar los costos mensuales de personal a los
+cuales les debe asociar el factor prestacional del 1,123
+
+Gerencia $ 1.123.850
+Secretaria General $ 312.350
+Agente de Ventas La mitad del salario del gerente
+Ingeniero Industrial $612.330
+Ingeniero Mecánico $512.300
+Personal de Mantenimiento $112.349
+
+--------------------------------------------------------------------------------
+Preguntar cómo trabajar on esta parte, no entiendo muy bien qué es.
+--------------------------------------------------------------------------------
+
+Usted conoce que el registro ante Cámara de Comercio tiene un valor de $212.300,
+Industria y Comercio tiene un valor de $50.123, así mismo debe inscribirse ante
+el ICA con un valor de $12.3500 y decide adquirir un software de contabilidad
+para hacer un correcto seguimiento de los inventarios que tiene un valor de
+$478.123
+
+Su estudio técnico y de mercado, le permitió conocer que tanto los costos como
+los gastos se incrementan, desde el año 2 en un 4,123% anual, lo cual
+corresponde al valor de la inflación esperada. Con los datos recolectados en el
+estudio técnico y estudio de mercado, fue posible conocer que los costos de los
+insumos para el año 1 son de $4.123.520, y tienen un incremento del 2,123% anual
+para las gelatinas y $3.280.123 con un incremento de $90.123 anual para las
+barras energéticas. 
+
+Recuerde que la maquinaria se depreciará en línea recta con un periodo de 10
+años y los equipos tecnológicos y enseres tendrán un periodo de depreciación de
+3 años. Como usted tiene algunos proceso automatizados, es necesario reponer los
+equipos de cómputo para lo cual compra equipos en el año 3 y esta vez el costo
+es un 1,233% mayor a la inversión inicial.
+
+Para poder establecer una estrategia clara, usted debe realizar el estudio
+financiero de su proyecto. Se da cuenta que es necesario que el 32% de la
+inversión sea financiada por una entidad bancaria, para lo cual escoge el Banco
+Agrario, que es el que mejor se acomoda a sus necesidades. Le proponen una tasa
+de financiación del 12,35 % Efectivo Anual, para realizar pagos anuales iguales
+durante 4 años. También conoce que los inversionistas esperan que la tasa de
+retorno mínima para ellos sea del 8,123%.
+
+1. Calcule el valor total de la inversión requerida para el proyecto.
+2. Construya el flujo de caja del proyecto para 5 años con un impuesto de renta
+de 12,38%.
+3. Valore el proyecto y calcule la Tasa interna de retorno del proyecto.
+4. Grafique el flujo de caja del proyecto.
+5. Analice la viabilidad del proyecto.
