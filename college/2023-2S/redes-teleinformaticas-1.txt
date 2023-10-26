@@ -2481,7 +2481,218 @@ practice is to use the double colon (::) on the longest string. If the strings
 are equal, the first string should use the double colon (::).
 
 12.3
-  
+10/25/2023 20:33:25
+There are three broad categories of IPv6 addresses:
+
+Unicast - An IPv6 unicast address uniquely identifies an interface on an
+IPv6-enabled device.
+
+Multicast - An IPv6 multicast address is used to send a single IPv6 packet to
+multiple destinations.
+
+Anycast - An IPv6 anycast address is any IPv6 unicast address that can be
+assigned to multiple devices. A packet sent to an anycast address is routed to
+the nearest device having that address. Anycast addresses are beyond the scope
+of this course.
+
+Unlike IPv4, IPv6 does not have a broadcast address. However, there is an IPv6
+all-nodes multicast address that essentially gives the same result.
+
+IPv6 uses slash notation only.
+
+The prefix length can range from 0 to 128. The recommended IPv6 prefix length
+for LANs and most other types of networks is /64.
+
+It is strongly recommended to use a 64-bit Interface ID for most networks. This
+is because stateless address autoconfiguration (SLAAC) uses 64 bits for the
+Interface ID. It also makes subnetting easier to create and manage.
+
+Unlike IPv4 devices that have only a single address, IPv6 addresses typically
+have two unicast addresses:
+
+Global Unicast Address (GUA) - This is similar to a public IPv4 address. These
+are globally unique, internet-routable addresses. GUAs can be configured
+statically or assigned dynamically.
+
+Link-local Address (LLA) - This is required for every IPv6-enabled device. LLAs
+are used to communicate with other devices on the same local link. With IPv6,
+the term link refers to a subnet. LLAs are confined to a single link. Their
+uniqueness must only be confirmed on that link because they are not routable
+beyond the link. In other words, routers will not forward packets with a
+link-local source or destination address.
+
+GUAs are equivalent to public IPv4 addresses.
+
+A GUA has three parts:
+
+- Global Routing Prefix
+- Subnet ID
+- Interace ID
+
+The IPv6 interface ID is equivalent to the host portion of an IPv4 address.
+
+Unlike IPv4, in IPv6, the all-0s and all-1s host addresses can be assigned to a
+device. The all-1s address can be used because broadcast addresses are not used
+within IPv6. The all-0s address can also be used, but is reserved as a
+Subnet-Router anycast address, and should be assigned only to routers.
+
+An IPv6 link-local address (LLA) enables a device to communicate with other
+IPv6-enabled devices on the same link and only on that link (subnet).
+
+LLA is required, GUA is not.
+
+IPv6 LLAs are in the fe80::/10 range. The /10 indicates that the first 10 bits
+are 1111 1110 10xx xxxx. The first hextet has a range of 1111 1110 1000 0000
+(fe80) to 1111 1110 1011 1111 (febf).
+
+Routers use the LLA of neighbor routers to send routing updates.
+
+Hosts use the LLA of a local router as the default-gateway.
+
+Note: Typically, it is the LLA of the router, and not the GUA, that is used as
+the default gateway for other devices on the link.
+
+There are two ways that a device can obtain an LLA:
+
+Statically - This means the device has been manually configured.
+
+Dynamically - This means the device creates its own interface ID by using
+randomly generated values or using the Extended Unique Identifier (EUI) method,
+which uses the client MAC address along with additional bits.
+
+12.4
+
+IPv6 GUA Configuration on Router R1:
+
+R1(config)# interface gigabitethernet 0/0/0
+R1(config-if)# ipv6 address 2001:db8:acad:1::1/64
+R1(config-if)# no shutdown
+R1(config-if)# exit
+R1(config)# interface gigabitethernet 0/0/1
+R1(config-if)# ipv6 address 2001:db8:acad:2::1/64
+R1(config-if)# no shutdown
+R1(config-if)# exit
+R1(config)# interface serial 0/1/0
+R1(config-if)# ipv6 address 2001:db8:acad:3::1/64
+R1(config-if)# no shutdown
+
+Using the LLA of the router as the default gateway address is considered best
+practice. Either configuration will work.
+
+There are two ways in which a device can obtain an IPv6 GUA automatically:
+
+Stateless Address Autoconfiguration (SLAAC)
+Stateful DHCPv6
+
+When an address begins with this hextet within the range of fe80 to febf, the
+link-local parameter must follow the address.
+
+Configuration of an LLA on router R1.
+
+R1(config)# interface gigabitethernet 0/0/0
+R1(config-if)# ipv6 address fe80::1:1 link-local
+R1(config-if)# exit
+R1(config)# interface gigabitethernet 0/0/1
+R1(config-if)# ipv6 address fe80::2:1 link-local
+R1(config-if)# exit
+R1(config)# interface serial 0/1/0
+R1(config-if)# ipv6 address fe80::3:1 link-local
+R1(config-if)# exit
+
+Note: The exact same LLA could be configured on each link as long as it is
+unique on that link. This is because LLAs only have to be unique on that link.
+However, common practice is to create a different LLA on each interface of the
+router to make it easy to identify the router and the specific interface.
+
+12.5
+For the GUA, a device obtains the address dynamically through Internet Control
+Message Protocol version 6 (ICMPv6) messages. IPv6 routers periodically send out
+ICMPv6 RA messages, every 200 seconds, to all IPv6-enabled devices on the
+network.
+
+To enable a router as an IPv6 router, the ipv6 unicast-routing global
+configuration command must be used.
+
+The ICMPv6 RA message is a suggestion to a device on how to obtain an IPv6 GUA.
+The ultimate decision is up to the device operating system. The ICMPv6 RA
+message includes the following:
+
+Network prefix and prefix length - This tells the device which network it
+belongs to.
+
+Default gateway address - This is an IPv6 LLA, the source IPv6 address of the RA
+message.
+
+DNS addresses and domain name - These are the addresses of DNS servers and a
+domain name.
+
+There are three methods for RA messages:
+
+Method 1: SLAAC - “I have everything you need including the prefix, prefix
+length, and default gateway address.”
+
+Method 2: SLAAC with a stateless DHCPv6 server - “Here is my information but you
+need to get other information such as DNS addresses from a stateless DHCPv6
+server.”
+
+Method 3: Stateful DHCPv6 (no SLAAC) - “I can give you your default gateway
+address. You need to ask a stateful DHCPv6 server for all your other
+information.”
+
+SLAAC uses
+
+Prefix - This is advertised in the RA message.
+
+Interface ID - This uses the EUI-64 process or by generating a random 64-bit
+number, depending on the device operating system.
+
+SLAAC and Stateless DHCPv6
+
+the RA message suggests devices use the following:
+
+ - SLAAC to create its own IPv6 GUA
+
+ - The router LLA, which is the RA source IPv6 address, as the default gateway
+   address
+
+ - A stateless DHCPv6 server to obtain other information such as a DNS server
+   address and a domain name
+
+A stateless DHCPv6 server distributes DNS server addresses and domain names. It
+does not allocate GUAs.
+
+Stateful DHCPv6
+
+A router interface can be configured to send an RA using stateful DHCPv6 only.
+
+Stateful DHCPv6 is similar to DHCP for IPv4. A device can automatically receive
+its addressing information including a GUA, prefix length, and the addresses of
+DNS servers from a stateful DHCPv6 server.
+
+with this method, the RA message suggests devices use the following:
+
+  - The router LLA, which is the RA source IPv6 address, for the default gateway
+address. 
+  - A stateful DHCPv6 server to obtain a GUA, DNS server address, domain
+name and other necessary information.
+
+A stateful DHCPv6 server allocates and maintains a list of which device receives
+which IPv6 address. DHCP for IPv4 is stateful.
+
+The default gateway address can only be obtained dynamically from the RA
+message. The stateless or stateful DHCPv6 server does not provide the default
+gateway address.
+
+IEEE defined the Extended Unique Identifier (EUI) or modified EUI-64 process.
+This process uses the 48-bit Ethernet MAC address of a client, and inserts
+another 16 bits in the middle of the 48-bit MAC address to create a 64-bit
+interface ID.
+
+To ensure the uniqueness of any IPv6 unicast address, the client may use a
+process known as Duplicate Address Detection (DAD). This is similar to an ARP
+request for its own address. If there is no reply, then the address is unique.
+
+12.6
 
 --------------------------------------------------------------------------------
 Teoría: 13 
