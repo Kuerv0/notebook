@@ -1735,7 +1735,7 @@ Cómo se calcula:
 
 Costo promedio de capital (WACC)
 
-WACC = KE * equity/(equity + deuda)
+WACC = KE * equity/(equity + deuda) + Kd * D/E+D * (1 - t)
 
 KE => Costo de patrimonio o costo equity + Kd * deuda/(equity + deuda) * (1 -t)
 
@@ -1855,3 +1855,5 @@ de 12,38%.
 3. Valore el proyecto y calcule la Tasa interna de retorno del proyecto.
 4. Grafique el flujo de caja del proyecto.
 5. Analice la viabilidad del proyecto.
+
+
