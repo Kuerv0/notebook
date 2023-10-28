@@ -98,11 +98,11 @@
 
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Leer el módulo de IPv6                                          | 0%         |
 | Hacer el trabajo final para servicios en la nube                | 0%         |
 | Hacer el curso extra de NetAcad                                 | 0%         |
 | Hacer la predicción para seminario                              | 0%         |
 | Leer el material para la predicción de seminario                | 75%        |
+| Leer el módulo de IPv6                                          | 90%        |
 | Terminar laboratorios de Google Cloud                           | 100%       |
 | Hacer el curso de NetAcad                                       | 100%       |
 | Hacer tarea para seminario 2                                    | 100%       |
