@@ -1856,4 +1856,13 @@ de 12,38%.
 4. Grafique el flujo de caja del proyecto.
 5. Analice la viabilidad del proyecto.
 
+Sun 29 Oct 2023 03:14:13 PM -05
+Preguntas para la siguiente class.
+
+¿Todo lo que no son gastos de administración y ventas son costos?
+
+Lo que no hace parte de valores anuales, ¿dónde se pone en el flujo de caja?
+
+¿El valor de salvamento se calcula para cada año o solo para el final?
+
 
