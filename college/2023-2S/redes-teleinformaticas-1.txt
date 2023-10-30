@@ -3968,3 +3968,124 @@ Mappeo IPv6-MAC -> NDP, NS(135 0x87), NA(136 0x88). [Multicast]
 
 Los hosts piden el prefijo con Router Solicitation(133) y Router Advertisement
 (134), usa multicast.
+
+--------------------------------------------------------------------------------
+vigésima quinta clase
+--------------------------------------------------------------------------------
+Inicia la sesión
+Mon Oct 30 10:11:11 2023
+
+La capa de red se encargaba de darnos la mejor ruta.
+El problema de la capa de red es que no nos dice si hay tráfico y otros
+problemas. De esta forma decimos que no es orientada a la conexión, es más,
+cuando habían errores, ICPM es el protocolo ayudante que le ayuda con eso. Sin
+embargo, no arregla el error, de modo que la capa de transporte nos da ese
+componente.
+Confiabilidad y es orientado a la conexión.
+La confiabilidad es la seguridad de que la ruta existe y está funcionando.
+Antes de enviar cualquier solicitud, la capa de transporte valida si está
+disponible el servicio.
+Orientado a la conexión es tener la seguridad de saber si (el número de cuenta
+en el ejemplo de Omar, es el que necesita), esto tiene mucha carajada para
+asegurarse de que todo se esté transmitiendo y llegando correctamente.
+
+Los protocolos principales son TCP y UDP.
+
+El encabezado pesa 8 bytes cuando es UDP. 4 campos.
+
+El encabezado de TCP es 20 bytes. 9 campos.
+
+Criterios para usar TCP o UDP.
+
+Si la aplicación requiere velocidad, se usa UDP porque son cosas en vivo.
+
+TCP se usa cuando se necesita confiabilidad porque requieres que te llegue.
+
+En cada capa hemos presentado un ID, en capa 2 tenemos la MAC, en capa 3 tenemos
+IP, ahora en capa 4 tenemos... puerto.
+El puerto simplemente es un ID con 16 bits. En otras palabras, 65536 valores.
+Las aplicaciones requieren diferentes puertos para correr aplicaciones.
+
+Capa
+3  4
+IP:Port -> Socket
+
+Cuando dos máquinas hablan por sockets, lo llamamos conversación.
+
+Cuando hay varias pestañas de navegador abiertas, cada una tiene un puerto.
+
+netstat -a -> all ports
+netsatat -an -> all ports number
+netstat -anb -> check executable
+
+Los puertos los abre el sistema operativo.
+
+Well-known 1 - 1023 
+Aplicaciones tradicionales
+20-21 FTP
+22 SSH
+23 Telnet
+53 DNS
+67-68 DHCP
+69 TFTP
+80 HTTP (ver images en WhatsApp)
+443 HTTPS
+
+Registered 1024 - 49151
+Dynamic 44152  - 65535
+
+TCP tiene estados, udp no le hace seguimiento a la conexión.
+
+La IANA asigna puertos que no use los protocolos ya existentes.
+
+Cuando un network admin quiere bloquear una aplicación, puede ir al firewall de
+Windows y bloquear puertos.
+
+Los firewall y demás suelen bloquear por IP y puertos.
+
+UDP se usa para consultas sencillas como DNS.
+
+TCP tiene mecanismos para hacer más cosas, confiabilidad. Como ver el read
+receipt en WhatsApp.
+
+Sequence number
+n
+
+acknowledge number
+n+1
+
+Darle certeza al orgine de que llegó bien. Si el ack no llega, se retransmite
+la secuecuencia.
+
+Ehternet no hace nada con los paquetes perdidos, para eso está TCP.
+
+Hay una cosa que se llama la ventana, lo cual es enviar varios paquetes.
+
+sequence = [n, n+1, n+2, n+m]
+acknowledge = [n+m+1, n+m+2, n+m+3]
+
+La ventan se define en bytes. Cuando llegue al valor en bytes, manda un ack de
+byttes recibidos.
+
+Control de flujo
+Consiste en negociar cuánta información se recibe, el campo se llama window.
+Esto para máquinas con specs diferentes.
+
+Orientado a la conexión.
+Antes de empezar a despachar paquetes, verfiicar si al otro lado están listos
+para recibir, a esto lo llaman el 3-way handshake.
+Esto es una negociación previa.
+
+Pasos para la negociación, primero las máquinas se sincronizan enviando el 0.
+La máquina responde 1
+
+Los números de secuencia es local para cada máquina.
+
+syn x = 0 ->
+
+ack x = 1 <-
+syn y = 0 <-
+
+ack y = 1 ->
+
+Las flags hablan del estado de la conexión.
