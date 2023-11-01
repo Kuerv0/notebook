@@ -4410,3 +4410,13 @@ syn y = 0 <-
 ack y = 1 ->
 
 Las flags hablan del estado de la conexión.
+
+--------------------------------------------------------------------------------
+vigésima quinta clase
+--------------------------------------------------------------------------------
+Usar el switch 2960
+
+Para hacer la cascada, usar el puerto Giga.
+
+Usar router Empty
+C es c obro
