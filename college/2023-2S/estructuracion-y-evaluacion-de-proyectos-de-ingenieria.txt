@@ -1861,8 +1861,45 @@ Preguntas para la siguiente class.
 
 ¿Todo lo que no son gastos de administración y ventas son costos?
 
-Lo que no hace parte de valores anuales, ¿dónde se pone en el flujo de caja?
-
 ¿El valor de salvamento se calcula para cada año o solo para el final?
 
+Fechas: 7, 9, 14 -> Trabajo
+Exposición = 16 noviembre
+Muestra Interna = 24 noviembre
+Trabajo final = 1 diciembre
 
+Entrega 3ra entrega:
+Trabajo: 1 diciembre
+Exposición: muestra
+
+--------------------------------------------------------------------------------
+Clase 19
+--------------------------------------------------------------------------------
+Preparando el parcial
+Tue Oct 31 18:26:43 2023
+
+Pepita desea invertir en un CDT, va 2 entidades financieras y estas le ofrecen
+la siguiente tasa de interés.
+
+a) Tasa interés 24% nominal anual, con capitalización trimestral.
+
+b) Tasa intereés 32% nominal anual con capitalización bimestral.
+
+Pedro hace un préstamo a una tasa de intereés del 43% nominal anual semestral,
+pero este lo paga de de manera mensual. Calcular la tasa de interés equivalente
+mensual.
+
+tasa periodica -> Buscar eso
+
+int.efectivo(tasa_nominal; num_periodo)
+
+Siempre trabajar con 4 decimales.
+
+le = (1 + ip)^n - 1 ; ip = in/n
+
+ip tasa periodica que describe un punto especifico en el tiempo.
+lp tasa nominal que se liquida en el tiempo.
+
+Karem Mokate - Evalucación de proyectos.
+
+Activos reales: activos, pasivos, patrimonio.
