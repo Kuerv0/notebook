@@ -1903,3 +1903,60 @@ lp tasa nominal que se liquida en el tiempo.
 Karem Mokate - Evalucación de proyectos.
 
 Activos reales: activos, pasivos, patrimonio.
+
+
+--------------------------------------------------------------------------------
+Clase 20
+--------------------------------------------------------------------------------
+Tue Nov  7 18:05:18 2023
+
+¿Cómo calcular el precio de venta?
+
+Identifica costos fijos variables.
+
+Estudiar los competidores y nuestro demandante. 
+
+Conocer muy bien al cliente.
+
+El tiempo es dinero y por eso es importante establecer el valor del tiempo de la
+producción.
+
+Investiga los competidores con la DOFA y el modelo de Porter.
+
+Identificar la empresa con mayor cuota de mercado.
+
+Poder de negociación de los clientes, lo mejor es no tener solo un cliente, sino
+una gran cantidad.
+
+Amenaza de los productos sustitutos. Entre más sustitutos, más elástico es el
+bien. 
+
+Poder de negociación de los proveedores. Al igual que los clientes, tratar de no
+darles tanto poder de negociación.
+
+Es posible hacer algo sencillo como la DOFA. *
+
+suma de costos fijos y variables / la producción estimada del producto
+
+unidad de producción / (1 - margen de utilidad esperado)
+
+margen de utilidad esperado = utilidad neta / ingresos totales * 100
+
+La información anterior se consigue en los estados de resultados. *
+
+Cómo calcular la WACC [Ver las diapositivas]
+
+Rf Rentabilidad libre de riesgo del mercado (%) Bonos del gobierno
+
+Rm Rentabilidad del mercado (%) Necesitamos agarrar un índice externo.
+
+Beta mide el riesgo de la empresa con relación al sector o la volatidlidad. Es
+una medidad de sensibilidad.
+
+Calcular la beta apalancada que se define en las diaspositivaso.
+
+Para calcular el beta es necesario que esté cotizando en bolsa.
+
+pages.stern.nyu.edu-ºadamodar-New_HOme_Page/datafile.betas.html
+
+
