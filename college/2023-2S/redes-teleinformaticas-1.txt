@@ -4419,4 +4419,40 @@ Usar el switch 2960
 Para hacer la cascada, usar el puerto Giga.
 
 Usar router Empty
-C es c obro
+C es cobre
+
+--------------------------------------------------------------------------------
+vigésima sexta clase
+--------------------------------------------------------------------------------
+11/8/2023 12:09:29
+
+Vamos a trabajar en la capa de aplicación... aunque no es el fuerte de los que
+se encargan de las redes.
+
+DNS
+Domain Name Service
+
+UDP/TCP 53
+Nombre <-> IP
+
+consultar desde terminal
+
+nslookup spotify.com
+
+A record -> IPv4
+AAAA Record -> IPv6
+
+Switch
+(config) ip name-server [ip address]
+
+DHCP
+Dynamic Host Configuration Protocol
+UDP 
+67 server
+68 cliente
+
+ipconfig /release
+ipconfig /renew
+
+HTTP, HTTPS
+TCP 80, 443
