@@ -4456,3 +4456,42 @@ ipconfig /renew
 
 HTTP, HTTPS
 TCP 80, 443
+
+
+--------------------------------------------------------------------------------
+vigésima séptima clase
+--------------------------------------------------------------------------------
+11/10/2023 12:08:30
+
+TFTP -> Trivial File Transfer Protocol, UDP, puerto 69.
+Se usa para backups en los equipos ciscos.
+
+Guardar configuraciones
+
+#copy running-config tftp
+Address or name of remote host [ip-address]
+Destination filename
+
+Guardar sistema operativo
+#copy flash tftp
+source filename [nombre]
+Address or name of remote host
+Destination filename
+
+FTP -> Trabaja con TCP en los puertos 20, 21
+Con GET se descargan archivos y con PUT se suben archivos.
+
+TELNET 
+TCP, puerto 23
+Intercambio de líneas de comando o caracteres.
+
+EMAIL
+Recibir POP3, IMAP 4
+
+En los años 90 se usaba el POP 3, el cual es un protocolo en el que usted
+descarga el correo al disco duro.
+
+IMAP 4 solo baja los headers.
+
+ENVIAR
+SMTP
