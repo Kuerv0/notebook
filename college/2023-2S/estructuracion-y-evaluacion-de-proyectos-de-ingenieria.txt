@@ -1959,4 +1959,10 @@ Para calcular el beta es necesario que esté cotizando en bolsa.
 
 pages.stern.nyu.edu-ºadamodar-New_HOme_Page/datafile.betas.html
 
+--------------------------------------------------------------------------------
+Clase 21
+--------------------------------------------------------------------------------
+11/9/2023 18:08:22
+
+Análisis de sensiblidad.
 
