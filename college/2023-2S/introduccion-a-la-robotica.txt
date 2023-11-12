@@ -361,3 +361,29 @@ A B Out
 1 0 Clockwise
 0 1 !Clockwise
 1 1 Off
+
+--------------------------------------------------------------------------------
+Clase 8
+--------------------------------------------------------------------------------
+Primero vamos a hacer los botones de la aplicación.
+Sat Nov 11 08:19:11 2023
+
+Crear una nueva apliación en la apliación web, ir a disposición, agregar
+disposición horizontal, altura 80 pixeles.
+Cambiar el título.
+Cambiar el background.
+Agregar el ícono.
+
+Agregar otra disposición horizontal, en el ancho cmabiar por 115 pixeles.
+Agregar un botón que tenga alto 70 y ancho 60, la imagen sería la flecha usada.
+
+Agregar otra disposición horizontal con alto de 20 pixeles y ancho ajustar al
+contenedor. (Debajo de las dispociones anteriores)
+
+Otra disposición horizontal debajo de las anteriores con alto de 80 pixeles
+ancho 30 pixeles.
+
+Botón de 70 pixeles, seguido por disposición horizontal, botón de parar,
+disposición horizontal y botón de derecha.
+
+En resumen, crear disposicione horizontales para agregar botones.
