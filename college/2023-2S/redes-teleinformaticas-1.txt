@@ -3230,6 +3230,55 @@ display IP addresses and port numbers in their numerical form.
 
 14.5
 
+These are the functions of the three-way handshake:
+
+It establishes that the destination device is present on the network.
+
+It verifies that the destination device has an active service and is accepting
+requests on the destination port number that the initiating client intends to
+use.
+
+It informs the destination device that the source client intends to establish a
+communication session on that port number.
+
+14.6
+
+During session setup, an initial sequence number (ISN) is set. This ISN
+represents the starting value of the bytes that are transmitted to the receiving
+application. As data is transmitted during the session, the sequence number is
+incremented by the number of bytes that have been transmitted. This data byte
+tracking enables each segment to be uniquely identified and acknowledged.
+Missing segments can then be identified.
+
+Host operating systems today typically employ an optional TCP feature called
+selective acknowledgment (SACK), negotiated during the three-way handshake. If
+both hosts support SACK, the receiver can explicitly acknowledge which segments
+(bytes) were received including any discontinuous segments.
+
+TCP also provides mechanisms for flow control. Flow control is the amount of
+data that the destination can receive and process reliably. Flow control helps
+maintain the reliability of TCP transmission by adjusting the rate of data flow
+between source and destination for a given session. To accomplish this, the TCP
+header includes a 16-bit field called the window size.
+
+The initial window size is agreed upon when the TCP session is established
+during the three-way handshake. The source device must limit the number of bytes
+sent to the destination device based on the window size of the destination. Only
+after the source device receives an acknowledgment that the bytes have been
+received, can it continue sending more data for the session. Typically, the
+destination will not wait for all the bytes for its window size to be received
+before replying with an acknowledgment. As the bytes are received and processed,
+the destination will send acknowledgments to inform the source that it can
+continue to send additional bytes.
+
+A common MSS is 1,460 bytes when using IPv4. A host determines the value of its
+MSS field by subtracting the IP and TCP headers from the Ethernet maximum
+transmission unit (MTU). On an Ethernet interface, the default MTU is 1500
+bytes. Subtracting the IPv4 header of 20 bytes and the TCP header of 20 bytes,
+the default MSS size will be 1460 bytes, as shown in the figure.
+
+15.1
+
 --------------------------------------------------------------------------------
 Primera clase
 --------------------------------------------------------------------------------
