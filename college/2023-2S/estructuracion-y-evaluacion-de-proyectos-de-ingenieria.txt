@@ -1966,3 +1966,16 @@ Clase 21
 
 Análisis de sensiblidad.
 
+--------------------------------------------------------------------------------
+Clase 22
+--------------------------------------------------------------------------------
+La profe dice que enviarle máximo el jueves al medio día para enviar el flujo de
+caja. Luego ella hará el análisis de sensibilidad y nos lo enviará.
+También el que asista a las 3 conferencias, se le eliminará una nota mala de los
+casos de estudio.
+
+¿Qué debe llevar la exposición?
+
+¿Qué es la ingeniería del proyecto o cuál es el alcance? Nuestro elemento
+estrella es la aplicación.
+
