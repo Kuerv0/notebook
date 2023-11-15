@@ -1975,7 +1975,13 @@ También el que asista a las 3 conferencias, se le eliminará una nota mala de l
 casos de estudio.
 
 ¿Qué debe llevar la exposición?
+contextualizacoin 
+
+segunda partemercado, tecnico, organiz, ambiental, viabilidad, flujo de caja,
+las conclusiones
 
 ¿Qué es la ingeniería del proyecto o cuál es el alcance? Nuestro elemento
 estrella es la aplicación.
-
+Falta el diagrama, la ubicación de la planta, el diagrama de procesos, ,
+descripción detallada del procesdo de producción, que sea óptimo. Maximimización
+del tiempo.
