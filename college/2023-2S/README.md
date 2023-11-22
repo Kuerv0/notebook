@@ -108,4 +108,16 @@
 | Hacer tarea para seminario 2                                    | 100%       |
 | Arreglar el problema con el curso de NetAcad                    | 100%       |
 
+## Semana 15
+| Tarea                                                           | Porcentaje |
+|:---------------------------------------------------------------:|:----------:|
+| Caso de estudio [redes]                                         | 50%        |
+| Final práctico [redes]                                          | 50%        |
+| Módulos NetAcad [redes]                                         | 25%        |
+| Test 14 - 15 [redes]                                            | false      |
+| Test 16 - 17 [redes]                                            | false      |
+| Póster [seminario]                                              | 0%         |
+| Presentación [seminario]                                        | 0%         |
+| Trabajo escrito [seminario]                                     | 0%         |
+
 vim:nowrap:
