@@ -319,7 +319,6 @@ export PATH="BUN_INSTALL/bin:$PATH"
 --------------------------------------------------------------------------------
 Clase 7
 --------------------------------------------------------------------------------
-Waiting...
 Sat Oct 21 08:02:23 2023
 
 Motores paso a paso
@@ -387,3 +386,11 @@ Botón de 70 pixeles, seguido por disposición horizontal, botón de parar,
 disposición horizontal y botón de derecha.
 
 En resumen, crear disposicione horizontales para agregar botones.
+
+--------------------------------------------------------------------------------
+Clase 9
+--------------------------------------------------------------------------------
+Sat Nov 18 08:08:49 2023
+
+Agregamos sensores de proximidad al robot.
+Sat Nov 18 15:58:14 2023

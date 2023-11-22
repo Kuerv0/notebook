@@ -4655,3 +4655,38 @@ IMAP 4 solo baja los headers.
 
 ENVIAR
 SMTP
+
+--------------------------------------------------------------------------------
+vigésima octava clase
+--------------------------------------------------------------------------------
+ssh para switches
+
+hostname
+ip domain-name unal.edu.co
+
+crypto key generate rsa
+  1024
+
+username guest password guest123
+username admin-jr secret admin-jr123
+username root privilege 15 secret root123
+
+Usuario es modo de privilegio 1
+El comando privilege entra directamente a privilegiado en el switch.
+
+line vty 0 4
+  login local
+  transport input ssh
+  
+tftp
+config running-config
+
+#copy running-config tftp
+
+IOS -> flash
+
+copy flash:c29...bin tftp
+
+dir flash:c100
+
+copy flash:c100.../c100...bin tftp
