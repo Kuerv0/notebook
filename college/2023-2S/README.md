@@ -112,11 +112,11 @@
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
 | Caso de estudio [redes]                                         | 50%        |
-| Final práctico [redes]                                          | 50%        |
+| Final práctico [redes]                                          | false      |
 | Módulos NetAcad [redes]                                         | 25%        |
 | Test 14 - 15 [redes]                                            | false      |
 | Test 16 - 17 [redes]                                            | false      |
-| Póster [seminario]                                              | 0%         |
+| Póster [seminario]                                              | 75%        |
 | Presentación [seminario]                                        | 0%         |
 | Trabajo escrito [seminario]                                     | 0%         |
 
