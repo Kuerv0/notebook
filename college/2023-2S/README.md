@@ -111,13 +111,13 @@
 ## Semana 15
 | Tarea                                                           | Porcentaje |
 |:---------------------------------------------------------------:|:----------:|
-| Caso de estudio [redes]                                         | 50%        |
 | Final práctico [redes]                                          | false      |
 | Módulos NetAcad [redes]                                         | 25%        |
 | Test 14 - 15 [redes]                                            | false      |
 | Test 16 - 17 [redes]                                            | false      |
-| Póster [seminario]                                              | 75%        |
-| Presentación [seminario]                                        | 0%         |
 | Trabajo escrito [seminario]                                     | 0%         |
+| Presentación [seminario]                                        | true       |
+| Póster [seminario]                                              | 100%       |
+| Caso de estudio [redes]                                         | 100%       |
 
 vim:nowrap:
