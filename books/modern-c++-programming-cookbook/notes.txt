@@ -1,0 +1,12 @@
+:mkview vista
+:loadview vista
+
+Modern C++ Programming Cookbook
+
+Marius Bancila
+
+1 Learning Modern Core Language Features
+Wed 29 Nov 2023 11:54:17 AM -05
+
+Almost always auto (AAA).
+
