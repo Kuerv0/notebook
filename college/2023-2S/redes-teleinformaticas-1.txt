@@ -3506,6 +3506,57 @@ file structure is duplicated on the email client as well. When a user decides to
 delete a message, the server synchronizes that action and deletes the message
 from the server.
 
+15.4
+The DNS protocol defines an automated service that matches resource names with
+the required numeric network address. It includes the format for queries,
+responses, and data. The DNS protocol communications use a single format called
+a message. This message format is used for all types of client queries and
+server responses, error messages, and the transfer of resource record
+information between servers.
+
+The DNS server stores different types of resource records that are used to
+resolve names. These records contain the name, address, and type of record. Some
+of these record types are as follows:
+
+A - An end device IPv4 address
+NS - An authoritative name server
+AAAA - An end device IPv6 address (pronounced quad-A)
+MX - A mail exchange record
+
+The DNS cient service on Windows PCs also stores previously resolved names in
+memory. The ipconfig /displaydns command displays all of the cached DNS
+entries.
+
+The Dynamic Host Configuration Protocol (DHCP) for IPv4 service automates the
+assignment of IPv4 addresses, subnet masks, gateways, and other IPv4 networking
+parameters. This is referred to as dynamic addressing. The alternative to
+dynamic addressing is static addressing. When using static addressing, the
+network administrator manually enters IP address information on hosts.
+
+15.5
+
+The client establishes the first connection to the server for control traffic
+using TCP port 21. The traffic consists of client commands and server replies.
+
+The client establishes the second connection to the server for the actual data
+transfer using TCP port 20. This connection is created every time there is data
+to be transferred.
+
+The data transfer can happen in either direction. The client can download (pull)
+data from the server, or the client can upload (push) data to the server.
+
+The Server Message Block (SMB) is a client/server file sharing protocol that
+describes the structure of shared network resources, such as directories, files,
+printers, and serial ports. It is a request-response protocol. All SMB messages
+share a common format. This format uses a fixed-sized header, followed by a
+variable-sized parameter and data component.
+
+Here are three functions of SMB messages:
+
+Start, authenticate, and terminate sessions.
+Control file and printer access.
+Allow an application to send or receive messages to or from another device.
+
 --------------------------------------------------------------------------------
 Primera clase
 --------------------------------------------------------------------------------
