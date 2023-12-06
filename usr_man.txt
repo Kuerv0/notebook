@@ -905,4 +905,22 @@ just yet.
 ================================================================================
 usr_30
 ================================================================================
+Tue Dec  5 18:58:30 2023
+:!make | &tee /tmp/vim215953.err 
+gcc -g -Wall -o prog main.c sub.c 
+main.c: In function 'main': 
+main.c:6: too many arguments to function 'do_sub' 
+main.c: At top level: 
+main.c:10: parse error before '}' 
+make: *** [prog] Error 1 
 
+2 returned 
+"main.c" 11L, 111C 
+(3 of 6): too many arguments to function 'do_sub' 
+Press ENTER or type command to continue 
+
+:cnext -> Goes to where the next error occurs.
+
+:cc -> See the whole erorr message.
+
+:clist -> Overview of all error messages.
