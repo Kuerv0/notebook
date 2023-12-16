@@ -8,7 +8,6 @@ os.system("clear")
 Chapter 0
 Quick Tricks:
 Easy (and Impressive) Calculations
-
 """
 
 def InstantMultiplication():
@@ -37,6 +36,23 @@ def SingleDigitSum():
     ans = int(input())
 
     if ((gen1 + gen2) != ans):
+        print("Wrong!\n")
+        return False
+
+    print("Good boi!\n")
+    print(f"{round(time.time() - start, 2)} seconds! \n")
+    return True
+
+def SingleDigitSub():
+    """Practice"""
+    gen1 = random.randint(1, 9)
+    gen2 = random.randint(1, 9)
+
+    start = time.time()
+    print(f"{gen1} - {gen2}?\n")
+    ans = int(input())
+
+    if ((gen1 - gen2) != ans):
         print("Wrong!\n")
         return False
 
@@ -99,13 +115,101 @@ def TwoDigitProd1():
 chapter0 = [
         InstantMultiplication,
         SingleDigitSum,
+        SingleDigitSub,
         SingleDigitProd,
         TwoDigitSquare,
         TwoDigitProd1,
         ]
 
+"""
+Chapter 1
+Quick Tricks:
+Easy (and Impressive) Calculations
+"""
+
+def TwoDigitSum():
+    """Practice"""
+    gen1 = random.randint(10, 99)
+    gen2 = random.randint(10, 99)
+
+    start = time.time()
+    print(f"{gen1} + {gen2}?\n")
+    ans = int(input())
+
+    if ((gen1 + gen2) != ans):
+        print("Wrong!\n")
+        return False
+    
+    print("Good boi!\n")
+    print(f"{round(time.time() - start, 2)} seconds! \n")
+    return True
+
+def ThreeDigitSum():
+    """Practice"""
+    gen1 = random.randint(100, 999)
+    gen2 = random.randint(100, 999)
+
+    start = time.time()
+    print(f"{gen1} + {gen2}?\n")
+    ans = int(input())
+
+    if ((gen1 + gen2) != ans):
+        print("Wrong!\n")
+        return False
+    
+    print("Good boi!\n")
+    print(f"{round(time.time() - start, 2)} seconds! \n")
+    return True
+
+def TwoDigitSub():
+    """Practice"""
+    gen1 = random.randint(10, 99)
+    gen2 = random.randint(10, 99)
+
+    start = time.time()
+    print(f"{gen1} - {gen2}?\n")
+    ans = int(input())
+
+    if ((gen1 - gen2) != ans):
+        print("Wrong!\n")
+        return False
+    
+    print("Good boi!\n")
+    print(f"{round(time.time() - start, 2)} seconds! \n")
+    return True
+
+def ThreeDigitSub():
+    """Practice"""
+    gen1 = random.randint(100, 999)
+    gen2 = random.randint(100, 999)
+
+    start = time.time()
+    print(f"{gen1} - {gen2}?\n")
+    ans = int(input())
+
+    if ((gen1 - gen2) != ans):
+        print("Wrong!\n")
+        return False
+    
+    print("Good boi!\n")
+    print(f"{round(time.time() - start, 2)} seconds! \n")
+    return True
+    
+
+chapter1 = [
+    TwoDigitSum,
+    ThreeDigitSum,
+    TwoDigitSub,
+    ThreeDigitSub,
+]
+
 while True:
-    fn = chapter0[random.randint(0, len(chapter0) - 1)]
+    # fn = chapter0[random.randint(0, len(chapter0) - 1)]
+    # fn = chapter1[random.randint(0, len(chapter1) - 1)]
+
+    everything = chapter0 + chapter1
+    fn = everything[random.randint(0, len(everything) - 1)]
+
     if not fn():
         break
 
