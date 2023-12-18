@@ -203,11 +203,74 @@ chapter1 = [
     ThreeDigitSub,
 ]
 
+"""
+Chapter 2
+Products of a Misspent Youth:
+Basic Multiplication
+"""
+
+def TwoByOneMul():
+    """2-By-1 Multiplication Problems"""
+    gen1 = random.randint(1, 9)
+    gen2 = random.randint(10, 99)
+
+    start = time.time()
+    print(f"{gen1} * {gen2}?\n")
+    ans = int(input())
+
+    if ((gen1 * gen2) != ans):
+        print("Wrong!\n")
+        return False
+    
+    print("Good boi!\n")
+    print(f"{round(time.time() - start, 2)} seconds! \n")
+    return True
+
+def ThreeByOneMul():
+    """3-By-1 Multiplication Problems"""
+    gen1 = random.randint(1, 9)
+    gen2 = random.randint(100, 999)
+
+    start = time.time()
+    print(f"{gen1} * {gen2}?\n")
+    ans = int(input())
+
+    if ((gen1 * gen2) != ans):
+        print("Wrong!\n")
+        return False
+    
+    print("Good boi!\n")
+    print(f"{round(time.time() - start, 2)} seconds! \n")
+    return True
+
+def TwoDigitSquare():
+    """Interesting property for square of two numbers"""
+    gen = random.randint(10, 99)
+
+    start = time.time()
+    print(f"{gen}^2?\n")
+    ans = int(input())
+
+    if ((gen * gen) != ans):
+        print("Wrong!\n")
+        return False
+    
+    print("Good boi!\n")
+    print(f"{round(time.time() - start, 2)} seconds! \n")
+    return True
+
+chapter2 = [
+    TwoByOneMul,
+    ThreeByOneMul,
+    TwoDigitSquare
+]
+
 while True:
     # fn = chapter0[random.randint(0, len(chapter0) - 1)]
     # fn = chapter1[random.randint(0, len(chapter1) - 1)]
+    # fn = chapter2[random.randint(0, len(chapter2) - 1)]
 
-    everything = chapter0 + chapter1
+    everything = chapter0 + chapter1 + chapter2
     fn = everything[random.randint(0, len(everything) - 1)]
 
     if not fn():
@@ -215,3 +278,4 @@ while True:
 
     input("Press any key to continue")
     os.system("clear")
+    
