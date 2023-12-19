@@ -17,9 +17,12 @@ def InstantMultiplication():
     start = time.time()
     print(f"{gen} * 11?\n")
     ans = int(input())
+
+    correct = gen * 11
     
-    if (gen * 11 != ans):
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
 
     print("Good boi!\n")
@@ -35,8 +38,11 @@ def SingleDigitSum():
     print(f"{gen1} + {gen2}?\n")
     ans = int(input())
 
-    if ((gen1 + gen2) != ans):
+    correct = gen1 + gen2
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
 
     print("Good boi!\n")
@@ -52,8 +58,11 @@ def SingleDigitSub():
     print(f"{gen1} - {gen2}?\n")
     ans = int(input())
 
-    if ((gen1 - gen2) != ans):
+    correct = gen1 - gen2
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
 
     print("Good boi!\n")
@@ -69,8 +78,11 @@ def SingleDigitProd():
     print(f"{gen1} * {gen2}?\n")
     ans = int(input())
 
-    if ((gen1 * gen2) != ans):
+    correct = gen1 * gen2
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
 
     print("Good boi!\n")
@@ -85,8 +97,11 @@ def TwoDigitSquare():
     print(f"{gen} * {gen}?\n")
     ans = int(input())
 
-    if ((gen * gen) != ans):
+    correct = gen * gen
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
     
     print("Good boi!\n")
@@ -104,8 +119,11 @@ def TwoDigitProd1():
     print(f"{gen1} * {gen2}?\n")
     ans = int(input())
 
-    if ((gen1 * gen2) != ans):
+    correct = gen1 * gen2
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
     
     print("Good boi!\n")
@@ -136,8 +154,11 @@ def TwoDigitSum():
     print(f"{gen1} + {gen2}?\n")
     ans = int(input())
 
-    if ((gen1 + gen2) != ans):
+    correct = gen1 + gen2
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
     
     print("Good boi!\n")
@@ -153,8 +174,11 @@ def ThreeDigitSum():
     print(f"{gen1} + {gen2}?\n")
     ans = int(input())
 
-    if ((gen1 + gen2) != ans):
+    correct = gen1 + gen2
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
     
     print("Good boi!\n")
@@ -170,8 +194,11 @@ def TwoDigitSub():
     print(f"{gen1} - {gen2}?\n")
     ans = int(input())
 
-    if ((gen1 - gen2) != ans):
+    correct = gen1 - gen2
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
     
     print("Good boi!\n")
@@ -187,8 +214,11 @@ def ThreeDigitSub():
     print(f"{gen1} - {gen2}?\n")
     ans = int(input())
 
-    if ((gen1 - gen2) != ans):
+    correct = gen1 - gen2
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
     
     print("Good boi!\n")
@@ -218,8 +248,11 @@ def TwoByOneMul():
     print(f"{gen1} * {gen2}?\n")
     ans = int(input())
 
-    if ((gen1 * gen2) != ans):
+    correct = gen1 * gen2
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
     
     print("Good boi!\n")
@@ -235,15 +268,18 @@ def ThreeByOneMul():
     print(f"{gen1} * {gen2}?\n")
     ans = int(input())
 
-    if ((gen1 * gen2) != ans):
+    correct = gen1 * gen2
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
     
     print("Good boi!\n")
     print(f"{round(time.time() - start, 2)} seconds! \n")
     return True
 
-def TwoDigitSquare():
+def TwoDigitSquareAny():
     """Interesting property for square of two numbers"""
     gen = random.randint(10, 99)
 
@@ -251,8 +287,11 @@ def TwoDigitSquare():
     print(f"{gen}^2?\n")
     ans = int(input())
 
-    if ((gen * gen) != ans):
+    correct = gen * gen
+
+    if (correct != ans):
         print("Wrong!\n")
+        print(f"Correct answer: {correct}")
         return False
     
     print("Good boi!\n")
@@ -262,7 +301,7 @@ def TwoDigitSquare():
 chapter2 = [
     TwoByOneMul,
     ThreeByOneMul,
-    TwoDigitSquare
+    TwoDigitSquareAny
 ]
 
 while True:
