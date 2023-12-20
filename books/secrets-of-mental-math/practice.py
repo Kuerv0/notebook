@@ -16,7 +16,13 @@ def InstantMultiplication():
 
     start = time.time()
     print(f"{gen} * 11?\n")
-    ans = int(input())
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen * 11
     
@@ -36,7 +42,13 @@ def SingleDigitSum():
 
     start = time.time()
     print(f"{gen1} + {gen2}?\n")
-    ans = int(input())
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen1 + gen2
 
@@ -56,7 +68,13 @@ def SingleDigitSub():
 
     start = time.time()
     print(f"{gen1} - {gen2}?\n")
-    ans = int(input())
+    
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen1 - gen2
 
@@ -76,7 +94,13 @@ def SingleDigitProd():
 
     start = time.time()
     print(f"{gen1} * {gen2}?\n")
-    ans = int(input())
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen1 * gen2
 
@@ -95,7 +119,13 @@ def TwoDigitSquare():
 
     start = time.time()
     print(f"{gen} * {gen}?\n")
-    ans = int(input())
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen * gen
 
@@ -117,7 +147,13 @@ def TwoDigitProd1():
     
     start = time.time()
     print(f"{gen1} * {gen2}?\n")
-    ans = int(input())
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen1 * gen2
 
@@ -152,7 +188,13 @@ def TwoDigitSum():
 
     start = time.time()
     print(f"{gen1} + {gen2}?\n")
-    ans = int(input())
+    
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen1 + gen2
 
@@ -172,7 +214,13 @@ def ThreeDigitSum():
 
     start = time.time()
     print(f"{gen1} + {gen2}?\n")
-    ans = int(input())
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen1 + gen2
 
@@ -192,7 +240,13 @@ def TwoDigitSub():
 
     start = time.time()
     print(f"{gen1} - {gen2}?\n")
-    ans = int(input())
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen1 - gen2
 
@@ -212,7 +266,13 @@ def ThreeDigitSub():
 
     start = time.time()
     print(f"{gen1} - {gen2}?\n")
-    ans = int(input())
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen1 - gen2
 
@@ -246,7 +306,13 @@ def TwoByOneMul():
 
     start = time.time()
     print(f"{gen1} * {gen2}?\n")
-    ans = int(input())
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen1 * gen2
 
@@ -266,7 +332,13 @@ def ThreeByOneMul():
 
     start = time.time()
     print(f"{gen1} * {gen2}?\n")
-    ans = int(input())
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen1 * gen2
 
@@ -285,7 +357,13 @@ def TwoDigitSquareAny():
 
     start = time.time()
     print(f"{gen}^2?\n")
-    ans = int(input())
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
 
     correct = gen * gen
 
