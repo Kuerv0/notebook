@@ -382,13 +382,44 @@ chapter2 = [
     TwoDigitSquareAny
 ]
 
+def TwoByTwoMul():
+    """Multiplying two digit numbers"""
+    gen1 = random.randint(10, 99)
+    gen2 = random.randint(10, 99)
+
+    start = time.time()
+    print(f"{gen1} * {gen2}?\n")
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
+
+    correct = gen1 * gen2
+
+    if (correct != ans):
+        print("Wrong!\n")
+        print(f"Correct answer: {correct}")
+        return False
+    
+    print("Good boi!\n")
+    print(f"{round(time.time() - start, 2)} seconds! \n")
+    return True
+
+chapter3 = [
+    TwoByTwoMul
+]
+
 while True:
     # fn = chapter0[random.randint(0, len(chapter0) - 1)]
     # fn = chapter1[random.randint(0, len(chapter1) - 1)]
     # fn = chapter2[random.randint(0, len(chapter2) - 1)]
+    fn = chapter3[random.randint(0, len(chapter3) - 1)]
 
-    everything = chapter0 + chapter1 + chapter2
-    fn = everything[random.randint(0, len(everything) - 1)]
+    # everything = chapter0 + chapter1 + chapter2 + chapter3
+    # fn = everything[random.randint(0, len(everything) - 1)]
 
     if not fn():
         break
