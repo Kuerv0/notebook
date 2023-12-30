@@ -416,10 +416,13 @@ while True:
     # fn = chapter0[random.randint(0, len(chapter0) - 1)]
     # fn = chapter1[random.randint(0, len(chapter1) - 1)]
     # fn = chapter2[random.randint(0, len(chapter2) - 1)]
-    fn = chapter3[random.randint(0, len(chapter3) - 1)]
+    # fn = chapter3[random.randint(0, len(chapter3) - 1)]
 
     # everything = chapter0 + chapter1 + chapter2 + chapter3
     # fn = everything[random.randint(0, len(everything) - 1)]
+
+    some = chapter2 + chapter3
+    fn = some[random.randint(0, len(some) - 1)]
 
     if not fn():
         break
