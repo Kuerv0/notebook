@@ -101,3 +101,52 @@ $a(x - x_{0}) + b(y - y_{0}) + c(z - z_{0}) = 0$
 $ax + by + cz = ax_{0} + by_{0} + cz_{0}$
 
 # Vector functions and space curves
+
+**Definition:** A *vector function or *vector-valued function* is a function
+whose domain is a set of real numbers and whose range is a set of vectors.
+
+$\vec{r}(t) = <r_{1}(t), r_{2}(t)... r_{n}(t)>$
+
+# Derivatives and integrals of vector functions
+
+**Definition:** The *derivative* of the vector function $\vec{r}(t)$ is the same
+thing as the tangent vector, defined as
+
+$\frac{d\vec{r}}{d\vec{t}} = \vec{r}'(t) = \lim_{h\to0} \frac{\vec{r}(t + h) -
+\vec{r}(t)}{h}$
+
+If $\vec{r}(t) = <f(t), g(t), h(t)>$, then $\vec{r}'(t) = <f'(t), g'(t), h'(t)>$
+
+The derivative of a vector function is a (circle one) vector/scalar. [tangent
+vector]
+
+The *unit tangent vector is*: $\vec{T}(t) = \frac{\vec{r}'(t)}{\| \vec{r}'(t)
+\|}$
+
+**Definition:** If $\vec{r}(t) = <f(t), g(t), h(t)>$ then
+
+$\int{\vec{r}(t)dt} = <\int{f(t)dt}, \int{g(t)dt}, \int{h(t)dt}>$
+
+and 
+
+$\int_{a}^{b}{\vec{r}(t)dt} = <\int_{a}^{b}{f(t)dt}, \int_{a}^{b}{g(t)dt},
+\int_{a}^{b}{h(t)dt}>$
+
+# Arclenght for parametric curves
+
+$arclenght = \int_a^b{\sqrt{ f'(t)^2 + g'(t)^2 }} dt$
+
+$arclenght = \int_a^b{\sqrt{\frac{dx}{dt}^2 + \frac{dy}{dt}^2}} dt$
+
+# Functions of several variables
+
+**Definition:** A function $f$ of two variables is a rule that assigns to each
+ordered pair of real numbers $(x, y)$ in a set $D$ a unique real number denoted
+by $f(x, y)$ [or $z$].
+The set D is the *domain* of $f$.
+The *range* of $f$ is ${z = f(x,y) | (x,y) in D}$.
+x and y are *independent variables*.
+z is the *dependent variable*.
+
+The graph of $f$ is the set of all points (x, y, z) in $R^3$ such that $z =
+f(x, y)$ and $(x, y)$ is in $D$.
