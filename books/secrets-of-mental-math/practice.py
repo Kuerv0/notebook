@@ -412,17 +412,65 @@ chapter3 = [
     TwoByTwoMul
 ]
 
+"""
+Chapter 7
+A Memorable Chapter:
+Memorizing Numbers:
+"""
+
+def ThePhoneticCode():
+    "This can be hard to remember"
+    codes = [
+        ["t or d sound?", 1],
+        ["n sound", 2],
+        ["m sound", 3],
+        ["r sound", 4],
+        ["l sound", 5],
+        ["j, ch, sh sound", 6],
+        ["k or hard g sound", 7],
+        ["f or v sound", 8],
+        ["p or b sound", 9],
+        ["z or s sound", 0]
+    ]
+
+    code = codes[random.randint(0, len(codes) - 1)]
+
+    prompt, correct = code[0], code[1]
+    
+    print(f"{prompt}?\n")
+
+    while True:
+        try:
+            ans = int(input())
+            break
+        except:
+            continue
+
+    if (correct != ans):
+        print("Wrong!\n")
+        print(f"Correct answer: {correct}")
+        return False
+    
+    print("Good boi!\n")
+    return True
+
+chapter7 = [
+    ThePhoneticCode
+]
+
 while True:
     # fn = chapter0[random.randint(0, len(chapter0) - 1)]
     # fn = chapter1[random.randint(0, len(chapter1) - 1)]
     # fn = chapter2[random.randint(0, len(chapter2) - 1)]
     # fn = chapter3[random.randint(0, len(chapter3) - 1)]
+    
+    fn = chapter7[random.randint(0, len(chapter3) - 1)]
 
     # everything = chapter0 + chapter1 + chapter2 + chapter3
     # fn = everything[random.randint(0, len(everything) - 1)]
 
-    some = chapter2 + chapter3
-    fn = some[random.randint(0, len(some) - 1)]
+    # some = chapter2 + chapter3
+    # fn = some[random.randint(0, len(some) - 1)]
 
     if not fn():
         break
