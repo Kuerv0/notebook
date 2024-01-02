@@ -1,0 +1,134 @@
+https://ccna-200-301.online/ccna-2/
+--------------------------------------------------------------------------------
+Teoría: 1 Basic Device Configuration
+--------------------------------------------------------------------------------
+Mon 01 Jan 2024 04:19:29 PM -05
+
+1.1 Configre a Switch with Initial Settings
+
+Switch Boot Sequence
+
+After a Cisco switch is powered on, it goes through the following five-step boot
+sequence:
+
+Step 1: First, the switch loads a power-on self-test (POST) program stored in
+ROM. POST checks the CPU subsystem. It tests the CPU, DRAM, and the portion of
+the flash device that makes up the flash file system.
+
+Step 2: Next, the switch loads the boot loader software. The boot loader is a
+small program stored in ROM that is run immediately after POST successfully
+completes.
+
+Step 3: The boot loader performs low-level CPU initialization. It initializes
+the CPU registers, which control where physical memory is mapped, the quantity
+of memory, and its speed.
+
+Step 4: The boot loader initializes the flash file system on the system board.
+
+Step 5: Finally, the boot loader locates and loads a default IOS operating
+system software image into memory and gives control of the switch over to the
+IOS.
+
+# show boot -> see what the current IOS boot file is set to.
+
+# boot system [path] -> set the boot system global.
+
+(config)# boot system flash:/c2960-lanbasek9-mz.150-2.SE/c9-mz.150-2.SE.bin
+
+boot system                      -> The main command
+flash:                           -> The storage device
+c2960-lanbasek9-mz.150-2.SE/     -> The path to the file system
+c2960-lanbasek9-mz.150-2.SE.bin  -> The IOS file name 
+
+Switch LED Indicators
+
+System LED
+Shows whether the system is receiving power and is functioning properly. If the
+LED is off, it means the system is not powered on. If the LED is green, the
+system is operating normally. If the LED is amber, the system is receiving power
+but is not functioning properly.
+
+Redundant Power System (RPS) LED
+Shows the RPS status. If the LED is off, the RPS is off, or it is not properly
+connected. If the LED is green, the RPS is connected and ready to provide backup
+power. If the LED is blinking green, the RPS is connected but is unavailable
+because it is providing power to another device. If the LED is amber, the RPS is
+in standby mode, or in a fault condition. If the LED is blinking amber, the
+internal power supply in the switch has failed, and the RPS is providing
+power.
+
+Port Status LED
+Indicates that the port status mode is selected when the LED is green. This is
+the default mode. When selected, the port LEDs will display colors with
+different meanings. If the LED is off, there is no link, or the port was
+administratively shut down. If the LED is green, a link is present. If the LED
+is blinking green, there is activity and the port is sending or receiving data.
+If the LED is alternating green-amber, there is a link fault. If the LED is
+amber, the port is blocked to ensure that a loop does not exist in the
+forwarding domain and is not forwarding data (typically, ports will remain in
+this state for the first 30 seconds after being activated). If the LED is
+blinking amber, the port is blocked to prevent a possible loop in the forwarding
+domain.
+
+Port Duplex LED
+Indicates that the port duplex mode is selected when the LED is green. When
+selected, port LEDs that are off are in half-duplex mode. If the port LED is
+green, the port is in full-duplex mode.
+
+Port Speed LED
+Indicates that the port speed mode is selected. When selected, the port LEDs
+will display colors with different meanings. If the LED is off, the port is
+operating at 10 Mbps. If the LED is green, the port is operating at 100 Mbps. If
+the LED is blinking green, the port is operating at 1000 Mbps.
+
+Power over Ethernet (PoE) Mode LED
+If PoE is supported, a PoE mode LED will be present. If the LED is off, it
+indicates the PoE mode is not selected and that none of the ports have been
+denied power or placed in a fault condition. If the LED is blinking amber, the
+PoE mode is not selected but at least one of the ports has been denied power or
+has a PoE fault. If the LED is green, it indicates the PoE mode is selected and
+the port LEDs will display colors with different meanings. If the port LED is
+off, the PoE is off. If the port LED is green, the PoE is on. If the port LED is
+alternating green-amber, PoE is denied because providing power to the powered
+device will exceed the switch power capacity. If the LED is blinking amber, PoE
+is off because of a fault. If the LED is amber, PoE for the port has been
+disabled.
+
+Recovering from a System Crash
+
+The boot loader provides access into the switch if the operating system cannot
+be used because of missing or damaged system files. The boot loader has a
+command-line that provides access to the files stored in flash memory.
+
+: set -> view the path of the switch BOOT environment variable.
+
+:flash_init -> view the current files in flash.
+
+: dir flash -> view the directories and files in flash.
+
+: BOOT=flash:[path] -> change the BOOT environment variable.
+
+: boot -> Load the new IOS type.
+
+The boot loader commands support initializing flash, formatting flash,
+installing a new IOS, changing the BOOT environment variable and recovery of
+lost or forgotten passwords.
+
+Switch Management Access
+To prepare a switch for remote management access, the switch must be configured
+with an IP address and a subnet mask. Keep in mind that to manage the switch
+from a remote network, the switch must be configured with a default gateway.
+This is very similar to configuring the IP address information on host devices.
+In the figure, the switch virtual interface (SVI) on S1 should be assigned an IP
+address. The SVI is a virtual interface, not a physical port on the switch. A
+console cable is used to connect to a PC so that the switch can be initially
+configured.
+
+Switch SVI Configuration
+By default, the switch is configured to have its management controlled through
+VLAN 1. All ports are assigned to VLAN 1 by default. For security purposes, it
+is considered a best practice to use a VLAN other than VLAN 1 for the management
+VLAN, such as VLAN 99 in the example.
+
+1.2 Configure Switch Ports
+
