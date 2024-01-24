@@ -271,4 +271,15 @@ Australia parece estarse buscando y no se encuentra, está perdida y sus
 pensamientos tan vueltas y vueltas... ni siquiera ella misma los entiende.
 <br> **1/24/2024 13:28:28**
 
+Creo que finalmente llegué a una conclusión con el tema de Camila, después de
+leer nuestros mensajes y hablar con mis amigos, converger lo que siente mis
+sentimientos y mi razón, considero que existe la posibilidad de que haya sido lo
+suficientemente despistada para no ver "que la intentaba enamorar" o que mis
+palabras y afecto seguían como cuando se fue, pero esto no excusa lo que me
+hizo. Por esto decidí no perdonar lo que me hizo a menos que decida cambiar su
+actitud y sé que no está dispuesta a hacerlo en base a instancias en el pasado y
+las acciones que he visto durante el año. Sé que ella no va a volver y por ende
+yo debo seguir mi camino.
+<br> **Wed Jan 24 17:28:00 2024**
+
 vim:nowrap:
