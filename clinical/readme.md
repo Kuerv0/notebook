@@ -176,4 +176,99 @@ la realidad es muy difícil etiquetar a alguien como un villano porque los seres
 humanos somos muy complejos... y no sé quién soy en esta historia.
 <br> **Mon 22 Jan 2024 05:29:46 PM -05**
 
+Estoy intentando dejar ir este recuerdo, pero no sé cómo eiquetarlo. ¿Fue
+realmente una confusión? ¿Acaso ella de verdad siempre quiso lo mejor para mí?
+Todavía no estoy seguro de cómo dejarlo ir, pero siento que mi parte de la culpa
+fue no ver las claras señales y sentirme correspondido por palabras y no por
+acciones.
+<br> **1/24/2024 12:42:58**
+
+Creo que entiendo por qué siento que no me gustarían algunas actividades...
+quizá no sé cómo interactuar en ellas. Por ejemplo, no sabría qué hacer en una
+fiesta, no sé bailar, no sé cantar.
+<br> **1/24/2024 12:44:30**
+
+Lo que más me gustaba de la relación que tenía con Camila era esa sensación de
+poder descubrir muchas primeras veces juntos al tener una historia similar al
+inicio. Pero, ella se fue y allá ya ha tenido muchas primeras veces sola, por lo
+que siento que eso ya se perdió. También creo que no es una buena idea continuar
+con una persona que está perdida y no ha solucionado ciertos problemas en las
+relaciones interpersonales. Así que he empezado a ir a la iglesia nuevamente
+buscando algo similar porque aún estoy en ese limbo en el que me gustan las
+chicas de la iglesia, pero de nuevo, siento que piensan tan diferente que no sé
+si sea conveniente...
+<br> **1/24/2024 12:46:46**
+
+El tema de temblar me preocupa un poco porque quizá pueda avanzar con los años y
+no me gustaría que sea algo que afecte mi calidad de vida y mis relaciones
+interpersonales. Pienso mucho esto con todo en realidad. La paruresis me dejaba
+una sensación similar al pensar que no podría trabajar, no podría casarme, no
+podría ser feliz. 
+<br> **1/24/2024 12:49:12**
+
+Algo así me pasa cuando me siento mal porque pienso que necesito constante
+acompañamiento y eso me hace sentir como una persona que no es completamente
+funcional y eso en parte me duele al ver gente que consigue lidiar con
+situaciones sin ayuda, aunque entiendo que no es sano y no dejan curar sus
+heridas.
+<br> **1/24/2024 12:50:31**
+
+Actualmente estoy muy insatisfecho respecto a contacto físico. Es justamente
+porque me cuesta mucho interesarme sentimentalmente en alguien, además, en la
+relación que tuve con Camila había insatisfacción sexual por parte de ambos
+porque era algo que ella consideraba pecado. De hecho, ese fue uno de los
+factores principales por los que decidí terminar... yo intenté buscar soluciones
+y pedirle que ella también lo hiciera, pero nunca se llegaba a nada.
+<br> **1/24/2024 12:53:24**
+
+No es que no tuviera situaciones en las que pudiera satisfacer mi deseo sexual,
+pero sentía que no quería hacerlo al no sentir que conectaba intelectualmente
+con la persona. Eso suena muy extraño, pero siempre he pensado que conectar
+intelectualmente es uno de los factores más importantes para mí.
+<br> **1/24/2024 12:55:52**
+
+Es curioso porque incluso en la Universidad siento que me cuesta conectar
+intelectualmente, cuando escucho una persona quejarse de ciertos temas y se ríe
+al ser muy difíciles. Admiro más a las personas que entienden que todos los
+temas se pueden digerir con el tiempo y aunque hay algunos abstractos, con el
+tiempo se hace fácil.
+<br> **1/24/2024 12:59:01**
+
+Creo que estoy perdido en el tema de buscar una persona afín... no sé dónde
+puedo encontrar chicas con intereses similares...
+<br> **1/24/2024 12:59:39**
+
+Siento que paso mucho tiempo en casa con mis cosas. Nunca había querido salir,
+ahora quiero y explorar el mundo, pero no sé cómo se hace eso. 
+<br> **1/24/2024 13:03:05**
+
+Es una de las cosas que me habría gustado hacer con Camila, y quizá por eso no
+me interesaba tanto por salir y conocer personas y por ese lado creo que lo que
+pasó está bien, así tengo un incentivo para trabajar en áreas descuidadas de mi
+vida.
+<br> **1/24/2024 13:03:51**
+
+Creo que perdí 3 años de mi vida intentando reconstruir una relación solo... en
+lugar de empezar de nuevo porque no sabía y aún no sé dónde buscar.
+<br> **1/24/2024 13:11:15**
+
+Camila dice que intento culparla o intento desahogarme con ella, pero me
+pregutno si es lo que intentó, le dijé lo que sentí en base a lo que me dijo y
+lo que me dijeron mis amigos, pues todos concordaron en que ella sabía lo que
+estaba haciendo y aún así no quiso decirlo antes. El tema de pensar que los dos
+estábamos en la misma página fue egoísta dicen ellos y yo también lo creo.
+<br> **1/24/2024 13:25:11**
+
+He estado intentando ver a Camila como una persona que toma malas decisiones,
+esto con el fin de sentirme mejor. Veo que ella pidió un préstamo para unas
+vacaciones a Mexico, hizo más de 600 horas de servicio social para su beca en la
+Universidad y la abandonó, fue a Australia a pesar de que su madre le decía que
+no lo hiciera. En Australia la pasó mal incialmente y luego no consiguió su meta
+de ahorrar en un año y por eso quiere quedarse... también compró un móvil de
+cuatro millones y medio. De esta manera intento convencerme de que una relación
+con ella habría sido igualmente caótica. También me dijo que desde que está en
+Australia parece estarse buscando y no se encuentra, está perdida y sus
+pensamientos tan vueltas y vueltas... ni siquiera ella misma los entiende.
+<br> **1/24/2024 13:28:28**
+
 vim:nowrap:
