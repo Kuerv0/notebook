@@ -1,0 +1,43 @@
+--------------------------------------------------------------------------------
+Primera clase
+--------------------------------------------------------------------------------
+Mon Feb  5 12:07:27 2024
+
+SIA
+
+3 parciales 20%
+
+Tareas 20% 
+
+Final práctico 20%
+
+* 10% Curso autoestudio.
+
+NetAcad
+
+Examen cap 20%
+
+Tareas 30%
+
+Final teórico 20%
+
+Final práctico 30%
+
+CCNA
+
+- Switching
+- Wireless
+- Routing
+
+#do [comando] -> En cualquier modo para ejecuar comando.
+
+Los mensajes que aparecen se conocen como logs. Lo ideal es ponerle un salto de
+linea.
+
+configure terminal
+line con 0
+loggin synchronous 
+
+show cdp -> Cisco Discovery Protocol
+show cdp neighbor -> Para ver los vecinos
+show cdp neighbor detail -> Para ver los detalles de los vecinos.
