@@ -41,3 +41,73 @@ loggin synchronous
 show cdp -> Cisco Discovery Protocol
 show cdp neighbor -> Para ver los vecinos
 show cdp neighbor detail -> Para ver los detalles de los vecinos.
+
+--------------------------------------------------------------------------------
+Segunda clase
+--------------------------------------------------------------------------------
+Tue Feb  6 11:56:17 2024
+Hoy quiero retomar algunos conceptos de redes 1 porque lo vamos a necesitar para
+el jueves. El concepto que quiero que revisemos es qué es un dominio de colisión
+y qué es un dominio de broadcast. No es una métrica, pero le da una pista del
+diseño de la red. 
+
+Colisión: Es cuando dos señales se superponen.
+
+Una colisión es una situación que no deseamos en las redes. Si hay muchas
+colisiones alguien hizo algo mal. No es una métrica, pero es una pista de si la
+red está bien o mal diseñada. Si de un Access Point se pegan muchos usuarios lo
+que va a pasar es que la red se pone muy lenta, no hay colisiones porque las
+redes wireless evitan las colisiones, sin embargo, la red se va a saturar. Esto
+también sucede con las redes móviles en lugares donde hay muchas personas.
+
+Las colisiones se presentan cuando no hay segmentación de capa 2 para arriba, si
+solo hay equipos de capa 1, las colisiones se van a sentir en todos los equipos
+y por ende todos los equipos pararían. Señal jam es la que avisa que hay
+colisión en los equipos. Cuando hay muchas colisiones se siente lenta la red,
+ahora que lo estamos buscando es que si ocurre una colisión, solo se vea
+afectado en una parte de la red.
+
+Dominio de colisión es el conjunto de dispositivos afectados en una colisión,
+los equipos de capa 2 para arriba.
+
+En la vida real los computadores ya tienen servicios capa 2. 
+
+Los hubs son un replicador de señales y poco más.
+
+Los dominios de colisión se definen por cada puerto del switch.
+
+Una red preferiblemente tendrá pequeños, pero muchos dominios de colisión.
+
+El switch tiene buffers, esto ayuda a las colisiones. Pero, un switch puede
+tener colisiones si trabaja en half-duplex.
+
+Los dominions de broadcast también nos dan una idea de qué tan buena es la
+topología. 
+
+El hub es un loro, todo lo que llega lo replica por todos los puertos excepto
+por el que llegó la información. Esto es un problema de seguridad, los switches,
+en cambio, tienen tablas MAC que dan más idea de dónde sacar el paquete.  
+
+Cuando el mensaje es un broadcast, el switch se comporta similar a un hub,
+enviando la información por todos los puertos. 
+
+Los routers construyen pequeños dominions de broadcast.
+Los switches construyen pequeños dominions de colisión. Los routers también.
+
+La MAC de router se puede consultar con show int [interface]
+
+#show mac address-table
+#clear mac address-table | #clear mac address-table *
+
+el cdp se envía cada 60 segundos.
+
+Cuando un switch pregunta por una MAC que no conoce, NO ES UN BROADCAST, es un
+flood. *
+
+Hay un comando para agregar entradas a la tabla MAC, con unas tácticas de
+ciberseguridad podemos agregar MACs manual y engañar al switch para que no
+aprenda MACs desde paquetes para que nunca vaya a cambiar la MAC de un servidor,
+por ejemplo.
+
+Hay momentos en los que hay más entradas en la tabla MAC y esto puede sugerir un
+comportamiento malicioso.
