@@ -1,0 +1,51 @@
+--------------------------------------------------------------------------------
+Cálculo en varias variables 
+Clase 1
+--------------------------------------------------------------------------------
+Wed Feb  7 06:05:58 2024
+Jheison Rivera
+
+3 rectas perpendiculares hacen referencia al espacio tridimensional, O hace
+referencia al orígen, que se refiere a (0, 0, 0)
+
+Regla de la mano derecha *
+
+Planos coordenados 
+
+Tenemos los planos xz, yz, xy... esos planos dividen el espacio en regiones.
+
+This dude. Levógiro y dextrógiro preferencia de Jheison.
+
+Octantes. *
+
+$R^3 := {(x,y,z) | x, y, z \e \R}$
+
+z = 3, un plano en R^3
+
+Distancia entre dos puntos del espacio
+
+Recuerda dibujar la caja y encontrar cómo figurarse los planos y demás, sin
+embargo, esto básicamente es trivial.
+
+Definimos la esfera como
+
+$S(C,r) := {P \e R^3 | d(P,C) = r}$
+
+Recordar completar el cuadrado *
+
+Trazas
+
+Las curvas de intersección de una superficie con planos paralelos a los planso
+coordenados se llaman trazas (o secciones transversales) de la superficie.
+
+Cilindros
+
+Un cilindro es una superficie que consiste de todas las líneas rectas llamads
+generatricse que son paralelas a una recta dada y pasaan por una curva plana
+dada.
+
+La superficie z = x^2 es una cilindro parabólico.
+
+Cilindro circular recto
+
+y^2 + z^2 = 1

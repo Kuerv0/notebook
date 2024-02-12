@@ -111,3 +111,77 @@ por ejemplo.
 
 Hay momentos en los que hay más entradas en la tabla MAC y esto puede sugerir un
 comportamiento malicioso.
+
+--------------------------------------------------------------------------------
+Tercera clase
+--------------------------------------------------------------------------------
+Thu Feb  8 12:08:40 2024
+
+Mientras uses switches, aunque uses redes diferentes, habrá solo un dominio de
+broadcast.
+
+Si hay n redes, debe haber n dominios de broadcast.
+
+Las VLAN las manejan los switches. Son una forma de aislar grupos por
+software. Cada VLAN es un dominio de broadcast separado.
+
+#show vlan -> mostrar vlans.
+
+(config)# vlan 10
+  name [nombre]
+#vlan 20
+  name [nombre]
+
+La regla inicial era que el router separaba los domiinos de broadcast, a esta
+regla vamos a agregar una excepción, de modo que para n vlans, tenemos n
+dominios de broadcast.
+
+(config)#int range fa0/1 - 10 
+  switchport access vlan 10
+
+Los puertos mixtos los vamos a llamar trunk, estos puertos pueden llevar
+información de varias VLAN, los que son exclusivos de una VLAN, se conocen como
+ACCESS.
+
+El tag se pone en los enlaces trunk.
+
+(config)# int range g0/1 - 2
+
+  switchport mode trunk
+
+Sin tag el estándar es 802.3 y con tag es 802.1q
+
+Todos los puertos inician como access. El trunk es útil cuando tienes 2 o más
+VLANs. Para los PCs se puede tener puertos trunk para máquinas virtuales.
+
+802.1q -> Admite tráfico taggeado.
+
+Un router se encarga de conectar VLANs, bueno, porque es lo mismo que una LAN en
+teoría.
+
+(config)# int g0/0.10
+(config-if) encapsulation dot1Q [vlan number]
+(config-if) ip address ...
+
+--------------------------------------------------------------------------------
+Cuarta clase
+--------------------------------------------------------------------------------
+Mon Feb 12 12:28:40 2024
+
+Dirección APIPA: 169.254...
+Esta dirección solo sirve para conectividad local, ipv6 se inspiró en esto para
+hacer la Link Local, la iniciativa de esta dirección fue de Microsoft y luego
+los otros Sistemas Operativos lo adaptaron, esta dirección aparece cuando no
+encuentra servidor DHCP.
+
+Cuando solo hay una vlan, usamos puentes de acceso.
+
+LAN - Ethernet - enet
+      FDDI 
+      TokenRing
+
+FDDI - protocolo en desuso de fibra para LAN.
+
+show interface trunk -> Mostrar enlaces trunk.
+
+show interface [] [] switchport

@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------------
+Creación multimedia
+--------------------------------------------------------------------------------
+Wed Feb  7 16:02:28 2024
+--------------------------------------------------------------------------------
+Primera clase
+--------------------------------------------------------------------------------
+
+Creación multimedia
+
+- Se refiere a unión de imágenes, audio y vídeo, para lograr una composición que
+  transmite una idea o información.
+
+- Actualmente un producto multimedia requiere dos compnentes fundamentales:
+  Tech, art.
+
+UV unwrapping
+
+Texturing
+
+Raster graphics editing
+
+Rigging and Skinning
+
+Simulation
+
+Fluids simulation
+
+Soft body simulation
+
+Scupting
+
+Animating
+
+Lighting
+
+Match moving
+
+Rendering
+
+Motion graphics
+
+Video editing
+
+Compositing
+
+Modelado órganico
+
+Modelado inórganico
