@@ -185,3 +185,74 @@ FDDI - protocolo en desuso de fibra para LAN.
 show interface trunk -> Mostrar enlaces trunk.
 
 show interface [] [] switchport
+
+--------------------------------------------------------------------------------
+Quinta clase
+--------------------------------------------------------------------------------
+Thu Feb 15 12:05:47 2024
+
+VLAN ID - registro de 12 bits, 0 - 4095, pero no se incluyen los extremos.
+
+En las VLANS existe un rango básico y un rango extendido.
+
+Básico [1 - 1001]: Todos los protocolos soportan este rango. En una empresa
+usted nunca va a necesitar más de 1000 VLANs.
+
+Extendido [1006 - 4094]: No todos los equipos y no todos los protocolos soportan
+el rango extendido.
+
+Con el básico vamos derecho, con el extendido hay que revisar muy bien.
+
+En la mitad entre básico y extendido están las VLANs especiales.
+
+La cantidad de VLANs efectivas dependen de la RAM del switch, los 2960 permiten
+255, los capa 3 soportan más.
+
+El nombre de las VLANs no importa, pero el ID importa.
+
+Es importante crear VLANs en todos los switches, si hay un trunk, pero un switch
+envía información de una VLAN que el otro switch no tiene, descarta los
+paquetes.
+
+Puerto de Acceso: 1 VLAN. Estándar 802.3.
+Puerto Troncales: Todas las VLANs. Estándar 802.1q. 
+
+En los equipos finales, en general se usan puertos de acceso, pero hay
+excepciones, como los servidores u ordenadores con máquinas virtuales en los que
+es necesario diferente tráfico.
+
+VLAN 1 - Por defecto - Default. Están todos los puertos inicialmente, no se
+puede eliminar, no se puede cambiar el nombre, siempre será default. Lo único
+que hacemos de la VLAN es tomar los puertos, se acostumbra no usarla. La VLAN
+1 es un problema de seguridad porque un atacante tendría acceso a todos los
+puertos con acceder a esta VLAN.
+
+#show interface trunk -> self explanatory
+
+El TCI es el tag y está en hex.
+
+La VLAN nativa es la única VLAN que no tiene tag, por defecto es la VLAN 1, lo
+mejor es crear una VLAN nativa para desechar los flujos que se dañan.
+
+Solo puede haber una VLAN nativa por troncal porque se mezclan los flujos y no
+se podría diferenciar.
+
+(config)# interface []
+(config)# switchport trunk native vlan [number]
+#show interface trunk para validar si cambia la vlan a nativa.
+
+Todo lo que llegue al switch sin etiqueta la manda por la vlan nativa, porque
+es la única vlan que no se etiqueta en un troncal.
+
+En el router tenemos que hacer un cambio, el router cree que todo llega con
+etiqueta a menos que...
+
+(config-subif)encapsulation dot1Q [number] native -> Hacer saber al router cuál
+tráfico no tiene etiqueta. 
+
+La VLAN administrativa, muchachos, sirve para gestionar o administrar el
+switch. Es para poner la ip del switch.
+
+#(configure)int vlan [vlan number]
+#()ip add [address] [mask]
+#()no shutdown
