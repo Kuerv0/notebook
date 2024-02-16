@@ -1,0 +1,26 @@
+--------------------------------------------------------------------------------
+Primera clase
+--------------------------------------------------------------------------------
+2/15/2024 18:06:11
+
+Encontrar las verdaderas formas con las que funciona un software.
+
+Obtención de requisitos: Recopilar las necesidades y las expectativas.
+Análisis de requisitos: Estudiar y comprender los requisitos obtenidos.
+Especificación de requisitos: Documentar formalmente los requisitos en un
+lenguaje claro y preciso.
+Gestión de requisitos: Controlar y hacer seguimiento de los requisitos.
+Validación de requisitos: Asegurarse de que cumplan.
+
+Ninguna metodología ágil hoy trabaja sin requisitos.
+
+Comprensión del dominio: Esencial comprender en profundidad el dominio y el
+contexto del sistema a desarrollar para definir requisitos apropiados.
+
+Participación de los stakeholders - Involucrar activamente a todas las partes
+interesadas. (clientes, usuarios, desarrolladores, etc.) en el proceso de
+definición de requisitos.
+
+Especificación completa - Los requisitos deben ser especificados de manera
+exhaustiva y sin ambiguedades, cubriendo todas las funcionalidades y
+restricciones.
