@@ -265,7 +265,7 @@ Solo puede haber una VLAN nativa por troncal porque se mezclan los flujos y no
 se podría diferenciar.
 
 (config)# interface []
-(config)# switchport trunk native vlan [number]
+(config-if)# switchport trunk native vlan [number]
 #show interface trunk para validar si cambia la vlan a nativa.
 
 Todo lo que llegue al switch sin etiqueta la manda por la vlan nativa, porque
@@ -281,5 +281,91 @@ La VLAN administrativa, muchachos, sirve para gestionar o administrar el
 switch. Es para poner la ip del switch.
 
 #(configure)int vlan [vlan number]
-#()ip add [address] [mask]
+()ip add [address] [mask]
 #()no shutdown
+
+--------------------------------------------------------------------------------
+Sexta clase
+--------------------------------------------------------------------------------
+Mon Feb 19 12:07:09 2024
+
+Podemos quitar VLANs del troncal cuando no queremos que se comunique con los
+demás, por ejemplo, un ataque o pruebas que pueden inerferir con otros
+equipos.
+
+S(config)# interface [interface id]
+S(config-if)# switchport trunk allowed vlan remove [id]
+
+Se puede repartir el tráfico entre dos enlaces trunk.
+
+El switch de capa 2, entiende los conceptos de capa 2, tiene puertos de acceso y
+trunk, el router no tiene ninguno de los dos, el router tiene puertos de capa 3,
+puertos enrutados. El switch no puede tener ip en ningún puerto, excepto con el
+artificio interfaz vlan.
+
+Un equipo capa 2, puede enviar tráfico entre la misma vlan, el equipo capa 3
+comunica entre vlans.
+
+El switch de capa 3 es lo mejor de ambos mundos.
+
+Un switch de capa 3 es indistinguible de un switch capa 2.
+
+Dynamic Trunking Protocol (DTP) -> Protocolo que comparte información cada 60
+segundos entre switches y busca negociar el modo. O el puerto funciona en access
+o el puerto funciona trunk. Los dos hacen la negociación, es posible negociar el
+enlace... vamos a tener dos modos manuales o estaticos. Los cuales son accesso y
+trunk (switchport access, switchport trunk).
+
+Hay dos modos dinámicos en los equipos: Desirable, Auto.
+
+Access nunca baila.
+Trunk baila de todo.
+
+Auto espera que lo saquen a bailar.
+Desirable saca a bailar.
+
+Bailar se refiere a trunk.
+
+Modo operacional es como resulta de la negociación. 
+show interface [interface] switchport.
+
+Si un puerto de acceso se conecta a un trunk, solo funcionará bien con la vlan
+nativa.
+
+S(config-if)# switchport nonegotitate -> Deshabilitar negociación.
+
+DTP también hace la negociación del encapsulamiento, Cisco tenía un
+encapsulamiento propio: Cisco ISL, IEE 802.1q
+
+S(config-if)switchport trunk encapsulation dot1q -> Para la negociación auto y
+errores.
+
+3 [SVI: int vlan 99] => Solo se crea para la vlan administrativa y es solo
+una.
+2 [vlan 99]
+1 [Acceso o Trunk]
+
+La ip solo se le da a la vlan administrativa.
+
+La SVI se guarda en la RAM, pero también lo podemos guardar en la startup
+config, en la  NVRAM, las vlan se guardan en un archivo en la Flash, en
+vlan.dat.
+
+Running, RAM: SVI 99
+NVRAM
+
+#delete vlan.dat -> eliminar vlans.
+
+En un switch capa 3, por cada vlan, hay SVI.
+
+Los multicapa traen el enrutamiento apagado.
+
+S3(config)# ip routing
+S(config)# ipv6 unicast routing
+
+S(config-if)# no switchport -> Renunciar a capa 2 y tener capa 3 solamente.
+
+Es preferible usar un Switch capa 3 a los routers en ciertos escenarios en los
+que requieren mucha velocidad.
+
+No usar multicapa cuando se usa WAN, DSL, etc.
