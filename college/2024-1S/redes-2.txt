@@ -369,3 +369,25 @@ Es preferible usar un Switch capa 3 a los routers en ciertos escenarios en los
 que requieren mucha velocidad.
 
 No usar multicapa cuando se usa WAN, DSL, etc.
+
+--------------------------------------------------------------------------------
+Séptima clase
+--------------------------------------------------------------------------------
+Tue Feb 20 11:47:58 2024
+
+Redundancia
+
+Siempre hay una necesidad que suplir, el primer problema es si yo le dejo solo
+un enlace entre switches y ese enlace se cae, la conectividad se pierde, por lo
+que queremos tener varios caminos para que los enlaces sean redunantes.
+
+Tenemos múltiples caminos para llegar a otro lugar. Puede haber redundancia de
+capa 2 y varios caminos capa 3.
+
+El protocolo que nos ayuda a elegir un camino es spanning tree.
+
+S(config)# no spanning-tree vlan [vlan-id] -> Desactivar spanning tree
+
+FastEthernet costo 19
+
+Giga costo 4
