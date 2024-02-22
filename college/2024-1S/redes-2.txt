@@ -391,3 +391,68 @@ S(config)# no spanning-tree vlan [vlan-id] -> Desactivar spanning tree
 FastEthernet costo 19
 
 Giga costo 4
+
+
+--------------------------------------------------------------------------------
+Octava clase
+--------------------------------------------------------------------------------
+Thu Feb 22 12:15:46 2024
+
+1. Elegir un un switch raíz por cada dominio de broadcast
+
+Breach ID -> BID, ya no hay breach, todo el mundo le tira a los switches.
+Cuando digamos breach pensemos en switches, es un identificador que tiene dos
+valores. [prioridad 16 bits 0 - 65535 (32768)][MAC base 48 bits]
+
+Menor BID es la root.
+
+# show spanning-tree -> Mostrar info sobre el spanning tree.
+
+Cuando el raíz está mal ubicado, hay rutas subóptimas. 
+
+Criterios: El raíz debería ser el equipo de mejores especificaciones, los
+equipos con mejor ubicación. [Acceso, distribución, core], ubicar el raíz lo más
+cercano al recurso compartido (router, impresoras, servidor)
+
+- Mejores especificaciones.
+- Mejor ubicación (Nivel superior).
+- Cercano al recurso compartido.
+
+Hay dos formas de cambiar prioridad. 
+
+- Bajar la prioridad manualmente.
+#(config) spanning-tree vlan 1 priority 16384
+
+- Bajar la prioridad de manera automática.
+#(config)spanning-tree vlan1 root [primary, secondary]
+De esta manera, baja escalones de 4096.
+
+2. Elegir un puero ŕaíz por cada switch no raíz. 
+
+Los switches que pierden, deben escoger un puerto para que sea el switch raíz.
+El puerto raíz es el que nos lleva más rápido a raíz.
+
+¿Cuál nos lleva más rápido al switch root?
+[SENDER]
+
+- Menor costo 10M -> 100, 100M -> 19, 1G -> 4, 10G -> 2.
+
+Para puertos raíz.
+
+- Menor BID Sender/vecino 
+
+- Menor Port ID sender/vecino, escoge el menor puerto del vecino y ese es el
+  raíz.
+
+- Menor Port ID local.
+
+Los costos son por dominio de colisión.
+
+3. Elegir un puerto designado por cada dominio de colisión.
+
+[RECIBIR]
+
+Por cada dominio de colisión, hay un puerto designado, todos los puertos del
+raíz son designados.
+
+4. Bloquear los puertos que no son designados.
