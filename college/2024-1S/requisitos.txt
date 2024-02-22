@@ -24,3 +24,10 @@ definición de requisitos.
 Especificación completa - Los requisitos deben ser especificados de manera
 exhaustiva y sin ambiguedades, cubriendo todas las funcionalidades y
 restricciones.
+
+--------------------------------------------------------------------------------
+Segunda clase
+--------------------------------------------------------------------------------
+2/20/2024 17:46:30
+
+
