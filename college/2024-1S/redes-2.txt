@@ -456,3 +456,49 @@ Por cada dominio de colisión, hay un puerto designado, todos los puertos del
 raíz son designados.
 
 4. Bloquear los puertos que no son designados.
+
+--------------------------------------------------------------------------------
+Novena clase
+--------------------------------------------------------------------------------
+Mon Feb 26 11:53:32 2024
+
+Es momento de saber cómo se logra esto en 30 segundos.
+
+El primer elemento que quiero contarles es que spanning tree tiene unos
+menssajes llamados los hellos, realmente llamados:
+
+- BPDU Hello -> Cada 2 segundos se manda un hello por todos los puertos que
+  están conectados. 
+
+MAC origen en paquetes STP, MAC destino 0180.c200.0000
+
+Forward Delay se refiere al tiempo que la información tarda en propagarse y sea
+homogenea.
+
+Estados STP
+
+1. Down.
+2. Listening (15 segundos).
+3. Learning (15 segundos).
+4. Forwarding or blocking.
+
+Hay variantes de spanning tree para que no tome tanto tiempo. 30 segundos en la
+actualidad es mucho tiempo.
+
+STPF fue estarndarizado en IEE 802.1d, pero cisco empezó a hacer modificaciones
+y hay que ser juicioso para revisar si son compatibles.
+
+Árbol común es de la IEE802.1D, donde STP hay un raíz para todas las VLANs, pero
+Cisco tiene PVSPT 
+
+Dibujando STP
+
+Los enlaces troncales se dibujan en todas las vlans
+En los de acceso, metemos solo los que pertenecen a la vlan n
+
+Si hay troncales, el puerto solo se pondrá naranja cuando todas las vlan están
+bloqueadas.
+
+STP y PVSTP no pueden comunicarse entre sí. Entonces Cisco tomó bits de la
+prioridad para ser interpretado de otra forma. Esto toma 12 bits de los 16 del
+campo prioridad para marcar las VLANs.
