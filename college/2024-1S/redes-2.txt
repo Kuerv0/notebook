@@ -502,3 +502,51 @@ bloqueadas.
 STP y PVSTP no pueden comunicarse entre sí. Entonces Cisco tomó bits de la
 prioridad para ser interpretado de otra forma. Esto toma 12 bits de los 16 del
 campo prioridad para marcar las VLANs.
+
+--------------------------------------------------------------------------------
+Décima clase
+--------------------------------------------------------------------------------
+Tue Feb 27 12:49:40 2024
+
+Puertos Edge vs puertos Link
+
+Los puertos link son los que tienen otro switch, i.e, puertos que van de un
+switch a otro switch.
+
+Los puertos Edge son aquellos donde termina. Una nevera, una consola de
+videojuegos, un televisor, un computador.
+
+En los puertos Edge, podemos habilitar una feature donde podemos hacer que
+funcione inmediatamente, esto tiene que ser un puerto Edge. (portfast)
+
+#(config) interface [port]
+#(config-if) switchport mode access
+#(config-if) spanning-tree portfast
+
+Se puede activar en PVSPT y RSPT
+
+Los puertos que son de Link, esos sí, paciencia porque se tiene que hacer el
+cálculo de spanning tree.
+
+Hay otros tipos de puerto: puertos punto a punto (p2p) y shared.
+
+Los p2p son los que solo tienen un equipo punto a punto, los shared son los que
+tienen más equipos.
+
+El switch se da cuenta que son punto a punto porque son full-duplex.
+
+Los shared son half-duplex, esto pasa cuando lo configuramos o cuando tenemos un
+hub, pero esto es raro hoy en día.
+
+RSPT tiene dos opciones, el de la IEEE, el cual es 802.1w, el de cisco se llama
+rapid-pvst.
+
+#(config) spanning-tree mode rapd-pvst
+
+En rapid-spanning tree, desaparece el listening y solo aparece el learning,
+menos de 6 segundos.
+
+Cuando hay un concurso, una competición, lo que sea, usted elige un principal,
+si el primero se muere. el segundo lo prommueven sin tener que hacer ningún
+proceso. Esto pasa en los switches con las conexiones Raíz y alternativo, si el
+raíz muere, se delega al alternativo. Esto no funciona muy bien con los hubs.
