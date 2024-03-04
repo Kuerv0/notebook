@@ -550,3 +550,9 @@ Cuando hay un concurso, una competición, lo que sea, usted elige un principal,
 si el primero se muere. el segundo lo prommueven sin tener que hacer ningún
 proceso. Esto pasa en los switches con las conexiones Raíz y alternativo, si el
 raíz muere, se delega al alternativo. Esto no funciona muy bien con los hubs.
+
+--------------------------------------------------------------------------------
+Décima primera clase
+--------------------------------------------------------------------------------
+Thu Feb 29 12:07:12 2024
+
