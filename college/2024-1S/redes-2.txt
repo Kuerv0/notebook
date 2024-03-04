@@ -556,3 +556,40 @@ Décima primera clase
 --------------------------------------------------------------------------------
 Thu Feb 29 12:07:12 2024
 
+Primero dibujamos los árboles para cada VLAN. Troncales + Acceso de cada VLAN.
+
+Hay hubs de 10 megas y hay hubs de 100 megas, esto es un cuello de botella.
+
+--------------------------------------------------------------------------------
+Décima segunda clase
+--------------------------------------------------------------------------------
+Mon Mar  4 11:59:10 2024
+
+Hoy entonces vamos a trabajar en un tema que es breve.
+
+1. Los 2 enlaces simultáneos.
+
+2. Un enlace principal activo, el resto de respaldo. (STP)
+
+3. Agregación de enlace. Bundle.
+Port Channel en Cisco, Ether channel en otros fabricantes
+  - Esta agregación se puede hacer hasta 8 enlaces
+  - Enlaces de la misma característica. Tipo.
+  - Mismo modo. Acceso | trunk | desirable | auto
+  - Trunk: misma nativa, Acceso: misma vlan
+  - Mismo Duplex
+
+El agrupammiento se puede hacer de forma manual o forma automática.
+El manual se puede hacer nombrando los puertos.
+Podemos también negociar y funciona de una manera similar al auto de los
+trunk.
+
+Existe protcolo de Cisco. PAgP. Port Aggregation Protocol.
+  - Desirable
+  - Auto
+
+IEEE - LACP -> Link aggregation control protocol.
+  - Active
+  - Passive
+
+Los puertos de portchannel no tienen que ser consecutivos.Protocolo de control de agregación de enlaces.
