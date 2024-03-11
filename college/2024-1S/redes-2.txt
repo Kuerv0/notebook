@@ -592,4 +592,24 @@ IEEE - LACP -> Link aggregation control protocol.
   - Active
   - Passive
 
-Los puertos de portchannel no tienen que ser consecutivos.Protocolo de control de agregación de enlaces.
+Los puertos de portchannel no tienen que ser consecutivos.Protocolo de control
+dpe agregación de enlaces.
+
+--------------------------------------------------------------------------------
+Décima tercera clase
+--------------------------------------------------------------------------------
+Tue Mar  5 12:20:41 2024
+
+--------------------------------------------------------------------------------
+Décima cuarta clase
+--------------------------------------------------------------------------------
+Mon Mar 11 12:29:55 2024
+
+Preparar running config
+
+1. version borrar hacia arriba (incluida)
+2. end borrar hacia abajo (no incluida)
+3. borrar bloque interface sin uso.
+4. Agregar no shutdown a las interfaces con uso.
+5. Confrontar show ip int brief con las interfaces en el txt.
+6. vlans se deben hacer de manera manual, en los switches, no se guardan.
