@@ -613,3 +613,28 @@ Preparar running config
 4. Agregar no shutdown a las interfaces con uso.
 5. Confrontar show ip int brief con las interfaces en el txt.
 6. vlans se deben hacer de manera manual, en los switches, no se guardan.
+f
+--------------------------------------------------------------------------------
+Décima quinta clase
+
+# standby [group-id] ip 10.100.0.3
+--------------------------------------------------------------------------------
+Tue Mar 12 11:52:00 2024
+
+El entorno con VLANs es L2, el entorno sin VLAns es L3.
+
+224.0.0.[2] HSRP
+0100.5E00.000[2]
+
+MAC virtual: 0000.0c07.ac[c8] <- Últimos dos corresponde al grupo.
+
+Elección del activo: Mayor prioridad, si se empata, se escoge la ip más alta.
+prioridad por defecto es de 100, puede tomar un valor entre 0 y 255.
+
+#(config-if)#show standby brief -> Mostrar summary 
+
+#(config-if)#standby [group-id] preempt -> Activar preempt
+
+Estas carajadas son MAC multicast que no están en equipos.
+
+show ip interface vlan 100 -> Ver cuáles multicast entiende el dispositivo.
