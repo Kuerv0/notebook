@@ -616,10 +616,10 @@ Preparar running config
 f
 --------------------------------------------------------------------------------
 Décima quinta clase
-
-# standby [group-id] ip 10.100.0.3
 --------------------------------------------------------------------------------
 Tue Mar 12 11:52:00 2024
+
+# standby [group-id] ip 10.100.0.3
 
 El entorno con VLANs es L2, el entorno sin VLAns es L3.
 
@@ -638,3 +638,31 @@ prioridad por defecto es de 100, puede tomar un valor entre 0 y 255.
 Estas carajadas son MAC multicast que no están en equipos.
 
 show ip interface vlan 100 -> Ver cuáles multicast entiende el dispositivo.
+
+--------------------------------------------------------------------------------
+Décima sexta clase
+--------------------------------------------------------------------------------
+Jueves 18 de abril.
+
+Antes había un protocolo que se llamaba bootp [boot protocol], el antecesor.
+Para cada usuario se creaba un perfil, para n usuarios, asignar n perfiles. En
+cada perfil se agregaba detalles similares a DHCP, pero se anclaba con la MAC.
+El DHCP, en cambio, crea un pool y este se encarga de asignar las ip de manera
+automática.
+
+discover, offer, request, acknowledge.
+
+En Ipv6 tenemos unos identificadores o direcciones de 128 bits, esos 128 bits lo
+habímos dividido como de forma canónica en 2 porciones, esas porciones tienen
+unos tamaños recomendados, pero no fijos, el famoso /64. El prefijo representa
+la red. [Prefijo][Int ID].
+
+Métodos de asignación de direcciones en Ipv6
+
+Primer método: Asignación manual.
+Una direción ip tiene dos partes. [prefijo (man)][int ID (man)]
+
+El segundo método es manual más EUI-64.
+
+En este escenario tenemos la porción del prefijo y la de interface.
+[Pref (Manual)][Int ID (Auto)]
