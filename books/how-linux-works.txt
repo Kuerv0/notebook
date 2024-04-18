@@ -1,5 +1,0 @@
-How Linux Works
-What every superuser should know
-3rd edition
-
-Brian Ward
