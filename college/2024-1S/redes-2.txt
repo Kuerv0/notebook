@@ -666,3 +666,76 @@ El segundo método es manual más EUI-64.
 
 En este escenario tenemos la porción del prefijo y la de interface.
 [Pref (Manual)][Int ID (Auto)]
+
+--------------------------------------------------------------------------------
+Décima séptima clase
+--------------------------------------------------------------------------------
+22 April 2024
+
+Métodos
+
+1. Manual
+2. Manual + EUI64
+
+3. Autoconfig - SLAAC (stateles address auto configuration)
+En este método, la interacción nuestra es mínima, una buena noticia es que los
+equipos ya tienen autoconfig de fábrica. Estrategia plug and play.
+
+Lo primero, vamos a necesitar que en la infraestructura haya al menos un router,
+usted se va a esforzar un equipo capa 3, de modo que también puede ser un Switch
+capa 3. Este equipo va a necesitar tener una dirección. Usted va a concentrar
+sus esfuerzos en configurar el router, el default gateway. El router viene en
+autoconfig, si no es así, es necesario configurarlo.
+
+En IPV6 hay 3 métodos automaticos, pero esto no lo escoge al usuario, esto lo
+hace el router y por ende esto debe estar configurado desde el router.
+
+Importante: Si solo se pone la IP al router, el router no funciona como router.
+El router se convierte en un router si al router le dices ipv6-unicast-routing,
+a usted se le olvida, el router no será router, sino un dispositivo más, un
+cliente.
+
+ICMPv6
+Conectividad - ping (echo request 128, echo reply 129)
+
+Dado que no hay arp - ICMPv6 también tiene la tarea de hacer los mapping entre
+IP y MAC. Neighbor solicitation y Neighbor advertisement. (NDP)
+
+Consultar el prefijo de la red. (NDP)
+
+FF02::2 all routers del segmento.
+FF02::1 All nodes del segmento.
+
+Ninguno de estos métodos usa un protocol extraño, todos son procedimientos
+propopios de IPv6.
+
+Nosotros hasta ahora nos hemos concentrado en los parametros manage, parametros
+de gestión manage (IP, longitud del prefijo (mask), gw).
+
+Parametros Other (DNS, Dominio).
+
+parametros M los entrega SLAAC.
+
+los parametros O los entrega dhcpv6.
+
+Y cuando la M la entrega SLAAC y la O la entrega DHCPv6, se conoce como DHCP
+Stateless,
+
+Y cuando M + O lo entrega DHCP, se conoce como DHCP Stateful.
+
+En IPv6 hay que meterse a la interfaz y decirle qué pool vas a usar.
+
+Las banderas en 0 lo hace ICMPv6 y la 1 la hace DHCPv6
+
+3) 0    -> Opción por defecto
+4) 0 1
+5) 1 1
+
+1. Crear pool.
+2. Asociar pool en interface.
+3. Encender flags.
+
+Stateless -> La dirección la entregó SLAAC, los otros parametros los entregó
+DHCPv6
+
+
