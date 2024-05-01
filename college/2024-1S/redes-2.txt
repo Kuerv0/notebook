@@ -738,4 +738,12 @@ Las banderas en 0 lo hace ICMPv6 y la 1 la hace DHCPv6
 Stateless -> La dirección la entregó SLAAC, los otros parametros los entregó
 DHCPv6
 
+--------------------------------------------------------------------------------
+Décima octava clase
+--------------------------------------------------------------------------------
+4/30/2024 12:03:28
+
+PC - Router Solicitation -> Router
+  <- Router advertisement - Router [M = 0, O = 0](SLAAC) Prefijo
+  <- Router advertisement - Router [M =0, O = 1](Stateless) DHCP para otros
 
