@@ -747,3 +747,44 @@ PC - Router Solicitation -> Router
   <- Router advertisement - Router [M = 0, O = 0](SLAAC) Prefijo
   <- Router advertisement - Router [M =0, O = 1](Stateless) DHCP para otros
 
+--------------------------------------------------------------------------------
+Décima novena clase
+--------------------------------------------------------------------------------
+5/2/2024 12:07:52
+
+Hoy vamos a conversar sobre la seguridad en las LAN, durante muchos años toda la
+fuerza se concentró en conectar. En ese nos hemos concentrado en el curso, en
+conectar. Siempre si lo han notado, acabamos cuando hay ping de extremo a
+extremo. Después de los años 80 y 90, se empezó a abrir otra temática, era el
+tema de la seguridad. Los que implementaban las redes solo lo conectaban, no les
+interesaba la seguridad. Desde los años 90 en adelante, la persona que montaba
+la red también pensaba cómo hacer las cosas seguras. El tema se volvió tan
+relevante que en la gram mayoría de empresas hay un grupo de trabajo para la
+infraestructura, pero también hay un grupo de trabajo independiente de
+ciberseguridad. Ya esto se convirtió en una rama independiente, primero era como
+un extra, ahora es algo completamente independiente en la seguridad, además,
+ahora hay profesionales que solo se enfocan en este tema. Visto desde la parte
+de seguridad, entonces eso a través de aquí en adelante vamos a mirar mucho ese
+tema.
+
+Nosotros vamos a hablar de seguridad en la LAN porque estos cursos estan
+orientados a la LAN.
+
+10.1 Endpoint Security. 
+
+El ser humano es el eslabón más débil de la seguridad.
+Porque es muy fácil engañar a la gente.
+
+Con los usuarios finales están los tres ataques más conocidos, el DDos, Data
+Breach y Malware.
+
+Defensas
+
+Virtual Private Network (VPN)
+
+Next-Generation Firewall (NGFW)
+
+Network Access Control (NAC)
+
+802.1x -> Protocolo para usar un switch, creo, como autenticador y hasta que no
+se autentique no se da acceso.
