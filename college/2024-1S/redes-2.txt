@@ -788,3 +788,43 @@ Network Access Control (NAC)
 
 802.1x -> Protocolo para usar un switch, creo, como autenticador y hasta que no
 se autentique no se da acceso.
+
+--------------------------------------------------------------------------------
+Vigésima clase
+--------------------------------------------------------------------------------
+Vamos a centrarnos en esta clase en la manera de configurar de manera básica
+seguridad.
+
+1. Port-fast Un atacante podría convertirse en el raíz de spanning tree, para
+esto es preferible convertir todos los enlaces a puertos finales (port-fast,
+edge).
+
+2. BPDU Guard Si un switch intenta enviar información mediante un puerto Edge,
+este se desactivará con err_disable.
+
+#spanning-tree bpdu guard enable #spanning-tree bpdu default (Todos los puertos)
+
+DHCP snooping, para evitar el dhcp starvation
+
+Nunca dejar los puertos en dinámico auto y preferiblemente pasarlos a una VLAN
+sin uso.
+
+Nunca poner la VLAN 1 como nativa.
+
+3. Port security.
+
+Port-security, limitar en un puerto limitar los flujos basados en el orígen.
+# sw mode acccess
+# sw port-security maximum 2
+# sw port-security mac [mac]
+# sw port-security mac sticky
+
+4. Port security violation
+
+Existen 3 aleternativas para la violación.
+
+Protect, Strict y shutdown(defecto)
+
+Protect -> Bloquea (Bloquea el flujo extraño)
+Restrict -> Bloquea (Envía notificaciones)[Logs]
+Shutdown -> Apaga (Envía notificaciones)[Logs]
