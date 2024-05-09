@@ -828,3 +828,49 @@ Protect, Strict y shutdown(defecto)
 Protect -> Bloquea (Bloquea el flujo extraño)
 Restrict -> Bloquea (Envía notificaciones)[Logs]
 Shutdown -> Apaga (Envía notificaciones)[Logs]
+
+--------------------------------------------------------------------------------
+Vigésima primera clase
+--------------------------------------------------------------------------------
+En redes uno discutimos un poco sobre redes inalambricas.
+
+En ese entonces la frecuencia usada era 2.4GHz con una banda ancha de 2Mbps, era
+poco atractivo debido a su velocidad, por lo que la IEEE empezó a anexar.
+1 - Legacy 1997 2.4Ghz 2Mbps.
+  
+2 - Anexo a 1999 -> 802.11a: 5Ghz 54Mbps. Le custa superar obstáculos, pero va a
+    más velocidad.
+    
+2 - Anexo b 1999 -> 802.11b: 2.4Ghz 11Mbps. Supera obstáculos con más
+    facilidad, pero es más lenta.
+
+3 - Anexo g 2003 -> 2.4Ghz 54Mbps. Esta tomó lo mejor de las anteriores.
+
+4 - Anexo n 2009 -> 2.4Ghz/5Ghz. 600Mbps. Debe tener 4 antenas, cada antena de
+    aproximadamente 150.
+
+5 - Anexo ac 2013 -> 5Ghz. 1.3Gbps. Se hizo tan popular el 2.4Ghz que se saturó.
+
+6 - Anexo ax 2020 -> 2.4Ghz/5Ghz/6Ghz. 9Gbps. El famoso Wi-Fi 6.
+
+AP autónomos (Muy manual)[Uno por uno]
+
+SSID -> Identificador de conjunto de servicios. 
+
+AP controladora 
+APs esclavos. LWAPP, Radius, LDAP.
+
+WPA-2 Personal (Una clave)
+WPA-2 Enterprise (Server y demás, es más complejo)
+
+802.1p lo mismo, pero en redes cableadas.
+802.1x lo mismo, pero en redes cableadas.
+
+Modelo Meraki
+
+Servidor Meraki con servidor controladora y servidor de autenticación.
+
+ad-hoc -> No AP.
+
+Pre-shared key PSK
+Cisco compró Meraki, (buscar al respecto).
