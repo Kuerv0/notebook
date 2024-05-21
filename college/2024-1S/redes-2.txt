@@ -874,3 +874,52 @@ ad-hoc -> No AP.
 
 Pre-shared key PSK
 Cisco compró Meraki, (buscar al respecto).
+
+--------------------------------------------------------------------------------
+Vigésima segunda clase
+--------------------------------------------------------------------------------
+5/21/2024 12:18:17
+
+Hoy vamos a continuar trabajando en el modelo Meraki.
+
+En un script de configuración:
+Primero se tiran los comando configs.
+
+hostname SWA-1
+!
+vlan 10
+ name EMPLEADOS
+vlan 20
+ name INVITADOS
+vlan 30
+ name ADMIN
+vlan 40
+ name NATIVA
+!
+int range f0/24, g0/1-2
+ sw mode trunk
+ sw trunk native vlan 40
+!
+int f0/1
+ sw mode access
+ sw access vlan 30
+!
+int vlan 30
+ ip add 10.30.0.2 255.255.0.0
+ no sh
+
+! Config en el router
+
+hostname RA
+!
+int g0/0/0
+ no sh
+int g0/0/0.10
+ encapsulation dot1q 10
+ ip add 10.10.0.1 255.255.0.0
+int g0/0/0.20
+ encapsulation dot1q 20
+ ip add 10.20.0.1 255.255.0.0
+int g0/0/0.30
+ encapsulation dot1q 30
+ ip add 10.30.0.1 255.255.0.0
