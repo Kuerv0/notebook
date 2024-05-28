@@ -929,3 +929,17 @@ Vigésima tercera clase
 --------------------------------------------------------------------------------
 5/23/2024 12:10:07
 
+--------------------------------------------------------------------------------
+Vigésima cuarta clase
+--------------------------------------------------------------------------------
+5/28/2024 12:10:24
+
+El modelo Meraki surgió como un startup.
+
+Meraki pensó en la controladora como un equipo que no esté en la
+infraestructura, sino en la nube, con el objetivo de tener un mejor acceso.
+
+Un Wrouter es un todo en uno, ese equipo tiene un router, una interfaz, llamada
+internet o interfaz WAN que va hacia el proveedor y la otra interfaz es Ethernet
+lAN Intranet y eso va pegado a un switch que tiene n puertos. Adem;ás, este
+Switch va pegado a un AP que provee una red inalambrica
