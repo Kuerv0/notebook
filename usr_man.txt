@@ -25,6 +25,8 @@ If you need to know everything about regular expressions, start reading at:
 
 Vim Script is available at  
   :help eval.txt
+  
+The table with all mode prefixes can be found below: help-summary.
 
 i_CTRL-J -> Moves downwards adding no lines.
 i_CTRL-M -> Moves downwards adding new lines.
@@ -42,11 +44,12 @@ i_CTRL-D -> delete one shiftwidth of indent in front of the current line. *
 v_J -> join the highlighted lines
 gJ -> but without inserting spaces
 
-Voy en Q_cm -> copying and moving text <- Pay attention here. We're reading this
+Q_cm -> copying and moving text <- Pay attention here. We're reading this
 
 ================================================================================
 usr_03
 ================================================================================
+Posicion
 
 ^	-> Moves the cursor	to first non-blank character in the line
 f{char} -> Moves the cursor to the Nth occurrence of {char} to the right
@@ -924,3 +927,15 @@ Press ENTER or type command to continue
 :cc -> See the whole erorr message.
 
 :clist -> Overview of all error messages.
+
+================================================================================
+pattern
+================================================================================
+5/29/2024 01:12:05
+
+* -> Search forward for the [count]'th occurence of the word nearest to the
+  cursor
+
+# -> Same as *, but backwards.
+
+g* -> Same as *, but don't put \< and \> around the word.
