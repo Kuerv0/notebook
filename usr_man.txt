@@ -49,7 +49,6 @@ Q_cm -> copying and moving text <- Pay attention here. We're reading this
 ================================================================================
 usr_03
 ================================================================================
-Posicion
 
 ^	-> Moves the cursor	to first non-blank character in the line
 f{char} -> Moves the cursor to the Nth occurrence of {char} to the right
@@ -63,9 +62,37 @@ L -> Low
 CTRL-U -> Scroll up
 CTRL-D -> Scroll down
 
+CTRL-F -> Scroll down one screen
+
+CTRL-F -> Scroll down one screen
+CTRL-B -> Scroll up one screen
+
+zz -> Center text
+
+To only find words that end in "the" use: /the\>
+Thus to search for the word "the" only: 
+
+The ^ character matches the beginning of a line./\<the\>
+. (dot) character matches any existing character.
+
+`` -> jump back
+CTRL-O -> Jump to older position
+CTRL-I -> Jump to newer position
+
+The ":jumps" command gives a list of positions you jumped to.  The entry which
+you used last is marked with a ">".
+
+You can use this command to get a list of marks -> marks
+
+'	The cursor position before doing a jump
+"	The cursor position when last editing the file
+[	Start of the last change
+]	End of the last change
+
 ================================================================================
 usr_04
 ================================================================================
+Cursor 0%
 
 dd -> deletes a whole line.
 cc -> changes a whole line.
