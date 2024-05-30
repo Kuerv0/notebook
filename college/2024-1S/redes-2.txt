@@ -943,3 +943,13 @@ Un Wrouter es un todo en uno, ese equipo tiene un router, una interfaz, llamada
 internet o interfaz WAN que va hacia el proveedor y la otra interfaz es Ethernet
 lAN Intranet y eso va pegado a un switch que tiene n puertos. Adem;ás, este
 Switch va pegado a un AP que provee una red inalambrica
+
+--------------------------------------------------------------------------------
+Nota para Minicom
+--------------------------------------------------------------------------------
+$ dmesg | grep tty
+[0.090183] printk: legacy console [tty0] enabled
+[5.098062] systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+[5.100139] systemd[1]: Reached target getty.target - Login Prompts.
+
+Looking for something like ttyS0 and that goes to the minicom Serial config.
