@@ -92,7 +92,6 @@ You can use this command to get a list of marks -> marks
 ================================================================================
 usr_04
 ================================================================================
-Cursor 9%
 
 dd -> deletes a whole line.
 cc -> changes a whole line.
@@ -103,6 +102,14 @@ D -> d$ (delete to end of the line) *
 C -> c$ (change to end of the line) *
 s -> cl (change one character)
 S -> cc (change a whole line)
+
+To replace a character with a line break use "r<Enter>".  This deletes one
+character and inserts a line break.  Using a count here only applies to the
+number of characters deleted: "4r<Enter>" replaces four characters with one
+line break.
+
+The "." command works for all changes you make, except for "u" (undo), CTRL-R
+(redo) and commands that start with a colon (:).
 
 CTRL-V -> Vertical visual mode
 
@@ -116,9 +123,12 @@ daw -> delete a word
 
 You can find a long list of text objects here: :help text-objects.
 
+You can find a list of operators here: |operator|.
+
 ================================================================================
 usr_05
 ================================================================================
+Cursor 0%
 
 I believe it is better to read the documentation for lazy.nvim. It takes care of
 all of this. I also have to read the documentation for nvim and plugins and Lua
