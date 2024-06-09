@@ -92,7 +92,7 @@ You can use this command to get a list of marks -> marks
 ================================================================================
 usr_04
 ================================================================================
-Cursor 0%
+Cursor 9%
 
 dd -> deletes a whole line.
 cc -> changes a whole line.
