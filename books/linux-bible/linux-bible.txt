@@ -58,3 +58,24 @@ reflects a combination of SVID, POSIX, and BSD compliance.
 
 A Linux distribution consists of the components needed to create a working Linux
 system and the procedures needed to get those components installed and running.
+
+--------------------------------------------------------------------------------
+Chapter 2: Creating the Perfect Linux Desktop
+--------------------------------------------------------------------------------
+Mon 10 Jun 2024 01:41:10 PM -05
+
+Nearly every major Linux distribution that offers desktop interfaces is based on
+the X Window System originally from the X.Org Foundation. The X Window System
+(sometimes simply called X) was created before Linux existed, and it even
+predates Microsoft Windows.
+
+A window manager adds the capability to manage the windows on your desktop and
+often provides menus for launching applications and otherwise working with the
+desktop.
+
+Lightweight -> twm, fluxbox
+Robust -> GNOME, KDE
+
+Press Ctrl+Alt+Tab to display additional desktop areas to select.
+Press Alt+F2 to display a command box. Type the name of the command that you
+want to run into the box.
