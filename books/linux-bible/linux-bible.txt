@@ -1,0 +1,60 @@
+Linux Bible
+The comprehensive tutorial resource 
+
+Christopher Negus
+Wiley
+
+================================================================================
+Part 1: Getting Started
+================================================================================
+Chapter 1: Starting with Linux
+Chapter 2: Creating the Perfect Linux Desktop
+
+--------------------------------------------------------------------------------
+Chapter 1: Starting with Linux
+--------------------------------------------------------------------------------
+"The operating Systems war is over, and Linux has won."
+
+Linux is a computer operating system. An operating system consists of the
+software that manages your computer and lets you run applications on it.
+
+Linux differs from other operating systems because it is open source.
+
+On Monday, August 26, 1991 at 2:12:08 AM UTC-4, Linus Benedict Torvalds wrote:
+  Hello everybody out there using minix -
+ 
+  I'm doing a (free) operating system (just a hobby, won't be big and
+  professional like gnu) for 386(486) AT clones. This has been brewing since
+  april, and is starting to get ready. I'd like any feedback on things people
+  like/dislike in minix, as my OS resembles it somewhat (same physical layout of
+  the file-system (due to practical reasons) among other things).
+ 
+  I've currently ported bash(1.08) and gcc(1.40), and things seem to work.  This
+  implies that I'll get something practical within a few months, and I'd like to
+  know what features most people would want. Any suggestions are welcome, but I
+  won't promise I'll implement them :-)
+ 
+  Linus (torv...@kruuna.helsinki.fi)
+ 
+  PS. Yes - it's free of any minix code, and it has a multi-threaded fs.  It is
+  NOT protable (uses 386 task switching etc), and it probably never will support
+  anything other than AT-harddisks, as that's all I have :-(.
+
+UNIX started as an open source operating system, but started selling UNIX by
+1984.
+
+In 1984, Richard M. Stallman started the GNU project (https://gnu.org),
+recursively named by the phrase GNU is Not UNIX. GNU was intended to become a
+recoding of the entire UNIX operating system that could be freely distributed.
+
+Over time, the term free software has been mostly replaced by the term open
+source soft- ware. The term free software is preferred by the Free Software
+Foundation, while open source software is promoted by the Open Source Initiative
+
+MacOS is built on a BSD derivative.
+
+Today, Linux can be described as an open source UNIX-like operating system that
+reflects a combination of SVID, POSIX, and BSD compliance.
+
+A Linux distribution consists of the components needed to create a working Linux
+system and the procedures needed to get those components installed and running.
