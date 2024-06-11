@@ -84,3 +84,29 @@ want to run into the box.
 Part 2: Becoming a Linux Power User
 ================================================================================
 
+--------------------------------------------------------------------------------
+Chapter 3: Using the shell
+--------------------------------------------------------------------------------
+Tue 11 Jun 2024 05:09:18 PM -05
+
+Before icons and windows took over computer screens, you typed commands to
+interact with most computers. On UNIX systems, from which Linux was derived, the
+program used to interpret and manage commands was referred to as the shell.
+
+Other shells are available, including the C shell (csh), which is popular among
+BSD UNIX users, and the Korn shell (ksh), which is popular among UNIX System V
+users. Linux also has a tcsh shell (an improved C shell) and an ash shell
+(another Bourne shell look-alike).
+
+Many Linux system administrators use shell scripts to automate tasks such as
+backing up data, monitoring log files, or checking system health.
+
+$ -> Regular user
+# -> Root user
+
+Ctrl+Alt+F1 (or F2, F3, F4, and so on up to F6).
+
+Newer systems, such as Fedora 29, now start the gdm (the login screen)
+persistently on tty1 to allow multiple simultaneous GUI sessions: the gdm is on
+tty1, the first desktop is started on tty2, the second desktop is started on
+tty3, and so on.
