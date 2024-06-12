@@ -110,3 +110,138 @@ Newer systems, such as Fedora 29, now start the gdm (the login screen)
 persistently on tty1 to allow multiple simultaneous GUI sessions: the gdm is on
 tty1, the first desktop is started on tty2, the second desktop is started on
 tty3, and so on.
+
+Find out default login shell.
+$ who am i
+$ grep chris /etc/passwd
+
+/home/kuervo:/bin/bash -> Deafult login shell
+
+$ date
+Tue Jun 11 11:26:56 PM -05 2024
+
+$ hostname
+fedora
+
+Same command
+$ ls -l -a -t
+$ ls -lat
+
+Whole words options
+$ command --help
+
+Argument
+$ cat /etc/passwd
+
+For full-word options, the argument often follows an equal sign (=)
+
+$ ls --hide=Desktop
+
+Information about current login session.
+
+$ who -uH
+NAME     LINE         TIME             IDLE          PID COMMENT
+kuervo   seat0        2024-06-11 22:49   ?          2137 (login screen)
+kuervo   :0           2024-06-11 22:49   ?          2137 (:0)
+
+$ echo $PATH
+/home/kuervo/.local/bin:/home/kuervo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/kuervo/bin:/home/kuervo/bin
+
+Some commands are built into the shell.
+
+Determine location of a particular command
+$ type bash
+bash is /usr/bin/bash
+
+$ locate hola
+/home/kuervo/repos/arkham/src/Game.js
+
+If no matches, run updatedb
+
+If you prefer the vi command for editing shell command lines, you can easily
+make that happen. Add the following line to the .bashrc file in your home
+directory:
+
+set -o vi
+
+$ -> Shell completes the text with a variable from the current shell.
+~ -> Shell completes with username.
+@ -> Shell completes with hostname taken from /etc/hosts file.
+
+Recall commands
+$ history 2
+
+!n -> Run command number
+!! -> Run previous command
+!?string? -> Run command containing string
+
+fc followed by a history line number.
+
+Ctrl-R -> Reverse incremental search
+Ctrl-S -> Forward incremental search
+Alt-P -> Reverse Search
+Alt-N -> Forward Search
+
+Disable HISTFILE 
+Prevent storing a shell's history by killing it. 
+
+$ kill -9 processID
+
+Metacharacters -> |, &, ;, ), (, <, >
+
+Pipe connects the output from one command to the input of another command.
+
+$ cat /etc/passwd | sort | less
+
+gunzip < /usr/share/man/man1/grep.1.gz | nroff -c -man | less
+
+Sequential commands are separated with semicolons.
+
+$ date ; troff -me -verylargedocument | lpr ; date
+
+Background commands (&).
+
+$ troff -me verylargedocument | lpr &
+
+Expading commands
+$(command) or `command`
+
+vi $(find /home | grep xyzzy)
+
+Expand arithmetic expressions
+
+$[expression]
+$(expression)
+
+$ echo "There are $(ls | wc -w) files in this directory"
+
+Expanding variables
+$ ls -l $BASH
+
+Shell variables
+$SHELL -> Identifies the shell you are using
+$PS1 -> Defines shell prompt
+$MAIL -> Location of user's mailbox
+
+See variables 
+$ set
+
+BASH=/bin/bash
+...
+
+Environment variables
+$ env
+
+SHELL=/bin/bash
+...
+
+$ alias p='pwd ; ls -CF'
+$ alias rm='rm -i'
+
+PS1 can be changed in .bashrc.
+
+man -k passwd
+
+chgpasswd (8)        - update group passwords in batch mode
+chpasswd (8)         - update passwords in batch mode
+...
