@@ -245,3 +245,56 @@ man -k passwd
 chgpasswd (8)        - update group passwords in batch mode
 chpasswd (8)         - update passwords in batch mode
 ...
+
+Finding the ssh protocol
+cat /etc/services | grep ssh
+
+--------------------------------------------------------------------------------
+Chapter 4: Moving Around the Filesystem
+--------------------------------------------------------------------------------
+
+One of the defining properties of the UNIX systems on which Linux is based is
+that nearly everything you need to identify on your system (data, commands,
+symbolic links, devices, and directories) is represented by items in the
+filesystems.
+
+In Linux, however, DOS command extensions such as .com, .exe, and .bat don’t
+necessarily signify an executable. (Permission flags make Linux files
+executable)
+
+cd -> Changes to another directory.
+pwd -> Prints the name of the current (or present) working directory.
+mkdir -> Creates directory.
+chmod -> Changes the permission on a file or directory.
+ls -> Lists the contents of a directory.
+
+File-matching metacharacters
+* -> Matches any number of characters.
+? -> Matches any one character.
+[...] -> Matches any one of the characters between the brackets, which can
+         include a hyphen separated range of letters or number.
+
+Create empty files
+$ touch
+
+< -> Directs the contents of a file to the command. 
+less bigfile <-> less < bigfile
+
+> -> Directs the standard output of a command to a file. Overwrites.
+
+2> -> Directs standard error (error messages) to the file.
+
+&> -> Directs both standard output and standard error to the file.
+
+>> -> Directs the output of a command to a file, adding the output to the end of
+      the existing file.
+
+$ mail root < ~/.bashrc
+$ man chmod | col -b > /tmp/chmod
+$ echo "I finished the project on $(date)" >> ~/projects
+
+<< -> Here text.
+
+Brace expansion
+
+$ echo "hello $({1, 2, 3, 4})"
