@@ -297,4 +297,67 @@ $ echo "I finished the project on $(date)" >> ~/projects
 
 Brace expansion
 
-$ echo "hello $({1, 2, 3, 4})"
+$ touch memo{1,2,3,4,5}
+$ touch {a..f}{1..5}
+
+Append file-type indicators.
+$ ls -F
+
+List all files by time most recently modified
+$ ls -at
+
+Exclude files beginning with the letter g in the list:
+$ ls --hide=g*
+
+To list info about a directory instead of the files it contains:
+$ ls -ld $HOME/test/
+
+Create multiple directory layers (-p is needed)
+$ mkdir -p $HOME/test/documents/memos/
+
+List files and directories recursively from current directory down:
+$ ls -R
+
+List files by size:
+$ ls -S
+
+- Regular file
+d Directory
+l Symbolic link
+b Block device
+c Character device
+s Socket
+p Named pipe
+
+# chmod
+r=4
+w=2
+x=1
+
+chmod recursive
+
+$ chmod -R 755 $HOME/myapps
+
+chmod (letters)
+u, user
+g, group
+o, other
+a, all
+
+$ chmod a-w file
+$ chmod o-x file
+$ chmod go-rwx file
+$ chmod u+rw
+
+Change file ownership
+# chown joe /home/joe/memo.txt
+# ls -l /home/joe/memo.txt
+
+Change user and group
+# chown joe:joe /home/joe/memo.txt
+# ls -l /home/joe/memotxt
+
+chown may be recurive with -R
+
+Run command unaliased
+$ \command
