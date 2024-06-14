@@ -361,3 +361,84 @@ chown may be recurive with -R
 
 Run command unaliased
 $ \command
+
+--------------------------------------------------------------------------------
+Chapter 5: Working with Text Files
+--------------------------------------------------------------------------------
+Thu Jun 13 10:33:44 PM -05 2024
+
+Ctrl+G -> Displays the name of the file that you are editing in vim
+
+locate -> Searches database.
+find -> Searches the whole filesystem.
+
+locate -i -> Regardless of case.
+
+find [directory] -ls -> Long listing
+
+# find /etc -name passwd
+# find /etc -iname '*passwd*'
+
+Search for files that are exactly smaller than, or larger than a selected size.
+find /usr/share/ -size +10M
+find /mostlybig -size -1M
+find /bigdata -size +500M -size -5G -exec du -sh {} \;
+
+Searching by user or group
+
+$ find /home -user chris -ls
+$ find /home \( -user chris -or -user joe \) -ls
+$ find /etc -group ntp -ls
+$ find /var/spool -not -user root -ls
+
+Finding by permission
+
+$ find /usr/bin -perm 755 -ls -> Exactly rwxr-xr-x
+$ find /home/chris/ -perm -222 -type d -ls -> Only files that have write
+permission
+
+$ find /myreadonly -perm /222 -type f
+$ find . -perm -002 -type f -ls
+
+Finding by date and time
+
+10 minutes ago
+$ find /etc/ -mmin -10
+
+Past 3 days
+$ find /bin /usr/bin /sbin /usr/sbin -ctime -3
+
+300+ days no changes
+$ find /var/ftp /var/www -atime +300
+
+Not and or finding files
+
+$ find /var/allusers \( -user joe -o -user chris \) -ls
+$ find /var/allusers -user joe -not -group joe -ls
+$ find /var/allusers -user joe -and -size +1M -ls
+
+$ find [options] -exec command {} \; -> Executes command for all matches
+$ find [options] -ok command {} \; -> Asks for each match 
+
+$ find /etc -iname passwd -exec echo "I found {}" \;
+$ find /usr/share -size +5M -exec du {} \; | sort -nr
+# find /var/allusers/ -user joe -ok mv {} /tmp/joe/ \;
+
+Grepping
+
+$ grep desktop /etc/services
+$ grep -i desktop /etc/services
+
+Not containing is the -v option
+
+$ grep -vi tcp /etc/services
+
+-r option for recursive search. -l lists files that include the string.
+
+$ grep -rli peerdns /usr/share/doc/
+
+Color
+
+$ grep -ri --color root /etc/sysconfig/
+
+$ ip addr show | grep inet 
