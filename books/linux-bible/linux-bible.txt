@@ -442,3 +442,89 @@ Color
 $ grep -ri --color root /etc/sysconfig/
 
 $ ip addr show | grep inet 
+
+--------------------------------------------------------------------------------
+Chapter 6: Managing Running Processes
+--------------------------------------------------------------------------------
+Fri Jun 14 11:20:56 PM -05 2024
+
+The most common utility for checking running processes.
+$ ps 
+$ ps u
+$ ps ux | less
+$ ps -eo pid,user,uid,group,gid,vsz,rss,comm | less
+$ ps -eo pid,user,group,gid,vsz,rss,com --sort=-vsz | head
+
+Display processes with top
+$ top
+
+h -> help options.
+M -> to sorty by memory usage instad of CPU.
+1 -> toggle showing CPU usage of all CPU.
+R -> reverse sort output
+u -> enter username to display processes only for tha user.
+
+vim CTRL-L re-draws the screen
+
+Background processes
+$ find /usr > /tmp/allusrfiles &
+[3] 15971
+[job number] PID
+
+Display jobs
+$ jobs
+
+Foreground and background commands
+$ fg %1
+
+% -> Refers to the most recent command put into the backgroudn (indicatedby the
+     plus sign when you type the jobs command). This action brings the command to the
+     foreground.
+
+%string -> Refers to a job where the command begins with a particular string of
+           characters. The string must be unambiguous. (In other words, typing %vi when
+           there are two vi commands in the background results in an error message)
+
+%?string -> Refers to a job where the command line contains a string at any
+            point. The string must be unambiguous or the match fails.
+
+%-- -> Refers to the job stopped beforethe one most recently stopped.
+
+If a command is stopped, you can start it running again in the background using
+the bg command. 
+
+$ bg %5
+
+9 -> SIGKILL
+15 -> SIGTERM
+1 -> SIGHUP
+
+man 7 signal to read about other available signals.
+
+SIGHUP -> 1
+SIGINT -> 2
+SIGQUIT -> 3
+SIGABRT -> 6
+SIGKILL -> 9
+SIGTERM -> 15
+SIGCONT -> 19,18,25
+SIGSTOP -> 17,19,23
+
+$ kill 10432
+$ kill -15 10432
+$ kill -SIGKILL 10432
+
+Restart the shell
+
+# kill -1 1833
+
+killall command can be particularly useful if you want to kill a bunch of
+commands of the same name
+
+# killall -HUP gnome-shell
+
+The nicer a process is, the less CPU attention it gets.
+
+# nice -n +5 updatedb &
+# renice -n -5 20284
+
