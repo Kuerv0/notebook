@@ -528,3 +528,153 @@ The nicer a process is, the less CPU attention it gets.
 # nice -n +5 updatedb &
 # renice -n -5 20284
 
+--------------------------------------------------------------------------------
+Chapter 7: Managing Running Processes
+--------------------------------------------------------------------------------
+Sat 15 Jun 2024 10:59:35 PM -05
+
+A shell script is a group of commands, functions, variables, or just about
+anything else you can use from a shell.
+
+#!/bin/bash
+chmod +x filename
+$ bash myscript
+
+# -> Comment
+
+$ bash -x myscript -> Read executed commands.
+
+Variables
+
+NAME=value
+CITY="Springfield"
+PI=3.14159265
+
+MYDATE=$(date)
+
+echo '$HOME * `date`' -> $HOME * `date`
+echo "$HOME * `date`" -> /home/kuervo * Sat Jun 15 11:20:07 PM -05 2024
+echo $HOME * `date` -> /home/kuervo books college courses README.md usr_man.txt Sat Jun 15 11:20:40 PM -05 2024
+
+BALANCE="$CurBalance"
+
+Shell positional parameters
+#!/bin/bash
+echo "The first argument is $1, the second is $2."
+echo "The command itself is called $0."
+echo "There are $# parameters on your command line."
+echo "Here are all the arguments: $@."
+
+$? -> exit status of the last command executed.
+
+#!/bin/bash
+read -p "Type something" var
+echo "$var"
+
+${var:-value}: If variable is unset or empty, expand this to value.
+${var#pattern}: Chop the shortest match for pattern from the front of var's
+                value
+${var##pattern}: Chop the longest match for pattern from the fron of var's
+                 value.
+${var%pattern:} Chop the shortest...
+${var%%pattern:} Chop the longest...
+
+bc command is a calculator application that is available in most Linux
+distributions.
+
+$ I=0
+$ echo "The value of I after increment is $((++I))"
+$ $((I++)) -> Increment before
+
+VARIABLE=1
+if [ $VARIABLE -eq 1 ] ; then (= can be used, -eq for numbers tho')
+  echo "The variable is 1"
+fi
+
+STRING="Friday"
+if [ $STRING = "Friday" ] ; then
+  echo "Woo. Friday."
+else
+  echo "Will Friday ever get here?"
+fi
+
+There's also elif and !=
+
+if [ -f "$filename" ] ; then
+  echo "file"
+elif [ -d "filename" ] ; then
+  echo "directory"
+else
+  echo "I have no idea"
+fi
+
+Operators for Test Expressions. Check Table 7.1.
+
+# Perform simple single command if test is false
+# [test] || action
+
+# Perform simple single command if test is true
+# [test] && action
+
+case "VAR" in 
+  Result1)
+    { body };;
+  Result2)
+    { body };;
+  Resultn)
+    { body };;
+  *)
+    { body };;
+esac
+
+for VAR in LIST
+do
+  {body}
+done
+
+for NUMBER in 0 1 2 3 4 5 n
+do 
+  echo The number is $NUMBER
+done
+
+for FILE in `/bin/ls`
+do
+  echo $FILE
+done
+
+while condition
+do
+  { body }
+done
+
+until condition
+do
+  { body }
+done
+
+Combine Bash with grep, cut, tr, awk, and sed.
+
+grep -> general regular expression print
+
+$ grep [expression] [file]
+
+$ env | grep ^HO
+
+cut
+$ grep /home /etc/passwd | cut -d':' -f6 -
+
+tr
+$ echo $FOO | tr [A-Z] [a-z]
+
+for file in * ; do
+  f=`echo $file | tr [:blank:] [_]`
+  [ "$file" = "$f" ] || mv -i -- "$file" "$f"
+done
+
+sed
+$ sed -n '/home/p' /etc/passwd
+$ sed 's/Mac/Linux/g' somefile.txt > fixed_file.txt
+Same result
+$ cat somefile.txt | sed 's/Mac/Linux/g' > fixed_file.txt
+Replacing with nothing
+$ cat somefile.txt | sed 's/ *$//' > fixed_file.txt
