@@ -678,3 +678,48 @@ Same result
 $ cat somefile.txt | sed 's/Mac/Linux/g' > fixed_file.txt
 Replacing with nothing
 $ cat somefile.txt | sed 's/ *$//' > fixed_file.txt
+
+================================================================================
+Part 3: Becoming a Linux System Administrator
+================================================================================
+
+--------------------------------------------------------------------------------
+Chapter 8: Learning System Administration
+--------------------------------------------------------------------------------
+Sun 16 Jun 2024 08:58:50 PM -05
+
+su command -> open a shell as root user.
+sudo -> Execute a command with root privileges.
+
+Administrator is expected to manage:
+Filesystems
+Software installation
+User accounts
+Network interfaces
+Servers
+
+"Cockpit is the best browser-based Linux system administration tool that I have
+ever seen."
+
+# dnf install cockpit
+
+# systemclt enable --now cockpit.socket
+
+https://cockpit-project.org.
+
+The root user has complete control of the operation of your Linux system. That
+user can open any file or run any program. 
+
+$ usermod -> Modify user values.
+
+$ su
+Password: ****
+#
+
+To read root user environment
+
+$ su -
+Password: ****
+
+Change user
+su - jsmith
