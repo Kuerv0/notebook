@@ -1,0 +1,19 @@
+--------------------------------------------------------------------------------
+Chapter 1: Introduction
+--------------------------------------------------------------------------------
+Mon Jun 17 14:46:56 -05 2024
+
+Play usually follows this format:
+  - The gamemaster outlines some siutation or encounter.
+  - Next, you and the other players say what your characters propose to do.
+  - The gamemaster responds through the actions or words of nonplayers
+    characters, monsters, or the environment.
+  - If an outcome is in doubt and is important to the progress of the story,
+    roll dice to determine what happens, using the characters' abilities as
+    guidelines.
+  - You and the other players respond in turn.
+
+As such, the gamemaster should think of themselves as the host of a party. Make
+sure everyone is having a good time, check periodically that everything is fine,
+and pay special attention to any behavior or language that can take away from
+other players' experience.
