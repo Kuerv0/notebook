@@ -5,7 +5,7 @@ Christopher Negus
 Wiley
 
 ================================================================================
-Part 1: Getting Started
+                            Part 1: Getting Started
 ================================================================================
 Chapter 1: Starting with Linux
 Chapter 2: Creating the Perfect Linux Desktop
@@ -81,7 +81,7 @@ Press Alt+F2 to display a command box. Type the name of the command that you
 want to run into the box.
 
 ================================================================================
-Part 2: Becoming a Linux Power User
+                      Part 2: Becoming a Linux Power User
 ================================================================================
 
 --------------------------------------------------------------------------------
@@ -680,7 +680,7 @@ Replacing with nothing
 $ cat somefile.txt | sed 's/ *$//' > fixed_file.txt
 
 ================================================================================
-Part 3: Becoming a Linux System Administrator
+                 Part 3: Becoming a Linux System Administrator
 ================================================================================
 
 --------------------------------------------------------------------------------
@@ -723,3 +723,32 @@ Password: ****
 
 Change user
 su - jsmith
+
+CTRL-D -> $ exit
+
+# visudo -> Change sudoers
+
+joe ALL=(ALL) ALL -> provide his own passowrd.
+
+joe ALL=(ALL) NOPASSWD:ALL -> privilege without using password.
+
+Administrative commands
+
+/sbin: Checking filesystems (fsck), swap devides (swapon)
+/usr/sbin: User account (useradd), holding files open (lsof).
+
+/bin/mount -> list mounted filesystems
+
+testparm command is used with Samba to check the sanity of your smb.conf file.
+
+httpd -t -> Check Apache web server configuration before starting your web
+server.
+
+journalctl -> No options lets you page through all messages in the systemd
+journal.
+
+$ journalctl _SYSTEM_UNIT=sshd.service
+$ journalctl PRIORITY=0
+$ jouranlctl -a -f
+
+
