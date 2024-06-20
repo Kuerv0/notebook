@@ -751,4 +751,53 @@ $ journalctl _SYSTEM_UNIT=sshd.service
 $ journalctl PRIORITY=0
 $ jouranlctl -a -f
 
+Administrative logins are available with Linux; however, loggin in directly as
+those users is disable by default.
 
+$ lp -> /var/log/cups, /var/spool/lpd
+$ apache -> httpd
+$ avahi -> zeroconf services
+$ chrony -> chronyd daemon
+$ postfix -> mail server spool
+$ bin -> Many commands in /bin
+$ news -> Administration of Internet news services
+$ rpc -> rpcbind
+
+They are really not intended for interactive logins.
+
+dmesg -> See what hardware was detected and which drivers were loaded by the
+kernel at boot time.
+
+journalctl -> Show messages associated with a particular boot instance.
+
+tail -f /var/log/messages
+journalctl -f -> Follow messages as they come into the systemd journal.
+
+$ lspci -> Lists PCI buses on your computer and devices connected to them.
+
+$ lspci -vvv -> Much more verbose.
+
+$ lsusb -> Lists USB.
+
+$ lscpu -> cpu information.
+
+/dev/sda, /dev/sdb, so on. -> USB flash drives.
+
+# lsmod -> See which modules are currently loaded into the running kernel.
+
+Then
+
+# /sbin/modinfo -d e1000 -> Module info.
+
+# modprobe parport -> Provides core functions to share parallel prots with
+multiple devices.
+
+# modprobe parport_pc io=0x3bd irq=auto -> Having address of 0x3bc, and the IRQ,
+device autodetected.
+
+modprobe modules disappear at the next reboot.
+
+$ rmmod parport_pc -> Remove module.
+
+Some modules can't be removed if are built-in.
+# rmmod usbcore
