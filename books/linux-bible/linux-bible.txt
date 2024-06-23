@@ -801,3 +801,12 @@ $ rmmod parport_pc -> Remove module.
 
 Some modules can't be removed if are built-in.
 # rmmod usbcore
+--------------------------------------------------------------------------------
+Chapter 9: Installing Linux
+--------------------------------------------------------------------------------
+Fri Jun 21 04:21:19 PM -05 2024
+
+Tiny Core Linux -> http://tinycorelinux.net/
+
+With PXE, it is possible to do a complete Linux installation without a physical
+medium.
