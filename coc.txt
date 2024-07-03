@@ -1,0 +1,57 @@
+The Dare
+
+Exterior  de la casa
+Condición pobre.
+
+Reja
+Oxidada, arbustos bloquean visión, puntiagudo, decoración.
+Daño por intentar escalar: 1D3 - 1
+Entrada para autos: Hard.
+
+Patio
+Descuidado, rastrojo alto, un par de árboles lejos de la casa.
+1D6 daño escalar árbol.
+Nature roll: Identificar plantas. +1 bonus die siguiente luck roll.
+Apartarse del camino: Luck roll.
+  Fail: 1D2-1 dmg
+  Fumble: 1D3 dmg
+Int roll para notar que no hay juguetes en el patio.
+
+Pequeño cobertizo:
+Muy dañado por la humedad.
+Fix stuff roll: bonus die Fixed stuff roll.
+Nature roll: Presencia de ratas, pero no de otros animales salvo insectos.
+Play matches: Encontrar kerosense. Duración total 3 + 1D3 rondas, 1D6 dmg.
+
+Estanque de peces natural:
+Oscuro, hedor, muy profundo. Hojas muertas, enredadera.
+Figura oscura se puede ver alejarse hacia la casa al acercarse.
+Roca con carne podrida.
+Notice stuff: La figura era un gato negro.
+Nature, Science: Identificar la carne como entrañas de pescado y un intestino
+muy largo, del que salen maggots si se agarra.
+
+Roger se aburrirá esperando los compas, molestando con gusanos, torturandolos
+con un palo y con los dedos. Sanity check 0/1
+
+Cisterna
+Centro de un cuadrado de madera prodrido, concreto quebrado. 2 metros bajo la
+tapa, está el agua maloliente, 4 metros de profundidad.
+Si se para en la tapa
+  Luck roll, fail: gym class roll, fail, caer al agua.
+Intentar salvar a alguien en la cisterna: hard gym class roll.
+Si cae al agua: Gym class roll, 0/1 damage every five minutes.
+  Fail: CON roll or suffer 1D6 damage on that round  until they can be rescued.
+  Pushed CON roll, CON roll changes to hard difficulty.
+Si alguien cae al agua, un perro ahogado flota a la superficie y un terrible
+olor se percibe.
+INT roll lo percibe como un perro conocido.
+Sanity: 1D3-1 to fall into the water; 1D6 to start drowning, +1 for every
+subsequent round to a maximum of 6 points. Everyone seeing the dog loses 0/1D2
+points; those recognizing the dog lose 1/1D3 points.
+
+Porche frontal.
+Muy deteriorado, crackea a cada paso.
+Debajo hay una compuerta que lleva al sótano inferior, una rata ataca si se
+gatea bajo el porche. Una rata ataca y solo se podrá observar si se consigue un
+notice stuff roll (Hard).
