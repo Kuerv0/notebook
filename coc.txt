@@ -1,6 +1,9 @@
 The Dare
 
+================================================================================
 Exterior  de la casa
+================================================================================
+
 Condición pobre.
 
 Reja
@@ -55,3 +58,125 @@ Muy deteriorado, crackea a cada paso.
 Debajo hay una compuerta que lleva al sótano inferior, una rata ataca si se
 gatea bajo el porche. Una rata ataca y solo se podrá observar si se consigue un
 notice stuff roll (Hard).
+
+================================================================================
+Interior de la casa
+================================================================================
+
+Al entrar la casa, tirar Sneak Roll
+  Pass: podrá observar ratas yendo a la cocina y la sala de visitas.
+
+Luego de entrar la casa, Roger cerrará las puertas diciendo que nadie puede
+salir hasta encontrar la llave que esconderá en la casa o hasta que sea el
+amanecer.
+
+Interior de la casa: deteriorado. Sin electricidad, no funcionan las tuberías.
+Pequeños electrodomesticos robados.
+  Olor:
+    Rica en olores ofensivos. Olor a orina, moho y humedad de los tapetes y
+    madera. pescado, putrefacción, Olor a planta marchita que han crecido en
+    algunas partes de la casa. Las velas tienen un olor putrefacto y ácido. Olor
+    a particulas de polvo.
+  Ruidos:
+    La casa chilla y se queja con cada paso, en una sinfonía de tonos disonantes
+    y desagradables. Todas las puertas chillan con sus bisagras oxidadas.
+    La lluvia hace multitud de ruido con las ventanas y madera suelta.
+    En los vientas fuertos se siente como si la casa se agitara. 
+    Hard notice stuff:
+      Pass: Ratas en las paredes.
+    Si los niños se separan se pueden escuchar moverse en la casa.
+
+Roger pondrá velas amarillentas en la casa, hechas de grasa humana. Son
+evidentemente hechas a mano, si se logra un Science Class roll or Natural Roll
+se entederá que están hechas de grasa animal. Un spooky roll recordará que las
+velas de grasa de bebés se usan en rituales satánicos 0/1 sanity loss.
+
+Entry Hall (Pasillo de la entrada).
+Casi sin decorar, salvo por unas plantas y jarrones. Por alguna razón las
+plantas crecen y rebosan de agua, inunandando el aire a planta marchita.
+Reloj de caja grande, destrozado, sin mecanismo interior.
+Si suena, sanity loss 0/1D2.
+Nature or Science Class roll:
+  Pass: Notan que las plantas son imposibles sin cuidado. 0/1 Sanity.
+Entrada trasera tiene un par de ganchos, trapos sucios y unas botas con moho.
+Notice Stuff roll:
+  Pass: Alguien se ha colado en la casa a la fuerza y ha cerrado nuevamente con
+  la tabla interior.
+Sneaky roll entrando desde el interior:
+  Pass: Observar ratas metiendose por las tablas del suelo.
+
+Cocina.
+Armarios y un par de cajones con escasas ollas, sartenes, y un par demás
+parafernalia de cocina. vasos, cajas viejas.
+Si se busca, Luck roll:
+  Pass: Una rata ataca a la peor tirada y corre.
+Encima de la estufa hay una masa de cenizas y algunos huesos, 
+Nature roll:
+  Pass: Confirma que no es de animales domesticos por el tamaño.
+Hard Science Class roll:
+  Identifica el hueso humano de un niño: 1/1D4 sanity loss.
+Telefono viejo que no funciona, pero se puede intentar reparar. Fix stuff.
+Cuando se desvele que la casa está embrujada solo se puede escuchar estática.
+Costo por contactar a Evelyn a través del teléfono: 0/1 to 1D2/1D6.
+Buscar armas en la cocina. Cuchillos de 1D3 damage, el primero se puede
+encontrar sin rol, los siguientes requieren Notice Stuff roll. Un hard success
+encuentra un cuchillo grande (1D6 dmg) encima de un armario, pero tiene sangre
+fresca 0/1 sanity loss.
+
+The dining Room (El comedor duh)
+mesa de madera ovalada con sillas en mal estado alrededor. Todo masticado. En la
+pared sur hay un espejo roto con el vidrio en el suelo. Un pequeño cajón se
+puede ver en la esquina, sin puerta.
+
+Hard notice stuff roll:
+  Pass: El techo ha sido dañado por humedad superior.
+Si se cae del piso superior, se sufre 1D4+1 dmg.
+
+El parlor (El salón)
+Grande y lleno de sillas polvorientas, sillones en horrible estado con los
+resortes visibles, en la pared que da al sur hay una chimena con un marco de
+madera, en el cual está colgado un costal malo. En la fogata hay restos de
+haberse usado. Se usó una silla para esto de la Dining Room. Hay olor a carbón
+que sugiere que el escape de la chimenea está atorado. Hay cuadros rotos y
+lienzos rasgados en el suelo.
+El bolso tiene:
+  - Tabaco y papel para fumar.
+  - Un cuchillo pequeño (1D2 dmg)
+  - Flask with whiskey
+  - $104 en billetes de $1 y $5
+  - Tiza en una caja de fósforos.
+La chimenea está efectivamente atascada, se puede forzar con un roll de STR, un
+animal disecado cae a la chimenea, (0/1D2, 1/1D3 si cae en el investigador).
+Nature roll:
+  pass: fuego entre uno o dos días.
+Buscar el salón o Notice Stuff roll encuentra un palo de metal para el carbón,
+doblado entre los sofás (1D6 dmg), si nadie lo encuentra, lo toma Roger y lo
+esconde.
+
+The Living Room (Sala)
+Lo que está en mejor estado. Sofá y armarios altos con miniaturas de animales
+gatos, zorros, pájaros, venados, etc. Hechos con vidrio y cerámica. En el
+armario más alto hay un gato de peluche, brillante.
+Si se molesta: 1/1D4 sanity loss.
+Ataca y escapa.
+Si se le hace mucho daño se va para el sótano con Evelyn.
+Si no se le presta atención, la próxima vez se habrá ido costando 0/1 sanity
+loss.
+Entre los escombros hay figuras rotas, de infantes. Hay una foto de una familia
+con los ojos cuidadosamente rayados y el cristal roto, deteriorada está la foto.
+Roger protege a Rastis intentando agarrarla si le hacen daño.
+
+================================================================================
+Piso superior
+================================================================================
+Peor condición que el primer piso. Descompuesto, goteras.
+Olor a heces animales y pudrición. El olor a podrido aumenta si los
+investigadores se acercan al ático. Las ventanas también se encuentran
+barricadas.
+
+Baño
+Tina manchada, gabinete de medicina
+Mirar en el espejo -> Figura pasando por el pasillo.
+  Inspeccionarlo -> Observar una abuela en el espejo. 0/1 Sanity loss.
+  Nadie lo nota salvo el invesigador.
+
