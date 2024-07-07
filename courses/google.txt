@@ -8,3 +8,99 @@ Fundamentos de la Ciberseguridad
 Ve a lo seguro: Gestiona los riesgos de seguridad
 ================================================================================
 Sun Jul  7 16:38:57 -05 2024
+
+Dominio 1: Seguridad y gestión de riesgos
+
+- Metas y objetivos de seguridad.
+- Procesos de mitigación de riesgos.
+- Cumplimiento normativo.
+- Planes para la continuidad del negocio.
+- Normativa.
+- Ética profesional y organizacional.
+
+InfoSec:
+
+- Respuestas a incidencias.
+- Gestión de las vulnerabilidades.
+- Seguridad de la aplicación.
+- Seguridad de la nube.
+- Seguridad de la infraestructura.
+
+Dominio 2: Seguridad de los activos.
+
+Almacenamiento, mantenimiento, conservación y destrucción de los datos. 
+Análisis de impacto, plan de recuperación, gestionar exposición de datos.
+Copias de seguridad.
+
+Dominio 3: Arquitectura y diseño de seguridad
+
+- Simulación de amenazas.
+- Principio del privilegio mínimo.
+- Defensa en profundidad.
+- Fallar de forma segura.
+- Separación de funciones.
+- Simplicidad.
+- Confianza cero.
+- Confianza tras verificación.
+
+SIEM.
+
+Dominio 4: Seguridad de las comunicaciones y de redes.
+
+Seguridad de redes físicas y comunicaciones inalámbricas.
+VPNs.
+
+Dominio 5: Gestión de identidades y accesos. 
+
+IAM, autenticación, autorización.
+Privilegio mínimo.
+
+Dominio 6: Evaluación y pruebas de seguridad.
+
+Identificar, mitigar riesgos, amenazas, vulnerabilidades.
+Pentesting.
+
+Dominio 7: Operaciones de seguridad.
+
+- Entrenamiento y concientización.
+- Informes y documentación.
+- Detección y prevención de intrusiones.
+- Herramientas SIEM.
+- Gestión de registros.
+- Gestión de incidentes.
+- Playbooks.
+- Análisis forense.
+- Reflexión.
+
+Grandes cantidades de datos.
+
+Dominio 8: Seguridad en el desarrollo de software.
+
+Prácticas y politicas de programación.
+
+RMF NIST
+  - Prepare
+    before breach.
+
+  - Categorize
+    Management.
+
+  - Select
+    documentation controls, playbook.
+
+  - Implement
+    Implement plans.
+
+  - Assess
+    If controls are implemented correctly.
+
+  - Authorize
+    Being accountable.
+
+  - Monitor
+    Aware.
+
+================================================================================
+Glosario
+================================================================================
+CISSP: 
