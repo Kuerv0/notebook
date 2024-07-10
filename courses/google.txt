@@ -7,24 +7,24 @@ Fundamentos de la Ciberseguridad
 ================================================================================
 Ve a lo seguro: Gestiona los riesgos de seguridad
 ================================================================================
+Módulo 1
+
 Sun Jul  7 16:38:57 -05 2024
 
 Dominio 1: Seguridad y gestión de riesgos
-
-- Metas y objetivos de seguridad.
-- Procesos de mitigación de riesgos.
-- Cumplimiento normativo.
-- Planes para la continuidad del negocio.
-- Normativa.
-- Ética profesional y organizacional.
+  - Metas y objetivos de seguridad.
+  - Procesos de mitigación de riesgos.
+  - Cumplimiento normativo.
+  - Planes para la continuidad del negocio.
+  - Normativa.
+  - Ética profesional y organizacional.
 
 InfoSec:
-
-- Respuestas a incidencias.
-- Gestión de las vulnerabilidades.
-- Seguridad de la aplicación.
-- Seguridad de la nube.
-- Seguridad de la infraestructura.
+  - Respuestas a incidencias.
+  - Gestión de las vulnerabilidades.
+  - Seguridad de la aplicación.
+  - Seguridad de la nube.
+  - Seguridad de la infraestructura.
 
 Dominio 2: Seguridad de los activos.
 
@@ -33,15 +33,14 @@ Análisis de impacto, plan de recuperación, gestionar exposición de datos.
 Copias de seguridad.
 
 Dominio 3: Arquitectura y diseño de seguridad
-
-- Simulación de amenazas.
-- Principio del privilegio mínimo.
-- Defensa en profundidad.
-- Fallar de forma segura.
-- Separación de funciones.
-- Simplicidad.
-- Confianza cero.
-- Confianza tras verificación.
+  - Simulación de amenazas.
+  - Principio del privilegio mínimo.
+  - Defensa en profundidad.
+  - Fallar de forma segura.
+  - Separación de funciones.
+  - Simplicidad.
+  - Confianza cero.
+  - Confianza tras verificación.
 
 SIEM.
 
@@ -61,16 +60,15 @@ Identificar, mitigar riesgos, amenazas, vulnerabilidades.
 Pentesting.
 
 Dominio 7: Operaciones de seguridad.
-
-- Entrenamiento y concientización.
-- Informes y documentación.
-- Detección y prevención de intrusiones.
-- Herramientas SIEM.
-- Gestión de registros.
-- Gestión de incidentes.
-- Playbooks.
-- Análisis forense.
-- Reflexión.
+  - Entrenamiento y concientización.
+  - Informes y documentación.
+  - Detección y prevención de intrusiones.
+  - Herramientas SIEM.
+  - Gestión de registros.
+  - Gestión de incidentes.
+  - Playbooks.
+  - Análisis forense.
+  - Reflexión.
 
 Grandes cantidades de datos.
 
@@ -100,7 +98,135 @@ RMF NIST
   - Monitor
     Aware.
 
+Módulo 2
+Mon Jul  8 21:57:39 -05 2024
+
+Security frameworks: Guidelines used for building plans to help mitigate risk
+and threats to data and privacy.
+
+People are the biggest threat to security.
+
+Controls are safeguards used to reduce specific risks.
+
+https://www.hhs.gov/sites/default/files/physical-access-control.pdf
+
+NIST CSF
+Identify
+  The management of cybersecurity risk and its effect on an organization{s
+  people and assets.
+Protect
+  The strategy used to protect an organization through the implementation of
+  policies, procedures, training, and tools that help mitigate cybersecurity
+  threats.
+Detect
+  Idnetifying potential security incidents and improving monitoring capabilities
+  to increase the speed and efficiency of detections.
+Respond
+  Making sure that the proper procedures are used to contian, neutralize, and
+  analyze security incidents, and implement improvements to the security
+  process.
+Recover
+  The process of returning affected systems back to normal operation.
+
+OWASP security principles
+  - Minimize attack surface area.
+  - Principle of least privilege.
+  - Defense in depth.
+  - Separation of duties.
+  - Keep security simple.
+  - Fix security issues correctly.
+
+  * Establecer configuraciones seguras por defecto.
+  * Fallar de forma segura.
+  * No confiar en los servicios.
+  * Evitar la seguridad por la oscuridad.
+
+Security audit: Review of an organization's security controls, policies, and
+procedures against a set of expectations.
+
+  - Identify organizational risk
+  - Assess controls.
+  - Correct compliance issues.
+
+Common elements of internal audits.
+  - Establlishing the scope and goals.
+  - Conductins a risk assessment.
+  - Completing a controls assessment.
+  - Assessing compliance.
+  - Communicatinng results.
+
+Módulo 3
+  - Logs
+  Record of events. Firewall, network, server logs.
+
+  - SIEM
+  Dashboards. Metrics.
+
+  - SIEM tools
+
+Orquestación, automatización y respuesta de seguridad (SOAR).
+
+SIEMs
+  - Self hosted
+  - Cloud hosted
+  - Hybrid
+
+Splunk: Enterprise and Cloud.
+Dashboards.
+
+Panel de postura -> Monitorear amenzas en tiempo real.
+Resumen ejecutivo -> Salud general de la organización a lo largo del tiempo.
+Revisión de incidentes -> Patrones sospechosos. Cronología visual.
+Análisis de riesgos -> Cambios en actividad o comportamiento.
+
+Chronicle: Herramienta nativa de Google Cloud.
+- Activo
+- Nombre de dominio
+- Usuario
+- Dirección IP
+También cuenta con paneles.
+
+Enterprise insights
+Monitorear tráfico inusual, como monitoriear los intentoss de inicio de sesión o
+acceso a un activo crítico.
+
+Panel de transferencia y estado
+Tasas de éxito de datos. Entrega de datos sin errores.
+
+Panel de coincidencias.
+Amenazas, riesgos y vulnerabilidades para la organización. Identificación de
+tendencias.
+
+Panel principal.
+Resumen de alto nivel relacionada con la ingestión de datos.
+
+Panel de detección de reglas.
+Estadísticas de incidentes con el mayor índice de ocurrencias, severidades y
+detecciones a lo largo del tiempo.
+
+Panel de descripción general de acceso de usuarios
+Comportamiento de acceso de usuarios en toda la organización.
+
+Playbook: A manual that provides details about any operation action.
+
+Incident response: An organization's quick attempt to identify an atatck,
+contain the damage, and correct the effects of a security breach
+  - Preparation
+  - Detection and analysis
+  - Containment
+  - Eradication and recovery
+  - Post incident activity
+
 ================================================================================
-Glosario
+Actividades de portafolio
 ================================================================================
-CISSP: 
+Professional statement:
+Administro Sistemas organizacionales y trabajo para mantener los principios
+básicos de seguridad, entre ellos, la ética.
+
+Strengths
+Pensamiento lógico/crítico, redes, Sistemas operativos.
+
+Administration interests me the most in cibersecurity.
+The audience for my professional statement are recruiters.
+My morality is valuable for organizations.
