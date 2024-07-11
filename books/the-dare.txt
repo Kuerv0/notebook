@@ -174,9 +174,32 @@ Olor a heces animales y pudrición. El olor a podrido aumenta si los
 investigadores se acercan al ático. Las ventanas también se encuentran
 barricadas.
 
+Habitación niña
+Cuadro de la cama. Un ropero vacío y solo el esqueleto, Puerta de closet con
+olor a escremento.
+Notice Stuff roll para notar inscripciones en la madera de la cama, y con
+algunas marcas a lápiz. Las marcas eran cómo los padres de Donna marcaban el su
+crecimiento. La última marca es la de sus once años. Sanity loss si el
+investigador ha escuchado sobre la familia Briggs.
+El Closet abre a un fuerte olor a escremento, hay un panel en el techo que se ha
+quitado [Gym class roll] y no se puede subir más de un niño a la vez.
+Hay una pila de libros viejos, sillas, juguetes, etc.
+Los que entren el área deben pasar [Be Sneaky roll]. Si hay un fumble, salen en
+grupo, si es un fallo regular, salen uno o dos.
+Cualquiera en el espacio también debe pasar un Luck roll o perder 0/1 sanity al
+ver un murcielago muy cerca. Si se falla, se despiertan todos los murcielagos y
+salen causando 1D6 dmg.
+Notice Stuff roll en el Small Attic Space encontrará atrás de cajas, un juego de
+cartas, en un sitio muy pequeño, excepto para un bebé.
+En un swarm, todos en el ático Sanity (1/1D4), seguido por los que están en el
+piso de abajo. Cualquiera que falle el Sanity check pierde 1D3-1 dmg.
+Un hard notice stuff hará que el niño note que a Roger le dan igual los
+murcielagos y estos parecen evitarlo.
+
 Baño
 Tina manchada, gabinete de medicina
 Mirar en el espejo -> Figura pasando por el pasillo.
   Inspeccionarlo -> Observar una abuela en el espejo. 0/1 Sanity loss.
   Nadie lo nota salvo el invesigador.
 
+La habitación de coser.
