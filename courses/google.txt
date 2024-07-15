@@ -218,6 +218,38 @@ contain the damage, and correct the effects of a security breach
   - Post incident activity
 
 ================================================================================
+Conexión y protección: Redes y seguridad en la red
+================================================================================
+Sun Jul 14 04:10:25 PM -05 2024
+
+Módulo 1
+A network is a group of connected devices.
+
+Hub: Network device that broadcasts informaiton to every device on the network.
+
+Switch: Device that makes connections between specific devices on a network by
+sending and receiving data between them.
+
+Router: Network device that connects multiple networks together.
+
+Modem: Device that connects your router to the internet and brings internet
+access to the LAN.
+
+Virtualization tool: Pieces of software that perform network operations.
+
+Cloud computing: Practice of using remote servers, applications, and networks
+services that are hosted on the internet instead of on local physical devices.
+
+Cloud network: Collection of servers or computers that stores resources and date
+in remote data centers that can be accessed via the internet.
+
+Cloud service providers offer:
+  - On-demand storage
+  - Processing power
+  - Analytics
+
+TCP/IP | OSI 
+================================================================================
 Actividades de portafolio
 ================================================================================
 Professional statement:
