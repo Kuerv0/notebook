@@ -249,6 +249,23 @@ Cloud service providers offer:
   - Analytics
 
 TCP/IP | OSI 
+
+Módulo 2
+Wed Jul 17 14:54:03 -05 2024
+
+Network protocols
+A set of rules used by two or more devices on a network to describe the order of
+delivery and the structure of the data.
+
+DHCP -> 67 (server) 68 (client)
+ARP
+Telnet -> TCP 23
+SSH -> TCP 22
+POP3 -> TCP/UDP 110, TCP/UDP 995 (cifrado SSL/TSL)
+IMAP -> TCP 143, TCP 993 (cifrado SSL, TSL)
+SMTP -> TCP/UDP 25 (TSL), TCP/UDP 587 (TSL)
+
+IEEE 802.11 -> Wifi
 ================================================================================
 Actividades de portafolio
 ================================================================================
