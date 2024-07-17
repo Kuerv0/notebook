@@ -200,6 +200,36 @@ Baño
 Tina manchada, gabinete de medicina
 Mirar en el espejo -> Figura pasando por el pasillo.
   Inspeccionarlo -> Observar una abuela en el espejo. 0/1 Sanity loss.
-  Nadie lo nota salvo el invesigador.
+  Nadie lo nota salvo el investigador.
 
 La habitación de coser.
+Llena de artículos de coser por la habitación y una vieja máquina de coser
+vieja, oxidada y empolvada. También un maniquí de un torso. Si Roger logra
+entrar primero, pone una vela de manera que el maniquí hace una sombra que los
+investigadores al entrar en la habitación, si se asustan, simplemente Roger ser
+burla.
+En la habitación hay unas tijeras si un investigador las busca, que hacen 1D3
+puntos de daño.
+
+Closet habitación de coser.
+Zapatos, vestidos con agujeros y polillas, mucho polvo.
+El primer niño en examinar el closet encuentran un muñeco mal cosido de sí
+mismos, con el detalle de su ropa. Los ojos son X en hilo. Al examinarlo, del
+abdomen sale hilo rojo, como pastas. El niño que lo encuentre pierde 1/1D3
+sanity. Roger dirá que él no lo hizo, dado que coser es para niñas.
+
+Rastis.
+Spells: Evil Eye, Mesmerize, Drown MInd, Implant Fear.
+Scatter nails across the dark floor Dodge roll or 1D6 dmg.
+Theft: Unwatched gear will be broken or stolen. Flashlights are likely targets.
+Voice in the Dark: Rastis can speak as a human. Can see in near darkness and can
+feing being an injured child or a friendly spirit.
+Ambush: Rastis may target particularly weak or vulnerableseeming unarmed or
+obviously reluctant to fight back investigators. He can hide in rooms. And
+attack for a 50% chance of hitting 1D2 dmg before again, fleeing into the dark
+house.
+
+Para las escaleras a la cúpula es neceario lanzar notice stuff, si no se
+consigue y se desea investigar la habitación, se puede buscar con un dado bonus.
+Las escalereas están completamente deterioradas por el agua, si alguien de peso
+50 o más, debe lanzar luck o perder 1D3 - 1 de daño por las astillas y la caída.
