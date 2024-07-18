@@ -328,6 +328,34 @@ Regulates and restricts a person's access to the internet.
 
 Reverse proxy server
 Regulates and restricts the internet's access to an internal server.
+
+Ping of death
+A type of DoS attack caused when a hacker pings a system by sending it an
+oversized ICMP packet that is bigger than 64KB
+
+Passive packet sniffing
+A type of attack where data packets are read in transit.
+
+Active packet sniffing
+A type of attack where data packets are manipulated in transit.
+
+IP spoofing
+A network attack performed when an attacker changes the source IP of a data
+packet to impersonate an authorized system and gain access to a network.
+
+Common IP spoofing attacks
+- On-path attack
+An attack where a malicious actor places themselves in the middle of an
+authorized connection and intercepts or alters the data in transit.
+
+- Replay attack
+A network attack performed when a malicous actor intercepts a data packet in
+transit and delays it or repeats it at another time.
+
+- Smurf attack
+A network attack performed when an attacker sniffs an authorized user's IP
+address and floods it with packets.
+
 ================================================================================
 Actividades de portafolio
 ================================================================================
