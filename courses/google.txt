@@ -1,9 +1,4 @@
 Ciberseguridad de Google
-
-================================================================================
-Fundamentos de la Ciberseguridad
-================================================================================
-
 ================================================================================
 Ve a lo seguro: Gestiona los riesgos de seguridad
 ================================================================================
@@ -355,6 +350,50 @@ transit and delays it or repeats it at another time.
 - Smurf attack
 A network attack performed when an attacker sniffs an authorized user's IP
 address and floods it with packets.
+
+Module 4
+
+Security hardening
+The process of strengthening a system to reduce its vulnerability and attack
+surface.
+
+Penetration test
+A simulated attack that helps identify vulnerabilities in systems, networks,
+websites, applications, and processes.
+
+OS
+Interface between computer hardware and the user
+
+Patch update
+Software and operating system update that addresses security vulnerabilities
+within a program or product.
+
+Baseline configuration (baseline image)
+A documented set of specifications within a system that is used as a basis for
+future builds, releases, and update.
+
+MFA
+Security measure which requires a user to verify their identity in two or more
+ways to access a system or network
+
+Network security hardening
+- Port filtering
+- Network access privilege
+- Encryption
+
+Tasks performed
+- Firewall rules maintenance
+- Network log analysis
+- Patch updates
+- Server backups
+
+Network log analysis
+Examining network logs to identify events of interest.
+
+================================================================================
+Ve a lo seguro: Gestiona los riesgos de seguridad
+================================================================================
+Module 1
 
 ================================================================================
 Actividades de portafolio
