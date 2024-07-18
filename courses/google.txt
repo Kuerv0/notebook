@@ -395,6 +395,15 @@ Ve a lo seguro: Gestiona los riesgos de seguridad
 ================================================================================
 Module 1
 
+User -> Application -> Operating System -> Hardware
+
+Shell
+The command-line interpreter
+
+Kernel
+The component of the Linux OS that manages processes and memory.
+
+# apt list --installed
 ================================================================================
 Actividades de portafolio
 ================================================================================
