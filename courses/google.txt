@@ -438,6 +438,14 @@ $ chmod
 # userdel salesrep7
 $ what is command
 $ apropos command
+
+Module 4
+Fri Jul 19 03:24:00 PM -05 2024
+
+Operator
+A symbol or keyword that represents an operation.
+
+WHERE office LIKE 'East%' -> % wildcard
 ================================================================================
 Actividades de portafolio
 ================================================================================
