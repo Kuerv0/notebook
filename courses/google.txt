@@ -404,6 +404,40 @@ Kernel
 The component of the Linux OS that manages processes and memory.
 
 # apt list --installed
+
+$ pwd
+$ ls
+$ cd
+
+$ cat
+$ head
+$ tail
+
+$ less
+
+$ grep
+
+$ find
+
+$ find /home/analyst/projects -name "*log*" -> case sensitive
+$ find /home/analyst/projects -iname "*log*" -> no case sensitive
+
+$ find /home/analyst/projects -mtime -3 -> 3 días
+
+> sobreescribir
+>> Agregar
+
+$ echo "last updated date" >> permissions.txt
+Si no existe el archivo, >, >> crearán un archivo nuevo.
+
+$ -ls -l -> Permissions
+
+$ chmod
+
+# useradd salesrep7
+# userdel salesrep7
+$ what is command
+$ apropos command
 ================================================================================
 Actividades de portafolio
 ================================================================================
