@@ -446,6 +446,13 @@ Operator
 A symbol or keyword that represents an operation.
 
 WHERE office LIKE 'East%' -> % wildcard
+
+================================================================================
+Curso 5
+================================================================================
+Threat 
+Any circumstance or event that can negatively impact assets
+
 ================================================================================
 Actividades de portafolio
 ================================================================================
