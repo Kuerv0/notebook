@@ -448,10 +448,64 @@ A symbol or keyword that represents an operation.
 WHERE office LIKE 'East%' -> % wildcard
 
 ================================================================================
-Curso 5
+Activos, amenazas y vulnerabilidades
 ================================================================================
 Threat 
-Any circumstance or event that can negatively impact assets
+Any circumstance or event that can negatively impact assets.
+
+Sat Jul 20 05:06:31 PM -05 2024
+
+Policy
+A set or rules that reduces risk and protects information.
+
+Standards
+References that inform how to set policies.
+
+Module 2
+
+Security controls
+Safeguards designed to reduce specific security risks
+
+Rivest, Shamir and Adleman (RSA)
+
+$ sha256sum [file]
+
+NIST aprueba cada uno de estos algoritmos.
+- SHA-1
+- SHA-224
+- SHA-256
+- SHA-384
+- SHA-512
+
+$ cmp command -> Compares differences
+
+Module 3
+Common Vulnerabilities and Exposures list (CVE(r) list)
+an openly accessible dictionary of known vulnerabilities and exposures.
+by MITRE
+
+  1. Independet of other issues
+  2. Recognized a a potential security risk
+  3. Submitted with supporting evidence
+  4. Only affect one codebase
+
+Attack vectors
+The pathways attackers use to penetrate security defenses.
+
+Modelado de amenazas
+  - Define scope
+  - Identify threats
+  - Characterize the environment
+  - Analyze threats
+  - Mitigate Risks
+  - Evaluate findings
+
+PASTA
+
+================================================================================
+
+================================================================================
+Sun Jul 21 01:34:42 AM -05 2024
 
 ================================================================================
 Actividades de portafolio
