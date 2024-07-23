@@ -255,3 +255,15 @@ pared.
 Playing with Matches roll determines that someone was trying to start a fire to
 burn down the house. Juzgando por el olor y la cortina rasgada. Pero, alguien
 apagó el fuego sin rastro de cómo se extinguió.
+
+The Boy's bedroom
+Quedan pocos muebles maltratados. Hay un borde de cama recostado a la pared sur.
+Escritorio con apenas cajones. Bajo el bed frame hay un nido de ratas que
+atacará si se molestan.
+Un escritorio contiene un cajón cerrado que se puede abrir con Fix Stuff roll o
+si se le hace 1D4 dmg.
+Si se abre -> old pocket watch, folding knife polished horn handle (1D4 dmg).
+
+The Boy's bedroom closet.
+Nada interesante salvo un montón de ganchos en el suelo y un telescopio que se
+puede usar como un mazo improvisado, haciendo 1D3 dmg.
