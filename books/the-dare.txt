@@ -267,3 +267,37 @@ Si se abre -> old pocket watch, folding knife polished horn handle (1D4 dmg).
 The Boy's bedroom closet.
 Nada interesante salvo un montón de ganchos en el suelo y un telescopio que se
 puede usar como un mazo improvisado, haciendo 1D3 dmg.
+
+The Master Bedroom
+Restos de cama doble. Destrozada y manchada. Hay un espejo viejo y desgastado,
+un hedor llena el cuarto. Trapdoor que se puede alcanzar de una manera similar a
+las otras. Nature roll will identify the smelll as a rotting animal of some
+sort.
+El closet donde está el morido puede abrirse con Fix Stuff roll, o haciendo 20
+puntos de daño.
+Ver el cadaver costs 1D4/2D6 SAN. INT roll to recognize him as Danny.
+Se puede encontrar un knife 1D4 dmg y un encendedor en el cuerpo de Danny.
+
+Science Roll class determine ch cked by the cord still around his neck, besides
+blood loss from rat bites. La mano fue removida post mortem, lo cual es muy
+extraño, pues la puerta estaba cerrada. También se determina que es muy raro que
+las ratas puedan matar un adulto.
+
+A Spooky Stuff roll will recall that a magician could create a terrible magic
+talisman from the hand of a hanged man, especially a felon. Called a “Hand of
+Glory,” it could be used to lock or unlock all the doors in a house, put the
+inhabitants into a supernatural slumber, or otherwise give its creator control
+of a house so long as the candle it holds burns. Recog-nizing this connection
+cost 1D2 points of Sanity.
+
+The Large Attic Space also opens off the bedroom. Inside are boxes of old
+documents, blankets, luggage, books, mag-azines, newspapers, and so on, all
+dating from twenty years earlier, if not more. If someone searches through all
+this junk and makes a Notice Stuff roll (grant a bonus die if they’re looking
+for books or papers) they will discover a battered scrapbook containing numerous
+newspaper clippings dating back to the 1860s. A Reading, Writing, and Arithmetic
+roll deduces that most of the clippings deal with cases of missing children in
+this town. This was compiled by Mr. Briggs before the disappearance of Donna
+Briggs.
+
+
