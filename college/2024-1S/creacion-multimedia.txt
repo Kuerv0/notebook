@@ -1,58 +1,8 @@
---------------------------------------------------------------------------------
-Creación multimedia
---------------------------------------------------------------------------------
-Wed Feb  7 16:02:28 2024
---------------------------------------------------------------------------------
-Primera clase
---------------------------------------------------------------------------------
+================================================================================
+Regreso a clases
+================================================================================
+Wed Jul 24 08:43:08 AM -05 2024
 
-Creación multimedia
-
-- Se refiere a unión de imágenes, audio y vídeo, para lograr una composición que
-  transmite una idea o información.
-
-- Actualmente un producto multimedia requiere dos compnentes fundamentales:
-  Tech, art.
-
-UV unwrapping
-
-Texturing
-
-Raster graphics editing
-
-Rigging and Skinning
-
-Simulation
-
-Fluids simulation
-
-Soft body simulation
-
-Scupting
-
-Animating
-
-Lighting
-
-Match moving
-
-Rendering
-
-Motion graphics
-
-Video editing
-
-Compositing
-
-Modelado órganico
-
-Modelado inórganico
-
---------------------------------------------------------------------------------
-Segunda clase
---------------------------------------------------------------------------------
-Wed Feb 14 16:11:27 2024
-
-Idea, story, storyboard, animatic, design, layout, R&D, modeling, texturing,
-riggins/setup, animation, vfx, lighting, rendering, compostiign, 2d  vfx/motion
-graphics, colore correction, final output.
+Leer el libro de Joseph Campbell, por lo menos el resumen porque entiendo que se
+evaluará.
+Joseph Campbell: The Hero With a Thousand Faces

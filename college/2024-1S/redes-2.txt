@@ -953,3 +953,9 @@ $ dmesg | grep tty
 [5.100139] systemd[1]: Reached target getty.target - Login Prompts.
 
 Looking for something like ttyS0 and that goes to the minicom Serial config.
+
+--------------------------------------------------------------------------------
+Regresando a clases
+--------------------------------------------------------------------------------
+Estudiar los módulos o lectura para el parcial.
+Los que serían 5 en adelante.
