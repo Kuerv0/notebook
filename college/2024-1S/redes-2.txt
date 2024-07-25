@@ -959,3 +959,7 @@ Regresando a clases
 --------------------------------------------------------------------------------
 Estudiar los módulos o lectura para el parcial.
 Los que serían 5 en adelante.
+
+switchport mode trunk, 10, Portchannel 2
+Crear la vlan 11 y la 22 y asignar el pc a la vlan 22
+
