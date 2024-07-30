@@ -985,8 +985,14 @@ infraestructura, sino en la nube, con el objetivo de tener un mejor acceso.
 
 Un Wrouter es un todo en uno, ese equipo tiene un router, una interfaz, llamada
 internet o interfaz WAN que va hacia el proveedor y la otra interfaz es Ethernet
-lAN Intranet y eso va pegado a un switch que tiene n puertos. Adem;ás, este
+lAN Intranet y eso va pegado a un switch que tiene n puertos. Además, este
 Switch va pegado a un AP que provee una red inalambrica
+
+--------------------------------------------------------------------------------
+Vigésima quinta clase ?
+--------------------------------------------------------------------------------
+Tue Jul 30 11:54:40 -05 2024
+
 
 --------------------------------------------------------------------------------
 Nota para Minicom
@@ -1059,6 +1065,10 @@ show ip interface g/0/0/1
 !-------------------------------------------------------------------------------
 !                                    DHCPv6
 !-------------------------------------------------------------------------------
+
+! Enable ipv6 routing
+(config)# ipv6 unicast-routing
+
 (config-if)# ipv6 address [ipv6-address/prefix-lenght]
 
 ! SLAAC
@@ -1095,8 +1105,8 @@ show ipv6 interface g0/0/1 | begin ND
 (config-dhcpv6)# exit
 
 (config)# interface g0/1
-(config-if)# interface ipv6 address 2001:db8:cafe:1::1/64
-(config-if)# interface dhcp server IPV6-STATELESS
+(config-if)# ipv6 address 2001:db8:cafe:1::1/64
+(config-if)# ipv6 dhcp server IPV6-STATELESS
 (config-if)# ipv6 nd other-config-flag
 
 ! Configure a Stateless DHCPv6 Client
