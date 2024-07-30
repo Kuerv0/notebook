@@ -569,13 +569,29 @@ IEEE - LACP -> Link aggregation control protocol. (IEEE 802.3ad)
   - Active
   - Passive
 
-Los puertos de portchannel no tienen que ser consecutivos.Protocolo de control
+Los puertos de portchannel no tienen que ser consecutivos. Protocolo de control
 dpe agregación de enlaces.
 
 --------------------------------------------------------------------------------
 Décima tercera clase
 --------------------------------------------------------------------------------
 Tue Mar  5 12:20:41 2024
+DHCPv4
+
+DHCPDISCOVER -> Always a broadcast, then it may be unicast
+DHCPOFFER
+DHCPREQUEST
+DHCPACK
+
+ip helper-address command forwards the following eight UDP services
+37: Time
+49: TACACS
+53: DNS
+67: DHCP/BOOTP server
+68: DHCP/BOOTP client
+69: TFTP
+137: NetBIOS name
+138: NetBIOS datagram
 
 --------------------------------------------------------------------------------
 Décima cuarta clase
@@ -649,8 +665,41 @@ Décima séptima clase
 --------------------------------------------------------------------------------
 22 April 2024
 
-Métodos
+LLA -> When host boots and interface active.
+[IPv6 Add]%[Zone ID] -> OS associate the LLA with specific interface.
 
+DHCPv6 is defined in RFC 3315
+
+Dynamic GUA Assignment
+  Stateless
+  [No device tracks the assignmet]
+    SLAAC Only (A:1 O:0 M:0)
+    [RA messages providing all IPv6 addressing]
+    [Hosts use the RA information exclusively]
+      Randomly generated
+      [client OS]
+
+      EUI-64
+      [Privacy concerns]
+
+    SLAAC with DHCP server (A:1 O:1 M:0)
+    [Router RA messages provide IPv6 configuration to hosts and redirects to
+    Stateless server]
+    [Hosts create GUA based on RA and get additional info from server]
+
+  Stateful (A:0 O:0 M:1)
+  [Server manages the assignment]
+  [RA informs about server except the default gateway]
+  [Hosts contact server]
+
+Router sends RA messages every 200 seconds or when it receives an RS message
+from a host.
+ff02::2 -> All routers multicast address.
+
+Host sends an ICMPv6 NS with the last IPv6 address of the host, if no response,
+the address is unique.
+
+Métodos
 1. Manual
 2. Manual + EUI64
 
@@ -715,14 +764,32 @@ Las banderas en 0 lo hace ICMPv6 y la 1 la hace DHCPv6
 Stateless -> La dirección la entregó SLAAC, los otros parametros los entregó
 DHCPv6
 
+DHCPv6
+Host sends an RS message
+The router responds with an RA message
+The host sends a DHCPv6 SOLICIT message
+The DHCPv6 server responds with an ADVERTISE message
+The host responds to the DHCPv6 server
+The DHCPv6 server sends a REPLY message
+
+RS, RA, SARR
+
+UDP 546 server
+UDP 547 client
+
+Router can be configured as
+  DHCPv6 Server
+  DHCPv6 Client
+  DHCPv6 Relay Agent
+
 --------------------------------------------------------------------------------
 Décima octava clase
 --------------------------------------------------------------------------------
-4/30/2024 12:03:28
-
-PC - Router Solicitation -> Router
-  <- Router advertisement - Router [M = 0, O = 0](SLAAC) Prefijo
-  <- Router advertisement - Router [M =0, O = 1](Stateless) DHCP para otros
+First Hop Redundancy Protocols (HSRP)
+HSRP priority, 
+Highest priority will become the active router.
+100 default priority.
+IPv4 if priorities are equal.
 
 --------------------------------------------------------------------------------
 Décima novena clase
@@ -931,18 +998,15 @@ $ dmesg | grep tty
 
 Looking for something like ttyS0 and that goes to the minicom Serial config.
 
---------------------------------------------------------------------------------
-Regresando a clases
---------------------------------------------------------------------------------
-Estudiar los módulos o lectura para el parcial.
-Los que serían 5 en adelante.
-
 ================================================================================
 Commands
 ================================================================================
 
-EtherChannel
-support, speed and duplex [same], same vlan or trunk
+!-------------------------------------------------------------------------------
+!                                 EtherChannel
+!-------------------------------------------------------------------------------
+
+! support, speed and duplex [same], same vlan or trunk
 (config)# interface range FastEthernet 0/1 - 2
 (config-if-range)# channel-group 1 mode active
 (config-if-range)# exit
@@ -954,3 +1018,113 @@ show interfaces port-channel
 show etherchannel summary
 show etherchannel port-channel
 show interfaces etherchannel
+
+!-------------------------------------------------------------------------------
+!                                    DHCPv4
+!-------------------------------------------------------------------------------
+
+! Exclude addresses, define pool name, configure pool
+(config)# ip dhcp excluded-addresses 192.168.10.1 192.168.10.9
+(config)# ip dhcp excluded-addresses 192.168.10.254
+(config)# ip dhcp pool LAN-POOL-1
+(dhcp-config)# network 192.168.10.0 255.255.255.0
+(dhcp-config)# default-router 192.168.10.1
+(dhcp-config)# dns-server 192.168.11.5
+(dhcp-config)# domain-name example.com
+(dhcp-config)# end
+
+! Stats
+show running-config | section dhcp
+show ip dhcp binding
+show ip dhcp server statistics
+
+! Disable
+(config)# no service dhcp
+(config)# service dhcp
+
+! Relay
+(config)# interface g0/0/0
+(config-if) ip helper-address 192.168.11.6
+(config-if) end
+
+show ip interface g0/0/0
+
+! Router as DHCPv4 client
+(config)# interface g0/0/1
+(config-if)# ip address dhcp
+(config-if)# no shutdown
+
+show ip interface g/0/0/1
+
+!-------------------------------------------------------------------------------
+!                                    DHCPv6
+!-------------------------------------------------------------------------------
+(config-if)# ipv6 address [ipv6-address/prefix-lenght]
+
+! SLAAC
+(config-if)# ipv6 address autoconfig
+
+! Reset
+(config-if)# ipv6 nd prefix default no-autoconfig
+
+! SLAAC + DHCPv6
+(config-if)# ipv6 nd other-config-flag
+(config-if)# end
+
+show ipv6 interface g0/0/1 | begin ND
+
+! Reset
+(config-if)# no ipv6 nd other-config-flag
+
+! Stateful
+(config-if)# ipv6 nd managed-config-flag
+(config-if)# end
+
+show ipv6 interface g0/0/1 | begin ND
+
+! Reset
+(config-if)# no ipv6 nd managed-config-flag
+
+! Configure Stateless DHCPv6 Server
+! enable ipv6 routing, define pool, configure pool options, bind interface 
+
+(config)# ipv6 unicast-routing
+(config)# ipv6 dhcp pool IPV6-STATELESS
+(config-dhcpv6)# dns-server 2001:db8:cafe:aaaa::5
+(config-dhcpv6)# domain-name example.com
+(config-dhcpv6)# exit
+
+(config)# interface g0/1
+(config-if)# interface ipv6 address 2001:db8:cafe:1::1/64
+(config-if)# interface dhcp server IPV6-STATELESS
+(config-if)# ipv6 nd other-config-flag
+
+! Configure a Stateless DHCPv6 Client
+! enable ipv6 routing, LLA, set SLAAC
+
+! Configure a Stateful DHCPv6 Server
+! enable ipv6 routing, pool, pool options, bind interface.
+
+! Configure a Stateful DHCPv6 Client
+! enable ipv6 routing, LLA, ipv6 dhcp
+
+show ipv6 dhcp pool
+show ipv6 dhcp binding
+
+! DHCP relay agent
+(config)# interface gigabitethernet 0/0/1
+(config-if)# ipv6 dhcp relay destination 2001:db8:acad:1::2 g0/0/0
+(config-if)# exit
+
+show ipv6 dhcp interface
+show ipv6 dhcp binding
+
+!-------------------------------------------------------------------------------
+!                                     HSRP
+!-------------------------------------------------------------------------------
+(config-if) standby priority [0 - 255]
+(config-if) standby preempt
+
+Initial   Speak
+Learn     Standby
+Listen
