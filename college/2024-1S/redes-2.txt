@@ -993,6 +993,19 @@ Vigésima quinta clase ?
 --------------------------------------------------------------------------------
 Tue Jul 30 11:54:40 -05 2024
 
+--------------------------------------------------------------------------------
+Vigésima sexta clase ?
+--------------------------------------------------------------------------------
+Thu Aug  1 12:13:47 PM -05 2024
+
+PC1: 90-B1-1C-76-89-EC
+PC2: 90-B1-1C-CD-07-3F
+PC3: 90-B1-1C-77-80-E1
+
+macoff para evitar que los atacantes nos hagan flood de MACs.
+# clear mac address-table dynamic -> Eliminar tabla MAC
+
+Port security, 3 configuraciones. Tiene que estar en acceso.
 
 --------------------------------------------------------------------------------
 Nota para Minicom
