@@ -846,7 +846,8 @@ edge).
 2. BPDU Guard Si un switch intenta enviar información mediante un puerto Edge,
 este se desactivará con err_disable.
 
-#spanning-tree bpdu guard enable #spanning-tree bpdu default (Todos los puertos)
+#spanning-tree bpdu guard enable 
+#spanning-tree bpdu default (Todos los puertos)
 
 DHCP snooping, para evitar el dhcp starvation
 
@@ -973,6 +974,7 @@ Vigésima tercera clase
 --------------------------------------------------------------------------------
 5/23/2024 12:10:07
 
+
 --------------------------------------------------------------------------------
 Vigésima cuarta clase
 --------------------------------------------------------------------------------
@@ -1006,6 +1008,82 @@ macoff para evitar que los atacantes nos hagan flood de MACs.
 # clear mac address-table dynamic -> Eliminar tabla MAC
 
 Port security, 3 configuraciones. Tiene que estar en acceso.
+
+--------------------------------------------------------------------------------
+Vigésima séptima clase ?
+--------------------------------------------------------------------------------
+Mon Aug  5 11:55:03 AM -05 2024
+
+VLAN 10 | Estudiantes | 1 - 9
+VLAN 20 | Profesores | 10 - 19
+VLAN 30 | GestionTIC | 20
+VLAN 40 | Nativa
+
+!
+vlan 10
+ name Estudiantes
+vlan 20
+ name Profesores
+vlan 30
+ name GestionTIC
+vlan 40
+ name Nativa
+!
+
+! Switch 1 y 3
+spanning-tree mode rapid-pvst
+
+interface range gigabitethernet1/0/1 - 9
+  switchport access vlan 10
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+  
+interface range gigabitethernet1/0/10 - 19
+  switchport access vlan 20
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range gigabitethernet1/0/20
+  switchport access vlan 30
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range gigabitethernet1/0/21 - 24
+ sw mode trunk
+ sw trunk native vlan 40
+
+!!!!!!!! Switch 1 only
+! spanning-tree vlan 10 root primary
+! spanning-tree vlan 20 root primary
+! spanning-tree vlan 30 root primary
+
+! Switch 2
+spanning-tree mode rapid-pvst
+
+interface range fastethernet0/1 - 9
+  switchport access vlan 10
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range fastethernet0/10 - 19
+  switchport access vlan 20
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range fastethernet0/20
+  switchport access vlan 30
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range fastethernet0/21 - 24
+ sw mode trunk
+ sw trunk native vlan 40
 
 --------------------------------------------------------------------------------
 Nota para Minicom
