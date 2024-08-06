@@ -1,0 +1,498 @@
+! Configuración sin nombre para laboratorio de 3 días
+! 8/5/2024
+
+! ==============================================================================
+! SWITCH 1
+! ==============================================================================
+! {
+
+hostname SW21
+
+vlan 10
+ name Estudiantes
+vlan 20
+ name Profesores
+vlan 30
+ name GestionTIC
+vlan 40
+ name Nativa
+
+spanning-tree mode rapid-pvst
+
+interface range gigabitethernet1/0/1 - 9
+  switchport access vlan 10
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+  
+interface range gigabitethernet1/0/10 - 19
+  switchport access vlan 20
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range gigabitethernet1/0/20
+  switchport access vlan 30
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range gigabitethernet1/0/21 - 24
+ sw mode trunk
+ sw trunk native vlan 40
+
+spanning-tree vlan 10 root primary
+spanning-tree vlan 20 root primary
+spanning-tree vlan 30 root primary
+
+interface vlan 30
+  ip address 192.168.2.131 255.255.255.192
+  no shutdown
+
+ip default-gateway 192.168.2.129
+
+line vty 0 4
+  password omar
+  login 
+  transport input telnet
+
+! }
+
+! ==============================================================================
+! SWITCH 2
+! ==============================================================================
+
+! {
+
+hostname SW22
+
+vlan 10
+ name Estudiantes
+vlan 20
+ name Profesores
+vlan 30
+ name GestionTIC
+vlan 40
+ name Nativa
+
+spanning-tree mode rapid-pvst
+
+interface range fastethernet0/1 - 9
+  switchport access vlan 10
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range fastethernet0/10 - 19
+  switchport access vlan 20
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range fastethernet0/20
+  switchport access vlan 30
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range fastethernet0/21 - 24
+  sw mode trunk
+  sw trunk native vlan 40
+
+interface vlan 30
+  ip address 192.168.2.132 255.255.255.192
+  no shutdown
+
+ip default-gateway 192.168.2.129
+
+line vty 0 4
+  password omar
+  login 
+  transport input telnet
+
+! }
+
+! ==============================================================================
+! SWITCH 3
+! ==============================================================================
+
+! {
+
+hostname SW23
+
+vlan 10
+ name Estudiantes
+vlan 20
+ name Profesores
+vlan 30
+ name GestionTIC
+vlan 40
+ name Nativa
+
+spanning-tree mode rapid-pvst
+
+interface range gigabitethernet1/0/1 - 9
+  switchport access vlan 10
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+  
+interface range gigabitethernet1/0/10 - 19
+  switchport access vlan 20
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range gigabitethernet1/0/20
+  switchport access vlan 30
+  spanning-tree portfast
+  spanning-tree bpduguard enable
+  switchport mode access
+
+interface range gigabitethernet1/0/21 - 24
+ sw mode trunk
+ sw trunk native vlan 40
+
+interface vlan 30
+  ip address 192.168.2.133 255.255.255.192
+  no shutdown
+
+ip default-gateway 192.168.2.129
+
+line vty 0 4
+  password omar
+  login 
+  transport input telnet
+
+! }
+
+! ==============================================================================
+! Router 1
+! ==============================================================================
+
+! {
+
+hostname R21
+
+ip dhcp excluded-address 192.168.2.1 192.168.2.5
+ip dhcp excluded-address 192.168.2.62
+
+ip dhcp excluded-address 192.168.2.65 192
+hostname R21
+
+ip dhcp excluded-address 192.168.2.1 192.168.2.5
+ip dhcp excluded-address 192.168.2.62
+
+ip dhcp excluded-address 192.168.2.65 192.168.2.70
+ip dhcp excluded-address 192.168.2.126
+
+ip dhcp excluded-address 192.168.2.129 192.168.2.133
+ip dhcp excluded-address 192.168.2.190
+
+ip dhcp excluded-address 192.168.2.193 192.168.2.197
+ip dhcp excluded-address 192.168.2.254
+
+ip dhcp pool DEADPOOL10
+  network 192.168.2.0 255.255.255.192
+  default-router 192.168.2.62
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+ip dhcp pool DEADPOOL20
+  network 192.168.2.64 255.255.255.192
+  default-router 192.168.2.126
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+ip dhcp pool DEADPOOL30
+  network 192.168.2.128 255.255.255.192
+  default-router 192.168.2.190
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+  
+ip dhcp pool DEADPOOL40
+  network 192.168.2.192 255.255.255.192
+  default-router 192.168.2.254
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+interface gigabitethernet0/0/0
+  no shutdown
+
+interface gigabitethernet0/0/0.10
+  encapsulation dot1Q 10 
+  ip address 192.168.2.1 255.255.255.192
+  standby 10 ip 192.168.2.62
+  standby 10 priority 101
+  standby 10 preempt
+  no shutdown
+
+interface gigabitethernet0/0/0.20
+  encapsulation dot1Q 20 
+  ip address 192.168.2.65 255.255.255.192
+  standby 20 ip 192.168.2.126
+  standby 20 priority 100
+  standby 20 preempt
+  no shutdown
+
+interface gigabitethernet0/0/0.30
+  encapsulation dot1Q 30 
+  ip address 192.168.2.129 255.255.255.192
+  standby 30 ip 192.168.2.190
+  standby 30 priority 101
+  standby 30 preempt
+  no shutdown
+
+hostname R21
+
+ip dhcp excluded-address 192.168.2.1 192.168.2.5
+ip dhcp excluded-address 192.168.2.62
+
+ip dhcp excluded-address 192.168.2.65 192.168.2.70
+ip dhcp excluded-address 192.168.2.126
+
+ip dhcp excluded-address 192.168.2.129 192.168.2.133
+ip dhcp excluded-address 192.168.2.190
+
+ip dhcp excluded-address 192.168.2.193 192.168.2.197
+ip dhcp excluded-address 192.168.2.254
+
+ip dhcp pool DEADPOOL10
+  network 192.168.2.0 255.255.255.192
+  default-router 192.168.2.62
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+ip dhcp pool DEADPOOL20
+  network 192.168.2.64 255.255.255.192
+  default-router 192.168.2.126
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+ip dhcp pool DEADPOOL30
+  network 192.168.2.128 255.255.255.192
+  default-router 192.168.2.190
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+  
+ip dhcp pool DEADPOOL40
+  network 192.168.2.192 255.255.255.192
+  default-router 192.168.2.254
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+interface gigabitethernet0/0/0
+  no shutdown
+
+interface gigabitethernet0/0/0.10
+  encapsulation dot1Q 10 
+  ip address 192.168.2.1 255.255.255.192
+  standby 10 ip 192.168.2.62
+  standby 10 priority 101
+  standby 10 preempt
+  no shutdown
+
+interface gigabitethernet0/0/0.20
+  encapsulation dot1Q 20 
+  ip address 192.168.2.65 255.255.255.192
+  standby 20 ip 192.168.2.126
+  standby 20 priority 100
+  standby 20 preempt
+  no shutdown
+
+interface gigabitethernet0/0/0.30
+  encapsulation dot1Q 30 
+  ip address 192.168.2.129 255.255.255.192
+  standby 30 ip 192.168.2.190
+  standby 30 priority 101
+  standby 30 preempt
+  no shutdown
+
+interface gigabitethernet0/0/0.40
+  encapsulation dot1Q 40 native
+  ip address 192.168.2.193 255.255.255.192
+  standby 40 ip 192.168.2.254
+  standby 40 priority 100
+  standby 40 preempt
+  no shutdown
+
+line vty 0 4
+  password omar
+  login 
+  transport input telnet
+
+! 
+interface gigabitethernet0/0/0.40
+  encapsulation dot1Q 40 native
+  ip address 192.168.2.193 255.255.255.192
+  standby 40 ip 192.168.2.254
+  standby 40 priority 100
+  standby 40 preempt
+  no shutdown
+
+line vty 0 4
+  password omar
+  login 
+  transport input telnet
+
+! .168.2.70
+ip dhcp excluded-address 192.168.2.126
+
+ip dhcp excluded-address 192.168.2.129 192.168.2.133
+ip dhcp excluded-address 192.168.2.190
+
+ip dhcp excluded-address 192.168.2.193 192.168.2.197
+ip dhcp excluded-address 192.168.2.254
+
+ip dhcp pool DEADPOOL10
+  network 192.168.2.0 255.255.255.192
+  default-router 192.168.2.62
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+ip dhcp pool DEADPOOL20
+  network 192.168.2.64 255.255.255.192
+  default-router 192.168.2.126
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+ip dhcp pool DEADPOOL30
+  network 192.168.2.128 255.255.255.192
+  default-router 192.168.2.190
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+  
+ip dhcp pool DEADPOOL40
+  network 192.168.2.192 255.255.255.192
+  default-router 192.168.2.254
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+interface gigabitethernet0/0/0
+  no shutdown
+
+interface gigabitethernet0/0/0.10
+  encapsulation dot1Q 10 
+  ip address 192.168.2.1 255.255.255.192
+  standby 10 ip 192.168.2.62
+  standby 10 priority 101
+  standby 10 preempt
+  no shutdown
+
+interface gigabitethernet0/0/0.20
+  encapsulation dot1Q 20 
+  ip address 192.168.2.65 255.255.255.192
+  standby 20 ip 192.168.2.126
+  standby 20 priority 100
+  standby 20 preempt
+  no shutdown
+
+interface gigabitethernet0/0/0.30
+  encapsulation dot1Q 30 
+  ip address 192.168.2.129 255.255.255.192
+  standby 30 ip 192.168.2.190
+  standby 30 priority 101
+  standby 30 preempt
+  no shutdown
+
+interface gigabitethernet0/0/0.40
+  encapsulation dot1Q 40 native
+  ip address 192.168.2.193 255.255.255.192
+  standby 40 ip 192.168.2.254
+  standby 40 priority 100
+  standby 40 preempt
+  no shutdown
+
+line vty 0 4
+  password omar
+  login 
+  transport input telnet
+
+! }
+
+! ==============================================================================
+! Router 2
+! ==============================================================================
+
+! {
+
+hostname R22
+ip dhcp excluded-address 192.168.2.1 192.168.2.5
+ip dhcp excluded-address 192.168.2.62
+
+ip dhcp excluded-address 192.168.2.65 192.168.2.70
+ip dhcp excluded-address 192.168.2.126
+
+ip dhcp excluded-address 192.168.2.129 192.168.2.133
+ip dhcp excluded-address 192.168.2.190
+
+ip dhcp excluded-address 192.168.2.193 192.168.2.197
+ip dhcp excluded-address 192.168.2.254
+
+spanning-tree mode rapid-pvst
+
+ip dhcp pool DEADPOOL10
+  network 192.168.2.0 255.255.255.192
+  default-router 192.168.2.62
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+ip dhcp pool DEADPOOL20
+  network 192.168.2.64 255.255.255.192
+  default-router 192.168.2.126
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+ip dhcp pool DEADPOOL30
+  network 192.168.2.128 255.255.255.192
+  default-router 192.168.2.190
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+  
+ip dhcp pool DEADPOOL40
+  network 192.168.2.192 255.255.255.192
+  default-router 192.168.2.254
+  dns-server 8.8.8.8
+  domain-name ccna2.com
+
+interface gigabitethernet0/0/1
+  no shutdown
+
+interface gigabitethernet0/0/1.10
+  encapsulation dot1Q 10 
+  ip address 192.168.2.2 255.255.255.192
+  standby 10 ip 192.168.2.62 
+  standby 10 priority 100
+  standby 10 preempt
+  no shutdown
+
+interface gigabitethernet0/0/1.20
+  encapsulation dot1Q 20 
+  ip address 192.168.2.66 255.255.255.192
+  standby 20 ip 192.168.2.126
+  standby 20 priority 101
+  standby 20 preempt
+  no shutdown
+
+interface gigabitethernet0/0/1.30
+  encapsulation dot1Q 30 
+  ip address 192.168.2.130 255.255.255.192
+  standby 30 ip 192.168.2.190
+  standby 30 priority 100
+  standby 30 preempt
+  no shutdown
+
+interface gigabitethernet0/0/1.40
+  encapsulation dot1Q 40 native
+  ip address 192.168.2.194 255.255.255.192
+  standby 40 ip 192.168.2.254
+  standby 40 priority 101
+  standby 40 preempt
+  no shutdown
+
+line vty 0 4
+  password omar
+  login 
+  transport input telnet
+
+! }
