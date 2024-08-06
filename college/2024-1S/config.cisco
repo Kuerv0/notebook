@@ -49,8 +49,6 @@ spanning-tree vlan 30 root primary
 interface vlan 30
   ip address 192.168.2.132 255.255.255.192
 
-  ipv6 address 3000:2:0:8000::3/50
-
   no shutdown
 
 ip default-gateway 192.168.2.131
@@ -107,8 +105,6 @@ interface range fastethernet0/21 - 24
 interface vlan 30
   ip address 192.168.2.133 255.255.255.192
 
-  ipv6 address 3000:2:0:8000::4/50
-
   no shutdown
 
 ip default-gateway 192.168.2.131
@@ -118,7 +114,7 @@ line vty 0 4
   login 
   transport input telnet
 
-interface range fastethernet0/5 - 15
+interface range fastethernet0/5, fastethernet0/15
   switchport port-security
   switchport port-security mac-address sticky
   switchport port-security maximum 2
@@ -171,8 +167,6 @@ interface range gigabitethernet1/0/21 - 24
 interface vlan 30
   ip address 192.168.2.134 255.255.255.192
 
-  ipv6 address 3000:2:0:8000::5/50
-
   no shutdown
 
 ip default-gateway 192.168.2.131
@@ -182,7 +176,7 @@ line vty 0 4
   login 
   transport input telnet
 
-interface range fastethernet0/5 - 15
+interface range fastethernet0/5, fastetherner0/15
   switchport port-security
   switchport port-security mac-address sticky
   switchport port-security maximum 2
@@ -248,7 +242,6 @@ interface gigabitethernet0/0.10
   standby 10 priority 101
   standby 10 preempt
 
-  ipv6 enable
   ipv6 address fe80::1 link-local
   ipv6 address 3000::/50
 
@@ -265,7 +258,6 @@ interface gigabitethernet0/0.20
   standby 20 priority 100
   standby 20 preempt
 
-  ipv6 enable
   ipv6 address fe80::1 link-local
   ipv6 address 3000:0000:0000:4000::/50
 
@@ -279,7 +271,6 @@ interface gigabitethernet0/0.30
   standby 30 priority 101
   standby 30 preempt
 
-  ipv6 enable
   ipv6 address fe80::1 link-local
   ipv6 address 3000:0000:0000:8000::/50
   no shutdown
@@ -292,7 +283,6 @@ interface gigabitethernet0/0.40
   standby 40 priority 101
   standby 40 preempt
 
-  ipv6 enable
   ipv6 address fe80::1 link-local
   ipv6 address 3000:0000:0000:c000::/50
   no shutdown
@@ -363,7 +353,6 @@ interface f0/1.10
   standby 10 priority 100
   standby 10 preempt
 
-  ipv6 enable
   ipv6 address fe80::2 link-local
   ipv6 address 3000::1/50
   no shutdown
@@ -376,7 +365,6 @@ interface f0/1.20
   standby 20 priority 101
   standby 20 preempt
 
-  ipv6 enable
   ipv6 address fe80::2 link-local
   ipv6 address 3000:0000:0000:4000::1/50
 
@@ -393,7 +381,6 @@ interface f0/1.30
   standby 30 priority 100
   standby 30 preempt
 
-  ipv6 enable
   ipv6 address fe80::2 link-local
   ipv6 address 3000:0000:0000:8000::1/50
   no shutdown
@@ -406,7 +393,6 @@ interface f0/1.40
   standby 40 priority 101
   standby 40 preempt
 
-  ipv6 enable
   ipv6 address fe80::2 link-local
   ipv6 address 3000:0000:0000:c000::1/50
   no shutdown
