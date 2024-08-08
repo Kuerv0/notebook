@@ -114,7 +114,7 @@ line vty 0 4
   login 
   transport input telnet
 
-interface range fastethernet0/5, fastethernet0/15
+interface range fastethernet0/5 , fastethernet0/15
   switchport port-security
   switchport port-security mac-address sticky
   switchport port-security maximum 2
@@ -176,7 +176,7 @@ line vty 0 4
   login 
   transport input telnet
 
-interface range fastethernet0/5, fastetherner0/15
+interface range gigabitethernet1/0/5 , gigabitethernet1/0/15
   switchport port-security
   switchport port-security mac-address sticky
   switchport port-security maximum 2
@@ -369,7 +369,7 @@ interface f0/1.20
   ipv6 address 3000:0000:0000:4000::1/50
 
   ipv6 nd managed-config-flag
-  ipv6 nd prefix 
+! ipv6 nd prefix 
   ipv6 dhcp server DEADFUL
   no shutdown 
 
@@ -402,4 +402,12 @@ line vty 0 4
   login 
   transport input telnet
 
+! }
+
+! {
+router rip
+ version 2 
+ network 10.0.0.0
+ network 192.168.2.0
+ no auto-summary
 ! }
