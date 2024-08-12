@@ -1016,6 +1016,74 @@ Mon Aug  5 11:55:03 AM -05 2024
 Moved to config
 
 --------------------------------------------------------------------------------
+Vigésima octava clase ?
+--------------------------------------------------------------------------------
+Mon Aug 12 12:03:16 PM -05 2024
+
+El router si no tiene una ruta para llegar al otro lado, descarta el paquete,
+entonces el enrutamiento es muy importante.
+
+El router necesita tener la información de destino.
+
+Manual -> Estático
+Dinámico -> como rip.
+
+Los PCs tienen habilidades de capa 3. Pueden ser enrutadores. 
+Y tiene una tabla de enrutamiento.
+Si hay mas de una interfaz de red, se puede personalizar.
+
+Imprimir rutas.
+$ route print
+$ netstat -r
+
+La información de las tablas se toma de las tarjetas de red.
+
+La métrica es una columna que asigna el sistema operativo, entre menor, más
+preferida.
+
+Si la ruta ya está en la tabla se hace con CHANGE, sino, se hace con ADD
+
+$ route ADD 8.0.0.0 MASK 255.0.0.0 127.0.0.1 METRIC 10 IF 1
+
+{
+interface Gig 0/0/0
+  ip address 10.0.0.1 255.0.0.0
+  no shutdown
+
+interface Gig 0/0/1
+  ip address 192.168.1.50 255.255.255.240
+  no shutdown
+}
+
+{
+ip route 0.0.0.0 0.0.0.0 Gig 0/0/1
+}
+
+Si no se puede mandar paquetes por el cable, el router no pone información en la
+tabla. Up/up
+
+L es host específico, mientras la C es la red completa e incluye a todos los
+dispositivos.
+
+Los caballeros routers y switches tienen debugs. Los shows son normalmente
+comandos que hacen resumen, los debugs son eventos, cada vez que suceda algo, yo
+con el debug le digo qué es lo que quiero ver, por ejemplo, cada vez hay un
+evento, como cada vez que la interfaz sube o baja.
+
+         Show                            Debug
+         - Resumen                       - Eventos
+         - Por solicitud                 - Por ocurrencia
+
+# debug ip routing
+
+Ver debugs encendidos
+
+# show debug
+# no debug ip routing
+# undebug
+# no debug all
+
+--------------------------------------------------------------------------------
 Nota para Minicom
 --------------------------------------------------------------------------------
 $ dmesg | grep tty
