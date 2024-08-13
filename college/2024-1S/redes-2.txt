@@ -1082,6 +1082,12 @@ Ver debugs encendidos
 # no debug ip routing
 # undebug
 # no debug all
+--------------------------------------------------------------------------------
+Vigésima octava clase ?
+--------------------------------------------------------------------------------
+Siempre que es multi acceso se usa el ip del siguiente salto.
+
+#(config)ip route 10.18.18.128 255.255.255.128 S0/2/0
 
 --------------------------------------------------------------------------------
 Nota para Minicom
