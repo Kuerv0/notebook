@@ -1126,6 +1126,57 @@ ip route 0.0.0.0 0.0.0.0 Se0/2/0
 }
 
 --------------------------------------------------------------------------------
+Vigésima novena clase ?
+--------------------------------------------------------------------------------
+Thu Aug 15 12:17:23 PM -05 2024
+
+Rutas flotantes
+AD: 0 - 255, elegibilidad, favorabilidad
+Entre más pequeño mejor
+
+C -> distancia 0
+S -> distancia 1
+
+ip route 0.0.0.0 0.0.0.0 Se0/2/0 [metric]
+
+Si la distancia es igual, no es una ruta flotante.
+
+Búsqueda recursiva se da cuando en el router no se encuentra la interfaz en la
+línea.
+
+Hay routers que permiten ambos argumentos, en este caso los llamamos rutas
+totalmente definidas.
+
+R1
+{
+interface fast0/0
+  ip address 10.1.0.1 255.255.255.0
+  no shutdown
+interface fast 0/1
+  ip address 10.12.0.1 255.255.0.0
+  no shutdown
+interface serial0/0/0
+  ip address 10.21.0.1 255.255.0.0
+  no shutdown
+  clock rate 64000
+}
+
+R2
+{
+hostname R2
+
+interface fast0/0
+  ip address 10.2.0.1 255.255.255.0
+  no shutdown
+interface fast 0/1
+  ip address 10.12.0.2 255.255.0.0
+  no shutdown
+interface serial0/0/0
+  ip address 10.21.0.2 255.255.0.0
+  no shutdown
+}
+
+--------------------------------------------------------------------------------
 Nota para Minicom
 --------------------------------------------------------------------------------
 $ dmesg | grep tty
