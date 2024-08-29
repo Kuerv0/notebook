@@ -411,3 +411,126 @@ router rip
  network 192.168.2.0
  no auto-summary
 ! }
+
+! ==============================================================================
+! Access point default config
+! ==============================================================================
+! Thu Aug 29 12:13:50 PM -05 2024
+
+!                                                                                                                                        
+version 12.4                                                                                                                             
+no service pad                                                                                                                           
+service timestamps debug datetime msec                                                                                                   
+service timestamps log datetime msec                                                                                                     
+service password-encryption                                                                                                              
+!                                                                                                                                        
+hostname AP2                                                                                                                             
+!                                                                                                                                        
+logging rate-limit console 9                                                                                                             
+enable secret 5 $1$KI3z$pM6dK0epvk5RMB3ZKa8xv.                                                                                           
+!                                                                                                                                        
+no aaa new-model                                                                                                                         
+!                                                                                                                                        
+!                                                                                                                                        
+dot11 syslog                                                                                                                             
+!                                                                                                                                        
+dot11 ssid 199InvitadosA                                                                                                                 
+   vlan 199                                                                                                                              
+   authentication open                                                                                                                   
+   authentication key-management wpa version 2                                                                                           
+   guest-mode                                                                                                                            
+   wpa-psk ascii 7 105C0C1D000440080D1725                                                                                                
+!                                                                                                                                        
+!                                                                                                                                        
+!                                                                                                                                        
+username Cisco password 7 032752180500                                                                                                   
+!                                                                                                                                        
+!                                                                                                                                        
+bridge irb                                                                                                                               
+!                                                                                                                                        
+!                                                                                                                                        
+interface Dot11Radio0                                                                                                                    
+ no ip address                                                                                                                           
+ no ip route-cache                                                                                                                       
+ shutdown                                                                                                                                
+ !                                                                                                                                       
+ encryption vlan 199 mode ciphers aes-ccm                                                                                                
+ ssid 199InvitadosA                                                                                                                      
+ !                                                                                                                                       
+ station-role root                                                                                                                       
+ bridge-group 1                                                                                                                          
+ bridge-group 1 subscriber-loop-control                                                                                                  
+ bridge-group 1 block-unknown-source                                                                                                     
+ no bridge-group 1 source-learning                                                                                                       
+ no bridge-group 1 unicast-flooding                                                                                                      
+ bridge-group 1 spanning-disabled                                                                                                        
+!                                                                                                                                        
+interface Dot11Radio0.199                                                                                                                
+ encapsulation dot1Q 199                                                                                                                 
+ no ip route-cache                                                                                                                       
+ bridge-group 199                                                                                                                        
+ bridge-group 199 subscriber-loop-control                                                                                                
+ bridge-group 199 block-unknown-source                                                                                                   
+ no bridge-group 199 source-learning                                                                                                     
+ no bridge-group 199 unicast-flooding                                                                                                    
+ bridge-group 199 spanning-disabled                                                                                                      
+!                                                                                                                                        
+interface Dot11Radio1                                                                                                                    
+ no ip address                                                                                                                           
+ no ip route-cache                                                                                                                       
+ shutdown                                                                                                                                
+ !                                                                                                                                       
+ encryption vlan 199 mode ciphers aes-ccm                                                                                                
+ dfs band 3 block                                                                                                                        
+ mbssid                                                                                                                                  
+ channel dfs                                                                                                                             
+ station-role root                                                                                                                       
+ bridge-group 1                                                                                                                          
+ bridge-group 1 subscriber-loop-control                                                                                                  
+ bridge-group 1 block-unknown-source                                                                                                     
+ no bridge-group 1 source-learning                                                                                                       
+ no bridge-group 1 unicast-flooding                                                                                                      
+ bridge-group 1 spanning-disabled                                                                                                        
+!                                                                                                                                        
+interface Dot11Radio1.199                                                                                                                
+ encapsulation dot1Q 199                                                                                                                 
+ no ip route-cache                                                                                                                       
+ bridge-group 199                                                                                                                        
+ bridge-group 199 subscriber-loop-control                                                                                                
+ bridge-group 199 block-unknown-source                                                                                                   
+ no bridge-group 199 source-learning                                                                                                     
+ no bridge-group 199 unicast-flooding                                                                                                    
+ bridge-group 199 spanning-disabled                                                                                                      
+!                                                                                                                                        
+interface FastEthernet0                                                                                                                  
+ no ip address                                                                                                                           
+ no ip route-cache                                                                                                                       
+ duplex auto                                                                                                                             
+ speed auto                                                                                                                              
+ bridge-group 1                                                                                                                          
+ no bridge-group 1 source-learning                                                                                                       
+ bridge-group 1 spanning-disabled                                                                                                        
+!                                                                                                                                        
+interface FastEthernet0.199                                                                                                              
+ encapsulation dot1Q 199                                                                                                                 
+ no ip route-cache                                                                                                                       
+ bridge-group 199                                                                                                                        
+ no bridge-group 199 source-learning                                                                                                     
+ bridge-group 199 spanning-disabled                                                                                                      
+!                                                                                                                                        
+interface BVI1                                                                                                                           
+ ip address dhcp client-id FastEthernet0                                                                                                 
+ no ip route-cache                                                                                                                       
+!                                                                                                                                        
+ip http server                                                                                                                           
+no ip http secure-server                                                                                                                 
+ip http help-path http://www.cisco.com/warp/public/779/smbiz/prodconfig/help/eag                                                         
+bridge 1 route ip                                                                                                                        
+!                                                                                                                                        
+!                                                                                                                                        
+!                                                                                                                                        
+line con 0                                                                                                                               
+line vty 0 4                                                                                                                             
+ login local                                                                                                                             
+!                                                                                                                                        
+end                                                                                                                                      
