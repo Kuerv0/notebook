@@ -1,4 +1,66 @@
 ================================================================================
-Regreso a clases
-================================================================================
-De momento nada en esta materia
+Soluciones Cafeteras S.A.S
+===============================================================================
+1. Enunciado con 7 requisitos funcionales.
+En Soluciones Cafeteras S.A.S nos especializamos en el desarrollo de
+controladores Kasa compatibles con dispositivos Z-wave y Zigbee del mercado, así
+como integraciones con Alexa, Google Home, entre otros. Hasta hace poco, el
+centro de control podía ser accesido únicamente por navegador escritorio. Por
+ello Estamos en el proceso de desarrollar una aplicación móvil que permita a los
+usuarios crear una cuenta en el portal Kasa, acceder a nuestro centro de
+control, asociar controladores a su cuenta, listar controladores, emparejar
+dispositivos, listar dispositivos y ajustar opciones desde el panel de control,
+crear automatizaciones y triggers con los dispositivos.
+
+2. Determinar requisitos funcionales.
+
+Para determinar los requisitos funcionales de la nueva aplicación móvil de
+Soluciones Cafeteras S.A.S, podemos desglosar las funcionalidades mencionadas en
+el enunciado. Aquí tienes una lista de los requisitos funcionales:
+
+1. **Creación de cuenta**:
+   - Permitir a los usuarios registrarse en el portal Kasa.
+   - Validación de correo electrónico y contraseña.
+
+2. **Acceso al centro de control**:
+   - Autenticación de usuarios mediante credenciales.
+   - Recuperación de contraseña en caso de olvido.
+
+3. **Asociación de controladores**:
+   - Permitir a los usuarios asociar controladores Kasa a su cuenta.
+   - Verificación de compatibilidad con dispositivos Z-wave y Zigbee.
+
+4. **Listado de controladores**:
+   - Mostrar una lista de todos los controladores asociados a la cuenta del
+     usuario.
+   - Detalles de cada controlador (nombre, estado, tipo).
+
+5. **Emparejamiento de dispositivos**:
+   - Facilitar el emparejamiento de dispositivos con los controladores.
+   - Instrucciones paso a paso para el emparejamiento.
+
+6. **Listado de dispositivos**:
+   - Mostrar una lista de todos los dispositivos emparejados con los
+     controladores.
+   - Detalles de cada dispositivo (nombre, estado, tipo).
+
+7. **Ajuste de opciones desde el panel de control**:
+   - Permitir a los usuarios ajustar configuraciones de los dispositivos desde
+     el panel de control.
+   - Opciones de configuración específicas para cada tipo de dispositivo.
+
+8. **Creación de automatizaciones y triggers**:
+   - Permitir a los usuarios crear automatizaciones basadas en condiciones
+     específicas.
+   - Configuración de triggers para activar dispositivos o acciones.
+
+Estos requisitos funcionales aseguran que la aplicación móvil cubra todas las
+necesidades mencionadas en el enunciado y proporcione una experiencia completa y
+eficiente a los usuarios. ¿Hay algún otro detalle específico que te gustaría
+incluir?
+
+3. Realizar la descomposición de los requisitos funcionales.
+
+4. Crear historias de usuario en un formato conveniente.
+
+5. Establecer los criterios de aceptación y prueba.
