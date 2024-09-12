@@ -59,7 +59,67 @@ necesidades mencionadas en el enunciado y proporcione una experiencia completa y
 eficiente a los usuarios. ¿Hay algún otro detalle específico que te gustaría
 incluir?
 
-3. Realizar la descomposición de los requisitos funcionales.
+3
+### Requisitos Funcionales Clave
+
+1. **Gestión de Cuentas Kasa**
+   - **Registro y Autenticación**: Los usuarios deben poder crear una cuenta Kasa y autenticarse en la aplicación.
+   - **Gestión de Perfil**: Los usuarios deben poder actualizar su información personal y cambiar su contraseña.
+
+2. **Asociación de Controladores**
+   - **Emparejamiento de Dispositivos**: Los usuarios deben poder emparejar dispositivos Z-Wave y Zigbee con su cuenta Kasa a través de un proceso guiado.
+   - **Desemparejamiento y Restablecimiento**: Los usuarios deben poder eliminar o restablecer dispositivos emparejados.
+
+3. **Panel de Control**
+   - **Dashboard Dinámico**: Mostrar todos los dispositivos emparejados con detalles sobre su estado, conexión y opciones de configuración.
+   - **Control de Dispositivos**: Permitir a los usuarios controlar y configurar dispositivos desde el panel.
+
+4. **Escenas y Automatizaciones**
+   - **Creación de Escenas**: Los usuarios deben poder crear y gestionar escenas que incluyan múltiples dispositivos.
+   - **Automatizaciones**: Configurar acciones basadas en triggers como movimiento, apertura de puertas, hora del día, etc.
+
+5. **Notificaciones en Tiempo Real**
+   - **Alertas**: Enviar notificaciones sobre eventos importantes como desconexiones, cambios de estado o activaciones de seguridad.
+
+6. **Opciones Avanzadas**
+   - **Registros de Actividad**: Acceso a registros de actividad de los dispositivos.
+   - **Intercambio de Datos**: Permitir peticiones e intercambio de datos con los dispositivos y el controlador a través de la API.
+
+7. **Gestión de Permisos**
+   - **Compartir Acceso**: Los usuarios deben poder compartir el acceso a su cuenta Kasa con otros, definiendo niveles de permisos según roles.
+
+### Historias de Usuario
+
+1. **Registro de Usuario**
+   - **Como** nuevo usuario,
+   - **Quiero** registrarme en la aplicación,
+   - **Para** poder gestionar mis dispositivos Kasa.
+
+2. **Emparejamiento de Dispositivos**
+   - **Como** usuario registrado,
+   - **Quiero** emparejar un nuevo dispositivo,
+   - **Para** poder controlarlo desde la aplicación.
+
+3. **Creación de Escenas**
+   - **Como** usuario avanzado,
+   - **Quiero** crear una escena que active luces al detectar movimiento,
+   - **Para** automatizar mi hogar.
+
+### Criterios de Aceptación y Pruebas
+
+1. **Registro de Usuario**
+   - **Criterios de Aceptación**: El usuario debe poder registrarse con un correo electrónico y contraseña válidos.
+   - **Pruebas**: Verificar que el registro se complete correctamente y que el usuario reciba un correo de confirmación.
+
+2. **Emparejamiento de Dispositivos**
+   - **Criterios de Aceptación**: El dispositivo debe aparecer en el dashboard después de ser emparejado.
+   - **Pruebas**: Realizar pruebas de emparejamiento con diferentes dispositivos Z-Wave y Zigbee.
+
+3. **Creación de Escenas**
+   - **Criterios de Aceptación**: La escena debe activarse correctamente según los triggers configurados.
+   - **Pruebas**: Configurar y activar escenas con diferentes combinaciones de dispositivos y triggers.
+
+Espero que esta descomposición te sea útil. ¿Hay algún otro aspecto que te gustaría detallar más?
 
 4. Crear historias de usuario en un formato conveniente.
 
