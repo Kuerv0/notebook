@@ -21,10 +21,11 @@ el enunciado. Aquí tienes una lista de los requisitos funcionales:
 1. **Creación de cuenta**:
    - Permitir a los usuarios registrarse en el portal Kasa.
    - Validación de correo electrónico y contraseña.
+   - Notificación de creación.
 
 2. **Acceso al centro de control**:
-   - Autenticación de usuarios mediante credenciales.
-   - Recuperación de contraseña en caso de olvido.
+   - Autenticación de usuarios a través de credenciales.
+   - Recuperación de credenciales.
 
 3. **Asociación de controladores**:
    - Permitir a los usuarios asociar controladores Kasa a su cuenta.
