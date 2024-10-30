@@ -48,7 +48,7 @@ recursively named by the phrase GNU is Not UNIX. GNU was intended to become a
 recoding of the entire UNIX operating system that could be freely distributed.
 
 Over time, the term free software has been mostly replaced by the term open
-source soft- ware. The term free software is preferred by the Free Software
+source software. The term free software is preferred by the Free Software
 Foundation, while open source software is promoted by the Open Source Initiative
 
 MacOS is built on a BSD derivative.
@@ -810,3 +810,16 @@ Tiny Core Linux -> http://tinycorelinux.net/
 
 With PXE, it is possible to do a complete Linux installation without a physical
 medium.
+
+[Bookmark] page 204: Understanding Cloud-Based Installations
+
+
+
+================================================================================
+                     Part 6: Engaging with Cloud Computing
+================================================================================
+
+--------------------------------------------------------------------------------
+Chapter 26: Shifting to Clouds and Containers
+--------------------------------------------------------------------------------
+
