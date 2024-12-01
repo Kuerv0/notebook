@@ -1,0 +1,160 @@
+! ==============================================================================
+! R1
+! ==============================================================================
+! {
+
+hostname R1
+no ip domain lookup
+enable secret class
+
+line console 0
+  password cisco
+  login
+
+line vty 0 4
+  password cisco
+  login
+
+service password-encryption
+
+banner motd $ ¡Omar vigila este equipo! $
+
+copy running-config startup-config
+
+! Part 2
+
+interface g0/0/1
+  ip address 10.53.0.1 255.255.255.0
+  no shutdown
+  exit
+
+interface loopback 1
+  ip address 172.16.1.1 255.255.255.0
+  exit
+
+router ospf 56
+  router-id 1.1.1.1
+  network 10.53.0.0 0.0.0.255 area 0
+
+! Part 3
+interface g0/0/1
+  ip ospf priority 50
+
+interface g0/0/1
+  ip ospf hello-interval 30
+
+ip route 0.0.0.0 0.0.0.0 loopback 1
+
+router ospf 56
+  default-information originate
+
+router ospf 56
+  auto-cost reference-bandwidth 1000
+  yes
+
+! }
+
+! ==============================================================================
+! R2
+! ==============================================================================
+! {
+  
+hostname R2
+no ip domain lookup
+enable secret class
+line console 0
+  password cisco
+  login
+
+line vty 0 4
+  password cisco
+  login
+
+service password-encryption
+
+banner motd $ ¡Omar vigila este equipo! $
+
+copy running-config startup-config
+
+! Part 2
+
+interface g0/0/1
+  ip address 10.53.0.2 255.255.255.0
+  no shutdown
+  exit
+
+interface loopback 1
+  ip address 192.168.1.1 255.255.255.0
+  exit
+
+router ospf 56
+  router-id 2.2.2.2
+  network 10.53.0.0 0.0.0.255 area 0
+  network 192.168.1.0 0.0.0.255 area 0
+
+interface g0/0/1
+  ip ospf hello-interval 30
+
+interface loopback 1
+  ip ospf network point-to-point
+
+router ospf 56
+  passive-interface loopback 1
+
+router ospf 56
+  auto-cost reference-bandwidth 1000
+  yes
+
+! }
+
+! ==============================================================================
+! S1
+! ==============================================================================
+! {
+hostname S1
+no ip domain lookup
+enable secret class
+
+line console 0
+  password cisco
+  login
+
+line vty 0 15
+  password cisco
+  login
+
+service password-encryption
+
+banner motd $¡Omar vigila este equipo!$
+
+copy running-config startup-config
+
+! Part 2
+
+! }
+
+! ==============================================================================
+! S2
+! ==============================================================================
+! {
+hostname S2
+no ip domain lookup
+enable secret class
+
+line console 0
+  password cisco
+  login
+
+line vty 0 15
+  password cisco
+  login
+
+service password-encryption
+
+banner motd $¡Omar vigila este equipo!$
+
+copy running-config startup-config
+
+! Part 2
+
+! }
