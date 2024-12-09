@@ -1,0 +1,118 @@
+--------------------------------------------------------------------------------
+Primera clase
+--------------------------------------------------------------------------------
+Sat 23 Nov 2024 06:59:14 AM -05
+
+OSPF = Open Shortest Path First
+RID = IP manual
+
+En OSPF siempre lo que está manual precede lo que está auto.
+
+- Manual
+(config)# router ospf 1
+          router-id 1.1.1.1
+
+ - Auto
+  - Mayor loopback
+  - Mayor dirección
+
+Una interfaz loopback en los routers es virtual, con todas las características,
+pero siempre está arriba. Son más estables.
+
+dos mil millones de loopback.
+
+interface loopback 0
+  ip address 4.4.4.4 255.0.0.0
+
+Cambiar el ID en el OSPF requiere reiniciar el prtocolo o reinicar el sistema
+completamente.
+
+Anunciar redes
+Estáticas -> redes remotas
+Dinámicas -> redes locales
+
+Máscara "match" wildcard
+0 = Coincidir
+1 = No importa
+
+255.255.0.255 -> Revisar el tercer octeto.
+
+La wildcard es la inversa de la máscara de red.
+
+Agregando las redes child a ospf
+(config)# router ospf 1
+          network 10.1.0.0 0.0.255.255 area 0
+          network 172.16.1.0 0.0.0.255 area 0
+
+Agregando las parents
+(config)# router ospf 1
+          network 10.0.0.0 0.255.255.255 area 0
+          network 172.16.0.0 0.0.255.255 area 0
+
+Comodín
+(config)# router ospf 1
+          network 0.0.0.0 255.255.255.255 area 0
+
+Show stuff
+
+Router(config-router)#do show ip ospf neigh
+Router(config-router)#do show ip ospf database
+Router(config-router)#do show ip ospf
+
+¿Cómo calcula OSPF el costo?
+
+Se puede poner un costo manual, si no se configura, se hace de manera
+automática. 
+
+show ip ospf 
+
+Router#show ip ospf interface f0/1
+Router(config-if)#ip ospf cost 5 -> Change cost
+
+Cisco tiene costo automático, lo calcula con el ancho de banda que se está
+usando en el puerto.
+
+Costo = 10^8 / BW [bps (en bits por segundo)] => Aquí usamos base 10 para los
+
+int S0/0/0
+  bandwidth 300000 [kbps] -> WAN
+
+int g0/0/0
+  speed 10 [mbps] -> LAN
+
+No puede existir un costo de 0. En este caso no se trunca, se aproxima a 1.
+
+La fórmula del costo se puede cambiar, pero para esto se necesita cambiar en
+todos los dispositivos.
+
+Router(config-router)#auto-cost reference-bandwidth 10000
+
+La relación que establecen los vecinos se llama adyacencia. El OSPF es pesado.
+
+Multiacceso
+
+n*(n-1) / 2
+
+Se escoge un DR, también un BDR
+
+Prioridad, luego se desempata por Router ID
+
+Si no se caen las adyacencias, hay negociación de cierta manera, pero cuando hay
+adyacencia
+
+(config)# ip ospf priority 10
+
+# clear ip ospf process
+
+--------------------------------------------------------------------------------
+Segunda clase
+--------------------------------------------------------------------------------
+En el mundo de seguridad, el modelo es cerrado, donde nadie está autorizado a
+nos ser que yo le diga que tiene accesso, por eso los firewall y etc hay que
+desbloquearle permisos.
+
+Le vamos a restringir para que solo cierta red pueda hacer telnet a nuestra red.
+
+(config) access-list 1 permit 10.48.0.0 0.3.255.255
+(config) access-list 1 permit 10.52.0.0 0.3.255.255
+(vty) access-class 1 in

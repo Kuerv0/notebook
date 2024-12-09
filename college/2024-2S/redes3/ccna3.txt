@@ -1,0 +1,8 @@
+1.1 OSPF Features and Characteristics
+
+Routing protocol messages
+- Hello packet
+- Database description packet
+- Link-state request packet
+- Link-state update packet
+- Link-state acknowledgment packet
