@@ -6,3 +6,15 @@ Routing protocol messages
 - Link-state request packet
 - Link-state update packet
 - Link-state acknowledgment packet
+
+Data Structures
+- Adjacency database: show ip ospf neighbor
+- Link-state database: show ip ospf database
+- Forwarding database: show ip route
+
+Link-State Operation
+1. Establish Neighbor Adjacencies
+2. Exchange Link-state Advertisements
+3. Build the Link State Database
+4. Execute the SPF Algorithm
+5. Choose the Best Route
