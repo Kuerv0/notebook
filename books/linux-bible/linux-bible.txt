@@ -823,3 +823,19 @@ medium.
 Chapter 26: Shifting to Clouds and Containers
 --------------------------------------------------------------------------------
 
+Starting with Linux Containers
+# yum install docker -y
+# systemctl start docker
+# systemctl enable docker
+
+Podman is similar, but uses a different codebase
+# yum install podman -y
+
+Pulling a container
+# podman pull registry.access.redhat.com/ubi8/ubi
+
+See images on your system
+# podman images
+
+Running a shell from a container
+# podman run -it 096cae65a207 bash
