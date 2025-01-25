@@ -1,10 +1,115 @@
 -------------------------------------------------------------------------------
-1. Notas de clase
+                                 Notas de clase
 -------------------------------------------------------------------------------
 
-                               1.1 Primera clase
+                              1. Packet forwarding 
+                        Sat Jan 25 09:27:42 AM -05 2025
 
+     Network Device Communication
+     Layer 2 Forwarding and Collision Domains
+
+        Siempre que ocurre una colisión queremos que se vean afectados pocos
+     elementos, por ende siempre vamos a querer minimizar los dominios de
+     colisión. Los switches limitan los dominios de colisión, por ello vamos a
+     preferirlos en lugar de un hub.
+
+        En la actualidad es difícil encontrar escenarios donde se den
+     colisiones, podría darse debebido a un equipo que trabaje en half-duplex,
+     pero el comportamiento por defecto de los equipos actuales es full-duplex.
+
+        Un switch envía un Unicast cuando el paquete tiene una MAC destino,
+     cuando tiene una MAC ffff:ffff..., se envía por todos los puertos excepto
+     por el que se envió, las vlan nos van a permitir separar los dominios de
+     broadcast, para no afectar el ancho de banda de todos los equipos, las
+     vlans son la primera solución para separar dominos de broadcast.
+     
+     Luego de crear los puertos, se debe asignar el puerto a la vlan
+     switchport [espacio para comando]
+
+        Los puertos troncales permiten el tráfico de múltiples vlans. Los
+     puertos troncales vienen etiquetados y el protocolo que hace esta etiqueta
+     es 802.1Q
+
+     Existe una vlan con un propósito especial, se llama la vlan nativa, el cual
+     reluce en un troncal, la vlan nativa tiene significado, relevancia en un
+     troncal, la cual es aquella única vlan que en el troncal no lleva tag.
+     Normalmente no se usa tanto, se usaba cuando por un flujo tenía problemas.
+     Si el tráfico genera errores, prueben cambiando esa vlan por la vlan
+     nativa, si realmente el problema es la etiquetada, saldrá a relucir, ahora
+     mismo la gran mayoría de flujos soporta ser etiquetada.
+
+     Por defecto, todas las vlan viajan por el troncal, pero esto se puede
+     cambiar manualmente. Las vlan nuevas no son agregadas automáticamente si se
+     usa el comando switchport trunk allowed vlan v, v1, v2
+
+     La tabla de las direcciones MAC se va construyendo a medidad que haya
+     flujos, esas son las denomiandas MACs dinámicas, el aprendizaje de las MAC
+     se hacen durante la marcha, la tabla MAC la tienen los equipos capa 2, se
+     va poblando de forma dinámica con las MAC origen, en entorno seguros, se
+     puede agregar las MAC manualmente.
+
+     Tabla condensada con informadción relevante
+                                                          #show interface status
+
+        Las decisiones en capa 3, se hacen basados en el encabezado de TCP/IP e
+     Ethernet, por lo que el abre los paquetes y modifica de ser necesario. En
+     esta tenemos tabla ARP
+
+        La comunicación local es necesaria para incluir información en los
+     paquetes, entonces cuando un PC quiere construir el paquete para un PC que
+     está en la misma red, tiene toda la información que requiere para crear el
+     paquete. Si no se sabe la MAC, ahí es donde se produce un arp request, el
+     cual es un broadcast, el switch no sabe nada de arp, pero sabe qué es un
+     broadcast en su capa, por lo que solo hace un broadcast preguntando por la
+     IP.
+
+   La tabla ARP es un mappeo entre capa 2 y capa 3 en la comunicación local.
+
+                La tabla MAC es un mappeo entre capa 1 y capa 2.
+
+Los routers pueden tener IPs secundarias, pero no se acostumbra mucho, sino que
+se hacen subinterfaces, los protocolos de enrutamiento no funcionan tan bien con
+secundarias, la recomendación es usar subinterfaces en lugar de usar
+secundarias.
+
+En los switches, las direcciones se asignan en las SVI, también a un Switch de
+capa 3 se puede activar un puerto enrutado con on switchport.
+
+Cisco era el mejor enrutando, luego adquirió una empresa llamada Catalyst donde
+adquirió el conocimiento de switching. Los routers son equipos que toman
+decisiones basadas en software. La capa 2 es un direccionamiento físico, el
+router se puede convertir en un cuello de botella, porque todo el tráfico pasa
+por él. Los switches toman la decisión con mayor velocidad.
+
+Existe una primera forma de tomar decisiones, pero ya no la usamos, en esta
+conferencia que estamos teniendo en Webex, el computador de Omar Roa le envía
+toda la información al router, el router tiene una tabla de enrutamiento, que
+usa para tomar decisiones y cada mensaje tiene que hacer el mismo análisis, el
+procesamiento incluído en eso es vasto, pero luego Cisco implementó un cache, el
+cual consiste en recordar decisiones para posteriores paquetes que sean
+similares, esto se llama la cache de enrutamiento. 
+
+En load balancing, si tiene fast switching, balancea por flujo, si no, balancea
+por paquetes.
+
+Tomar decision paquete a paquete
+no ip-route cache
+
+Cisco crea un algoritmo de forwarding donde el router concatena el arp con la ip
+routing table, este es el llamado CEF, lo que busca es que la decisión se aún
+más veloz que fast switching.
+
+Podría darse el caso que la IA empiece a tomar decisiones de enrutamiento. Ya
+hay equipos que están separados y se pueden conectar con algo externo para que
+le dé la mejor decisión posible.
+
+Los switches tienen unos recursos, los recursos los tiene distribuidos de cierta
+manera. Por ejemplo la RAM y el procesador se pueden concentrar en las vlan,
+entonces para poder atender 1000 vlans, por ejemplo, necesita distribuir los
+recursos, pero si se necesita ipv6, ya no se podría tener 1000 vlans, esto es lo
+que llamamos SDM Templates, normalmente.
+                                                                       #show sdm
 
 -------------------------------------------------------------------------------
-2. Lecturas
+                                    Lecturas
 -------------------------------------------------------------------------------
