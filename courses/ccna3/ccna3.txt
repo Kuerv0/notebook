@@ -1,0 +1,106 @@
+-------------------------------------------------------------------------------
+1. Notas de clase
+-------------------------------------------------------------------------------
+
+                              IOS Recovery: Router
+                        Sat Jan 25 06:28:40 AM -05 2025
+
+        Se considera una buena práctica mantener backups de los equipos, un un
+     repositorio es una buena opción. Nosotros vamos a usar el TFTP, es un
+     servicio sin contraseñas, sin autenticación, también podríamos usar FTP,
+     pero este es algo más complejo.
+
+                        Sat Jan 25 06:42:22 AM -05 2025
+
+        Ahora sí vamos a hacer la copia del sistema operativo
+     Podemos validar la imagen del sistema operativo con el comando 
+
+                                  #show flash: 
+     
+     Router#show flash:
+
+     CompactFlash directory:
+     File  Length   Name/status
+     1   67926080  c2800nm-adventerprisek9-mz.151-4.M10.bin
+     [67926144 bytes used, 61097852 available, 129023996 total]
+     126000K bytes of ATA CompactFlash (Read/Write)
+
+     Router#
+
+     Copiar flash a un servidor tftp
+
+     Router#copy flash: tftp:
+     Source filename []? c2800nm-adventerprisek9-mz.151-4.M10.bin
+     Address or name of remote host []? 10.0.0.100
+     Destination filename [c2800nm-adventerprisek9-mz.151-4.M10.bin]? igual.bin
+
+     Érase una vez la flash
+                                 #erase flash:
+
+     1. Preparar las variables de entorno...
+
+     Ver las variables de entorno
+                                  rommon> set 
+
+     Proceso de recuperación tftp
+                                rommon> tftpdnld
+
+     IP_ADDRESS: 10.0.0.1
+     IP_SUBNET_MASK: 255.0.0.0
+     DEFAULT_GATEWAY: 10.0.0.1
+     TFTP_SERVER: 10.0.0.100
+     TFTP_FILE: igual.bin
+     TFTP_VERBOSE: Progress
+     TFTP_RETRY_COUNT: 18
+     TFTP_TIMEOUT: 7200
+     TFTP_CHECKSUM: Yes
+     TFTP_MACADDR: 00:23:33:63:b8:48
+     FE_PORT: Fast Ethernet 0
+     FE_SPEED_MODE: Auto    
+
+     2. Realizar transferencia
+                                rommon> tftpdnld
+     reset
+
+                           Password recovery: Router
+
+        Hay 2 formas, la primera es eliminar todo lo que hay en el equipo, la cual
+     no se usa mucho, pero habrá momentos en los que la persona la formatea
+     todo, el más difícil o el que tiene unos pasitos más, se rescata lo que se
+     tiene, lo único que vamos a hacer es sobreescribir las contraseñas,
+     normalmente uno no sabe cuál es la contraseña que tenía.
+
+        La recuperación se hace a través del rommon, lo que vamos a hacer es
+     interrumpir la carga del sistema operativo, para forzarlo a entrar al
+     rommon y en el rommon vamos a hacer unas marañas, este paso necesita acceso
+     presencial. A los equipos de Cisco se les puede desactivar el proceso de
+     recuperación de contraseñas, pero esto es un arma de doble filo.
+
+     1. Cambiar el registro de config
+
+     - Apagar manual
+     - Encender manual
+     > send gbreak antes de #######
+
+        Los routers tienen registros en hex, como 0x2102, donde alterar cada bit
+     cambiaría el comportamiento del router. Vamos a alterar un registro para
+     que al estar en 1 no cargue la nvram, esto se hará cambiando el registro
+     0x2102 a 0x2142
+
+                            rommon > confreg 0x2142
+
+     2. Cambios en startup-config
+
+     a. erase startup-config | No es la mejor opción
+
+     b. copy startup-config running-config
+     Luego se cambian las contraseñas necesarias para poder acceder, finalmente
+     cambiar el registro de config nuevamente a 0x2102
+     
+                        (config)# config-register 0x2102
+                                 #show version
+                                    #reload
+
+-------------------------------------------------------------------------------
+2. Lecturas
+-------------------------------------------------------------------------------
