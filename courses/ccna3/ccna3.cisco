@@ -1,0 +1,150 @@
+!------------------------------------------------------------------------------
+!                                     OSPF                                     
+!------------------------------------------------------------------------------
+
+! Create a virtual interface for OSPF router ID
+interface loopback 1
+  ip address 1.1.1.1 255.255.255.255
+  end
+
+! Check router ID
+show ip protocols | include Router ID
+
+! router ospf process-id
+router ospf 1 
+! Optionally configure the OSPF router ID
+router-id 2.2.2.2
+! Include directly connected networks that match this parameter
+network 172.16.45.0 0.0.0.255 area 0
+! Propagate the quad-0 default route
+default-information originate
+! Propagate classful static routes configured on this router to other OSPF 
+! routers
+redistribute static
+! Propagate classless static routes configured on thsi router to other OSPF
+! routers
+redistribute static subnets
+! No routing updates out any interface
+passive-interface default
+! Allow certain interfaces
+no passive-interface fastethernet 0/1
+! Or restrict certain interfaces
+passive-interface fastethernet 0/1
+! On ABR (Area Border Router) summarize addresses
+area 7 range 172.16.8.0 255.255.248.0
+! On ASBR - to summarize non-OSPF routes imported into OSPF
+summary address 172.16.8.0 255.255.248.0
+! Change ref bw - Mbits/s 1 - 4294967 MUST BE THE SAME for all ROUTERS
+auto-cost reference-bandwidth ?
+! Globally activate MD-5 authentication within an OSPF area
+area AREA-ID authentication message-digest
+! authentication key
+ip ospf message-digest-key 1 md5 PASSWORD
+! On an interface, configure the OSPF auth key - will not activate auth
+ip ospf message-digest-key 1 md5 PASSWORD
+! Activate OSPF authentication
+ip ospf authentication message-digest
+! Configure absolute cost for a link
+ip ospf cost 1562
+! change hello timer from default 10 seconds
+ip ospf hello-interval SECONDS
+! change dead timer from default 40 seconds | default * 4
+ip ospf dead-interval SECONDS
+! Change priority for DR/BDR election, default = 1, ineligible = 0
+ip ospf priority {0 - 255}
+! Display OSPF information
+! Display OSPF neighbor adjacencies - state should be FULL or 2WAY
+show ip ospf neighbor
+! Includes the OSPF router ID of this router
+show ip protocols
+! Re-calculate OSPF router ID based on current parameters
+clear ip ospf process
+! Display OSPF process and router IDs, as well as area information
+show ip ospf
+! See DR/BDR information, hello and dead intervals
+show ip ospf interface serial 0/0/0
+
+!------------------------------------------------------------------------------
+!                            Standard Access Lists
+!------------------------------------------------------------------------------
+! Standard access lists only evaluate the source IP field. They can use the
+! 'host' and 'any' keywords, or apply wildcard masks, they do not use port 
+! numbers
+
+!! Named standard access list
+! Name the list
+ip access-list standard NAME
+! Deny a specific host / log matches
+  deny host 192.168.20.5 log
+! Permit subnet 192.168.20.0
+  permit 192.168.20.0 0.0.0.255
+! Deny all other IP address
+  deny any
+!! Numbered IP standard access list
+! Deny specific host
+access-list 25 deny host 192.168.20.5
+! Permit entire subnet
+access-list 25 permit 192.168.20.0 0.0.0.255
+! Deny all other IP addresses
+access-list 25 deny any
+!! Named Extended Access List:
+! Name the list
+ip access-list extended NAME
+! Deny an individual host to an entire subnet for Telnet and also log matches
+  deny tcp host 192.168.20.10 172.16.0.0 0.0.255.255 eq 23 log
+! Permit an entire subnet to go anywhere
+  permit ip 192.168.20.0 0.0.0.255 any
+! Deny everything
+  deny ip any any
+!! Applying Access Lists
+interface fastethernet 0/0
+! Evaluate packets coming in to the router
+  ip access-group NAME in 
+! Evaluate packets leaving the router
+  ip access-group NAME out
+!! Evaluate packets for telnet or SSH
+line vty 0 4
+  access-class NAME in 
+
+!------------------------------------------------------------------------------
+!                                 NAT for IPv4
+!------------------------------------------------------------------------------
+! For both static and dynamic NAT, desigante interfaces as inside or outside:
+! Typically all interfaces except the outside one
+interface fa0/0
+! Designate this as an inside interface
+  ip nat inside
+! Typically there's only one outside interface
+interface serial 0/0/0
+! Designate this as an outside interface
+  ip nat outside
+
+! Static NAT requires only one statement. The IP addresses are inside / outside
+ip nat inside source static 192.168.10.22 73.2.34.137
+
+! Dynamic NAT may use a pool of 'outside addresses'. If you do not use a pool,
+! you will have to use the address on the outside interface. YOu can use
+! 'netmask'
+ip nat pool POOL-NAME 73.2.34.138 73.2.34.143 netmask 255.255.255.248
+! or you may choose to use 'prefix-length'
+ip nat pool POOL-NAME 73.2.34.138 73.2.34.143 prefix-length 29
+
+! Dynamic NAT requires an ACL to define which internal addresses can be NATed:
+ip access-list standard NAT-ELIGIBLE
+! Include all subnets
+  permit 192.168.10.0 0.0.0.255
+  deny any
+
+! Dynamic NAT can use the pool for outside addresses:
+ip nat inside source list NAT-ELIGIBLE pool POOL-NAME
+! Or Dynamic NAT can use the pool with overlaod to share outside addresses:
+ip nat inside source list NAT-ELIGIBLE pool POOL-NAME overload
+! Dynamic NAT can use the exit interface- almost - almost always will use
+! overload
+ip nat inside source list NAT-ELIGIBLE interface serial 0/0/0 overload
+
+! Show information
+! Current translations - dynamic and static
+show ip nat translations 
+! See number of active translations, role of interfaces, etc
+show ip nat statistics
