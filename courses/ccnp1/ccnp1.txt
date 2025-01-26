@@ -1,6 +1,6 @@
--------------------------------------------------------------------------------
-                                 Notas de clase
--------------------------------------------------------------------------------
+*------------------------------------------------------------------------------*
+|                                Notas de clase                                |
+*------------------------------------------------------------------------------*
 
                               1. Packet forwarding 
                         Sat Jan 25 09:27:42 AM -05 2025
@@ -63,9 +63,10 @@
      broadcast en su capa, por lo que solo hace un broadcast preguntando por la
      IP.
 
-   La tabla ARP es un mappeo entre capa 2 y capa 3 en la comunicación local.
-
-		La tabla MAC es un mappeo entre capa 1 y capa 2.
+  *---                                                                   ---*
+  |La tabla ARP es un mappeo entre capa 2 y capa 3 en la comunicación local.|
+  |             La tabla MAC es un mappeo entre capa 1 y capa 2.            |
+  *---                                                                   ---*
 
      Los routers pueden tener IPs secundarias, pero no se acostumbra mucho,
      sino que se hacen subinterfaces, los protocolos de enrutamiento no
@@ -111,6 +112,81 @@
      1000 vlans, esto es lo que llamamos SDM Templates, normalmente.
                                                                        #show sdm
 
--------------------------------------------------------------------------------
-                                    Lecturas
--------------------------------------------------------------------------------
+*------------------------------------------------------------------------------*
+|                                   Lecturas                                   |
+*------------------------------------------------------------------------------*
+
+                        Sun Jan 26 02:25:13 PM -05 2025
+
+     Chapter 1: Packet Forwarding
+        Today, almost everything is based on Transmission Control
+     Protocol/Internet Protocol (TCP/IP). It is important to note that TCP/IP is
+     based on the conceptual Open Systems Interconnection (OSI) model that is
+     composed of seven layers.
+
+      *---------*--------------*-------------------------------------------*
+      | Layer 7 | Application  | Interface for receiving and sending data  |
+      | Layer 6 | Presentation | Formatting data and encryption            |
+      | Layer 5 |   Session    | Tracking of packets                       |
+      | Layer 4 |  Transport   | End-to-end communication betweeen devices |
+      | Layer 3 |   Network    | Logical addressing and routing of packets |
+      | Layer 2 |  Data Link   | Hardware addressing                       |
+      | Layer 1 |   Physical   | Media type and connector                  |
+      *---------*--------------*-------------------------------------------*
+      OSI Model
+
+        The first Layer 2 network devices were bridges or switches, and Layer 3
+     devices were strictly routers. As technology advanced, the develop- ment of
+     faster physical media required the ability to forward packets in hardware
+     through application-specific integrated circuits (ASICs). As ASIC
+     functionality continued to develop, multilayer switches (MLSs) were
+     invented to forward Layer 2 traffic in hardware as if they were switches;
+     however, they can also perform other functions, such as routing packets,
+     from a Layer 3 perspective.
+
+     Layer 2 Forwarding
+        The second layer of the OSI model, the data link layer, handles
+     addressing beneath the IP protocol stack. Ethernet commonly uses Media
+     Access Control (MAC) addresses, and other data link layer protocols such as
+     Frame Relay use an entirely different method of Layer 2 addressing.
+
+*------------------------------------ NOTE ------------------------------------*
+|    A MAC address is a 48-bit address that is split across six octets and     |
+|  notated in 1 hexadecimal. The first three octets are assigned to a device   |
+| manufacturer, known as the organizationally unique identifier (OUI), and the |
+|   manufacturer is responsible for ensuring that the last three octets are    |
+|unique. A device listens for network traffic that contains its MAC address as |
+|   the packet’s destination MAC address before moving the packet up the OSI   |
+|    stack to Layer 3 for processing.  Network broadcasts with MAC address     |
+| FF:FF:FF:FF:FF:FF are the exception to the rule and will always be processed |
+|    by all network devices on the same network segment. Broadcasts are not    |
+|                typically forwarded beyond a Layer 3 boundary.                |
+*------------------------------------------------------------------------------*
+
+        A collision occurs when two or more network devices tries to transmit
+     data at the same time in the same network segment.
+
+     A collision domain is a network segment where one device can detect if
+     another device is transmitting data.
+
+                               Ethernet includes:
+            Carrier Sense Multiple Access/Collision Detect (CSMA/CD)
+
+        Network switches enhance scalability and stability in a network through
+     the creation of virtual channels. A switch maintains a table that
+     associates a host’s Media Access Control (MAC) Ethernet addresses to the
+     port that sourced the network traffic.
+
+        A switch receives a packet that contains a MAC that is not in the
+     switch's MAC address table, the switch forwards the packet out of every
+     switch port, other than the port the packet was received on. This process
+     is known as unknown unicast flooding.
+
+        Broadcast traffic is network traffic intended for every host on the
+     local area network (LAN). Network broadcasts do not cross Layer 3
+     boundaries.
+
+        All devices that reside in the same Layer 2 segment are considered to be
+     in the same broadcast domain.
+
+Reading page 7 Virtual LANs (VLANs)
