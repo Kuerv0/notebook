@@ -65,49 +65,50 @@
 
    La tabla ARP es un mappeo entre capa 2 y capa 3 en la comunicación local.
 
-                La tabla MAC es un mappeo entre capa 1 y capa 2.
+		La tabla MAC es un mappeo entre capa 1 y capa 2.
 
-Los routers pueden tener IPs secundarias, pero no se acostumbra mucho, sino que
-se hacen subinterfaces, los protocolos de enrutamiento no funcionan tan bien con
-secundarias, la recomendación es usar subinterfaces en lugar de usar
-secundarias.
+     Los routers pueden tener IPs secundarias, pero no se acostumbra mucho,
+     sino que se hacen subinterfaces, los protocolos de enrutamiento no
+     funcionan tan bien con secundarias, la recomendación es usar subinterfaces
+     en lugar de usar secundarias.
 
-En los switches, las direcciones se asignan en las SVI, también a un Switch de
-capa 3 se puede activar un puerto enrutado con on switchport.
+     En los switches, las direcciones se asignan en las SVI, también a un
+     Switch de capa 3 se puede activar un puerto enrutado con on switchport.
+     
+     Cisco era el mejor enrutando, luego adquirió una empresa llamada Catalyst
+     donde adquirió el conocimiento de switching. Los routers son equipos que
+     toman decisiones basadas en software. La capa 2 es un direccionamiento
+     físico, el router se puede convertir en un cuello de botella, porque todo
+     el tráfico pasa por él. Los switches toman la decisión con mayor
+     velocidad.
+     
+     Existe una primera forma de tomar decisiones, pero ya no la usamos, en
+     esta conferencia que estamos teniendo en Webex, el computador de Omar Roa
+     le envía toda la información al router, el router tiene una tabla de
+     enrutamiento, que usa para tomar decisiones y cada mensaje tiene que hacer
+     el mismo análisis, el procesamiento incluído en eso es vasto, pero luego
+     Cisco implementó un cache, el cual consiste en recordar decisiones para
+     posteriores paquetes que sean similares, esto se llama la cache de
+     enrutamiento. 
 
-Cisco era el mejor enrutando, luego adquirió una empresa llamada Catalyst donde
-adquirió el conocimiento de switching. Los routers son equipos que toman
-decisiones basadas en software. La capa 2 es un direccionamiento físico, el
-router se puede convertir en un cuello de botella, porque todo el tráfico pasa
-por él. Los switches toman la decisión con mayor velocidad.
-
-Existe una primera forma de tomar decisiones, pero ya no la usamos, en esta
-conferencia que estamos teniendo en Webex, el computador de Omar Roa le envía
-toda la información al router, el router tiene una tabla de enrutamiento, que
-usa para tomar decisiones y cada mensaje tiene que hacer el mismo análisis, el
-procesamiento incluído en eso es vasto, pero luego Cisco implementó un cache, el
-cual consiste en recordar decisiones para posteriores paquetes que sean
-similares, esto se llama la cache de enrutamiento. 
-
-En load balancing, si tiene fast switching, balancea por flujo, si no, balancea
-por paquetes.
-
-Tomar decision paquete a paquete
-no ip-route cache
-
-Cisco crea un algoritmo de forwarding donde el router concatena el arp con la ip
-routing table, este es el llamado CEF, lo que busca es que la decisión se aún
-más veloz que fast switching.
-
-Podría darse el caso que la IA empiece a tomar decisiones de enrutamiento. Ya
-hay equipos que están separados y se pueden conectar con algo externo para que
-le dé la mejor decisión posible.
-
-Los switches tienen unos recursos, los recursos los tiene distribuidos de cierta
-manera. Por ejemplo la RAM y el procesador se pueden concentrar en las vlan,
-entonces para poder atender 1000 vlans, por ejemplo, necesita distribuir los
-recursos, pero si se necesita ipv6, ya no se podría tener 1000 vlans, esto es lo
-que llamamos SDM Templates, normalmente.
+     En load balancing, si tiene fast switching, balancea por flujo, si no,
+     balancea por paquetes.
+     
+     Tomar decision paquete a paquete no ip-route cache
+     
+     Cisco crea un algoritmo de forwarding donde el router concatena el arp con
+     la ip routing table, este es el llamado CEF, lo que busca es que la
+     decisión se aún más veloz que fast switching.
+     
+     Podría darse el caso que la IA empiece a tomar decisiones de enrutamiento.
+     Ya hay equipos que están separados y se pueden conectar con algo externo
+     para que le dé la mejor decisión posible.
+     
+     Los switches tienen unos recursos, los recursos los tiene distribuidos de
+     cierta manera. Por ejemplo la RAM y el procesador se pueden concentrar en
+     las vlan, entonces para poder atender 1000 vlans, por ejemplo, necesita
+     distribuir los recursos, pero si se necesita ipv6, ya no se podría tener
+     1000 vlans, esto es lo que llamamos SDM Templates, normalmente.
                                                                        #show sdm
 
 -------------------------------------------------------------------------------
