@@ -1,6 +1,6 @@
-!------------------------------------------------------------------------------
-!                                     OSPF                                     
-!------------------------------------------------------------------------------
+!*-----------------------------------------------------------------------------*
+!|                                    OSPF                                     |
+!*-----------------------------------------------------------------------------*
 
 ! Create a virtual interface for OSPF router ID
 interface loopback 1
@@ -64,9 +64,9 @@ show ip ospf
 ! See DR/BDR information, hello and dead intervals
 show ip ospf interface serial 0/0/0
 
-!------------------------------------------------------------------------------
-!                            Standard Access Lists
-!------------------------------------------------------------------------------
+!*-----------------------------------------------------------------------------*
+!|                                Access Lists                                 |
+!*-----------------------------------------------------------------------------*
 ! Standard access lists only evaluate the source IP field. They can use the
 ! 'host' and 'any' keywords, or apply wildcard masks, they do not use port 
 ! numbers
@@ -87,6 +87,7 @@ access-list 25 deny host 192.168.20.5
 access-list 25 permit 192.168.20.0 0.0.0.255
 ! Deny all other IP addresses
 access-list 25 deny any
+
 !! Named Extended Access List:
 ! Name the list
 ip access-list extended NAME
@@ -106,9 +107,9 @@ interface fastethernet 0/0
 line vty 0 4
   access-class NAME in 
 
-!------------------------------------------------------------------------------
-!                                 NAT for IPv4
-!------------------------------------------------------------------------------
+!*-----------------------------------------------------------------------------*
+!|                                NAT for IPv4                                 |
+!*-----------------------------------------------------------------------------*
 ! For both static and dynamic NAT, desigante interfaces as inside or outside:
 ! Typically all interfaces except the outside one
 interface fa0/0

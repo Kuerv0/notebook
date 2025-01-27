@@ -101,3 +101,18 @@
 -------------------------------------------------------------------------------
 2. Lecturas
 -------------------------------------------------------------------------------
+5.4.2 Numbered Extended IPv4 ACL Syntax
+
+To create a numbered extended ACL, use the following global configuration
+command:
+
+Router(config)# access-list access-list-number {deny | permit | remark text}
+protocol source source-wildcard [operator {port}] destination
+destination-wildcard [operator {port}] [established] [log]
+
+The command to apply an extended IPv4 ACL to an interface is the same as the
+command used for standard IPv4 ACLs.
+
+Router(config-if)# ip access-group {access-list-number | access-list-name} 
+{in | out}
+
