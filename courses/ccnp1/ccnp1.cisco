@@ -71,3 +71,58 @@ show interfaces gi1/0/5 switchport
 ! Example 1-10
 ! SW1#
 show interfaces status
+
+! Example 1-11
+! R1(config)#
+interface gi0/0/0
+  ip address 10.10.10.254 255.255.255.255.0
+  ip address 172.16.10.254 255.255.255.0 secondary
+  ipv6 address 2001:db8:10::254/64
+  ipv6 address 2001:db8:10:172::254/64
+interface gi0/0/1
+  ip address 10.20.20.254 255.255.255.0
+  ip address 172.16.20.254 255.255.255.0 secondary
+  ipv6 address 2001:db8:20::254/64
+  ipv6 address 2001:db8:20:172::254/64
+
+! Example 1-12
+! R2(config-if)#
+interface g0/0/1.10
+  encapsulation dot1Q 10
+  ip address 10.10.10.2 255.255.255.0
+  ipv6 address 2001:db8:10::2/64
+interface g0/0/1.99
+  encapsulation dot1Q 99
+  ip address 10.20.20.2 255.255.255.0
+  ipv6 address 2001:db8:20::2/64
+
+! Example 1-13
+! SW1(config)#
+interface vlan 10
+  ip address 10.10.1 255.255.255.0
+  ipv6 address 2001:db8:10::1/64
+  no shutdown
+interface vlan 99
+  ip address 10.99.99.1 255.255.255.0
+  ipv6 address 2001:db8:99::1/64
+  no shutdown
+
+! Example 1-14: Configuring a Routed Switch Port
+! SW1(config)#
+interface gi1/0/14
+  no switchport
+  ip address 10.20.20.1 255.255.255.0
+  ipv6 address 2001:db8:20::1/64
+  no shutdown
+
+! Example 1-15: Viewing Device IPv4 Addresses
+! SW1#
+show ip interface brief
+
+show ip interface brief | exclude unassigned
+
+show ipv6 interface brief
+
+show ipv6 interface brief | exclude unassigned|GigabitEthernet
+
+

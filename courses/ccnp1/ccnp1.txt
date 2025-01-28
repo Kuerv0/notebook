@@ -238,3 +238,26 @@ IP addresses to Layer 2 MAC addresses by storing the IP address of a host and
 its corre sponding MAC address.
 
 Reading IP Address Assignment.
+
+An interface with a configured IP address and that is in an operational “up”
+state injects the associated network into the router’s routing table (Routing
+Information Base [RIB]).
+
+Process switching, also referred to as software switching or slow path, is a
+switching mechanism in which the general-purpose CPU on a router is in charge of
+packet switching.
+
+The routing table, also known as the Routing Information Base (RIB), is built
+from information obtained from dynamic routing protocols and directly connected
+and static routes.
+
+Cisco Express Forwarding (CEF) is a Cisco proprietary switching mechanism
+developed to keep up with the demands of evolving network infrastructures.
+
+A switch’s ternary content addressable memory (TCAM) allows for the matching and
+evaluation of a packet on more than one field. TCAM provides more flex ibility
+in searching than does CAM, which is binary. A TCAM search provides three
+results: 0 for true, 1 false, and X for do not care, which is a ternary
+combination.
+
+Page 28
