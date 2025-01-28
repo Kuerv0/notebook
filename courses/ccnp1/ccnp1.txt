@@ -189,4 +189,52 @@
         All devices that reside in the same Layer 2 segment are considered to be
      in the same broadcast domain.
 
-Reading page 7 Virtual LANs (VLANs)
+ Virtual LANs (VLANs) [802.1Q] provide logical segmentation by creating multiple broadcast 
+domains on the same network switch. Network devices in one VLAN cannot com
+municate with devices in a different VLAN without a router to interconnect the VLAN 
+segments.
+
+                      *---------------------------*
+                      | TPID   | PCP | DEI | VLAN | 802.1Q                    
+                      | 0x8100 |     |     |  ID  | Fields         
+                      *---------------------------*
+
+The VLAN identifier has only 12 bits, which provide 4094 unique VLANs. Catalyst switches
+use the following logic for VLAN identifiers:
+
+ ■ VLAN 0 is reserved for 802.1p traffic and cannot be modified or deleted.
+ ■ VLAN 1 is the default VLAN and cannot be modified or deleted.
+ ■ VLANs 2 to 1001 are in the normal VLAN range and can be added, deleted, or
+   modified as necessary.
+ ■ VLANs 1002 to 1005 are reserved and cannot be deleted.
+ ■ VLANs 1006 to 4094 are in the extended VLAN range and can be added, deleted, or
+   modified as necessary.
+
+An access port is assigned to only one VLAN. It carries traffic from the
+specified VLAN to the device connected to it or viceversa. The 802.1Q tags are
+not included on packets transmitted or received on access ports.
+
+Trunk ports can carry multiple VLANs. Trunk ports are typically used when
+multiple VLANs need connectivity between a switch and another switch, router, or
+firewall and use only one port.
+
+In the 802.1Q standard, any traffic that is transmitted or received on a trunk
+port without the 802.1Q VLAN tag is associated to the native VLAN. The default
+native VLAN is VLAN 1.
+
+The MAC address table is responsible for identifying the switch ports and VLANs
+with which a device is associated.
+
+The MAC address table resides in content addressable memory (CAM), which is RAM,
+but faster.
+
+There are two main methodologies for Layer 3 forwarding:
+
+■ Forwarding traffic to devices on the same subnet
+■ Forwarding traffic to devices on a different subnet
+
+The Address Resolution Protocol (ARP) table provides a method of mapping Layer 3
+IP addresses to Layer 2 MAC addresses by storing the IP address of a host and
+its corre sponding MAC address.
+
+Reading IP Address Assignment.
