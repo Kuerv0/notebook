@@ -117,8 +117,8 @@
 *------------------------------------------------------------------------------*
 
                         Sun Jan 26 02:25:13 PM -05 2025
+                          Chapter 1: Packet Forwarding
 
-     Chapter 1: Packet Forwarding
         Today, almost everything is based on Transmission Control
      Protocol/Internet Protocol (TCP/IP). It is important to note that TCP/IP is
      based on the conceptual Open Systems Interconnection (OSI) model that is
@@ -189,75 +189,103 @@
         All devices that reside in the same Layer 2 segment are considered to be
      in the same broadcast domain.
 
- Virtual LANs (VLANs) [802.1Q] provide logical segmentation by creating multiple broadcast 
-domains on the same network switch. Network devices in one VLAN cannot com
-municate with devices in a different VLAN without a router to interconnect the VLAN 
-segments.
+        Virtual LANs (VLANs) [802.1Q] provide logical segmentation by creating
+     multiple broadcast domains on the same network switch. Network devices in
+     one VLAN cannot com municate with devices in a different VLAN without a
+     router to interconnect the VLAN segments.
 
                       *---------------------------*
                       | TPID   | PCP | DEI | VLAN | 802.1Q                    
                       | 0x8100 |     |     |  ID  | Fields         
                       *---------------------------*
 
-The VLAN identifier has only 12 bits, which provide 4094 unique VLANs. Catalyst switches
-use the following logic for VLAN identifiers:
+        The VLAN identifier has only 12 bits, which provide 4094 unique VLANs.
+     Catalyst switches use the following logic for VLAN identifiers:
 
- ■ VLAN 0 is reserved for 802.1p traffic and cannot be modified or deleted.
- ■ VLAN 1 is the default VLAN and cannot be modified or deleted.
- ■ VLANs 2 to 1001 are in the normal VLAN range and can be added, deleted, or
-   modified as necessary.
- ■ VLANs 1002 to 1005 are reserved and cannot be deleted.
- ■ VLANs 1006 to 4094 are in the extended VLAN range and can be added, deleted, or
-   modified as necessary.
+     ■ VLAN 0 is reserved for 802.1p traffic and cannot be modified or deleted.
+     ■ VLAN 1 is the default VLAN and cannot be modified or deleted.
+     ■ VLANs 2 to 1001 are in the normal VLAN range and can be added, deleted,
+     or modified as necessary.
+     ■ VLANs 1002 to 1005 are reserved and cannot be deleted.
+     ■ VLANs 1006 to 4094 are in the extended VLAN range and can be added,
+     deleted, or modified as necessary.
 
-An access port is assigned to only one VLAN. It carries traffic from the
-specified VLAN to the device connected to it or viceversa. The 802.1Q tags are
-not included on packets transmitted or received on access ports.
+        An access port is assigned to only one VLAN. It carries traffic from the
+     specified VLAN to the device connected to it or viceversa. The 802.1Q tags
+     are not included on packets transmitted or received on access ports.
+        
+        Trunk ports can carry multiple VLANs. Trunk ports are typically used
+     when multiple VLANs need connectivity between a switch and another switch,
+     router, or firewall and use only one port.
+        
+        In the 802.1Q standard, any traffic that is transmitted or received on a
+     trunk port without the 802.1Q VLAN tag is associated to the native VLAN.
+     The default native VLAN is VLAN 1.
+        
+        The MAC address table is responsible for identifying the switch ports
+     and VLANs with which a device is associated.
+        
+        The MAC address table resides in content addressable memory (CAM), which
+     is RAM, but faster.
+        
+     There are two main methodologies for Layer 3 forwarding:
 
-Trunk ports can carry multiple VLANs. Trunk ports are typically used when
-multiple VLANs need connectivity between a switch and another switch, router, or
-firewall and use only one port.
+        ■ Forwarding traffic to devices on the same subnet 
+        ■ Forwarding traffic to devices on a different subnet
+        
+        The Address Resolution Protocol (ARP) table provides a method of mapping
+     Layer 3 IP addresses to Layer 2 MAC addresses by storing the IP address of
+     a host and its corre sponding MAC address.
+        
+                         Reading IP Address Assignment.
 
-In the 802.1Q standard, any traffic that is transmitted or received on a trunk
-port without the 802.1Q VLAN tag is associated to the native VLAN. The default
-native VLAN is VLAN 1.
+        An interface with a configured IP address and that is in an operational
+     “up” state injects the associated network into the router’s routing table
+     (Routing Information Base [RIB]).
+        
+        Process switching, also referred to as software switching or slow path,
+     is a switching mechanism in which the general-purpose CPU on a router is in
+     charge of packet switching.
+        
+        The routing table, also known as the Routing Information Base (RIB), is
+     built from information obtained from dynamic routing protocols and directly
+     connected and static routes.
+        
+        Cisco Express Forwarding (CEF) is a Cisco proprietary switching
+     mechanism developed to keep up with the demands of evolving network
+     infrastructures.
+        
+        A switch’s ternary content addressable memory (TCAM) allows for the
+     matching and evaluation of a packet on more than one field. TCAM provides
+     more flex ibility in searching than does CAM, which is binary.  A TCAM
+     search provides three results: 0 for true, 1 false, and X for do not care,
+     which is a ternary combination.
+        
+        The routers are equipped with NPUs that are designed to overcome the
+     inflexibility of ASICs. Unlike ASICs, NPUs are programmable, and their
+     firmware can be changed with relative ease.
 
-The MAC address table is responsible for identifying the switch ports and VLANs
-with which a device is associated.
+*------------------------------------------------------------------------------*
 
-The MAC address table resides in content addressable memory (CAM), which is RAM,
-but faster.
+                           2. Spanning Tree Protocol
+                        Tue Jan 28 10:16:51 PM -05 2025
 
-There are two main methodologies for Layer 3 forwarding:
+A good network design provides redundancy in devices and network links (that is,
+paths).  The simplest solution involves adding a second link between switches to
+overcome a network link failure or ensuring that a switch is connected to at
+least two other switches in a topology. However, such topologies cause problems
+when a switch must forward broadcasts or when unknown unicast flooding occurs.
 
-■ Forwarding traffic to devices on the same subnet
-■ Forwarding traffic to devices on a different subnet
+Spanning Tree Protocol (STP) enables switches to become aware of other switches
+through the advertisement and receipt of bridge protocol data units (BPDUs). STP
+builds a Layer 2 loop-free topology in an environment by temporarily blocking
+traffic on redundant ports. 
 
-The Address Resolution Protocol (ARP) table provides a method of mapping Layer 3
-IP addresses to Layer 2 MAC addresses by storing the IP address of a host and
-its corre sponding MAC address.
+STP has multiple iterations:
+ ■ 802.1D, which is the original specification
+ ■ Per-VLAN Spanning Tree (PVST)
+ ■ Per-VLAN Spanning Tree Plus (PVST+)
+ ■ 802.1W Rapid Spanning Tree Protocol (RSTP)
+ ■ 802.1S Multiple Spanning Tree Protocol (MST)
 
-Reading IP Address Assignment.
-
-An interface with a configured IP address and that is in an operational “up”
-state injects the associated network into the router’s routing table (Routing
-Information Base [RIB]).
-
-Process switching, also referred to as software switching or slow path, is a
-switching mechanism in which the general-purpose CPU on a router is in charge of
-packet switching.
-
-The routing table, also known as the Routing Information Base (RIB), is built
-from information obtained from dynamic routing protocols and directly connected
-and static routes.
-
-Cisco Express Forwarding (CEF) is a Cisco proprietary switching mechanism
-developed to keep up with the demands of evolving network infrastructures.
-
-A switch’s ternary content addressable memory (TCAM) allows for the matching and
-evaluation of a packet on more than one field. TCAM provides more flex ibility
-in searching than does CAM, which is binary. A TCAM search provides three
-results: 0 for true, 1 false, and X for do not care, which is a ternary
-combination.
-
-Page 28
+Page 41: Building the STP Topology

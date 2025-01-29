@@ -125,4 +125,6 @@ show ipv6 interface brief
 
 show ipv6 interface brief | exclude unassigned|GigabitEthernet
 
-
+! Example 1-17 Viewing the Current SDM Template
+! SW1#
+show sdm prefer
