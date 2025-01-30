@@ -47,7 +47,24 @@ potential barriers to succcessful communication.
 - Encoding : Transformation
 - Channel  : Method
 - Decoding : Interpreting
-- Receiver :
-- Feedback :
-- Context  :
+- Receiver : Destination after barriers
+- Feedback : Insight
+- Context  : Environment
 
+We all come to each communication exchange with our 'filter' through which we
+see the world. This means we differ in perspective with the person we are
+communicating with.
+
+The same words can have very different meanings depending on how we interpret
+them. We can't always be certain that the other person will read or heart. 
+
+                                              "Effective listeners remember that 
+                                    words have no meaning - people have meaning"
+                                                                    Larry Barker
+
+Factors such as past experiences, our prejudices, our feelings, and our
+environment affect how we communicate.
+
+Phone unreachable | Data initializing error
+Extension change tried
+Called the person on site to keep troubleshooting
