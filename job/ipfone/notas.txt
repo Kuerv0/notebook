@@ -1,0 +1,53 @@
+*------------------------------------------------------------------------------*
+|                               Notas de chamba                                |
+*------------------------------------------------------------------------------*
+
+                                    Meeting
+                        Wed Jan 29 12:57:55 PM -05 2025
+
+teams session border controller.
+El soporte es medio limitado.
+Los usuarios de Teams tienen su admin certificado en Teams, nosotros los sacmos
+a PSTN.
+
+*11 -> Extensión para directed call pickup
+120 -> Voice portal por grupo
+*78on *79off -> DND -> Directo a voicemail
+
+Feature access code
+*------------------------------------------------------------------------------*
+                         Effective Communication Skills
+*------------------------------------------------------------------------------*
+
+    A University of Pittsburgh study found that the most important factor in
+                  selecting managers is communication skills.
+
+If you can communicate well, you can get your message across to others in an
+effective way, otherwise the messages you send get lost in translation. 
+
+There are many individuals struggling to convey their thoughts and ideas in an
+accurate manner. However these skills can be practiced and learned.
+
+                                  Definition:
+      Communication is the art and process of creating and sharing ideas.
+
+                                  Definition:
+    Communication skills are the tools that we use to remove the barriers to
+                            effective communication.
+
+To be successful at communicating, it's important to recognize that these
+barriers to communication can occur at multiple points in the communication
+process.
+
+The communication process is composed of several stages, each of which offers
+potential barriers to succcessful communication.
+
+- Source   : Origin
+- Message  : Information
+- Encoding : Transformation
+- Channel  : Method
+- Decoding : Interpreting
+- Receiver :
+- Feedback :
+- Context  :
+

@@ -128,3 +128,10 @@ show ipv6 interface brief | exclude unassigned|GigabitEthernet
 ! Example 1-17 Viewing the Current SDM Template
 ! SW1#
 show sdm prefer
+
+
+!------------------------------------------------------------------------------*
+
+! Example 2-1 Verifying the STP Root Bridge
+! SW1#
+show spanning-tree root
