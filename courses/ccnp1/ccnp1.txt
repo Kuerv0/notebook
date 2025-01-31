@@ -112,6 +112,58 @@
      1000 vlans, esto es lo que llamamos SDM Templates, normalmente.
                                                                        #show sdm
 
+2. 
+Omar agregó una carpeta con laboratorios, asistencia y actualizó el cronograma.
+Se pidieron los ebooks de los compañeros restantes en vivo, dado que el Cisco
+Press enviaba autorización al correo.
+
+Este curso va a estar dividido por secciones, el primero que vamos a ver es el
+switching, el cual es capa 2. Spanning Tree se maneja en el CCNA 2.
+
+Spanning Tree fue desarrollado por Radia Perlman, 802.1D es el spanning tree
+legacy CSTP. Esto tuvo una revisión en el 2014, más que todo revisando los
+costos porque spanning tree cuando Radia en los 80s, las velocidades y los
+costos están relacionados y en ese entonces se puso como punto de comparación
+20GBs, dado que ese era el tope. Hay 2 escalas de costos.
+
+De 802.1D sale la vertiente de IEEE y al vertiente de Cisco.
+
+802.1w RSTP, 802.1s MSTP de la IEEE.
+
+PVST, PVST+, rapid-PVST+ de Cisco.
+
+Hay problemas de compatibilidad de Cisco con otros equipos.
+
+MSTP suele ser la solución final.
+
+En CCNA vemos principalmente las variantes de Cisco, en PVST el raíz es común
+para todos, pero en VLANs es uno diferente por VLAN.
+
+Cisco en los 90 desarrolló un protocolo propio para hacer troncales. Para hacer
+troncales podemos usar 802.1q (IEEE), Cisco ISL (Cisco), pero el encapsulamiento
+de ISL no fue popular y Cisco tuvo que agregar el PVST+, el cual también soporta
+los troncales de IEEE. r-PVST es otra variante de Cisco, los PVST pasan 15
+segundos listening y 15 learning. En los años 80 no era nada, hoy en día 30
+segundos es crítico. r-PVST tarda a lo sumo 6 segundos. 
+
+Al final siempre se queda forwarding o blocking. Los puertos forwarding van a
+quedar o bien puerto raíz o puerto designado. El resto es puerto no designado o
+puerto bloqueado.
+
+El TCN BPDU, todos los noticerios tienen horarios fijos donde dan horario de
+noticia, los switches mandan hellos (BPDUs) cada 2 segundos, sin embargo cuando
+hay un cambio en la topología, el Switch notifica con un TCN, el cual es usado
+para comunicar cambios. MLSTP tiene por defecto la escala long para los cálculos
+del costo.
+
+1. Elige switch raíz.
+2. 
+
+Menor costo
+Menor BID sender
+Menor PID sender [Los puertos tienen prioridades 1 - 255]
+Menor own PID
+
 *------------------------------------------------------------------------------*
 |                                   Lecturas                                   |
 *------------------------------------------------------------------------------*
@@ -288,4 +340,7 @@ STP has multiple iterations:
  ■ 802.1W Rapid Spanning Tree Protocol (RSTP)
  ■ 802.1S Multiple Spanning Tree Protocol (MST)
 
-Page 41: Building the STP Topology
+The priority in the configuration BPDU packets is actually the priority plus the
+value of the sys-id-ext (which is the VLAN number).
+
+[Add the steps for spanning tree and add the steps for choosing root port]

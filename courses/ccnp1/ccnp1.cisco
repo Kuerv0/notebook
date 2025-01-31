@@ -132,6 +132,14 @@ show sdm prefer
 
 !------------------------------------------------------------------------------*
 
-! Example 2-1 Verifying the STP Root Bridge
+! Example 2-[1 to 3] Verifying the STP Root Bridge
 ! SW1#
 show spanning-tree root
+
+! Example 2-[4 to 5] Viewing SW1's STP Information
+! SW1#
+show spanning-tree vlan 1
+
+! Example 2-6 Viewing VLANs Participating with STP on an Interface
+! SW3#
+show spanning-tree interface gi1/0/1 detail
