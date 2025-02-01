@@ -164,6 +164,40 @@ Menor BID sender
 Menor PID sender [Los puertos tienen prioridades 1 - 255]
 Menor own PID
 
+Evaluación:
+
+Seguimiento teórico 20%
+Seguimiento práctico 30%
+Final teórico 20%
+Final práctico 30%
+El curso se aprueba con una nota mayor a 70%
+
+Johan Madroñero Cuervo - Ingeniería de Sistemas, Facultad de Minas
+Trabajo como técnico de soporte en IPFone, brindando sopporte a Redes y
+VoiceOverIp y vivo en Bello.
+
+Vamos a nombrar rápidamente algunas opciones para personalizar spanning tree
+
+Podemos cambiar el switch raíz variando la prioridad.
+Podemos cambiar el swithc secundario.
+Podemos cambiar el port-id para cambiar el puerto bloqueado.
+
+Spanning tree tiene un problema se seguridad, el cual es escuchar activamente
+por BPDUs. Lo cual puede dar cabida a Man in the Middle attacks.
+
+Para esto se implentaron:
+root guard.
+portfast, bpduguard.
+bpdu filter
+
+MSTP
+
+Cuando tenemos PVSTP+, si tenemos n VLANs, necesitamos n procesos, tablas, etc.
+La razón de ser de MSTP es justamente tener árboles que sean plantillas.
+
+Se puede tener una MST Region para controlar sectores. Estos clusters se pueden
+usar para hablar diferentes protocolos STP con los vecinos.
+
 *------------------------------------------------------------------------------*
 |                                   Lecturas                                   |
 *------------------------------------------------------------------------------*
