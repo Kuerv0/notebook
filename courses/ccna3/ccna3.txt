@@ -98,6 +98,45 @@
 								   #show version
 									 #reload
 
+                        Sat Feb  1 06:14:51 AM -05 2025
+Hoy vamos a recuperar los switches.
+
+Lo primero que vamos a hacer es la recuperación del sistema operativo.
+IOS recovery
+
+Paso 0: sacar backup.
+Poner una ip al switch: hoy pondremos 192.168.1.2/24
+pc: 192.168.1.10/24
+Hacer el famoso copy
+copy flash: tftp:
+
+flash_init to start flash
+switch: flash_init
+xmodem:
+ymodem:
+Both are old protocols to tranfer data
+Cambiar la velocidad de la consola
+switch: set BAUD 115200
+
+2. Transmitir IOS
+En SW:
+switch: copy xmodem: flash:c2950-i6k2l2q4-mz.121-22.EA14.bin
+
+3. Restaurar config
+Set BAUD 9600
+reset
+
+Password Recovery: Switch
+
+Los routers tienen un chip que se conoce como NVRAM, el startup config se guarda
+en la flash en los switches, vamos a hacer una marañas en switch:
+
+config.text = startup-config
+delete flash:config.text => La salida fácil
+
+reset
+
+# copy flash:config.old running-config
 -------------------------------------------------------------------------------
 2. Lecturas
 -------------------------------------------------------------------------------

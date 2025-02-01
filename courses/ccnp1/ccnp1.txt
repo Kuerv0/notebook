@@ -198,6 +198,56 @@ La razón de ser de MSTP es justamente tener árboles que sean plantillas.
 Se puede tener una MST Region para controlar sectores. Estos clusters se pueden
 usar para hablar diferentes protocolos STP con los vecinos.
 
+Hoy vamos a rematar con 3 temas que quiero que revisemos y pensando en CCNP, que
+es un ambiente más empresarial.
+
+El primer concepto es el manejo y creación de VLANs, dado que todas las VLANs
+deben estar en todos los dispositivos.
+
+Cisco tiene un protocolo para sincronizar el vlan.dat, este protocolo se llama
+VTP - VLAN Trunking Protocol, VTP solo funciona en equipos de acceso y solo
+funciona en enlaces troncales.
+
+En este protocolo, los switches pueden tener rol client o server. Se usan
+revisiones para rastrear los cambios. El modo transparente tiene un database
+local que no se sincroniza con los servers y no afecta los demás. También hay
+VTP password para validar en caso de de haber switches maliciosos.
+
+VTP está preconfigurado, pero hasta que no configure el dominio, no empieza y
+siempre empieza en server para poder crear VLANs
+
+#switchport trunk encapsulation dot1q
+
+Versión 1: server, cliente y transparente
+El transparente debe tener el dominio igual que los demás. Si no está en el
+mismo dominio, no replica los mensajes VTP.
+
+La versión 2 sí permite aunque no esté en el mismo dominio.
+
+En vlan.dat se guarda la configuración VTP.
+VTP no asigna puertos.
+
+Segunda oportunidad.
+A Omar no le gusta el protocolo
+Tener el control del enlace controlando solo una punta, el famoso DTP, Dynamic
+Trunkig Protocl que también es de Cisco.
+
+Puertos pueden estar en:
+
+Access
+Trunk
+Dynamic Desirable
+Dynamic Auto
+
+DTP también hace la negociación del encapsulamiento
+
+La tercera oportunidad de mejora.
+Si quieres más banda ancha usando cables en paralelo es absurdo. La solución es
+un Etherchannle haciendo un bundle para mejorar la situación.
+
+PAG protocolo de agregacion
+Portchannel para hacer balanceo de carga
+
 *------------------------------------------------------------------------------*
 |                                   Lecturas                                   |
 *------------------------------------------------------------------------------*
