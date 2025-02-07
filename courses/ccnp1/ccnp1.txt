@@ -248,6 +248,16 @@ un Etherchannle haciendo un bundle para mejorar la situación.
 PAG protocolo de agregacion
 Portchannel para hacer balanceo de carga
 
+3.
+Chapter 7: EIGRP
+
+Protocolo propietario de Cisco, lo desarrolló para sus máquinas, por allá por
+los 90s, este protocolo realmente viene a trabajar como una solución a los
+protocolos vector-distancia como RIP. Por allá en 2013 se estandariza. Es decir
+que ya no es un protocolo propietario.
+
+
+
 *------------------------------------------------------------------------------*
 |                                   Lecturas                                   |
 *------------------------------------------------------------------------------*

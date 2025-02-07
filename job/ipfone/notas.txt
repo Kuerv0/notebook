@@ -13,6 +13,7 @@ a PSTN.
 *11 -> Extensión para directed call pickup
 120 -> Voice portal por grupo
 *78on *79off -> DND -> Directo a voicemail
+*55 voicemail
 
 Feature access code
 *------------------------------------------------------------------------------*
@@ -133,3 +134,9 @@ When writing emails:
 - Put the main point first.
 - Know your audience.
 - Organize your message accordingly.
+
+*------------------------------------------------------------------------------*
+|                                    MyPBX                                     |
+*------------------------------------------------------------------------------*
+                                 Micaela Rubin
+                        Mon Feb  3 01:59:34 PM -05 2025
