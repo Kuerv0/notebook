@@ -256,7 +256,57 @@ los 90s, este protocolo realmente viene a trabajar como una solución a los
 protocolos vector-distancia como RIP. Por allá en 2013 se estandariza. Es decir
 que ya no es un protocolo propietario.
 
+4.
 
+¿Por qué no quedarnos con EIGRP? 
+Porque en OSPF vamos a tener una vista completa de la topología y esto es
+importante para detectar loops en la topología. Sin embargo, OSPF es más
+demandante. Además, OSPF toma una decisión de manera independiente y no basado
+en la información de sus vecinos.
+
+OSPF aparece a finales de los años 80. Y luego pasamos a la versión 2 de OSPF
+donde se soporta VLSM y FLSM y finalmente estamos en la versión 3.
+
+El árbol de cada router se llama database (LSDB).
+
+El problema principal de OSPF es la capacidad de cómputo que requiere para
+topologías grandes, generando un problema de escabilidad en los routers. También
+todos los routers inundan la topología con LSAs, generando un pico de ancho de
+banda.
+
+La solución propuesta por OSPF para el problema de escalabilidad es usar áreas.
+Esto disminuye el impacto de LSA y la cantidad de procesamiento. 
+
+El área 0 es el backbone de la infraestructura y las áreas restantes van a estar
+conectadas a esta.
+
+--
+Sistema autónomo: Infraestructura manejada por una organización.
+--
+Área
+--
+Subred
+
+OSPF tiene una virtud. Al igual que EIGRP están en IP, pero esto implica que
+deben implementar mecanismos para tener una comunicación orientada a la
+conexión.
+
+OSPF hello packets
+RID: 32bit ID
+authentication
+Area ID
+Interface address mask
+interface priority
+Hello interval
+Dead interval
+DR and BDR
+Active neighbor
+
+EL DR simplifica las topologías.
+
+Es una buena práctica optimizar la métrica a valores actuales.
+
+OSPF puede trabajar diferente dependiendo del tipo de red.
 
 *------------------------------------------------------------------------------*
 |                                   Lecturas                                   |
