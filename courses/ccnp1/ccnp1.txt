@@ -346,18 +346,18 @@ OSPF puede trabajar diferente dependiendo del tipo de red.
      Access Control (MAC) addresses, and other data link layer protocols such as
      Frame Relay use an entirely different method of Layer 2 addressing.
 
-*------------------------------------ NOTE ------------------------------------*
-|    A MAC address is a 48-bit address that is split across six octets and     |
-|  notated in 1 hexadecimal. The first three octets are assigned to a device   |
-| manufacturer, known as the organizationally unique identifier (OUI), and the |
-|   manufacturer is responsible for ensuring that the last three octets are    |
-|unique. A device listens for network traffic that contains its MAC address as |
-|   the packet’s destination MAC address before moving the packet up the OSI   |
-|    stack to Layer 3 for processing.  Network broadcasts with MAC address     |
-| FF:FF:FF:FF:FF:FF are the exception to the rule and will always be processed |
-|    by all network devices on the same network segment. Broadcasts are not    |
-|                typically forwarded beyond a Layer 3 boundary.                |
-*------------------------------------------------------------------------------*
+     *------------------------------- NOTE ------------------------------------*
+     |A MAC address is a 48-bit address that is split across six octets and
+     |notated in 1 hexadecimal. The first three octets are assigned to a device
+     |manufacturer, known as the organizationally unique identifier (OUI), and
+     |the  manufacturer is responsible for ensuring that the last three octets
+     |are     unique. A device listens for network traffic that contains its MAC
+     |address as  the packet’s destination MAC address before moving the packet
+     |up the OSI    stack to Layer 3 for processing.  Network broadcasts with
+     |MAC address      FF:FF:FF:FF:FF:FF are the exception to the rule and will
+     |always be processed  by all network devices on the same network segment.
+     |Broadcasts are not     typically forwarded beyond a Layer 3 boundary.                 
+     *-------------------------------------------------------------------------*
 
         A collision occurs when two or more network devices tries to transmit
      data at the same time in the same network segment.
