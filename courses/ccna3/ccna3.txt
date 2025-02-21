@@ -137,6 +137,51 @@ delete flash:config.text => La salida fácil
 reset
 
 # copy flash:config.old running-config
+
+-------------------------------------------------------------------------------
+                                 Last struggle
+-------------------------------------------------------------------------------
+                        Fri Feb 21 01:49:17 AM -05 2025
+
+                            Password recovery Switch
+1. Enter ramon mode
+Simply press the button during the booting process.
+
+2. Rename configuration file
+switch: flash_init
+switch: dir flash
+switch: rename flash:config.text flash:config.old
+
+3. Reboot switch
+switch: boot
+
+4. Rename config file back to the original name
+switch# dir flash:
+switch# rename flash:config.old flash:config.text
+
+5. Copy current configuration into running-config
+switch# copy flash:config.text running-config
+
+6. update new password and secret
+name(config)# enable password cisco
+name(config)# enable secret cisco
+
+7. Save configuration and restart
+wr
+
+                              IOS recovery Switch
+Entrar por Tera Term
+
+switch: set BAUD 115200
+switch: copy xmodem:[image.bin] flash:[image.bin]
+switch: set BAUD 9600
+switch: set BOOT flash:[image.bin]
+
+console 0
+  speed 9600
+
+wr
+
 -------------------------------------------------------------------------------
 2. Lecturas
 -------------------------------------------------------------------------------

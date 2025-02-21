@@ -308,6 +308,12 @@ Es una buena práctica optimizar la métrica a valores actuales.
 
 OSPF puede trabajar diferente dependiendo del tipo de red.
 
+                        Fri Feb 14 06:18:10 PM -05 2025
+
+Las áreas ayudan a que la base de datos no se haga inmanejable. Todas las áreas
+se comunican a través del área 0. Los router recurren a los ABR cuando quieren
+alcanzar otra área.
+
 *------------------------------------------------------------------------------*
 |                                   Lecturas                                   |
 *------------------------------------------------------------------------------*
