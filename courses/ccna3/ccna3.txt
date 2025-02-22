@@ -143,6 +143,25 @@ reset
 -------------------------------------------------------------------------------
                         Fri Feb 21 01:49:17 AM -05 2025
 
+                            Password recovery Router
+1. Restart  the router with the break command
+
+2. Change register to 0x2142 & restart
+rommon 1 > confreg 0x2142
+
+3. Start-up configuration to Running config
+router# copy startup-config running-config
+
+enable secret cisco
+enable password cisco
+
+4. Revert back register
+(config)# config-register 0x2102
+
+bk cmd -> confreg 0x2142 -> cp start run -> enable pass, sec -> config-reg 0x2102
+
+                              IOS Recovery Router
+rommon > tftdnld
                             Password recovery Switch
 1. Enter ramon mode
 Simply press the button during the booting process.
@@ -168,10 +187,11 @@ name(config)# enable secret cisco
 
 7. Save configuration and restart
 wr
+rommon -> flash_init -> rename flash:config.text flash:config.old -> boot -> ena -> rename flash:config.old flash:config.text -> cp flash:config.text running-config -> passwords -> wr
+
 
                               IOS recovery Switch
 Entrar por Tera Term
-
 switch: set BAUD 115200
 switch: copy xmodem:[image.bin] flash:[image.bin]
 switch: set BAUD 9600
@@ -181,6 +201,8 @@ console 0
   speed 9600
 
 wr
+
+Tera Term -> set BAUD 115200 -> cp xmodem:[image.bin] flash:[image.bin] -> set BAUD 9600 -> BOOT flash:[image.bin] console 0, speed 9600 -> wr
 
 -------------------------------------------------------------------------------
 2. Lecturas
