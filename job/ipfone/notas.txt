@@ -140,3 +140,25 @@ When writing emails:
 *------------------------------------------------------------------------------*
                                  Micaela Rubin
                         Mon Feb  3 01:59:34 PM -05 2025
+
+*------------------------------------------------------------------------------*
+|                            Documentación temporal                            |
+*------------------------------------------------------------------------------*
+Proyecto en curso.
+
+*------------------------------------------------------------------------------*
+                                     Bicom
+*------------------------------------------------------------------------------*
+
+The first thing one does in Bicom is search an account, we do this by going to
+External -> Tenants and searching for the Tenant in the search bar, we might
+find several Tenants with the same number, but this is expected, they're unique
+per server. 
+
+We select the Tenant and it will open the server for that Tenant, with
+information about the Tenant in the server, but it's not the Tenant itself yet,
+just info. Since we already are at the Tenant, we can use the search box to find
+the Tenant in that particular server. Notice that now we open Tenants in
+Settings instead of Home.
+
+Congratulations, now you reached the Dashboard for your Tenant.
